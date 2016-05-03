@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="fr" datatype="plaintext" original="messages" date="2014-05-07T14:43:48Z" product-name="sav_library_example1">
+		<header/>
+		<body>
+			<trans-unit id="tx_savlibraryexample1_members" xml:space="preserve" approved="yes">
+				<source>Members</source>
+				<target>Membres</target>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample1_members.firstname" xml:space="preserve" approved="yes">
+				<source>First Name</source>
+				<target>Prénom</target>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample1_members.lastname" xml:space="preserve" approved="yes">
+				<source>Last Name</source>
+				<target>Nom</target>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample1_members.street" xml:space="preserve" approved="yes">
+				<source>Street</source>
+				<target>Rue</target>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample1_members.zipcode" xml:space="preserve" approved="yes">
+				<source>Zip Code</source>
+				<target>Code postal</target>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample1_members.city" xml:space="preserve" approved="yes">
+				<source>City</source>
+				<target>Ville</target>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample1_members.image" xml:space="preserve" approved="yes">
+				<source>Image</source>
+				<target>Image</target>
+			</trans-unit>
+			<trans-unit id="tt_content.list_type_pi1" xml:space="preserve" approved="yes">
+				<source>SAV Library Example1 - Contact list</source>
+				<target>Liste de contatcs</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

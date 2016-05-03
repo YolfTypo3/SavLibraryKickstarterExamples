@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-04-30T19:30:56Z" product-name="sav_filter_search">
+		<header/>
+		<body>
+			<trans-unit id=".description" xml:space="preserve">
+				<source>SAV Filter Search</source>
+			</trans-unit>
+			<trans-unit id=".details" xml:space="preserve">
+				<source></source>
+			</trans-unit>
+			<trans-unit id="help.description" xml:space="preserve">
+				<source>SAV Filter Search extension</source>
+			</trans-unit>
+			<trans-unit id="help.image" xml:space="preserve">
+				<source>EXT:sav_filter_search/csh/sav_filter_search_example.jpg</source>
+			</trans-unit>
+			<trans-unit id="help.details" xml:space="preserve">
+				<source>
+			This plugin builds search selection device. It can be easily used with the &quot;SAV library&quot; extension.
+			
+      . &lt;b&gt;CSS File:&lt;/b&gt;
+      CSS file to be used in replacement of the default CSS file.
+
+      . &lt;b&gt;Table name:&lt;/b&gt;
+      Table name from which information are extracted. If several tables are used, they must be separated by a coma and the filter should be used to link the tables.
+       
+      . &lt;b&gt;Field names:&lt;/b&gt;
+      Semicolumn-separated list of field names from which information are extracted.
+      In specific cases when the extension is used as a filter for extensions built with the SAV Library Extension Generator, an SQL error “Column 'ColumnName' in where clause is ambiguous” can be generated.
+      It occurs, for example, when the same name is used in two tables or when you use several languages for records. In such cases, use the full field name syntax, that is “tableName.fieldName”.
+
+      . &lt;b&gt;Allowed groups:&lt;/b&gt;
+      This field will limit the display to information belonging to the selected groups.
+      
+      . &lt;b&gt;Filter:&lt;/b&gt;
+      Use this field if you want to add a where clause to select information.
+      
+      . &lt;b&gt;Storage page list:&lt;/b&gt;
+      List of the pages where information are searched. By default the page where the plugin is inserted is taken into account.
+
+      . &lt;b&gt;Search fields:&lt;/b&gt;
+      Semicolon-separated list of field names from which information are searched.
+      </source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

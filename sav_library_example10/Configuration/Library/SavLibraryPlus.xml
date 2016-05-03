@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+
+<SavLibraryPlus>
+    <general type="array">
+        <version>1.0.0</version>
+        <overridedTablesForLocalization>
+        </overridedTablesForLocalization>
+        <saveAndNew type="array">
+		</saveAndNew>
+    </general>
+    <forms type="array">
+        <numIndex index="1" type="array">
+            <title>Gallery</title>
+            <listView>1</listView>
+            <singleView>2</singleView>
+            <editView>3</editView>
+            <query>1</query>
+            <formView></formView>
+            <specialView>0</specialView>
+            <userPlugin>0</userPlugin>
+            <viewsWithCondition>
+            </viewsWithCondition>
+        </numIndex>
+    </forms>
+    <templates type="array">
+        <numIndex index="1" type="array">
+            <itemTemplate>&lt;ul&gt;
+  &lt;li class=&quot;image&quot;&gt;###image###&lt;/li&gt;
+&lt;/ul&gt;</itemTemplate>
+        </numIndex>
+    </templates>
+    <views type="array">
+        <numIndex index="1" type="array">
+            <a217895432 type="array">
+                <config type="array">
+                    <label>0</label>
+				</config>
+                <title type="array">
+                    <config type="array">
+                        <field></field>
+                    </config>
+                </title>
+                <fields type="array">
+                    <a9598752 type="array">
+                        <config type="array">
+                            <func>makeItemLink</func>
+                            <tsproperties>file = uploads/tx_savlibraryexample10/###image###
+file.width= 100
+</tsproperties>
+                            <tableName>tx_savlibraryexample10</tableName>
+                            <fieldName>image</fieldName>
+                            <fieldType>Files</fieldType>
+                        </config>
+                    </a9598752>
+                </fields>
+            </a217895432>
+        </numIndex>
+        <numIndex index="2" type="array">
+            <a217895432 type="array">
+                <config type="array">
+                    <label>0</label>
+				</config>
+                <title type="array">
+                    <config type="array">
+                        <field></field>
+                    </config>
+                </title>
+                <fields type="array">
+                    <a9598752 type="array">
+                        <config type="array">
+                            <wrapitem>&lt;div class=&quot;container&quot;&gt;&lt;div class=&quot;image&quot;&gt; | &lt;/div&gt;</wrapitem>
+                            <cutlabel>1</cutlabel>
+                            <tsproperties>file = uploads/tx_savlibraryexample10/###image###
+  file.width = 300
+  imageLinkWrap = 1
+  imageLinkWrap.enable = 1
+</tsproperties>
+                            <tableName>tx_savlibraryexample10</tableName>
+                            <fieldName>image</fieldName>
+                            <fieldType>Files</fieldType>
+                        </config>
+                    </a9598752>
+                    <a210704446 type="array">
+                        <config type="array">
+                            <wrapitem>&lt;div class=&quot;info&quot;&gt;&lt;div class=&quot;name&quot;&gt; | &lt;/div&gt;</wrapitem>
+                            <tableName>tx_savlibraryexample10</tableName>
+                            <fieldName>title</fieldName>
+                            <fieldType>String</fieldType>
+                        </config>
+                    </a210704446>
+                    <a90773530 type="array">
+                        <config type="array">
+                            <wrapitem>&lt;div class=&quot;description&quot;&gt; | &lt;/div&gt;&lt;/div&gt;</wrapitem>
+                            <tableName>tx_savlibraryexample10</tableName>
+                            <fieldName>description</fieldName>
+                            <fieldType>Text</fieldType>
+                        </config>
+                    </a90773530>
+                    <a79811241 type="array">
+                        <config type="array">
+                            <wrapitem>&lt;div class=&quot;map&quot;&gt; | &lt;/div&gt;&lt;/div&gt;</wrapitem>
+                            <cutlabel>1</cutlabel>
+                            <tsobject>COA</tsobject>
+                            <tsproperties>10 = &lt; plugin.tx_wecmap_pi1
+10{
+  height = 300
+  width = 300
+  showDirections = 0
+  prefillAddress = 0
+  initialMapType = G_NORMAL_MAP
+  controls{
+    mapControlSize = small
+    showOverviewMap = 0
+    showMapType = 1
+    showScale = 0
+  }
+  markers.1 {
+    title = ###title###
+    street = ###address###
+    city = ###city###
+    zip = ###zip###
+    country = ###country###
+  }
+}
+</tsproperties>
+                            <cutif>address = EMPTY</cutif>
+                            <tableName>tx_savlibraryexample10</tableName>
+                            <fieldName>map</fieldName>
+                            <fieldType>ShowOnly</fieldType>
+                            <renderType>String</renderType>
+                        </config>
+                    </a79811241>
+                </fields>
+            </a217895432>
+        </numIndex>
+        <numIndex index="3" type="array">
+            <a217895432 type="array">
+                <config type="array">
+                    <label>0</label>
+				</config>
+                <title type="array">
+                    <config type="array">
+                        <field></field>
+                    </config>
+                </title>
+                <fields type="array">
+                    <a9598752 type="array">
+                        <config type="array">
+                            <tableName>tx_savlibraryexample10</tableName>
+                            <fieldName>image</fieldName>
+                            <fieldType>Files</fieldType>
+                        </config>
+                    </a9598752>
+                    <a210704446 type="array">
+                        <config type="array">
+                            <tableName>tx_savlibraryexample10</tableName>
+                            <fieldName>title</fieldName>
+                            <fieldType>String</fieldType>
+                        </config>
+                    </a210704446>
+                    <a90773530 type="array">
+                        <config type="array">
+                            <tableName>tx_savlibraryexample10</tableName>
+                            <fieldName>description</fieldName>
+                            <fieldType>Text</fieldType>
+                        </config>
+                    </a90773530>
+                    <a170253813 type="array">
+                        <config type="array">
+                            <tableName>tx_savlibraryexample10</tableName>
+                            <fieldName>address</fieldName>
+                            <fieldType>String</fieldType>
+                        </config>
+                    </a170253813>
+                    <a155668924 type="array">
+                        <config type="array">
+                            <tableName>tx_savlibraryexample10</tableName>
+                            <fieldName>zip</fieldName>
+                            <fieldType>String</fieldType>
+                        </config>
+                    </a155668924>
+                    <a217877709 type="array">
+                        <config type="array">
+                            <tableName>tx_savlibraryexample10</tableName>
+                            <fieldName>city</fieldName>
+                            <fieldType>String</fieldType>
+                        </config>
+                    </a217877709>
+                    <a166208576 type="array">
+                        <config type="array">
+                            <tableName>tx_savlibraryexample10</tableName>
+                            <fieldName>country</fieldName>
+                            <fieldType>String</fieldType>
+                        </config>
+                    </a166208576>
+                </fields>
+            </a217895432>
+        </numIndex>
+    </views>
+    <queries type="array">
+        <numIndex index="1" type="array">
+            <title>Query</title>
+            <mainTable>tx_savlibraryexample10</mainTable>
+ 		</numIndex>
+	</queries>
+
+</SavLibraryPlus>

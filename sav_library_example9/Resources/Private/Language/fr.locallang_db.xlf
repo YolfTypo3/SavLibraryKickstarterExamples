@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="fr" datatype="plaintext" original="messages" date="2014-05-07T14:54:27Z" product-name="sav_library_example9">
+		<header/>
+		<body>
+			<trans-unit id="tx_savlibraryexample9" xml:space="preserve" approved="yes">
+				<source>Events</source>
+				<target>Evènements</target>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample9.title" xml:space="preserve" approved="yes">
+				<source>Title</source>
+				<target>Titre</target>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample9.begin" xml:space="preserve" approved="yes">
+				<source>Begin</source>
+				<target>Début</target>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample9.end" xml:space="preserve" approved="yes">
+				<source>End</source>
+				<target>Fin</target>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample9.category" xml:space="preserve" approved="yes">
+				<source>Category</source>
+				<target>Catégorie</target>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample9.graph" xml:space="preserve" approved="yes">
+				<source>Graph</source>
+				<target>Graphe</target>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample9_category" xml:space="preserve" approved="yes">
+				<source>Events (Category)</source>
+				<target>Evènements (Catégorie)</target>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample9_category.name" xml:space="preserve" approved="yes">
+				<source>Name</source>
+				<target>Nom</target>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample9_category.color" xml:space="preserve" approved="yes">
+				<source>Color</source>
+				<target>Couleur</target>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample9_period" xml:space="preserve" approved="yes">
+				<source>Events (Period)</source>
+				<target>Evènements (Période)</target>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample9_period.beginperiod" xml:space="preserve" approved="yes">
+				<source>Begin</source>
+				<target>Début</target>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample9_period.endperiod" xml:space="preserve" approved="yes">
+				<source>End</source>
+				<target>Fin</target>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample9_period.periodtitle" xml:space="preserve" approved="yes">
+				<source>Title</source>
+				<target>Titre</target>
+			</trans-unit>
+			<trans-unit id="tt_content.list_type_pi1" xml:space="preserve" approved="yes">
+				<source>SAV Library Example9 - XML JpGraph</source>
+				<target>SAV Exemple9 - XML JpGraph</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="fr" datatype="plaintext" original="messages" date="2014-05-07T14:51:57Z" product-name="sav_library_example6">
+		<header/>
+		<body>
+			<trans-unit id="toolTitle" xml:space="preserve" approved="yes">
+				<source>Conference Tool</source>
+				<target>Gestionnaire de conférence</target>
+			</trans-unit>
+			<trans-unit id="mailSubject" xml:space="preserve" approved="yes">
+				<source>Registration to the conference</source>
+				<target>Inscription à la conférence</target>
+			</trans-unit>
+			<trans-unit id="mailMessage" xml:space="preserve" approved="yes">
+				<source>Dear ###name###,
+
+Thank you for your registration to the conference.
+
+Your registration includes:
+
+###render[registration]###
+
+Your invoice will be available at the registration desk.
+
+Looking forwards to seeing you.
+
+Best regards,
+
+The conference organization committee.      
+      </source>
+				<target>Cher(e) ###name###,
+
+Merci pour votre inscription à la conference.
+
+Votre inscription inclut :
+
+###render[registration]###
+
+Une facture vous sera remise au bureau d'accueil de la conférence.
+
+Sincères salutations
+
+Le comité d'organisation.      
+      </target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

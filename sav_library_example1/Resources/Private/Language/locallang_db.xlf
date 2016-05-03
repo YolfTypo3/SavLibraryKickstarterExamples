@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-04-30T22:01:54Z" product-name="sav_library_example1">
+		<header/>
+		<body>
+			<trans-unit id="tx_savlibraryexample1_members" xml:space="preserve">
+				<source>Members</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample1_members.firstname" xml:space="preserve">
+				<source>First Name</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample1_members.lastname" xml:space="preserve">
+				<source>Last Name</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample1_members.street" xml:space="preserve">
+				<source>Street</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample1_members.zipcode" xml:space="preserve">
+				<source>Zip Code</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample1_members.city" xml:space="preserve">
+				<source>City</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample1_members.image" xml:space="preserve">
+				<source>Image</source>
+			</trans-unit>
+			<trans-unit id="tt_content.list_type_pi1" xml:space="preserve">
+				<source>SAV Library Example1 - Contact list</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
+

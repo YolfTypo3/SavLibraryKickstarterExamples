@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-03-05T21:42:15Z" product-name="sav_filter_abc">
+		<header/>
+		<body>
+			<trans-unit id=".alttitle" xml:space="preserve">
+				<source>SAV Filter abc</source>
+			</trans-unit>
+			<trans-unit id=".description" xml:space="preserve">
+				<source>This plugin builds an alphabetic selection device. It can be easily used with the &quot;SAV Library Plus&quot; or &quot;SAV Library&quot; extensions.</source>
+			</trans-unit>
+			<trans-unit id="help.description" xml:space="preserve">
+				<source>SAV Filter abc extension</source>
+			</trans-unit>
+			<trans-unit id="help.image" xml:space="preserve">
+				<source>EXT:sav_filter_abc/Resources/Private/Images/sav_filter_abc_csh.jpg</source>
+			</trans-unit>
+			<trans-unit id="help.details" xml:space="preserve">
+				<source>. &lt;b&gt;CSS File:&lt;/b&gt;
+CSS file to be used in replacement of the default CSS file.
+
+. &lt;b&gt;Table name:&lt;/b&gt;
+Table name from which information are extracted. If several tables are used, they must be separated by a coma and the filter should be used to link the tables.
+
+. &lt;b&gt;Field names:&lt;/b&gt;
+Semicolumn-separated list of field names from which information are extracted.
+In specific cases when the extension is used as a filter for extensions built with the SAV Library Extension Generator, an SQL error &quot;Column 'ColumnName' in where clause is ambiguous&quot; can be generated.
+It occurs, for example, when the same name is used in two tables or when you use several languages for records. In such cases, use the full field name syntax, that is &quot;tableName.fieldName&quot;.
+
+. &lt;b&gt;Allowed groups:&lt;/b&gt;
+This field will limit the display to information belonging to the selected groups.
+
+. &lt;b&gt;Filter:&lt;/b&gt;
+Use this field if you want to add a where clause to select information.
+
+. &lt;b&gt;Page Filter:&lt;/b&gt;
+See example below. The page filter is the following :
+table.field:pageid=fieldValue; .... ;pageid=fieldValue
+The first sub-page has the id 254 and is associated with the category 1 while the second sub-page has the id 255 and is associated with the category 2.
+
+. &lt;b&gt;Storage page list:&lt;/b&gt;
+List of the pages where information are searched. By default the page where the plugin is inserted is taken into account.
+
+. &lt;b&gt;Add a search box:&lt;/b&gt;
+A search box is added to the abc list. Search is performed on the field name.
+
+. &lt;b&gt;Search fields:&lt;/b&gt;
+Semicolon-separated list of field names from which information are searched.</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

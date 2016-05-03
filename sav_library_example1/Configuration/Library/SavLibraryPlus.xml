@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+
+<SavLibraryPlus>
+    <general type="array">
+        <version>1.0.0</version>
+        <overridedTablesForLocalization>
+        </overridedTablesForLocalization>
+        <saveAndNew type="array">
+		</saveAndNew>
+    </general>
+    <forms type="array">
+        <numIndex index="1" type="array">
+            <title>Contact</title>
+            <listView>1</listView>
+            <singleView>2</singleView>
+            <editView>3</editView>
+            <query>1</query>
+            <formView></formView>
+            <specialView>0</specialView>
+            <userPlugin></userPlugin>
+            <viewsWithCondition>
+            </viewsWithCondition>
+        </numIndex>
+    </forms>
+    <templates type="array">
+        <numIndex index="1" type="array">
+            <itemTemplate>&lt;ul&gt;
+  &lt;li class=&quot;image&quot;&gt;###image###&lt;/li&gt;
+  &lt;li class=&quot;lastName&quot;&gt;###lastname###&lt;/li&gt;
+  &lt;li class=&quot;firstName&quot;&gt;###firstname###&lt;/li&gt;
+&lt;/ul&gt;</itemTemplate>
+            <viewTemplate>{template.viewTemplate->f:format.raw()title}</viewTemplate>
+        </numIndex>
+    </templates>
+    <views type="array">
+        <numIndex index="1" type="array">
+            <a217895432 type="array">
+                <config type="array">
+                    <label>0</label>
+				</config>
+                <title type="array">
+                    <config type="array">
+                        <field></field>
+                    </config>
+                </title>
+                <fields type="array">
+                    <a171665851 type="array">
+                        <config type="array">
+                            <tableName>tx_savlibraryexample1_members</tableName>
+                            <fieldName>firstname</fieldName>
+                            <fieldType>String</fieldType>
+                        </config>
+                    </a171665851>
+                    <a111594229 type="array">
+                        <config type="array">
+                            <tableName>tx_savlibraryexample1_members</tableName>
+                            <fieldName>lastname</fieldName>
+                            <fieldType>String</fieldType>
+                        </config>
+                    </a111594229>
+                    <a200317443 type="array">
+                        <config type="array">
+                            <func>makeItemLink</func>
+                            <width>50</width>
+                            <height>50</height>
+                            <tableName>tx_savlibraryexample1_members</tableName>
+                            <fieldName>image</fieldName>
+                            <fieldType>Files</fieldType>
+                        </config>
+                    </a200317443>
+                </fields>
+            </a217895432>
+        </numIndex>
+        <numIndex index="2" type="array">
+            <a217895432 type="array">
+                <config type="array">
+                    <label>0</label>
+				</config>
+                <title type="array">
+                    <config type="array">
+                        <field></field>
+                    </config>
+                </title>
+                <fields type="array">
+                    <a171665851 type="array">
+                        <config type="array">
+                            <tableName>tx_savlibraryexample1_members</tableName>
+                            <fieldName>firstname</fieldName>
+                            <fieldType>String</fieldType>
+                        </config>
+                    </a171665851>
+                    <a111594229 type="array">
+                        <config type="array">
+                            <tableName>tx_savlibraryexample1_members</tableName>
+                            <fieldName>lastname</fieldName>
+                            <fieldType>String</fieldType>
+                        </config>
+                    </a111594229>
+                    <a132655371 type="array">
+                        <config type="array">
+                            <tableName>tx_savlibraryexample1_members</tableName>
+                            <fieldName>street</fieldName>
+                            <fieldType>Text</fieldType>
+                        </config>
+                    </a132655371>
+                    <a245194147 type="array">
+                        <config type="array">
+                            <tableName>tx_savlibraryexample1_members</tableName>
+                            <fieldName>zipcode</fieldName>
+                            <fieldType>String</fieldType>
+                        </config>
+                    </a245194147>
+                    <a27366037 type="array">
+                        <config type="array">
+                            <tableName>tx_savlibraryexample1_members</tableName>
+                            <fieldName>city</fieldName>
+                            <fieldType>String</fieldType>
+                        </config>
+                    </a27366037>
+                    <a200317443 type="array">
+                        <config type="array">
+                            <tableName>tx_savlibraryexample1_members</tableName>
+                            <fieldName>image</fieldName>
+                            <fieldType>Files</fieldType>
+                        </config>
+                    </a200317443>
+                </fields>
+            </a217895432>
+        </numIndex>
+        <numIndex index="3" type="array">
+            <a217895432 type="array">
+                <config type="array">
+                    <label>0</label>
+				</config>
+                <title type="array">
+                    <config type="array">
+                        <field></field>
+                    </config>
+                </title>
+                <fields type="array">
+                    <a171665851 type="array">
+                        <config type="array">
+                            <size>40</size>
+                            <tableName>tx_savlibraryexample1_members</tableName>
+                            <fieldName>firstname</fieldName>
+                            <fieldType>String</fieldType>
+                        </config>
+                    </a171665851>
+                    <a111594229 type="array">
+                        <config type="array">
+                            <tableName>tx_savlibraryexample1_members</tableName>
+                            <fieldName>lastname</fieldName>
+                            <fieldType>String</fieldType>
+                        </config>
+                    </a111594229>
+                    <a132655371 type="array">
+                        <config type="array">
+                            <tableName>tx_savlibraryexample1_members</tableName>
+                            <fieldName>street</fieldName>
+                            <fieldType>Text</fieldType>
+                        </config>
+                    </a132655371>
+                    <a245194147 type="array">
+                        <config type="array">
+                            <tableName>tx_savlibraryexample1_members</tableName>
+                            <fieldName>zipcode</fieldName>
+                            <fieldType>String</fieldType>
+                        </config>
+                    </a245194147>
+                    <a27366037 type="array">
+                        <config type="array">
+                            <tableName>tx_savlibraryexample1_members</tableName>
+                            <fieldName>city</fieldName>
+                            <fieldType>String</fieldType>
+                        </config>
+                    </a27366037>
+                    <a200317443 type="array">
+                        <config type="array">
+                            <tableName>tx_savlibraryexample1_members</tableName>
+                            <fieldName>image</fieldName>
+                            <fieldType>Files</fieldType>
+                        </config>
+                    </a200317443>
+                </fields>
+            </a217895432>
+        </numIndex>
+    </views>
+    <queries type="array">
+        <numIndex index="1" type="array">
+            <title>Query</title>
+            <mainTable>tx_savlibraryexample1_members</mainTable>
+ 		</numIndex>
+	</queries>
+
+</SavLibraryPlus>

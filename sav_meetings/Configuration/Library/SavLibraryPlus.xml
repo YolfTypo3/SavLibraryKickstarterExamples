@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+
+<SavLibraryPlus>
+    <general type="array">
+        <version>1.0.0</version>
+        <overridedTablesForLocalization>
+        </overridedTablesForLocalization>
+        <saveAndNew type="array">
+            <numIndex index="tx_savmeetings_category">1</numIndex>
+		</saveAndNew>
+    </general>
+    <forms type="array">
+        <numIndex index="1" type="array">
+            <title>Meetings</title>
+            <listView>1</listView>
+            <singleView>2</singleView>
+            <editView>3</editView>
+            <query>1</query>
+            <formView></formView>
+            <specialView>0</specialView>
+            <userPlugin></userPlugin>
+            <viewsWithCondition>
+            </viewsWithCondition>
+        </numIndex>
+    </forms>
+    <templates type="array">
+        <numIndex index="1" type="array">
+            <itemTemplate>&lt;ul&gt;
+  &lt;li class=&quot;date&quot;&gt;###date###&lt;/li&gt;
+  &lt;li class=&quot;category&quot;&gt;###category###&lt;/li&gt;
+&lt;/ul&gt;</itemTemplate>
+        </numIndex>
+    </templates>
+    <views type="array">
+        <numIndex index="1" type="array">
+            <a217895432 type="array">
+                <config type="array">
+                    <label>0</label>
+				</config>
+                <title type="array">
+                    <config type="array">
+                        <field>&lt;ul&gt;
+  &lt;li class=&quot;date&quot;&gt;###date###&lt;/li&gt;
+  &lt;li class=&quot;category&quot;&gt;###category###&lt;/li&gt;
+&lt;/ul&gt;</field>
+                    </config>
+                </title>
+                <fields type="array">
+                    <a241226711 type="array">
+                        <config type="array">
+                            <func>makeItemLink</func>
+                            <orderlinkintitle>1</orderlinkintitle>
+                            <tableName>tx_savmeetings</tableName>
+                            <fieldName>date</fieldName>
+                            <fieldType>DateTime</fieldType>
+                        </config>
+                    </a241226711>
+                    <a239248449 type="array">
+                        <config type="array">
+                            <tableName>tx_savmeetings</tableName>
+                            <fieldName>category</fieldName>
+                            <fieldType>RelationOneToManyAsSelectorbox</fieldType>
+                        </config>
+                    </a239248449>
+                </fields>
+            </a217895432>
+        </numIndex>
+        <numIndex index="2" type="array">
+            <a217895432 type="array">
+                <config type="array">
+                    <label>0</label>
+				</config>
+                <title type="array">
+                    <config type="array">
+                        <field>###render[category]### - ###render[date]###</field>
+                    </config>
+                </title>
+                <fields type="array">
+                    <a241226711 type="array">
+                        <config type="array">
+                            <tableName>tx_savmeetings</tableName>
+                            <fieldName>date</fieldName>
+                            <fieldType>DateTime</fieldType>
+                        </config>
+                    </a241226711>
+                    <a239248449 type="array">
+                        <config type="array">
+                            <tableName>tx_savmeetings</tableName>
+                            <fieldName>category</fieldName>
+                            <fieldType>RelationOneToManyAsSelectorbox</fieldType>
+                        </config>
+                    </a239248449>
+                    <a87549076 type="array">
+                        <config type="array">
+                            <labelselect>name</labelselect>
+                            <orderselect>name</orderselect>
+                            <separator>,</separator>
+                            <nohtmlprefix>1</nohtmlprefix>
+                            <tableName>tx_savmeetings</tableName>
+                            <fieldName>participants</fieldName>
+                            <fieldType>RelationManyToManyAsDoubleSelectorbox</fieldType>
+                        </config>
+                    </a87549076>
+                    <a46798992 type="array">
+                        <config type="array">
+                            <cutlabel>1</cutlabel>
+                            <maxsubformitems>0</maxsubformitems>
+                            <order>sorting</order>
+                            <tableName>tx_savmeetings</tableName>
+                            <fieldName>rel_item</fieldName>
+                            <fieldType>RelationManyToManyAsSubform</fieldType>
+                            <subform type="array">
+                                <a217895432 type="array">
+                                    <fields type="array">
+                                        <a57937923 type="array">
+                                            <config type="array">
+                                                <tableName>tx_savmeetings_item</tableName>
+                                                <fieldName>subject</fieldName>
+                                                <fieldType>String</fieldType>
+                                            </config>
+                                        </a57937923>
+                                        <a42484691 type="array">
+                                            <config type="array">
+                                                <labelselect>name</labelselect>
+                                                <fusion>begin</fusion>
+                                                <tableName>tx_savmeetings_item</tableName>
+                                                <fieldName>proposed_by</fieldName>
+                                                <fieldType>RelationOneToManyAsSelectorbox</fieldType>
+                                            </config>
+                                        </a42484691>
+                                        <a182716673 type="array">
+                                            <config type="array">
+                                                <fusion>end</fusion>
+                                                <stdwrapvalue>wrap = |&amp;nbsp;mn</stdwrapvalue>
+                                                <stylelabel>width:120px</stylelabel>
+                                                <tableName>tx_savmeetings_item</tableName>
+                                                <fieldName>expected_duration</fieldName>
+                                                <fieldType>String</fieldType>
+                                            </config>
+                                        </a182716673>
+                                        <a79266112 type="array">
+                                            <config type="array">
+                                                <addicon>1</addicon>
+                                                <tableName>tx_savmeetings_item</tableName>
+                                                <fieldName>file</fieldName>
+                                                <fieldType>Files</fieldType>
+                                            </config>
+                                        </a79266112>
+                                        <a176473846 type="array">
+                                            <config type="array">
+                                                <cutlabel>1</cutlabel>
+                                                <tableName>tx_savmeetings_item</tableName>
+                                                <fieldName>report</fieldName>
+                                                <fieldType>RichTextEditor</fieldType>
+                                            </config>
+                                        </a176473846>
+                                    </fields>
+                                </a217895432>
+                            </subform>
+                        </config>
+                    </a46798992>
+                </fields>
+            </a217895432>
+        </numIndex>
+        <numIndex index="3" type="array">
+            <a217895432 type="array">
+                <config type="array">
+                    <label>0</label>
+				</config>
+                <title type="array">
+                    <config type="array">
+                        <field>###render[category]### - ###render[date]###</field>
+                    </config>
+                </title>
+                <fields type="array">
+                    <a241226711 type="array">
+                        <config type="array">
+                            <nodefault>1</nodefault>
+                            <tableName>tx_savmeetings</tableName>
+                            <fieldName>date</fieldName>
+                            <fieldType>DateTime</fieldType>
+                        </config>
+                    </a241226711>
+                    <a239248449 type="array">
+                        <config type="array">
+                            <tableName>tx_savmeetings</tableName>
+                            <fieldName>category</fieldName>
+                            <fieldType>RelationOneToManyAsSelectorbox</fieldType>
+                        </config>
+                    </a239248449>
+                    <a87549076 type="array">
+                        <config type="array">
+                            <labelselect>name</labelselect>
+                            <orderselect>name</orderselect>
+                            <whereselect>###group_list=sav_meetings###</whereselect>
+                            <tableName>tx_savmeetings</tableName>
+                            <fieldName>participants</fieldName>
+                            <fieldType>RelationManyToManyAsDoubleSelectorbox</fieldType>
+                        </config>
+                    </a87549076>
+                    <a46798992 type="array">
+                        <config type="array">
+                            <adddelete>1</adddelete>
+                            <addupdown>1</addupdown>
+                            <addsave>1</addsave>
+                            <cutlabel>1</cutlabel>
+                            <maxsubformitems>1</maxsubformitems>
+                            <nofirstlast>1</nofirstlast>
+                            <wrapitem>&lt;div class=&quot;block&quot;&gt;&lt;div class=&quot;blockTitle&quot;&gt;$$$label[rel_item]$$$&lt;/div&gt; | &lt;/div&gt;</wrapitem>
+                            <tableName>tx_savmeetings</tableName>
+                            <fieldName>rel_item</fieldName>
+                            <fieldType>RelationManyToManyAsSubform</fieldType>
+                            <subform type="array">
+                                <a217895432 type="array">
+                                    <fields type="array">
+                                        <a57937923 type="array">
+                                            <config type="array">
+                                                <size>80</size>
+                                                <tableName>tx_savmeetings_item</tableName>
+                                                <fieldName>subject</fieldName>
+                                                <fieldType>String</fieldType>
+                                            </config>
+                                        </a57937923>
+                                        <a42484691 type="array">
+                                            <config type="array">
+                                                <labelselect>name</labelselect>
+                                                <orderselect>name</orderselect>
+                                                <whereselect>###group_list=sav_meetings###</whereselect>
+                                                <fusion>begin</fusion>
+                                                <tableName>tx_savmeetings_item</tableName>
+                                                <fieldName>proposed_by</fieldName>
+                                                <fieldType>RelationOneToManyAsSelectorbox</fieldType>
+                                            </config>
+                                        </a42484691>
+                                        <a182716673 type="array">
+                                            <config type="array">
+                                                <size>5</size>
+                                                <fusion>end</fusion>
+                                                <stylelabel>width:120px</stylelabel>
+                                                <tableName>tx_savmeetings_item</tableName>
+                                                <fieldName>expected_duration</fieldName>
+                                                <fieldType>String</fieldType>
+                                            </config>
+                                        </a182716673>
+                                        <a79266112 type="array">
+                                            <config type="array">
+                                                <addlinkineditmode>1</addlinkineditmode>
+                                                <tableName>tx_savmeetings_item</tableName>
+                                                <fieldName>file</fieldName>
+                                                <fieldType>Files</fieldType>
+                                            </config>
+                                        </a79266112>
+                                        <a176473846 type="array">
+                                            <config type="array">
+                                                <tableName>tx_savmeetings_item</tableName>
+                                                <fieldName>report</fieldName>
+                                                <fieldType>RichTextEditor</fieldType>
+                                            </config>
+                                        </a176473846>
+                                    </fields>
+                                </a217895432>
+                            </subform>
+                        </config>
+                    </a46798992>
+                </fields>
+            </a217895432>
+        </numIndex>
+    </views>
+    <queries type="array">
+        <numIndex index="1" type="array">
+            <title>Query</title>
+            <mainTable>tx_savmeetings</mainTable>
+            <groupByClause>tx_savmeetings.uid</groupByClause>
+            <orderByClause>tx_savmeetings.date desc</orderByClause>
+            <whereTags type="array">
+                <a160628470 type="array">
+                    <orderByClause>tx_savmeetings.date</orderByClause>
+                </a160628470>
+                <a130165616 type="array">
+                    <orderByClause>tx_savmeetings.date desc</orderByClause>
+                </a130165616>
+            </whereTags>
+ 		</numIndex>
+	</queries>
+
+</SavLibraryPlus>

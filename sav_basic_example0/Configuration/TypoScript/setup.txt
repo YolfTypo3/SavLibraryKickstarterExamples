@@ -1,0 +1,12 @@
+
+
+plugin.tx_savbasicexample0 {
+    view {
+        templateRootPath = {$plugin.tx_savbasicexample0.view.templateRootPath}
+        partialRootPath = {$plugin.tx_savbasicexample0.view.partialRootPath}
+        layoutRootPath = {$plugin.tx_savbasicexample0.view.layoutRootPath}
+    }
+    persistence {
+        storagePid = {$plugin.tx_savbasicexample0.persistence.storagePid}
+    }
+}

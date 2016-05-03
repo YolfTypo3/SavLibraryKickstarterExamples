@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-03-06T07:57:46Z" product-name="sav_filter_months">
+		<header/>
+		<body>
+			<trans-unit id=".alttitle" xml:space="preserve">
+				<source>SAV Filter Months</source>
+			</trans-unit>
+			<trans-unit id=".description" xml:space="preserve">
+				<source>This plugin builds a month selection device. It can be easily used with the &quot;SAV Library Plus&quot; or &quot;SAV Library&quot; extensions.</source>
+			</trans-unit>
+			<trans-unit id="help.description" xml:space="preserve">
+				<source>SAV Filter Months extension</source>
+			</trans-unit>
+			<trans-unit id="help.image" xml:space="preserve">
+				<source>EXT:sav_filter_months/Resources/Private/Images/sav_filter_months_csh.jpg</source>
+			</trans-unit>
+			<trans-unit id="help.details" xml:space="preserve">
+				<source>. &lt;b&gt;CSS File:&lt;/b&gt;
+CSS file to be used in replacement of the default CSS file.
+
+. &lt;b&gt;Table name:&lt;/b&gt;
+Table name from which information are extracted. If several tables are used, they must be separated by a coma and the filter should be used to link the tables.
+
+. &lt;b&gt;Field name:&lt;/b&gt;
+Field name from which information are extracted.
+
+. &lt;b&gt;Add a search box:&lt;/b&gt;
+A search box is added to the abc list. Search is performed on the field name.		
+
+. &lt;b&gt;Search field list:&lt;/b&gt;
+Comma separated list of fields in which information is searched.
+
+. &lt;b&gt;Number of backward months:&lt;/b&gt;
+If not null, the number of months will be added to the selector, before January.		
+
+. &lt;b&gt;Number of forward months:&lt;/b&gt;
+If not null, the number of months will be added to the selector, after December.		
+
+. &lt;b&gt;Storage page list:&lt;/b&gt;
+List of the pages where information are searched. By default the page where the plugin is inserted is taken into account.</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

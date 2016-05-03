@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+
+<SavLibraryPlus>
+    <general type="array">
+        <version>1.0.0</version>
+        <overridedTablesForLocalization>
+        </overridedTablesForLocalization>
+        <saveAndNew type="array">
+		</saveAndNew>
+    </general>
+    <forms type="array">
+        <numIndex index="1" type="array">
+            <title>FORM</title>
+            <listView>2</listView>
+            <singleView>0</singleView>
+            <editView>0</editView>
+            <query>1</query>
+            <formView>1</formView>
+            <specialView>0</specialView>
+            <userPlugin>0</userPlugin>
+            <viewsWithCondition>
+            </viewsWithCondition>
+        </numIndex>
+        <numIndex index="2" type="array">
+            <title>LIST</title>
+            <listView>3</listView>
+            <singleView>4</singleView>
+            <editView>5</editView>
+            <query>2</query>
+            <formView></formView>
+            <specialView>0</specialView>
+            <userPlugin></userPlugin>
+            <viewsWithCondition>
+            </viewsWithCondition>
+        </numIndex>
+        <numIndex index="3" type="array">
+            <title>TEASER</title>
+            <listView>6</listView>
+            <singleView>0</singleView>
+            <editView>0</editView>
+            <query>3</query>
+            <formView></formView>
+            <specialView>0</specialView>
+            <userPlugin></userPlugin>
+            <viewsWithCondition>
+            </viewsWithCondition>
+        </numIndex>
+    </forms>
+    <templates type="array">
+        <numIndex index="1" type="array">
+            <itemTemplate>&lt;div class=&quot;colLeft&quot;&gt;
+  &lt;div class=&quot;label&quot;&gt;$$$label[firstname]$$$&lt;/div&gt;
+  &lt;div class=&quot;field&quot;&gt;###field[firstname]###&lt;/div&gt;
+  &lt;div class=&quot;label&quot;&gt;$$$label[lastname]$$$&lt;/div&gt;
+  &lt;div class=&quot;field&quot;&gt;###field[lastname]###&lt;/div&gt;
+  &lt;div class=&quot;label&quot;&gt;$$$label[website]$$$&lt;/div&gt;
+  &lt;div class=&quot;field&quot;&gt;###field[website]###&lt;/div&gt;
+  &lt;div class=&quot;label&quot;&gt;###button[submit]###&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;colRight&quot;&gt;
+   &lt;div class=&quot;label&quot;&gt;$$$label[message]$$$&lt;/div&gt;
+   &lt;div class=&quot;field&quot;&gt; ###field[message]###&lt;/div&gt;
+&lt;/div&gt;
+</itemTemplate>
+        </numIndex>
+        <numIndex index="2" type="array">
+            <itemTemplate>&lt;ul&gt;
+  &lt;li&gt;###email###&lt;/li&gt;
+&lt;/ul&gt;</itemTemplate>
+        </numIndex>
+        <numIndex index="3" type="array">
+            <itemTemplate>&lt;div class=&quot;name&quot;&gt;###firstname### ###lastname### - &lt;span class=&quot;date&quot;&gt;###date###&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;colLeft&quot;&gt;
+  &lt;div class=&quot;email&quot;&gt;###email###&lt;/div&gt;
+  &lt;div class=&quot;website&quot;&gt;###website###&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;colRight&quot;&gt;
+  &lt;div class=&quot;message&quot;&gt;###message###&lt;/div&gt;
+  &lt;div class=&quot;comment&quot;&gt;###comment###&lt;/div&gt;
+&lt;/div&gt;
+</itemTemplate>
+            <viewTemplate>{template.viewTemplate->f:format.raw()title}</viewTemplate>
+        </numIndex>
+        <numIndex index="6" type="array">
+            <itemTemplate>&lt;div class=&quot;name&quot;&gt;###firstname### ###lastname### - &lt;span class=&quot;date&quot;&gt;###date###&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;message&quot;&gt;###message###&lt;/div&gt;
+</itemTemplate>
+        </numIndex>
+    </templates>
+    <views type="array">
+        <numIndex index="1" type="array">
+            <a217895432 type="array">
+                <config type="array">
+                    <label>0</label>
+				</config>
+                <title type="array">
+                    <config type="array">
+                        <field></field>
+                    </config>
+                </title>
+                <fields type="array">
+                    <a240638963 type="array">
+                        <config type="array">
+                            <addedit>1</addedit>
+                            <required>1</required>
+                            <checkedinupdateformadmin>1</checkedinupdateformadmin>
+                            <tableName>tx_savlibraryexample7_guests</tableName>
+                            <fieldName>firstname</fieldName>
+                            <fieldType>String</fieldType>
+                        </config>
+                    </a240638963>
+                    <a119044004 type="array">
+                        <config type="array">
+                            <addedit>1</addedit>
+                            <required>1</required>
+                            <checkedinupdateformadmin>1</checkedinupdateformadmin>
+                            <tableName>tx_savlibraryexample7_guests</tableName>
+                            <fieldName>lastname</fieldName>
+                            <fieldType>String</fieldType>
+                        </config>
+                    </a119044004>
+                    <a37854466 type="array">
+                        <config type="array">
+                            <tableName>tx_savlibraryexample7_guests</tableName>
+                            <fieldName>email</fieldName>
+                            <fieldType>String</fieldType>
+                        </config>
+                    </a37854466>
+                    <a148382105 type="array">
+                        <config type="array">
+                            <addedit>1</addedit>
+                            <checkedinupdateformadmin>1</checkedinupdateformadmin>
+                            <tableName>tx_savlibraryexample7_guests</tableName>
+                            <fieldName>website</fieldName>
+                            <fieldType>Link</fieldType>
+                        </config>
+                    </a148382105>
+                    <a103857199 type="array">
+                        <config type="array">
+                            <addedit>1</addedit>
+                            <required>1</required>
+                            <checkedinupdateformadmin>1</checkedinupdateformadmin>
+                            <tableName>tx_savlibraryexample7_guests</tableName>
+                            <fieldName>message</fieldName>
+                            <fieldType>Text</fieldType>
+                        </config>
+                    </a103857199>
+                </fields>
+            </a217895432>
+        </numIndex>
+        <numIndex index="2" type="array">
+            <a217895432 type="array">
+                <config type="array">
+                    <label>0</label>
+				</config>
+                <title type="array">
+                    <config type="array">
+                        <field>$$$adminTitle$$$</field>
+                    </config>
+                </title>
+                <fields type="array">
+                    <a37854466 type="array">
+                        <config type="array">
+                            <func>makeItemLink</func>
+                            <updateform>1</updateform>
+                            <tableName>tx_savlibraryexample7_guests</tableName>
+                            <fieldName>email</fieldName>
+                            <fieldType>String</fieldType>
+                        </config>
+                    </a37854466>
+                </fields>
+            </a217895432>
+        </numIndex>
+        <numIndex index="3" type="array">
+            <a217895432 type="array">
+                <config type="array">
+                    <label>0</label>
+				</config>
+                <title type="array">
+                    <config type="array">
+                        <field></field>
+                    </config>
+                </title>
+                <fields type="array">
+                    <a240638963 type="array">
+                        <config type="array">
+                            <tableName>tx_savlibraryexample7_guests</tableName>
+                            <fieldName>firstname</fieldName>
+                            <fieldType>String</fieldType>
+                        </config>
+                    </a240638963>
+                    <a119044004 type="array">
+                        <config type="array">
+                            <tableName>tx_savlibraryexample7_guests</tableName>
+                            <fieldName>lastname</fieldName>
+                            <fieldType>String</fieldType>
+                        </config>
+                    </a119044004>
+                    <a37854466 type="array">
+                        <config type="array">
+                            <func>makeEmailLink</func>
+                            <message>$$$email$$$</message>
+                            <tableName>tx_savlibraryexample7_guests</tableName>
+                            <fieldName>email</fieldName>
+                            <fieldType>String</fieldType>
+                        </config>
+                    </a37854466>
+                    <a148382105 type="array">
+                        <config type="array">
+                            <message>$$$website$$$</message>
+                            <cutifnull>1</cutifnull>
+                            <tableName>tx_savlibraryexample7_guests</tableName>
+                            <fieldName>website</fieldName>
+                            <fieldType>Link</fieldType>
+                        </config>
+                    </a148382105>
+                    <a103857199 type="array">
+                        <config type="array">
+                            <tableName>tx_savlibraryexample7_guests</tableName>
+                            <fieldName>message</fieldName>
+                            <fieldType>Text</fieldType>
+                        </config>
+                    </a103857199>
+                    <a3335673 type="array">
+                        <config type="array">
+                            <addleftifnotnull>&lt;strong&gt;$$$label[comment]$$$&lt;/strong&gt;&lt;br /&gt;</addleftifnotnull>
+                            <cutifnull>1</cutifnull>
+                            <tableName>tx_savlibraryexample7_guests</tableName>
+                            <fieldName>comment</fieldName>
+                            <fieldType>Text</fieldType>
+                        </config>
+                    </a3335673>
+                    <a49137310 type="array">
+                        <config type="array">
+                            <alias>crdate</alias>
+                            <tableName>tx_savlibraryexample7_guests</tableName>
+                            <fieldName>date</fieldName>
+                            <fieldType>ShowOnly</fieldType>
+                            <renderType>DateTime</renderType>
+                        </config>
+                    </a49137310>
+                </fields>
+            </a217895432>
+        </numIndex>
+        <numIndex index="6" type="array">
+            <a217895432 type="array">
+                <config type="array">
+                    <label>0</label>
+				</config>
+                <title type="array">
+                    <config type="array">
+                        <field>$$$lastEntries$$$</field>
+                    </config>
+                </title>
+                <fields type="array">
+                    <a240638963 type="array">
+                        <config type="array">
+                            <tableName>tx_savlibraryexample7_guests</tableName>
+                            <fieldName>firstname</fieldName>
+                            <fieldType>String</fieldType>
+                        </config>
+                    </a240638963>
+                    <a119044004 type="array">
+                        <config type="array">
+                            <tableName>tx_savlibraryexample7_guests</tableName>
+                            <fieldName>lastname</fieldName>
+                            <fieldType>String</fieldType>
+                        </config>
+                    </a119044004>
+                    <a103857199 type="array">
+                        <config type="array">
+                            <stdwrapvalue>crop = 60|...
+</stdwrapvalue>
+                            <addrightifnotnull>$$$more$$$</addrightifnotnull>
+                            <funcright>makeLink</funcright>
+                            <setuidright>123</setuidright>
+                            <tableName>tx_savlibraryexample7_guests</tableName>
+                            <fieldName>message</fieldName>
+                            <fieldType>Text</fieldType>
+                        </config>
+                    </a103857199>
+                    <a49137310 type="array">
+                        <config type="array">
+                            <alias>crdate</alias>
+                            <tableName>tx_savlibraryexample7_guests</tableName>
+                            <fieldName>date</fieldName>
+                            <fieldType>ShowOnly</fieldType>
+                            <renderType>DateTime</renderType>
+                        </config>
+                    </a49137310>
+                </fields>
+            </a217895432>
+        </numIndex>
+    </views>
+    <queries type="array">
+        <numIndex index="1" type="array">
+            <title>FORM_Query</title>
+            <mainTable>tx_savlibraryexample7_guests</mainTable>
+            <whereClause>instr(_submitted_data_,'sav_library_example7_form') &gt; 0 AND not _validated_</whereClause>
+ 		</numIndex>
+        <numIndex index="2" type="array">
+            <title>LIST_Query</title>
+            <mainTable>tx_savlibraryexample7_guests</mainTable>
+            <whereClause>_validated_</whereClause>
+            <orderByClause>tx_savlibraryexample7_guests.crdate desc</orderByClause>
+ 		</numIndex>
+        <numIndex index="3" type="array">
+            <title>TEASER_Query</title>
+            <mainTable>tx_savlibraryexample7_guests</mainTable>
+            <whereClause>_validated_</whereClause>
+            <orderByClause>tx_savlibraryexample7_guests.crdate desc</orderByClause>
+ 		</numIndex>
+	</queries>
+
+</SavLibraryPlus>

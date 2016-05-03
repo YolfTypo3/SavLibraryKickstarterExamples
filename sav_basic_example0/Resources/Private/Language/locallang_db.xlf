@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-04-30T22:01:38Z" product-name="sav_basic_example0">
+		<header/>
+		<body>
+			<trans-unit id="tx_savbasicexample0_domain_model_table1" xml:space="preserve">
+				<source>Table1</source>
+			</trans-unit>
+			<trans-unit id="tx_savbasicexample0_domain_model_table1.field1" xml:space="preserve">
+				<source>Field 1</source>
+			</trans-unit>
+			<trans-unit id="tx_savbasicexample0_domain_model_table1.field2" xml:space="preserve">
+				<source>Field 2</source>
+			</trans-unit>
+			<trans-unit id="tt_content.list_type_pi1" xml:space="preserve">
+				<source>SAV Basic Mvc Example0 - Test</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
+

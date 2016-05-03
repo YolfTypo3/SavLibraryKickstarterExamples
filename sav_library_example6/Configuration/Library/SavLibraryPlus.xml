@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+
+<SavLibraryPlus>
+    <general type="array">
+        <version>1.0.0</version>
+        <overridedTablesForLocalization>
+        </overridedTablesForLocalization>
+        <saveAndNew type="array">
+		</saveAndNew>
+    </general>
+    <forms type="array">
+        <numIndex index="1" type="array">
+            <title>View1</title>
+            <listView>1</listView>
+            <singleView>2</singleView>
+            <editView>3</editView>
+            <query>1</query>
+            <formView></formView>
+            <specialView>0</specialView>
+            <userPlugin></userPlugin>
+            <viewsWithCondition>
+            </viewsWithCondition>
+        </numIndex>
+    </forms>
+    <templates type="array">
+        <numIndex index="1" type="array">
+            <itemTemplate>&lt;ul&gt;
+  &lt;li&gt;###name###&lt;/li&gt;
+&lt;/ul&gt;</itemTemplate>
+        </numIndex>
+    </templates>
+    <views type="array">
+        <numIndex index="1" type="array">
+            <a217895432 type="array">
+                <config type="array">
+                    <label>0</label>
+				</config>
+                <title type="array">
+                    <config type="array">
+                        <field>$$$toolTitle$$$</field>
+                    </config>
+                </title>
+                <fields type="array">
+                    <a49392237 type="array">
+                        <config type="array">
+                            <func>makeItemLink</func>
+                            <tableName>tx_savlibraryexample6</tableName>
+                            <fieldName>name</fieldName>
+                            <fieldType>String</fieldType>
+                        </config>
+                    </a49392237>
+                </fields>
+            </a217895432>
+        </numIndex>
+        <numIndex index="2" type="array">
+            <a217895432 type="array">
+                <config type="array">
+                    <label>0</label>
+				</config>
+                <title type="array">
+                    <config type="array">
+                        <field>###name###</field>
+                    </config>
+                </title>
+                <fields type="array">
+                    <a49392237 type="array">
+                        <config type="array">
+                            <tableName>tx_savlibraryexample6</tableName>
+                            <fieldName>name</fieldName>
+                            <fieldType>String</fieldType>
+                        </config>
+                    </a49392237>
+                    <a255550858 type="array">
+                        <config type="array">
+                            <tableName>tx_savlibraryexample6</tableName>
+                            <fieldName>address</fieldName>
+                            <fieldType>Text</fieldType>
+                        </config>
+                    </a255550858>
+                    <a262587096 type="array">
+                        <config type="array">
+                            <cols>1</cols>
+                            <tableName>tx_savlibraryexample6</tableName>
+                            <fieldName>registration</fieldName>
+                            <fieldType>Checkboxes</fieldType>
+                        </config>
+                    </a262587096>
+                    <a146417863 type="array">
+                        <config type="array">
+                            <func>makeEmailLink</func>
+                            <tableName>tx_savlibraryexample6</tableName>
+                            <fieldName>email</fieldName>
+                            <fieldType>String</fieldType>
+                        </config>
+                    </a146417863>
+                    <a107932983 type="array">
+                        <config type="array">
+                            <fusion>begin</fusion>
+                            <tableName>tx_savlibraryexample6</tableName>
+                            <fieldName>email_flag</fieldName>
+                            <fieldType>Checkbox</fieldType>
+                        </config>
+                    </a107932983>
+                    <a57096146 type="array">
+                        <config type="array">
+                            <fusion>end</fusion>
+                            <tableName>tx_savlibraryexample6</tableName>
+                            <fieldName>email_language</fieldName>
+                            <fieldType>Selectorbox</fieldType>
+                        </config>
+                    </a57096146>
+                    <a8939554 type="array">
+                        <config type="array">
+                            <generatertf>1</generatertf>
+                            <savefilertf>fileadmin/###tx_savlibraryexample6.name###.rtf</savefilertf>
+                            <tableName>tx_savlibraryexample6</tableName>
+                            <fieldName>invoice</fieldName>
+                            <fieldType>Link</fieldType>
+                        </config>
+                    </a8939554>
+                </fields>
+            </a217895432>
+        </numIndex>
+        <numIndex index="3" type="array">
+            <a217895432 type="array">
+                <config type="array">
+                    <label>0</label>
+				</config>
+                <title type="array">
+                    <config type="array">
+                        <field>###name###</field>
+                    </config>
+                </title>
+                <fields type="array">
+                    <a49392237 type="array">
+                        <config type="array">
+                            <tableName>tx_savlibraryexample6</tableName>
+                            <fieldName>name</fieldName>
+                            <fieldType>String</fieldType>
+                        </config>
+                    </a49392237>
+                    <a255550858 type="array">
+                        <config type="array">
+                            <tableName>tx_savlibraryexample6</tableName>
+                            <fieldName>address</fieldName>
+                            <fieldType>Text</fieldType>
+                        </config>
+                    </a255550858>
+                    <a262587096 type="array">
+                        <config type="array">
+                            <cols>1</cols>
+                            <tableName>tx_savlibraryexample6</tableName>
+                            <fieldName>registration</fieldName>
+                            <fieldType>Checkboxes</fieldType>
+                        </config>
+                    </a262587096>
+                    <a146417863 type="array">
+                        <config type="array">
+                            <tableName>tx_savlibraryexample6</tableName>
+                            <fieldName>email</fieldName>
+                            <fieldType>String</fieldType>
+                        </config>
+                    </a146417863>
+                    <a107932983 type="array">
+                        <config type="array">
+                            <fusion>begin</fusion>
+                            <mail>1</mail>
+                            <fieldforcheckmail>email</fieldforcheckmail>
+                            <mailsender>conference.organization@example.com</mailsender>
+                            <mailreceiverfromfield>email</mailreceiverfromfield>
+                            <mailsubject>$$$mailSubject$$$</mailsubject>
+                            <mailmessage>$$$mailMessage$$$</mailmessage>
+                            <mailmessagelanguagefromfield>email_language</mailmessagelanguagefromfield>
+                            <tableName>tx_savlibraryexample6</tableName>
+                            <fieldName>email_flag</fieldName>
+                            <fieldType>Checkbox</fieldType>
+                        </config>
+                    </a107932983>
+                    <a57096146 type="array">
+                        <config type="array">
+                            <fusion>end</fusion>
+                            <tableName>tx_savlibraryexample6</tableName>
+                            <fieldName>email_language</fieldName>
+                            <fieldType>Selectorbox</fieldType>
+                        </config>
+                    </a57096146>
+                    <a8939554 type="array">
+                        <config type="array">
+                            <generatertf>1</generatertf>
+                            <templatertf>fileadmin/invoice.rtf</templatertf>
+                            <savefilertf>fileadmin/###tx_savlibraryexample6.name###.rtf</savefilertf>
+                            <tableName>tx_savlibraryexample6</tableName>
+                            <fieldName>invoice</fieldName>
+                            <fieldType>Link</fieldType>
+                        </config>
+                    </a8939554>
+                </fields>
+            </a217895432>
+        </numIndex>
+    </views>
+    <queries type="array">
+        <numIndex index="1" type="array">
+            <title>Query</title>
+            <mainTable>tx_savlibraryexample6</mainTable>
+ 		</numIndex>
+	</queries>
+
+</SavLibraryPlus>

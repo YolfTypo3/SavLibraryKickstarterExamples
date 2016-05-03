@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-04-30T22:02:34Z" product-name="sav_librarymvc_example0">
+		<header/>
+		<body>
+			<trans-unit id="tx_savlibrarymvcexample0_domain_model_table1" xml:space="preserve">
+				<source>Table 1 for Mvc</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibrarymvcexample0_domain_model_table1.field2" xml:space="preserve">
+				<source>Checkbox</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibrarymvcexample0_domain_model_table1.field1" xml:space="preserve">
+				<source>String</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibrarymvcexample0_domain_model_table1.field8" xml:space="preserve">
+				<source>Textarea</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibrarymvcexample0_domain_model_table1.field9" xml:space="preserve">
+				<source>Rich text editor</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibrarymvcexample0_domain_model_table1.field4" xml:space="preserve">
+				<source>Date</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibrarymvcexample0_domain_model_table1.field5" xml:space="preserve">
+				<source>Date and time</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibrarymvcexample0_domain_model_table1.field5.I.1" xml:space="preserve">
+				<source>Case 1</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibrarymvcexample0_domain_model_table1.field5.I.2" xml:space="preserve">
+				<source>Case 2</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibrarymvcexample0_domain_model_table1.field5.I.3" xml:space="preserve">
+				<source>Case 3</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibrarymvcexample0_domain_model_table1.field10" xml:space="preserve">
+				<source>Integer</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibrarymvcexample0_domain_model_table1.field7" xml:space="preserve">
+				<source>Relation 1:n (selectorbox)</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibrarymvcexample0_domain_model_table1.field6" xml:space="preserve">
+				<source>Selectorbox</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibrarymvcexample0_domain_model_table1.field6.I.1" xml:space="preserve">
+				<source>Label1</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibrarymvcexample0_domain_model_table1.field6.I.2" xml:space="preserve">
+				<source>Label2</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibrarymvcexample0_domain_model_table1.field6.I.3" xml:space="preserve">
+				<source>Label3</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibrarymvcexample0_domain_model_table1.field12" xml:space="preserve">
+				<source>Link</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibrarymvcexample0_domain_model_table1.field13" xml:space="preserve">
+				<source>Files</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibrarymvcexample0_domain_model_table1.field14" xml:space="preserve">
+				<source>Data</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibrarymvcexample0_domain_model_table1.field15" xml:space="preserve">
+				<source>Legend</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibrarymvcexample0_domain_model_table1.field16" xml:space="preserve">
+				<source>Graph</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibrarymvcexample0_domain_model_table1.field17" xml:space="preserve">
+				<source>Comma-list n:n relation </source>
+			</trans-unit>
+			<trans-unit id="tx_savlibrarymvcexample0_domain_model_table1.field18" xml:space="preserve">
+				<source>True  n:n relation</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibrarymvcexample0_domain_model_table1.field19" xml:space="preserve">
+				<source>Subform 1</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibrarymvcexample0_domain_model_table1.field20" xml:space="preserve">
+				<source>Subform 2</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibrarymvcexample0_domain_model_table1.field3" xml:space="preserve">
+				<source>Checkboxes</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibrarymvcexample0_domain_model_table1.field3.I.1" xml:space="preserve">
+				<source>Item 1</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibrarymvcexample0_domain_model_table1.field3.I.2" xml:space="preserve">
+				<source>Item 2</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibrarymvcexample0_domain_model_table1.field3.I.3" xml:space="preserve">
+				<source>Item 3</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibrarymvcexample0_domain_model_table1.field3.I.4" xml:space="preserve">
+				<source>Item 4</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibrarymvcexample0_domain_model_table1.field11" xml:space="preserve">
+				<source>Radio buttons</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibrarymvcexample0_domain_model_table1.field11.I.1" xml:space="preserve">
+				<source>Label1</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibrarymvcexample0_domain_model_table1.field11.I.2" xml:space="preserve">
+				<source>Label2</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibrarymvcexample0_domain_model_table1.field11.I.3" xml:space="preserve">
+				<source>Label3</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibrarymvcexample0_domain_model_table1.field21" xml:space="preserve">
+				<source>View selector</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibrarymvcexample0_domain_model_table1.field21.I.1" xml:space="preserve">
+				<source>Default</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibrarymvcexample0_domain_model_table1.field21.I.2" xml:space="preserve">
+				<source>View 1</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibrarymvcexample0_domain_model_table1.field21.I.3" xml:space="preserve">
+				<source>View 2</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibrarymvcexample0_domain_model_table1.field22" xml:space="preserve">
+				<source>Comment</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibrarymvcexample0_domain_model_table1.field23" xml:space="preserve">
+				<source>Subform 3</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibrarymvcexample0_domain_model_table1.field24" xml:space="preserve">
+				<source>Currency</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibrarymvcexample0_domain_model_table2" xml:space="preserve">
+				<source>Table 2 for Mvc</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibrarymvcexample0_domain_model_table2.field1" xml:space="preserve">
+				<source>Field1 </source>
+			</trans-unit>
+			<trans-unit id="tx_savlibrarymvcexample0_domain_model_table3" xml:space="preserve">
+				<source>Table 3 for Mvc</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibrarymvcexample0_domain_model_table3.field1" xml:space="preserve">
+				<source>Field 1</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibrarymvcexample0_domain_model_table3.field2" xml:space="preserve">
+				<source>Field 2</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibrarymvcexample0_domain_model_table4" xml:space="preserve">
+				<source>Table 4 for Mvc</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibrarymvcexample0_domain_model_table4.field1" xml:space="preserve">
+				<source>Field 1</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibrarymvcexample0_domain_model_table5" xml:space="preserve">
+				<source>Table 5 for Mvc</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibrarymvcexample0_domain_model_table5.field1" xml:space="preserve">
+				<source>Field 1</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibrarymvcexample0_domain_model_table5.field2" xml:space="preserve">
+				<source>Subform 1 in Subform 3</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibrarymvcexample0_domain_model_table6" xml:space="preserve">
+				<source>Table 6 for Mvc</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibrarymvcexample0_domain_model_table6.field1" xml:space="preserve">
+				<source>String</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibrarymvcexample0_domain_model_table6.field2" xml:space="preserve">
+				<source>Files</source>
+			</trans-unit>
+			<trans-unit id="tt_content.list_type_pi1" xml:space="preserve">
+				<source>SAV Library Mvc Example0 - Test</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
+

@@ -1,0 +1,1361 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+
+
+<SavLibraryPlus>
+	<general type="array">
+		<version>0.4.0</version>
+		<overridedTablesForLocalization>
+
+		</overridedTablesForLocalization>
+		<saveAndNew type="array">
+
+			<numIndex index="tx_savlibrarymvcexample0_table1">1</numIndex>
+
+			<numIndex index="tx_savlibrarymvcexample0_table3">1</numIndex>
+
+		</saveAndNew>
+	</general>
+	<forms type="array">
+
+		<numIndex index="1" type="array">
+			<title>Test</title>
+			<listView>1</listView>
+			<singleView>2</singleView>
+			<editView>3</editView>
+			<query>1</query>
+			<formView></formView>
+			<specialView>0</specialView>
+			<userPlugin></userPlugin>
+			<viewsWithCondition>
+
+        <singleView type="array">
+
+		        <numIndex index="4" type="array">
+              <config type="array">
+
+                <showif>tx_savlibrarymvcexample0_table1.field21 = 1</showif>
+
+              </config>
+		        </numIndex>
+
+		        <numIndex index="5" type="array">
+              <config type="array">
+
+                <showif>tx_savlibrarymvcexample0_table1.field21 = 2</showif>
+
+              </config>
+		        </numIndex>
+
+        </singleView>
+
+      </viewsWithCondition>
+		</numIndex>
+
+	</forms>
+	<templates type="array">
+
+		<numIndex index="1" type="array">
+			<itemTemplate>&lt;ul&gt;
+  &lt;li&gt;###field1###&lt;/li&gt;
+  &lt;li&gt;###field4###&lt;/li&gt;
+&lt;/ul&gt;</itemTemplate>
+
+    </numIndex>
+
+	</templates>
+
+	<views type="array">
+
+		<numIndex index="1" type="array">
+
+      <a217895432 type="array">
+				<config type="array">
+
+					<label>0</label>
+
+				</config>
+				<title type="array">
+					<config type="array">
+						<field>&lt;ul&gt;
+  &lt;li&gt;###field1###&lt;/li&gt;
+  &lt;li&gt;###field4###&lt;/li&gt;
+&lt;/ul&gt;</field>
+					</config>
+				</title>
+
+				<fields type="array">
+
+          <a188393271 type="array">
+						<config type="array">
+
+              <func>makeItemLink</func>
+
+              <orderlinkintitle>1</orderlinkintitle>
+
+              <orderlinkintitlesetup>:value:ascdesc</orderlinkintitlesetup>
+
+              <tableName>tx_savlibrarymvcexample0_table1</tableName>
+
+              <fieldName>field1</fieldName>
+
+              <fieldType>String</fieldType>
+
+						</config>
+          </a188393271>
+
+          <a55748644 type="array">
+						<config type="array">
+
+              <tableName>tx_savlibrarymvcexample0_table1</tableName>
+
+              <fieldName>field4</fieldName>
+
+              <fieldType>Date</fieldType>
+
+						</config>
+          </a55748644>
+
+				</fields>
+      </a217895432>
+
+		</numIndex>
+
+		<numIndex index="2" type="array">
+
+      <a230006371 type="array">
+				<config type="array">
+
+					<label>Checkboxes and radio</label>
+
+				</config>
+				<title type="array">
+					<config type="array">
+						<field>###field1###</field>
+					</config>
+				</title>
+
+				<fields type="array">
+
+          <a230494809 type="array">
+						<config type="array">
+
+              <tableName>tx_savlibrarymvcexample0_table1</tableName>
+
+              <fieldName>field2</fieldName>
+
+              <fieldType>Checkbox</fieldType>
+
+						</config>
+          </a230494809>
+
+          <a105405761 type="array">
+						<config type="array">
+
+              <cols>1</cols>
+
+              <tableName>tx_savlibrarymvcexample0_table1</tableName>
+
+              <fieldName>field3</fieldName>
+
+              <fieldType>Checkboxes</fieldType>
+
+						</config>
+          </a105405761>
+
+          <a76130692 type="array">
+						<config type="array">
+
+              <tableName>tx_savlibrarymvcexample0_table1</tableName>
+
+              <fieldName>field11</fieldName>
+
+              <fieldType>RadioButtons</fieldType>
+
+						</config>
+          </a76130692>
+
+				</fields>
+      </a230006371>
+
+      <a71333563 type="array">
+				<config type="array">
+
+					<label>String, Text, Rte</label>
+
+				</config>
+				<title type="array">
+					<config type="array">
+						<field>###field1###</field>
+					</config>
+				</title>
+
+				<fields type="array">
+
+          <a188393271 type="array">
+						<config type="array">
+
+              <tableName>tx_savlibrarymvcexample0_table1</tableName>
+
+              <fieldName>field1</fieldName>
+
+              <fieldType>String</fieldType>
+
+						</config>
+          </a188393271>
+
+          <a110954964 type="array">
+						<config type="array">
+
+              <tableName>tx_savlibrarymvcexample0_table1</tableName>
+
+              <fieldName>field8</fieldName>
+
+              <fieldType>Text</fieldType>
+
+						</config>
+          </a110954964>
+
+          <a226055964 type="array">
+						<config type="array">
+
+              <tableName>tx_savlibrarymvcexample0_table1</tableName>
+
+              <fieldName>field9</fieldName>
+
+              <fieldType>RichTextEditor</fieldType>
+
+						</config>
+          </a226055964>
+
+				</fields>
+      </a71333563>
+
+      <a193105250 type="array">
+				<config type="array">
+
+					<label>Dates and integer</label>
+
+				</config>
+				<title type="array">
+					<config type="array">
+						<field>###field1###</field>
+					</config>
+				</title>
+
+				<fields type="array">
+
+          <a55748644 type="array">
+						<config type="array">
+
+              <tableName>tx_savlibrarymvcexample0_table1</tableName>
+
+              <fieldName>field4</fieldName>
+
+              <fieldType>Date</fieldType>
+
+						</config>
+          </a55748644>
+
+          <a28568401 type="array">
+						<config type="array">
+
+              <tableName>tx_savlibrarymvcexample0_table1</tableName>
+
+              <fieldName>field5</fieldName>
+
+              <fieldType>DateTime</fieldType>
+
+						</config>
+          </a28568401>
+
+          <a149750945 type="array">
+						<config type="array">
+
+              <tableName>tx_savlibrarymvcexample0_table1</tableName>
+
+              <fieldName>field24</fieldName>
+
+              <fieldType>Currency</fieldType>
+
+						</config>
+          </a149750945>
+
+          <a266032084 type="array">
+						<config type="array">
+
+              <tableName>tx_savlibrarymvcexample0_table1</tableName>
+
+              <fieldName>field10</fieldName>
+
+              <fieldType>Integer</fieldType>
+
+						</config>
+          </a266032084>
+
+				</fields>
+      </a193105250>
+
+      <a188466241 type="array">
+				<config type="array">
+
+					<label>Selectorbox</label>
+
+				</config>
+				<title type="array">
+					<config type="array">
+						<field>###field1###</field>
+					</config>
+				</title>
+
+				<fields type="array">
+
+          <a225066330 type="array">
+						<config type="array">
+
+              <tableName>tx_savlibrarymvcexample0_table1</tableName>
+
+              <fieldName>field7</fieldName>
+
+              <fieldType>RelationOneToManyAsSelectorbox</fieldType>
+
+						</config>
+          </a225066330>
+
+          <a123211771 type="array">
+						<config type="array">
+
+              <tableName>tx_savlibrarymvcexample0_table1</tableName>
+
+              <fieldName>field6</fieldName>
+
+              <fieldType>Selectorbox</fieldType>
+
+						</config>
+          </a123211771>
+
+				</fields>
+      </a188466241>
+
+      <a200635271 type="array">
+				<config type="array">
+
+					<label>Links and files</label>
+
+				</config>
+				<title type="array">
+					<config type="array">
+						<field>###field1###</field>
+					</config>
+				</title>
+
+				<fields type="array">
+
+          <a151734361 type="array">
+						<config type="array">
+
+              <tableName>tx_savlibrarymvcexample0_table1</tableName>
+
+              <fieldName>field12</fieldName>
+
+              <fieldType>Link</fieldType>
+
+						</config>
+          </a151734361>
+
+          <a224271629 type="array">
+						<config type="array">
+
+              <func>makeNewWindowLink</func>
+
+              <tableName>tx_savlibrarymvcexample0_table1</tableName>
+
+              <fieldName>field13</fieldName>
+
+              <fieldType>Files</fieldType>
+
+						</config>
+          </a224271629>
+
+				</fields>
+      </a200635271>
+
+      <a235968261 type="array">
+				<config type="array">
+
+					<label>Relations</label>
+
+				</config>
+				<title type="array">
+					<config type="array">
+						<field>###field1###</field>
+					</config>
+				</title>
+
+				<fields type="array">
+
+          <a247112509 type="array">
+						<config type="array">
+
+              <tableName>tx_savlibrarymvcexample0_table1</tableName>
+
+              <fieldName>field17</fieldName>
+
+              <fieldType>RelationManyToManyAsDoubleSelectorbox</fieldType>
+
+						</config>
+          </a247112509>
+
+          <a209454338 type="array">
+						<config type="array">
+
+              <tableName>tx_savlibrarymvcexample0_table1</tableName>
+
+              <fieldName>field18</fieldName>
+
+              <fieldType>RelationManyToManyAsDoubleSelectorbox</fieldType>
+
+						</config>
+          </a209454338>
+
+          <a62781141 type="array">
+						<config type="array">
+
+              <maxsubformitems>2</maxsubformitems>
+
+              <tableName>tx_savlibrarymvcexample0_table1</tableName>
+
+              <fieldName>field19</fieldName>
+
+              <fieldType>RelationManyToManyAsSubform</fieldType>
+
+          		<subform type="array">
+                <a217895432 type="array">
+                  <fields type="array">
+
+                    <a122015165 type="array">
+                      <config type="array">
+
+                        <tableName>tx_savlibrarymvcexample0_table3</tableName>
+
+                        <fieldName>field1</fieldName>
+
+                        <fieldType>String</fieldType>
+
+                      </config>
+                    </a122015165>
+
+                    <a78901773 type="array">
+                      <config type="array">
+
+                        <tableName>tx_savlibrarymvcexample0_table3</tableName>
+
+                        <fieldName>field2</fieldName>
+
+                        <fieldType>Date</fieldType>
+
+                      </config>
+                    </a78901773>
+
+                  </fields>
+                </a217895432>
+              </subform>
+
+						</config>
+          </a62781141>
+
+          <a257691471 type="array">
+						<config type="array">
+
+              <maxsubformitems>1</maxsubformitems>
+
+              <tableName>tx_savlibrarymvcexample0_table1</tableName>
+
+              <fieldName>field20</fieldName>
+
+              <fieldType>RelationManyToManyAsSubform</fieldType>
+
+          		<subform type="array">
+                <a217895432 type="array">
+                  <fields type="array">
+
+                    <a11656264 type="array">
+                      <config type="array">
+
+                        <tableName>tx_savlibrarymvcexample0_table4</tableName>
+
+                        <fieldName>field1</fieldName>
+
+                        <fieldType>String</fieldType>
+
+                      </config>
+                    </a11656264>
+
+                  </fields>
+                </a217895432>
+              </subform>
+
+						</config>
+          </a257691471>
+
+          <a95610311 type="array">
+						<config type="array">
+
+              <maxsubformitems>2</maxsubformitems>
+
+              <tableName>tx_savlibrarymvcexample0_table1</tableName>
+
+              <fieldName>field23</fieldName>
+
+              <fieldType>RelationManyToManyAsSubform</fieldType>
+
+          		<subform type="array">
+                <a217895432 type="array">
+                  <fields type="array">
+
+                    <a134763374 type="array">
+                      <config type="array">
+
+                        <tableName>tx_savlibrarymvcexample0_table5</tableName>
+
+                        <fieldName>field1</fieldName>
+
+                        <fieldType>String</fieldType>
+
+                      </config>
+                    </a134763374>
+
+                    <a216113643 type="array">
+                      <config type="array">
+
+                        <tableName>tx_savlibrarymvcexample0_table5</tableName>
+
+                        <fieldName>field2</fieldName>
+
+                        <fieldType>RelationManyToManyAsSubform</fieldType>
+
+          						<subform type="array">
+                <a217895432 type="array">
+                  <fields type="array">
+
+                    <a56498924 type="array">
+                      <config type="array">
+
+                        <tableName>tx_savlibrarymvcexample0_table6</tableName>
+
+                        <fieldName>field1</fieldName>
+
+                        <fieldType>String</fieldType>
+
+                      </config>
+                    </a56498924>
+
+                  </fields>
+                </a217895432>
+              </subform>
+
+                      </config>
+                    </a216113643>
+
+                  </fields>
+                </a217895432>
+              </subform>
+
+						</config>
+          </a95610311>
+
+				</fields>
+      </a235968261>
+
+      <a186619741 type="array">
+				<config type="array">
+
+					<label>Graphs</label>
+
+				</config>
+				<title type="array">
+					<config type="array">
+						<field>###field1###</field>
+					</config>
+				</title>
+
+				<fields type="array">
+
+          <a225591815 type="array">
+						<config type="array">
+
+              <tableName>tx_savlibrarymvcexample0_table1</tableName>
+
+              <fieldName>field14</fieldName>
+
+              <fieldType>String</fieldType>
+
+						</config>
+          </a225591815>
+
+          <a103389819 type="array">
+						<config type="array">
+
+              <tableName>tx_savlibrarymvcexample0_table1</tableName>
+
+              <fieldName>field15</fieldName>
+
+              <fieldType>String</fieldType>
+
+						</config>
+          </a103389819>
+
+          <a176750701 type="array">
+						<config type="array">
+
+              <graphtemplate>typo3conf/ext/sav_jpgraph/Resources/Private/Templates/pieex4.xml</graphtemplate>
+
+              <markers>data#data=notEmpty[###field14###],data#legend=notEmpty[###field15###]</markers>
+
+              <tableName>tx_savlibrarymvcexample0_table1</tableName>
+
+              <fieldName>field16</fieldName>
+
+              <fieldType>Graph</fieldType>
+
+						</config>
+          </a176750701>
+
+				</fields>
+      </a186619741>
+
+		</numIndex>
+
+		<numIndex index="3" type="array">
+
+      <a230006371 type="array">
+				<config type="array">
+
+					<label>Checkboxes and radio</label>
+
+				</config>
+				<title type="array">
+					<config type="array">
+						<field>###field1###</field>
+					</config>
+				</title>
+
+				<fields type="array">
+
+          <a230494809 type="array">
+						<config type="array">
+
+              <tableName>tx_savlibrarymvcexample0_table1</tableName>
+
+              <fieldName>field2</fieldName>
+
+              <fieldType>Checkbox</fieldType>
+
+						</config>
+          </a230494809>
+
+          <a105405761 type="array">
+						<config type="array">
+
+              <tableName>tx_savlibrarymvcexample0_table1</tableName>
+
+              <fieldName>field3</fieldName>
+
+              <fieldType>Checkboxes</fieldType>
+
+						</config>
+          </a105405761>
+
+          <a76130692 type="array">
+						<config type="array">
+
+              <tableName>tx_savlibrarymvcexample0_table1</tableName>
+
+              <fieldName>field11</fieldName>
+
+              <fieldType>RadioButtons</fieldType>
+
+						</config>
+          </a76130692>
+
+				</fields>
+      </a230006371>
+
+      <a71333563 type="array">
+				<config type="array">
+
+					<label>String, Text, Rte</label>
+
+				</config>
+				<title type="array">
+					<config type="array">
+						<field>###field1###</field>
+					</config>
+				</title>
+
+				<fields type="array">
+
+          <a188393271 type="array">
+						<config type="array">
+
+              <tableName>tx_savlibrarymvcexample0_table1</tableName>
+
+              <fieldName>field1</fieldName>
+
+              <fieldType>String</fieldType>
+
+						</config>
+          </a188393271>
+
+          <a110954964 type="array">
+						<config type="array">
+
+              <tableName>tx_savlibrarymvcexample0_table1</tableName>
+
+              <fieldName>field8</fieldName>
+
+              <fieldType>Text</fieldType>
+
+						</config>
+          </a110954964>
+
+          <a226055964 type="array">
+						<config type="array">
+
+              <height>200</height>
+
+              <tableName>tx_savlibrarymvcexample0_table1</tableName>
+
+              <fieldName>field9</fieldName>
+
+              <fieldType>RichTextEditor</fieldType>
+
+						</config>
+          </a226055964>
+
+				</fields>
+      </a71333563>
+
+      <a193105250 type="array">
+				<config type="array">
+
+					<label>Dates and integer</label>
+
+				</config>
+				<title type="array">
+					<config type="array">
+						<field>###field1###</field>
+					</config>
+				</title>
+
+				<fields type="array">
+
+          <a55748644 type="array">
+						<config type="array">
+
+              <nodefault>1</nodefault>
+
+              <fusion>begin</fusion>
+
+              <tableName>tx_savlibrarymvcexample0_table1</tableName>
+
+              <fieldName>field4</fieldName>
+
+              <fieldType>Date</fieldType>
+
+						</config>
+          </a55748644>
+
+          <a28568401 type="array">
+						<config type="array">
+
+              <fusion>end</fusion>
+
+              <tableName>tx_savlibrarymvcexample0_table1</tableName>
+
+              <fieldName>field5</fieldName>
+
+              <fieldType>DateTime</fieldType>
+
+						</config>
+          </a28568401>
+
+          <a266032084 type="array">
+						<config type="array">
+
+              <tableName>tx_savlibrarymvcexample0_table1</tableName>
+
+              <fieldName>field10</fieldName>
+
+              <fieldType>Integer</fieldType>
+
+						</config>
+          </a266032084>
+
+          <a149750945 type="array">
+						<config type="array">
+
+              <tableName>tx_savlibrarymvcexample0_table1</tableName>
+
+              <fieldName>field24</fieldName>
+
+              <fieldType>Currency</fieldType>
+
+						</config>
+          </a149750945>
+
+				</fields>
+      </a193105250>
+
+      <a188466241 type="array">
+				<config type="array">
+
+					<label>Selectorbox</label>
+
+				</config>
+				<title type="array">
+					<config type="array">
+						<field>###field1###</field>
+					</config>
+				</title>
+
+				<fields type="array">
+
+          <a225066330 type="array">
+						<config type="array">
+
+              <tableName>tx_savlibrarymvcexample0_table1</tableName>
+
+              <fieldName>field7</fieldName>
+
+              <fieldType>RelationOneToManyAsSelectorbox</fieldType>
+
+						</config>
+          </a225066330>
+
+          <a123211771 type="array">
+						<config type="array">
+
+              <tableName>tx_savlibrarymvcexample0_table1</tableName>
+
+              <fieldName>field6</fieldName>
+
+              <fieldType>Selectorbox</fieldType>
+
+						</config>
+          </a123211771>
+
+				</fields>
+      </a188466241>
+
+      <a200635271 type="array">
+				<config type="array">
+
+					<label>Links and files</label>
+
+				</config>
+				<title type="array">
+					<config type="array">
+						<field>###field1###</field>
+					</config>
+				</title>
+
+				<fields type="array">
+
+          <a151734361 type="array">
+						<config type="array">
+
+              <tableName>tx_savlibrarymvcexample0_table1</tableName>
+
+              <fieldName>field12</fieldName>
+
+              <fieldType>Link</fieldType>
+
+						</config>
+          </a151734361>
+
+          <a224271629 type="array">
+						<config type="array">
+
+              <tableName>tx_savlibrarymvcexample0_table1</tableName>
+
+              <fieldName>field13</fieldName>
+
+              <fieldType>Files</fieldType>
+
+						</config>
+          </a224271629>
+
+				</fields>
+      </a200635271>
+
+      <a235968261 type="array">
+				<config type="array">
+
+					<label>Relations</label>
+
+				</config>
+				<title type="array">
+					<config type="array">
+						<field>###field1###</field>
+					</config>
+				</title>
+
+				<fields type="array">
+
+          <a247112509 type="array">
+						<config type="array">
+
+              <tableName>tx_savlibrarymvcexample0_table1</tableName>
+
+              <fieldName>field17</fieldName>
+
+              <fieldType>RelationManyToManyAsDoubleSelectorbox</fieldType>
+
+						</config>
+          </a247112509>
+
+          <a209454338 type="array">
+						<config type="array">
+
+              <tableName>tx_savlibrarymvcexample0_table1</tableName>
+
+              <fieldName>field18</fieldName>
+
+              <fieldType>RelationManyToManyAsDoubleSelectorbox</fieldType>
+
+						</config>
+          </a209454338>
+
+          <a62781141 type="array">
+						<config type="array">
+
+              <maxsubformitems>2</maxsubformitems>
+
+              <adddelete>1</adddelete>
+
+              <addupdown>1</addupdown>
+
+              <tableName>tx_savlibrarymvcexample0_table1</tableName>
+
+              <fieldName>field19</fieldName>
+
+              <fieldType>RelationManyToManyAsSubform</fieldType>
+
+          		<subform type="array">
+                <a217895432 type="array">
+                  <fields type="array">
+
+                    <a122015165 type="array">
+                      <config type="array">
+
+                        <tableName>tx_savlibrarymvcexample0_table3</tableName>
+
+                        <fieldName>field1</fieldName>
+
+                        <fieldType>String</fieldType>
+
+                      </config>
+                    </a122015165>
+
+                    <a78901773 type="array">
+                      <config type="array">
+
+                        <nodefault>1</nodefault>
+
+                        <tableName>tx_savlibrarymvcexample0_table3</tableName>
+
+                        <fieldName>field2</fieldName>
+
+                        <fieldType>Date</fieldType>
+
+                      </config>
+                    </a78901773>
+
+                  </fields>
+                </a217895432>
+              </subform>
+
+						</config>
+          </a62781141>
+
+          <a257691471 type="array">
+						<config type="array">
+
+              <maxsubformitems>1</maxsubformitems>
+
+              <tableName>tx_savlibrarymvcexample0_table1</tableName>
+
+              <fieldName>field20</fieldName>
+
+              <fieldType>RelationManyToManyAsSubform</fieldType>
+
+          		<subform type="array">
+                <a217895432 type="array">
+                  <fields type="array">
+
+                    <a11656264 type="array">
+                      <config type="array">
+
+                        <tableName>tx_savlibrarymvcexample0_table4</tableName>
+
+                        <fieldName>field1</fieldName>
+
+                        <fieldType>String</fieldType>
+
+                      </config>
+                    </a11656264>
+
+                  </fields>
+                </a217895432>
+              </subform>
+
+						</config>
+          </a257691471>
+
+          <a95610311 type="array">
+						<config type="array">
+
+              <maxsubformitems>2</maxsubformitems>
+
+              <tableName>tx_savlibrarymvcexample0_table1</tableName>
+
+              <fieldName>field23</fieldName>
+
+              <fieldType>RelationManyToManyAsSubform</fieldType>
+
+          		<subform type="array">
+                <a217895432 type="array">
+                  <fields type="array">
+
+                    <a134763374 type="array">
+                      <config type="array">
+
+                        <tableName>tx_savlibrarymvcexample0_table5</tableName>
+
+                        <fieldName>field1</fieldName>
+
+                        <fieldType>String</fieldType>
+
+                      </config>
+                    </a134763374>
+
+                    <a216113643 type="array">
+                      <config type="array">
+
+                        <tableName>tx_savlibrarymvcexample0_table5</tableName>
+
+                        <fieldName>field2</fieldName>
+
+                        <fieldType>RelationManyToManyAsSubform</fieldType>
+
+          						<subform type="array">
+                <a217895432 type="array">
+                  <fields type="array">
+
+                    <a56498924 type="array">
+                      <config type="array">
+
+                        <tableName>tx_savlibrarymvcexample0_table6</tableName>
+
+                        <fieldName>field1</fieldName>
+
+                        <fieldType>String</fieldType>
+
+                      </config>
+                    </a56498924>
+
+                  </fields>
+                </a217895432>
+              </subform>
+
+                      </config>
+                    </a216113643>
+
+                  </fields>
+                </a217895432>
+              </subform>
+
+						</config>
+          </a95610311>
+
+				</fields>
+      </a235968261>
+
+      <a186619741 type="array">
+				<config type="array">
+
+					<label>Graphs</label>
+
+				</config>
+				<title type="array">
+					<config type="array">
+						<field>###field1###</field>
+					</config>
+				</title>
+
+				<fields type="array">
+
+          <a225591815 type="array">
+						<config type="array">
+
+              <tableName>tx_savlibrarymvcexample0_table1</tableName>
+
+              <fieldName>field14</fieldName>
+
+              <fieldType>String</fieldType>
+
+						</config>
+          </a225591815>
+
+          <a103389819 type="array">
+						<config type="array">
+
+              <tableName>tx_savlibrarymvcexample0_table1</tableName>
+
+              <fieldName>field15</fieldName>
+
+              <fieldType>String</fieldType>
+
+						</config>
+          </a103389819>
+
+				</fields>
+      </a186619741>
+
+      <a20177595 type="array">
+				<config type="array">
+
+					<cutif>tx_savlibrarymvcexample0_table1.field3 = 0</cutif>
+
+					<label>Changing the view</label>
+
+				</config>
+				<title type="array">
+					<config type="array">
+						<field>###field1###</field>
+					</config>
+				</title>
+
+				<fields type="array">
+
+          <a42501154 type="array">
+						<config type="array">
+
+              <tableName>tx_savlibrarymvcexample0_table1</tableName>
+
+              <fieldName>field21</fieldName>
+
+              <fieldType>RadioButtons</fieldType>
+
+						</config>
+          </a42501154>
+
+          <a142189671 type="array">
+						<config type="array">
+
+              <edit>0</edit>
+
+              <value>$$$comment$$$</value>
+
+              <tableName>tx_savlibrarymvcexample0_table1</tableName>
+
+              <fieldName>field22</fieldName>
+
+              <fieldType>ShowOnly</fieldType>
+
+              <renderType>Text</renderType>
+
+						</config>
+          </a142189671>
+
+				</fields>
+      </a20177595>
+
+		</numIndex>
+
+		<numIndex index="4" type="array">
+
+      <a217895432 type="array">
+				<config type="array">
+
+					<label>0</label>
+
+				</config>
+				<title type="array">
+					<config type="array">
+						<field>$$$View1$$$</field>
+					</config>
+				</title>
+
+				<fields type="array">
+
+          <a230494809 type="array">
+						<config type="array">
+
+              <tableName>tx_savlibrarymvcexample0_table1</tableName>
+
+              <fieldName>field2</fieldName>
+
+              <fieldType>Checkbox</fieldType>
+
+						</config>
+          </a230494809>
+
+          <a105405761 type="array">
+						<config type="array">
+
+              <tableName>tx_savlibrarymvcexample0_table1</tableName>
+
+              <fieldName>field3</fieldName>
+
+              <fieldType>Checkboxes</fieldType>
+
+						</config>
+          </a105405761>
+
+          <a55748644 type="array">
+						<config type="array">
+
+              <tableName>tx_savlibrarymvcexample0_table1</tableName>
+
+              <fieldName>field4</fieldName>
+
+              <fieldType>Date</fieldType>
+
+						</config>
+          </a55748644>
+
+          <a28568401 type="array">
+						<config type="array">
+
+              <tableName>tx_savlibrarymvcexample0_table1</tableName>
+
+              <fieldName>field5</fieldName>
+
+              <fieldType>DateTime</fieldType>
+
+						</config>
+          </a28568401>
+
+				</fields>
+      </a217895432>
+
+		</numIndex>
+
+		<numIndex index="5" type="array">
+
+      <a205676329 type="array">
+				<config type="array">
+
+					<label>Checkboxes</label>
+
+				</config>
+				<title type="array">
+					<config type="array">
+						<field>$$$View2$$$</field>
+					</config>
+				</title>
+
+				<fields type="array">
+
+          <a230494809 type="array">
+						<config type="array">
+
+              <tableName>tx_savlibrarymvcexample0_table1</tableName>
+
+              <fieldName>field2</fieldName>
+
+              <fieldType>Checkbox</fieldType>
+
+						</config>
+          </a230494809>
+
+          <a105405761 type="array">
+						<config type="array">
+
+              <tableName>tx_savlibrarymvcexample0_table1</tableName>
+
+              <fieldName>field3</fieldName>
+
+              <fieldType>Checkboxes</fieldType>
+
+						</config>
+          </a105405761>
+
+				</fields>
+      </a205676329>
+
+      <a99666494 type="array">
+				<config type="array">
+
+					<label>Dates</label>
+
+				</config>
+				<title type="array">
+					<config type="array">
+						<field>$$$View2$$$</field>
+					</config>
+				</title>
+
+				<fields type="array">
+
+          <a55748644 type="array">
+						<config type="array">
+
+              <tableName>tx_savlibrarymvcexample0_table1</tableName>
+
+              <fieldName>field4</fieldName>
+
+              <fieldType>Date</fieldType>
+
+						</config>
+          </a55748644>
+
+          <a28568401 type="array">
+						<config type="array">
+
+              <tableName>tx_savlibrarymvcexample0_table1</tableName>
+
+              <fieldName>field5</fieldName>
+
+              <fieldType>DateTime</fieldType>
+
+						</config>
+          </a28568401>
+
+				</fields>
+      </a99666494>
+
+		</numIndex>
+
+	</views>
+	<queries type="array">
+
+ 		<numIndex index="1" type="array">
+			<title>Test</title>
+			<mainTable>tx_savlibrarymvcexample0_table1</mainTable>
+
+			<groupByClause>tx_savlibrarymvcexample0_table1.uid</groupByClause>
+
+			<whereTags type="array">
+
+      <a13734248 type="array">
+
+        <orderByClause>tx_savlibrarymvcexample0_table1.field1 ASC</orderByClause>
+
+      </a13734248>
+
+      <a169063121 type="array">
+
+        <orderByClause>tx_savlibrarymvcexample0_table1.field1 DESC</orderByClause>
+
+      </a169063121>
+
+      </whereTags>
+
+ 		</numIndex>
+
+	</queries>
+
+
+</SavLibraryPlus>

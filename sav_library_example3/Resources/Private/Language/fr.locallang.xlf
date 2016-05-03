@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="fr" datatype="plaintext" original="messages" date="2014-05-07T14:47:56Z" product-name="sav_library_example3">
+		<header/>
+		<body>
+			<trans-unit id="formTitle" xml:space="preserve" approved="yes">
+				<source>CD Collection</source>
+				<target>Liste de CD</target>
+			</trans-unit>
+			<trans-unit id="General" xml:space="preserve" approved="yes">
+				<source>General</source>
+				<target>Général</target>
+			</trans-unit>
+			<trans-unit id="Comments" xml:space="preserve" approved="yes">
+				<source>Comments</source>
+				<target>Commentaires</target>
+			</trans-unit>
+			<trans-unit id="Friends" xml:space="preserve" approved="yes">
+				<source>My friends</source>
+				<target>Mes amis</target>
+			</trans-unit>
+			<trans-unit id="Lending" xml:space="preserve" approved="yes">
+				<source>Lending</source>
+				<target>Prêts</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

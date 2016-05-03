@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+
+<SavLibraryPlus>
+    <general type="array">
+        <version>1.0.0</version>
+        <overridedTablesForLocalization>
+        </overridedTablesForLocalization>
+        <saveAndNew type="array">
+            <numIndex index="tx_savdownload_category">1</numIndex>
+		</saveAndNew>
+    </general>
+    <forms type="array">
+        <numIndex index="1" type="array">
+            <title>Intranet</title>
+            <listView>1</listView>
+            <singleView>2</singleView>
+            <editView>3</editView>
+            <query>1</query>
+            <formView></formView>
+            <specialView></specialView>
+            <userPlugin></userPlugin>
+            <viewsWithCondition>
+            </viewsWithCondition>
+        </numIndex>
+    </forms>
+    <templates type="array">
+        <numIndex index="1" type="array">
+            <itemTemplate>&lt;ul&gt;
+  &lt;li class=&quot;date&quot;&gt;###date###&lt;/li&gt;
+  &lt;li class=&quot;category&quot;&gt;###category###&lt;/li&gt;
+  &lt;li class=&quot;file&quot;&gt;###file###&lt;/li&gt;
+&lt;/ul&gt;</itemTemplate>
+        </numIndex>
+    </templates>
+    <views type="array">
+        <numIndex index="1" type="array">
+            <a217895432 type="array">
+                <config type="array">
+                    <label>0</label>
+				</config>
+                <title type="array">
+                    <config type="array">
+                        <field>&lt;ul&gt;
+  &lt;li class=&quot;date&quot;&gt;###date###&lt;/li&gt;
+  &lt;li class=&quot;category&quot;&gt;###category###&lt;/li&gt;
+  &lt;li class=&quot;file&quot;&gt;###file###&lt;/li&gt;
+&lt;/ul&gt;</field>
+                    </config>
+                </title>
+                <fields type="array">
+                    <a158411092 type="array">
+                        <config type="array">
+                            <orderlinkintitle>1</orderlinkintitle>
+                            <tableName>tx_savdownload</tableName>
+                            <fieldName>category</fieldName>
+                            <fieldType>RelationOneToManyAsSelectorbox</fieldType>
+                        </config>
+                    </a158411092>
+                    <a11743497 type="array">
+                        <config type="array">
+                            <format>%d/%m/%y</format>
+                            <addnewicon>15</addnewicon>
+                            <orderlinkintitle>1</orderlinkintitle>
+                            <tableName>tx_savdownload</tableName>
+                            <fieldName>date</fieldName>
+                            <fieldType>DateTime</fieldType>
+                        </config>
+                    </a11743497>
+                    <a105124557 type="array">
+                        <config type="array">
+                            <fieldmessage>title</fieldmessage>
+                            <target>_blank</target>
+                            <addicon>1</addicon>
+                            <tableName>tx_savdownload</tableName>
+                            <fieldName>file</fieldName>
+                            <fieldType>Files</fieldType>
+                        </config>
+                    </a105124557>
+                </fields>
+            </a217895432>
+        </numIndex>
+        <numIndex index="3" type="array">
+            <a217895432 type="array">
+                <config type="array">
+                    <label>0</label>
+				</config>
+                <title type="array">
+                    <config type="array">
+                        <field></field>
+                    </config>
+                </title>
+                <fields type="array">
+                    <a129860641 type="array">
+                        <config type="array">
+                            <size>80</size>
+                            <tableName>tx_savdownload</tableName>
+                            <fieldName>title</fieldName>
+                            <fieldType>String</fieldType>
+                        </config>
+                    </a129860641>
+                    <a158411092 type="array">
+                        <config type="array">
+                            <tableName>tx_savdownload</tableName>
+                            <fieldName>category</fieldName>
+                            <fieldType>RelationOneToManyAsSelectorbox</fieldType>
+                        </config>
+                    </a158411092>
+                    <a11743497 type="array">
+                        <config type="array">
+                            <tableName>tx_savdownload</tableName>
+                            <fieldName>date</fieldName>
+                            <fieldType>DateTime</fieldType>
+                        </config>
+                    </a11743497>
+                    <a105124557 type="array">
+                        <config type="array">
+                            <verifier>isValidPattern</verifier>
+                            <verifierparam>/^[A-Z0-9a-z_.-]+$/</verifierparam>
+                            <tableName>tx_savdownload</tableName>
+                            <fieldName>file</fieldName>
+                            <fieldType>Files</fieldType>
+                        </config>
+                    </a105124557>
+                </fields>
+            </a217895432>
+        </numIndex>
+    </views>
+    <queries type="array">
+        <numIndex index="1" type="array">
+            <title>Query</title>
+            <mainTable>tx_savdownload</mainTable>
+            <foreignTables>INNER JOIN tx_savdownload_category
+  ON tx_savdownload.category = tx_savdownload_category.uid</foreignTables>
+            <orderByClause>name, date desc</orderByClause>
+            <whereTags type="array">
+                <a160628470 type="array">
+                    <orderByClause>tx_savdownload.date</orderByClause>
+                </a160628470>
+                <a130165616 type="array">
+                    <orderByClause>tx_savdownload.date desc</orderByClause>
+                </a130165616>
+                <a157348683 type="array">
+                    <orderByClause>tx_savdownload_category.name</orderByClause>
+                </a157348683>
+                <a142122587 type="array">
+                    <orderByClause>tx_savdownload_category.name desc</orderByClause>
+                </a142122587>
+            </whereTags>
+ 		</numIndex>
+	</queries>
+
+</SavLibraryPlus>

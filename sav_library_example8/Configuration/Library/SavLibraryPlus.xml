@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+
+<SavLibraryPlus>
+    <general type="array">
+        <version>1.0.0</version>
+        <overridedTablesForLocalization>
+        </overridedTablesForLocalization>
+        <saveAndNew type="array">
+		</saveAndNew>
+    </general>
+    <forms type="array">
+        <numIndex index="1" type="array">
+            <title>USER</title>
+            <listView>1</listView>
+            <singleView>0</singleView>
+            <editView>3</editView>
+            <query>1</query>
+            <formView></formView>
+            <specialView>0</specialView>
+            <userPlugin></userPlugin>
+            <viewsWithCondition>
+            </viewsWithCondition>
+        </numIndex>
+        <numIndex index="2" type="array">
+            <title>ADMIN</title>
+            <listView>4</listView>
+            <singleView>5</singleView>
+            <editView>6</editView>
+            <query>2</query>
+            <formView></formView>
+            <specialView>0</specialView>
+            <userPlugin></userPlugin>
+            <viewsWithCondition>
+            </viewsWithCondition>
+        </numIndex>
+    </forms>
+    <templates type="array">
+        <numIndex index="1" type="array">
+            <itemTemplate>&lt;ul&gt;
+  &lt;li&gt;###image###&lt;/li&gt;
+&lt;/ul&gt;
+</itemTemplate>
+        </numIndex>
+        <numIndex index="4" type="array">
+            <itemTemplate>&lt;ul&gt;
+  &lt;li&gt;###name###&lt;/li&gt;
+  &lt;li&gt;###email###&lt;/li&gt;
+  &lt;li&gt;###telephone###&lt;/li&gt;
+  &lt;li&gt;###usergroup###&lt;/li&gt;
+&lt;/ul&gt;</itemTemplate>
+        </numIndex>
+    </templates>
+    <views type="array">
+        <numIndex index="1" type="array">
+            <a217895432 type="array">
+                <config type="array">
+                    <label>0</label>
+				</config>
+                <title type="array">
+                    <config type="array">
+                        <field></field>
+                    </config>
+                </title>
+                <fields type="array">
+                    <a106858894 type="array">
+                        <config type="array">
+                            <func>makeItemLink</func>
+                            <edit>1</edit>
+                            <width>50</width>
+                            <height>50</height>
+                            <tableName>fe_users</tableName>
+                            <fieldName>image</fieldName>
+                            <fieldType>ShowOnly</fieldType>
+                            <renderType>Files</renderType>
+                        </config>
+                    </a106858894>
+                </fields>
+            </a217895432>
+        </numIndex>
+        <numIndex index="3" type="array">
+            <a217895432 type="array">
+                <config type="array">
+                    <label>0</label>
+				</config>
+                <title type="array">
+                    <config type="array">
+                        <field></field>
+                    </config>
+                </title>
+                <fields type="array">
+                    <a58663706 type="array">
+                        <config type="array">
+                            <fusion>begin</fusion>
+                            <tableName>fe_users</tableName>
+                            <fieldName>title</fieldName>
+                            <fieldType>ShowOnly</fieldType>
+                            <renderType>String</renderType>
+                        </config>
+                    </a58663706>
+                    <a206471204 type="array">
+                        <config type="array">
+                            <fusion>end</fusion>
+                            <tableName>fe_users</tableName>
+                            <fieldName>name</fieldName>
+                            <fieldType>ShowOnly</fieldType>
+                            <renderType>String</renderType>
+                        </config>
+                    </a206471204>
+                    <a69528782 type="array">
+                        <config type="array">
+                            <tableName>fe_users</tableName>
+                            <fieldName>password</fieldName>
+                            <fieldType>ShowOnly</fieldType>
+                            <renderType>String</renderType>
+                        </config>
+                    </a69528782>
+                    <a106858894 type="array">
+                        <config type="array">
+                            <maxitems>1</maxitems>
+                            <tableName>fe_users</tableName>
+                            <fieldName>image</fieldName>
+                            <fieldType>ShowOnly</fieldType>
+                            <renderType>Files</renderType>
+                        </config>
+                    </a106858894>
+                    <a154457928 type="array">
+                        <config type="array">
+                            <fusion>begin</fusion>
+                            <tableName>fe_users</tableName>
+                            <fieldName>email</fieldName>
+                            <fieldType>ShowOnly</fieldType>
+                            <renderType>String</renderType>
+                        </config>
+                    </a154457928>
+                    <a63742366 type="array">
+                        <config type="array">
+                            <fusion>end</fusion>
+                            <tableName>fe_users</tableName>
+                            <fieldName>www</fieldName>
+                            <fieldType>ShowOnly</fieldType>
+                            <renderType>String</renderType>
+                        </config>
+                    </a63742366>
+                    <a159376346 type="array">
+                        <config type="array">
+                            <fusion>begin</fusion>
+                            <tableName>fe_users</tableName>
+                            <fieldName>telephone</fieldName>
+                            <fieldType>ShowOnly</fieldType>
+                            <renderType>String</renderType>
+                        </config>
+                    </a159376346>
+                    <a41580534 type="array">
+                        <config type="array">
+                            <fusion>end</fusion>
+                            <tableName>fe_users</tableName>
+                            <fieldName>fax</fieldName>
+                            <fieldType>ShowOnly</fieldType>
+                            <renderType>String</renderType>
+                        </config>
+                    </a41580534>
+                    <a36341044 type="array">
+                        <config type="array">
+                            <tableName>fe_users</tableName>
+                            <fieldName>company</fieldName>
+                            <fieldType>ShowOnly</fieldType>
+                            <renderType>String</renderType>
+                        </config>
+                    </a36341044>
+                    <a42564584 type="array">
+                        <config type="array">
+                            <tableName>fe_users</tableName>
+                            <fieldName>address</fieldName>
+                            <fieldType>ShowOnly</fieldType>
+                            <renderType>String</renderType>
+                        </config>
+                    </a42564584>
+                    <a56147394 type="array">
+                        <config type="array">
+                            <fusion>begin</fusion>
+                            <tableName>fe_users</tableName>
+                            <fieldName>zip</fieldName>
+                            <fieldType>ShowOnly</fieldType>
+                            <renderType>String</renderType>
+                        </config>
+                    </a56147394>
+                    <a68166738 type="array">
+                        <config type="array">
+                            <tableName>fe_users</tableName>
+                            <fieldName>city</fieldName>
+                            <fieldType>ShowOnly</fieldType>
+                            <renderType>String</renderType>
+                        </config>
+                    </a68166738>
+                    <a181816398 type="array">
+                        <config type="array">
+                            <fusion>end</fusion>
+                            <tableName>fe_users</tableName>
+                            <fieldName>country</fieldName>
+                            <fieldType>ShowOnly</fieldType>
+                            <renderType>String</renderType>
+                        </config>
+                    </a181816398>
+                    <a180906460 type="array">
+                        <config type="array">
+                            <tableName>fe_users</tableName>
+                            <fieldName>tx_savlibraryexample8_special</fieldName>
+                            <fieldType>String</fieldType>
+                        </config>
+                    </a180906460>
+                </fields>
+            </a217895432>
+        </numIndex>
+        <numIndex index="4" type="array">
+            <a217895432 type="array">
+                <config type="array">
+                    <label>0</label>
+				</config>
+                <title type="array">
+                    <config type="array">
+                        <field>&lt;ul&gt;
+  &lt;li&gt;###fe_users.name###&lt;/li&gt;
+  &lt;li&gt;###email###&lt;/li&gt;
+  &lt;li&gt;###telephone###&lt;/li&gt;
+  &lt;li&gt;###usergroup###&lt;/li&gt;
+&lt;/ul&gt;</field>
+                    </config>
+                </title>
+                <fields type="array">
+                    <a206471204 type="array">
+                        <config type="array">
+                            <func>makeItemLink</func>
+                            <orderlinkintitle>1</orderlinkintitle>
+                            <orderlinkintitlesetup>:link:ascdesc</orderlinkintitlesetup>
+                            <tableName>fe_users</tableName>
+                            <fieldName>name</fieldName>
+                            <fieldType>ShowOnly</fieldType>
+                            <renderType>String</renderType>
+                        </config>
+                    </a206471204>
+                    <a154457928 type="array">
+                        <config type="array">
+                            <tableName>fe_users</tableName>
+                            <fieldName>email</fieldName>
+                            <fieldType>ShowOnly</fieldType>
+                            <renderType>String</renderType>
+                        </config>
+                    </a154457928>
+                    <a159376346 type="array">
+                        <config type="array">
+                            <tableName>fe_users</tableName>
+                            <fieldName>telephone</fieldName>
+                            <fieldType>ShowOnly</fieldType>
+                            <renderType>String</renderType>
+                        </config>
+                    </a159376346>
+                    <a16381176 type="array">
+                        <config type="array">
+                            <tableName>fe_users</tableName>
+                            <fieldName>usergroup</fieldName>
+                            <fieldType>ShowOnly</fieldType>
+                            <renderType>RelationManyToManyAsDoubleSelectorbox</renderType>
+                        </config>
+                    </a16381176>
+                </fields>
+            </a217895432>
+        </numIndex>
+        <numIndex index="5" type="array">
+            <a217895432 type="array">
+                <config type="array">
+                    <label>0</label>
+				</config>
+                <title type="array">
+                    <config type="array">
+                        <field></field>
+                    </config>
+                </title>
+                <fields type="array">
+                    <a58663706 type="array">
+                        <config type="array">
+                            <fusion>begin</fusion>
+                            <tableName>fe_users</tableName>
+                            <fieldName>title</fieldName>
+                            <fieldType>ShowOnly</fieldType>
+                            <renderType>String</renderType>
+                        </config>
+                    </a58663706>
+                    <a206471204 type="array">
+                        <config type="array">
+                            <fusion>end</fusion>
+                            <tableName>fe_users</tableName>
+                            <fieldName>name</fieldName>
+                            <fieldType>ShowOnly</fieldType>
+                            <renderType>String</renderType>
+                        </config>
+                    </a206471204>
+                    <a69528782 type="array">
+                        <config type="array">
+                            <tableName>fe_users</tableName>
+                            <fieldName>password</fieldName>
+                            <fieldType>ShowOnly</fieldType>
+                            <renderType>String</renderType>
+                        </config>
+                    </a69528782>
+                    <a106858894 type="array">
+                        <config type="array">
+                            <tableName>fe_users</tableName>
+                            <fieldName>image</fieldName>
+                            <fieldType>ShowOnly</fieldType>
+                            <renderType>Files</renderType>
+                        </config>
+                    </a106858894>
+                    <a154457928 type="array">
+                        <config type="array">
+                            <fusion>begin</fusion>
+                            <tableName>fe_users</tableName>
+                            <fieldName>email</fieldName>
+                            <fieldType>ShowOnly</fieldType>
+                            <renderType>String</renderType>
+                        </config>
+                    </a154457928>
+                    <a63742366 type="array">
+                        <config type="array">
+                            <fusion>end</fusion>
+                            <tableName>fe_users</tableName>
+                            <fieldName>www</fieldName>
+                            <fieldType>ShowOnly</fieldType>
+                            <renderType>String</renderType>
+                        </config>
+                    </a63742366>
+                    <a159376346 type="array">
+                        <config type="array">
+                            <fusion>begin</fusion>
+                            <tableName>fe_users</tableName>
+                            <fieldName>telephone</fieldName>
+                            <fieldType>ShowOnly</fieldType>
+                            <renderType>String</renderType>
+                        </config>
+                    </a159376346>
+                    <a41580534 type="array">
+                        <config type="array">
+                            <fusion>end</fusion>
+                            <tableName>fe_users</tableName>
+                            <fieldName>fax</fieldName>
+                            <fieldType>ShowOnly</fieldType>
+                            <renderType>String</renderType>
+                        </config>
+                    </a41580534>
+                    <a36341044 type="array">
+                        <config type="array">
+                            <tableName>fe_users</tableName>
+                            <fieldName>company</fieldName>
+                            <fieldType>ShowOnly</fieldType>
+                            <renderType>String</renderType>
+                        </config>
+                    </a36341044>
+                    <a42564584 type="array">
+                        <config type="array">
+                            <tableName>fe_users</tableName>
+                            <fieldName>address</fieldName>
+                            <fieldType>ShowOnly</fieldType>
+                            <renderType>String</renderType>
+                        </config>
+                    </a42564584>
+                    <a56147394 type="array">
+                        <config type="array">
+                            <fusion>begin</fusion>
+                            <tableName>fe_users</tableName>
+                            <fieldName>zip</fieldName>
+                            <fieldType>ShowOnly</fieldType>
+                            <renderType>String</renderType>
+                        </config>
+                    </a56147394>
+                    <a68166738 type="array">
+                        <config type="array">
+                            <tableName>fe_users</tableName>
+                            <fieldName>city</fieldName>
+                            <fieldType>ShowOnly</fieldType>
+                            <renderType>String</renderType>
+                        </config>
+                    </a68166738>
+                    <a181816398 type="array">
+                        <config type="array">
+                            <fusion>end</fusion>
+                            <tableName>fe_users</tableName>
+                            <fieldName>country</fieldName>
+                            <fieldType>ShowOnly</fieldType>
+                            <renderType>String</renderType>
+                        </config>
+                    </a181816398>
+                    <a16381176 type="array">
+                        <config type="array">
+                            <tableName>fe_users</tableName>
+                            <fieldName>usergroup</fieldName>
+                            <fieldType>ShowOnly</fieldType>
+                            <renderType>RelationManyToManyAsDoubleSelectorbox</renderType>
+                        </config>
+                    </a16381176>
+                    <a107428174 type="array">
+                        <config type="array">
+                            <tableName>fe_users</tableName>
+                            <fieldName>TSconfig</fieldName>
+                            <fieldType>ShowOnly</fieldType>
+                            <renderType>Text</renderType>
+                        </config>
+                    </a107428174>
+                    <a180906460 type="array">
+                        <config type="array">
+                            <tableName>fe_users</tableName>
+                            <fieldName>tx_savlibraryexample8_special</fieldName>
+                            <fieldType>String</fieldType>
+                        </config>
+                    </a180906460>
+                </fields>
+            </a217895432>
+        </numIndex>
+        <numIndex index="6" type="array">
+            <a217895432 type="array">
+                <config type="array">
+                    <label>0</label>
+				</config>
+                <title type="array">
+                    <config type="array">
+                        <field></field>
+                    </config>
+                </title>
+                <fields type="array">
+                    <a58663706 type="array">
+                        <config type="array">
+                            <fusion>begin</fusion>
+                            <tableName>fe_users</tableName>
+                            <fieldName>title</fieldName>
+                            <fieldType>ShowOnly</fieldType>
+                            <renderType>String</renderType>
+                        </config>
+                    </a58663706>
+                    <a206471204 type="array">
+                        <config type="array">
+                            <fusion>end</fusion>
+                            <tableName>fe_users</tableName>
+                            <fieldName>name</fieldName>
+                            <fieldType>ShowOnly</fieldType>
+                            <renderType>String</renderType>
+                        </config>
+                    </a206471204>
+                    <a69528782 type="array">
+                        <config type="array">
+                            <tableName>fe_users</tableName>
+                            <fieldName>password</fieldName>
+                            <fieldType>ShowOnly</fieldType>
+                            <renderType>String</renderType>
+                        </config>
+                    </a69528782>
+                    <a106858894 type="array">
+                        <config type="array">
+                            <maxitems>1</maxitems>
+                            <tableName>fe_users</tableName>
+                            <fieldName>image</fieldName>
+                            <fieldType>ShowOnly</fieldType>
+                            <renderType>Files</renderType>
+                        </config>
+                    </a106858894>
+                    <a154457928 type="array">
+                        <config type="array">
+                            <fusion>begin</fusion>
+                            <tableName>fe_users</tableName>
+                            <fieldName>email</fieldName>
+                            <fieldType>ShowOnly</fieldType>
+                            <renderType>String</renderType>
+                        </config>
+                    </a154457928>
+                    <a63742366 type="array">
+                        <config type="array">
+                            <fusion>end</fusion>
+                            <tableName>fe_users</tableName>
+                            <fieldName>www</fieldName>
+                            <fieldType>ShowOnly</fieldType>
+                            <renderType>String</renderType>
+                        </config>
+                    </a63742366>
+                    <a159376346 type="array">
+                        <config type="array">
+                            <fusion>begin</fusion>
+                            <tableName>fe_users</tableName>
+                            <fieldName>telephone</fieldName>
+                            <fieldType>ShowOnly</fieldType>
+                            <renderType>String</renderType>
+                        </config>
+                    </a159376346>
+                    <a41580534 type="array">
+                        <config type="array">
+                            <fusion>end</fusion>
+                            <tableName>fe_users</tableName>
+                            <fieldName>fax</fieldName>
+                            <fieldType>ShowOnly</fieldType>
+                            <renderType>String</renderType>
+                        </config>
+                    </a41580534>
+                    <a36341044 type="array">
+                        <config type="array">
+                            <tableName>fe_users</tableName>
+                            <fieldName>company</fieldName>
+                            <fieldType>ShowOnly</fieldType>
+                            <renderType>String</renderType>
+                        </config>
+                    </a36341044>
+                    <a42564584 type="array">
+                        <config type="array">
+                            <tableName>fe_users</tableName>
+                            <fieldName>address</fieldName>
+                            <fieldType>ShowOnly</fieldType>
+                            <renderType>String</renderType>
+                        </config>
+                    </a42564584>
+                    <a56147394 type="array">
+                        <config type="array">
+                            <fusion>begin</fusion>
+                            <tableName>fe_users</tableName>
+                            <fieldName>zip</fieldName>
+                            <fieldType>ShowOnly</fieldType>
+                            <renderType>String</renderType>
+                        </config>
+                    </a56147394>
+                    <a68166738 type="array">
+                        <config type="array">
+                            <tableName>fe_users</tableName>
+                            <fieldName>city</fieldName>
+                            <fieldType>ShowOnly</fieldType>
+                            <renderType>String</renderType>
+                        </config>
+                    </a68166738>
+                    <a181816398 type="array">
+                        <config type="array">
+                            <fusion>end</fusion>
+                            <tableName>fe_users</tableName>
+                            <fieldName>country</fieldName>
+                            <fieldType>ShowOnly</fieldType>
+                            <renderType>String</renderType>
+                        </config>
+                    </a181816398>
+                    <a16381176 type="array">
+                        <config type="array">
+                            <maxitems>5</maxitems>
+                            <tableName>fe_users</tableName>
+                            <fieldName>usergroup</fieldName>
+                            <fieldType>ShowOnly</fieldType>
+                            <renderType>RelationManyToManyAsDoubleSelectorbox</renderType>
+                        </config>
+                    </a16381176>
+                    <a107428174 type="array">
+                        <config type="array">
+                            <tableName>fe_users</tableName>
+                            <fieldName>TSconfig</fieldName>
+                            <fieldType>ShowOnly</fieldType>
+                            <renderType>Text</renderType>
+                        </config>
+                    </a107428174>
+                    <a180906460 type="array">
+                        <config type="array">
+                            <tableName>fe_users</tableName>
+                            <fieldName>tx_savlibraryexample8_special</fieldName>
+                            <fieldType>String</fieldType>
+                        </config>
+                    </a180906460>
+                </fields>
+            </a217895432>
+        </numIndex>
+    </views>
+    <queries type="array">
+        <numIndex index="1" type="array">
+            <title>USER_Query</title>
+            <mainTable>fe_users</mainTable>
+            <whereClause>fe_users.uid = '###user###'</whereClause>
+            <groupByClause>fe_users.uid</groupByClause>
+ 		</numIndex>
+        <numIndex index="2" type="array">
+            <title>ADMIN_Query</title>
+            <mainTable>fe_users</mainTable>
+            <groupByClause>fe_users.uid</groupByClause>
+            <whereTags type="array">
+                <a147989701 type="array">
+                    <orderByClause>fe_users.name</orderByClause>
+                </a147989701>
+                <a10311065 type="array">
+                    <orderByClause>fe_users.name desc</orderByClause>
+                </a10311065>
+            </whereTags>
+ 		</numIndex>
+	</queries>
+
+</SavLibraryPlus>

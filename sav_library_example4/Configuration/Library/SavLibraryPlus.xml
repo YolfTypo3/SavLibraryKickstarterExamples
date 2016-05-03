@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+
+<SavLibraryPlus>
+    <general type="array">
+        <version>1.0.0</version>
+        <overridedTablesForLocalization>
+        </overridedTablesForLocalization>
+        <saveAndNew type="array">
+		</saveAndNew>
+    </general>
+    <forms type="array">
+        <numIndex index="1" type="array">
+            <title>CD Album</title>
+            <listView>1</listView>
+            <singleView>2</singleView>
+            <editView>3</editView>
+            <query>1</query>
+            <formView></formView>
+            <specialView></specialView>
+            <userPlugin></userPlugin>
+            <viewsWithCondition>
+            </viewsWithCondition>
+        </numIndex>
+    </forms>
+    <templates type="array">
+        <numIndex index="1" type="array">
+            <itemTemplate>&lt;ul&gt;
+  &lt;li class=&quot;artist&quot;&gt;###artist###&lt;/li&gt;
+  &lt;li class=&quot;title&quot;&gt;###album_title###&lt;/li&gt;
+  &lt;li class=&quot;date&quot;&gt;###date_of_purchase###&lt;/li&gt;
+  &lt;li class=&quot;category&quot;&gt;###category###&lt;/li&gt;
+  &lt;li class=&quot;image&quot;&gt;###coverimage###&lt;/li&gt;
+&lt;/ul&gt;</itemTemplate>
+        </numIndex>
+    </templates>
+    <views type="array">
+        <numIndex index="1" type="array">
+            <a217895432 type="array">
+                <config type="array">
+                    <label>0</label>
+				</config>
+                <title type="array">
+                    <config type="array">
+                        <field>$$$formTitle$$$</field>
+                    </config>
+                </title>
+                <fields type="array">
+                    <a204647352 type="array">
+                        <config type="array">
+                            <func>makeItemLink</func>
+                            <tableName>tx_savlibraryexample4_cds</tableName>
+                            <fieldName>artist</fieldName>
+                            <fieldType>String</fieldType>
+                        </config>
+                    </a204647352>
+                    <a183096385 type="array">
+                        <config type="array">
+                            <tableName>tx_savlibraryexample4_cds</tableName>
+                            <fieldName>album_title</fieldName>
+                            <fieldType>String</fieldType>
+                        </config>
+                    </a183096385>
+                    <a178598160 type="array">
+                        <config type="array">
+                            <tableName>tx_savlibraryexample4_cds</tableName>
+                            <fieldName>date_of_purchase</fieldName>
+                            <fieldType>Date</fieldType>
+                        </config>
+                    </a178598160>
+                    <a42532543 type="array">
+                        <config type="array">
+                            <width>70</width>
+                            <height>70</height>
+                            <func>makeNewWindowLink</func>
+                            <tableName>tx_savlibraryexample4_cds</tableName>
+                            <fieldName>coverimage</fieldName>
+                            <fieldType>Files</fieldType>
+                        </config>
+                    </a42532543>
+                    <a99466238 type="array">
+                        <config type="array">
+                            <tableName>tx_savlibraryexample4_cds</tableName>
+                            <fieldName>category</fieldName>
+                            <fieldType>RelationOneToManyAsSelectorbox</fieldType>
+                        </config>
+                    </a99466238>
+                </fields>
+            </a217895432>
+        </numIndex>
+        <numIndex index="2" type="array">
+            <a14366585 type="array">
+                <config type="array">
+                    <label>General</label>
+				</config>
+                <title type="array">
+                    <config type="array">
+                        <field>###artist### - ###album_title###</field>
+                    </config>
+                </title>
+                <fields type="array">
+                    <a204647352 type="array">
+                        <config type="array">
+                            <tableName>tx_savlibraryexample4_cds</tableName>
+                            <fieldName>artist</fieldName>
+                            <fieldType>String</fieldType>
+                        </config>
+                    </a204647352>
+                    <a183096385 type="array">
+                        <config type="array">
+                            <tableName>tx_savlibraryexample4_cds</tableName>
+                            <fieldName>album_title</fieldName>
+                            <fieldType>String</fieldType>
+                        </config>
+                    </a183096385>
+                    <a178598160 type="array">
+                        <config type="array">
+                            <tableName>tx_savlibraryexample4_cds</tableName>
+                            <fieldName>date_of_purchase</fieldName>
+                            <fieldType>Date</fieldType>
+                        </config>
+                    </a178598160>
+                    <a113002389 type="array">
+                        <config type="array">
+                            <tableName>tx_savlibraryexample4_cds</tableName>
+                            <fieldName>link_to_website</fieldName>
+                            <fieldType>Link</fieldType>
+                        </config>
+                    </a113002389>
+                    <a42532543 type="array">
+                        <config type="array">
+                            <tableName>tx_savlibraryexample4_cds</tableName>
+                            <fieldName>coverimage</fieldName>
+                            <fieldType>Files</fieldType>
+                        </config>
+                    </a42532543>
+                    <a99466238 type="array">
+                        <config type="array">
+                            <tableName>tx_savlibraryexample4_cds</tableName>
+                            <fieldName>category</fieldName>
+                            <fieldType>RelationOneToManyAsSelectorbox</fieldType>
+                        </config>
+                    </a99466238>
+                </fields>
+            </a14366585>
+            <a138493032 type="array">
+                <config type="array">
+                    <label>Comments</label>
+				</config>
+                <title type="array">
+                    <config type="array">
+                        <field>###artist### - ###album_title###</field>
+                    </config>
+                </title>
+                <fields type="array">
+                    <a14294645 type="array">
+                        <config type="array">
+                            <tableName>tx_savlibraryexample4_cds</tableName>
+                            <fieldName>description</fieldName>
+                            <fieldType>RichTextEditor</fieldType>
+                        </config>
+                    </a14294645>
+                </fields>
+            </a138493032>
+            <a64328801 type="array">
+                <config type="array">
+                    <label>Friends</label>
+				</config>
+                <title type="array">
+                    <config type="array">
+                        <field>###artist### - ###album_title###</field>
+                    </config>
+                </title>
+                <fields type="array">
+                    <a116758166 type="array">
+                        <config type="array">
+                            <cutlabel>1</cutlabel>
+                            <norelation>1</norelation>
+                            <where>cruser_id=###user###</where>
+                            <tableName>tx_savlibraryexample4_cds</tableName>
+                            <fieldName>rel_friends</fieldName>
+                            <fieldType>RelationManyToManyAsSubform</fieldType>
+                            <subform type="array">
+                                <a217895432 type="array">
+                                    <fields type="array">
+                                        <a3433043 type="array">
+                                            <config type="array">
+                                                <tableName>tx_savlibraryexample4_friends</tableName>
+                                                <fieldName>friend_name</fieldName>
+                                                <fieldType>String</fieldType>
+                                            </config>
+                                        </a3433043>
+                                        <a178041819 type="array">
+                                            <config type="array">
+                                                <fusion>begin</fusion>
+                                                <tableName>tx_savlibraryexample4_friends</tableName>
+                                                <fieldName>friend_phone</fieldName>
+                                                <fieldType>String</fieldType>
+                                            </config>
+                                        </a178041819>
+                                        <a253857786 type="array">
+                                            <config type="array">
+                                                <fusion>end</fusion>
+                                                <tableName>tx_savlibraryexample4_friends</tableName>
+                                                <fieldName>friend_email</fieldName>
+                                                <fieldType>String</fieldType>
+                                            </config>
+                                        </a253857786>
+                                        <a17417746 type="array">
+                                            <config type="array">
+                                                <tableName>tx_savlibraryexample4_friends</tableName>
+                                                <fieldName>friend_preferred_music</fieldName>
+                                                <fieldType>RelationManyToManyAsDoubleSelectorbox</fieldType>
+                                            </config>
+                                        </a17417746>
+                                    </fields>
+                                </a217895432>
+                            </subform>
+                        </config>
+                    </a116758166>
+                </fields>
+            </a64328801>
+            <a160476280 type="array">
+                <config type="array">
+                    <label>Lending</label>
+				</config>
+                <title type="array">
+                    <config type="array">
+                        <field>###artist### - ###album_title###</field>
+                    </config>
+                </title>
+                <fields type="array">
+                    <a164377800 type="array">
+                        <config type="array">
+                            <cutlabel>1</cutlabel>
+                            <tableName>tx_savlibraryexample4_cds</tableName>
+                            <fieldName>rel_lending</fieldName>
+                            <fieldType>RelationManyToManyAsSubform</fieldType>
+                            <subform type="array">
+                                <a217895432 type="array">
+                                    <fields type="array">
+                                        <a253437308 type="array">
+                                            <config type="array">
+                                                <tableName>tx_savlibraryexample4_lending</tableName>
+                                                <fieldName>friend_name</fieldName>
+                                                <fieldType>RelationOneToManyAsSelectorbox</fieldType>
+                                            </config>
+                                        </a253437308>
+                                        <a137036008 type="array">
+                                            <config type="array">
+                                                <fusion>begin</fusion>
+                                                <tableName>tx_savlibraryexample4_lending</tableName>
+                                                <fieldName>lending_date</fieldName>
+                                                <fieldType>Date</fieldType>
+                                            </config>
+                                        </a137036008>
+                                        <a179456241 type="array">
+                                            <config type="array">
+                                                <fusion>end</fusion>
+                                                <tableName>tx_savlibraryexample4_lending</tableName>
+                                                <fieldName>return_date</fieldName>
+                                                <fieldType>Date</fieldType>
+                                            </config>
+                                        </a179456241>
+                                    </fields>
+                                </a217895432>
+                            </subform>
+                        </config>
+                    </a164377800>
+                </fields>
+            </a160476280>
+        </numIndex>
+        <numIndex index="3" type="array">
+            <a14366585 type="array">
+                <config type="array">
+                    <label>General</label>
+				</config>
+                <title type="array">
+                    <config type="array">
+                        <field>###artist### - ###album_title###</field>
+                    </config>
+                </title>
+                <fields type="array">
+                    <a204647352 type="array">
+                        <config type="array">
+                            <size>40</size>
+                            <tableName>tx_savlibraryexample4_cds</tableName>
+                            <fieldName>artist</fieldName>
+                            <fieldType>String</fieldType>
+                        </config>
+                    </a204647352>
+                    <a183096385 type="array">
+                        <config type="array">
+                            <tableName>tx_savlibraryexample4_cds</tableName>
+                            <fieldName>album_title</fieldName>
+                            <fieldType>String</fieldType>
+                        </config>
+                    </a183096385>
+                    <a178598160 type="array">
+                        <config type="array">
+                            <tableName>tx_savlibraryexample4_cds</tableName>
+                            <fieldName>date_of_purchase</fieldName>
+                            <fieldType>Date</fieldType>
+                        </config>
+                    </a178598160>
+                    <a113002389 type="array">
+                        <config type="array">
+                            <tableName>tx_savlibraryexample4_cds</tableName>
+                            <fieldName>link_to_website</fieldName>
+                            <fieldType>Link</fieldType>
+                        </config>
+                    </a113002389>
+                    <a42532543 type="array">
+                        <config type="array">
+                            <tableName>tx_savlibraryexample4_cds</tableName>
+                            <fieldName>coverimage</fieldName>
+                            <fieldType>Files</fieldType>
+                        </config>
+                    </a42532543>
+                    <a99466238 type="array">
+                        <config type="array">
+                            <tableName>tx_savlibraryexample4_cds</tableName>
+                            <fieldName>category</fieldName>
+                            <fieldType>RelationOneToManyAsSelectorbox</fieldType>
+                        </config>
+                    </a99466238>
+                </fields>
+            </a14366585>
+            <a138493032 type="array">
+                <config type="array">
+                    <label>Comments</label>
+				</config>
+                <title type="array">
+                    <config type="array">
+                        <field>###artist### - ###album_title###</field>
+                    </config>
+                </title>
+                <fields type="array">
+                    <a14294645 type="array">
+                        <config type="array">
+                            <tableName>tx_savlibraryexample4_cds</tableName>
+                            <fieldName>description</fieldName>
+                            <fieldType>RichTextEditor</fieldType>
+                        </config>
+                    </a14294645>
+                </fields>
+            </a138493032>
+            <a64328801 type="array">
+                <config type="array">
+                    <label>Friends</label>
+				</config>
+                <title type="array">
+                    <config type="array">
+                        <field>###artist### - ###album_title###</field>
+                    </config>
+                </title>
+                <fields type="array">
+                    <a116758166 type="array">
+                        <config type="array">
+                            <cutlabel>1</cutlabel>
+                            <adddelete>1</adddelete>
+                            <norelation>1</norelation>
+                            <where>cruser_id=###user###</where>
+                            <tableName>tx_savlibraryexample4_cds</tableName>
+                            <fieldName>rel_friends</fieldName>
+                            <fieldType>RelationManyToManyAsSubform</fieldType>
+                            <subform type="array">
+                                <a217895432 type="array">
+                                    <fields type="array">
+                                        <a3433043 type="array">
+                                            <config type="array">
+                                                <tableName>tx_savlibraryexample4_friends</tableName>
+                                                <fieldName>friend_name</fieldName>
+                                                <fieldType>String</fieldType>
+                                            </config>
+                                        </a3433043>
+                                        <a178041819 type="array">
+                                            <config type="array">
+                                                <fusion>begin</fusion>
+                                                <tableName>tx_savlibraryexample4_friends</tableName>
+                                                <fieldName>friend_phone</fieldName>
+                                                <fieldType>String</fieldType>
+                                            </config>
+                                        </a178041819>
+                                        <a253857786 type="array">
+                                            <config type="array">
+                                                <fusion>end</fusion>
+                                                <tableName>tx_savlibraryexample4_friends</tableName>
+                                                <fieldName>friend_email</fieldName>
+                                                <fieldType>String</fieldType>
+                                            </config>
+                                        </a253857786>
+                                        <a17417746 type="array">
+                                            <config type="array">
+                                                <tableName>tx_savlibraryexample4_friends</tableName>
+                                                <fieldName>friend_preferred_music</fieldName>
+                                                <fieldType>RelationManyToManyAsDoubleSelectorbox</fieldType>
+                                            </config>
+                                        </a17417746>
+                                    </fields>
+                                </a217895432>
+                            </subform>
+                        </config>
+                    </a116758166>
+                </fields>
+            </a64328801>
+            <a160476280 type="array">
+                <config type="array">
+                    <label>Lending</label>
+				</config>
+                <title type="array">
+                    <config type="array">
+                        <field>###artist### - ###album_title###</field>
+                    </config>
+                </title>
+                <fields type="array">
+                    <a164377800 type="array">
+                        <config type="array">
+                            <cutlabel>1</cutlabel>
+                            <adddelete>1</adddelete>
+                            <maxsubitems>5</maxsubitems>
+                            <tableName>tx_savlibraryexample4_cds</tableName>
+                            <fieldName>rel_lending</fieldName>
+                            <fieldType>RelationManyToManyAsSubform</fieldType>
+                            <subform type="array">
+                                <a217895432 type="array">
+                                    <fields type="array">
+                                        <a253437308 type="array">
+                                            <config type="array">
+                                                <required>1</required>
+                                                <whereselect>cruser_id=###user###</whereselect>
+                                                <tableName>tx_savlibraryexample4_lending</tableName>
+                                                <fieldName>friend_name</fieldName>
+                                                <fieldType>RelationOneToManyAsSelectorbox</fieldType>
+                                            </config>
+                                        </a253437308>
+                                        <a137036008 type="array">
+                                            <config type="array">
+                                                <fusion>begin</fusion>
+                                                <nodefault>1</nodefault>
+                                                <tableName>tx_savlibraryexample4_lending</tableName>
+                                                <fieldName>lending_date</fieldName>
+                                                <fieldType>Date</fieldType>
+                                            </config>
+                                        </a137036008>
+                                        <a179456241 type="array">
+                                            <config type="array">
+                                                <fusion>end</fusion>
+                                                <nodefault>1</nodefault>
+                                                <tableName>tx_savlibraryexample4_lending</tableName>
+                                                <fieldName>return_date</fieldName>
+                                                <fieldType>Date</fieldType>
+                                            </config>
+                                        </a179456241>
+                                    </fields>
+                                </a217895432>
+                            </subform>
+                        </config>
+                    </a164377800>
+                </fields>
+            </a160476280>
+        </numIndex>
+    </views>
+    <queries type="array">
+        <numIndex index="1" type="array">
+            <title>Query</title>
+            <mainTable>tx_savlibraryexample4_cds</mainTable>
+            <groupByClause>tx_savlibraryexample4_cds.uid</groupByClause>
+ 		</numIndex>
+	</queries>
+
+</SavLibraryPlus>

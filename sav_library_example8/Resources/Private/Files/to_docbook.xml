@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+
+<article lang="en">
+  <title>List of FE users</title>
+  <informaltable>
+    <tgroup cols="4" align="left" colsep="1" rowsep="1">
+      <thead>
+        <row>
+          <entry align="center"></entry>
+          <entry align="center">$$$label[fe_users.name]$$$</entry>
+          <entry align="center">$$$label[fe_users.email]$$$</entry>
+          <entry align="center">$$$label[fe_users.usergroup]$$$</entry>
+        </row>
+      </thead>
+      <tbody>
+        <row sav_type="replaceAlways">
+          <entry align="center">
+            <mediaobject sav_type="cutIfEmpty" sav_id="fe_users.image">
+              <imageobject>
+                <imagedata fileref="$$$constant[PATH_site]$$$uploads/pics/###fe_users.image###" width="2cm" scalefit="1" />
+              </imageobject>
+            </mediaobject>
+          </entry>
+          <entry>###fe_users.name###</entry>
+          <entry>###fe_users.email###</entry>
+          <entry><itemizedlist spacing="compact">###fe_users.usergroup###</itemizedlist></entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+</article>

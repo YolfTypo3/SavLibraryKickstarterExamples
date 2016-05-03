@@ -1,0 +1,112 @@
+/**
+ * Default CSS - Extension 'SAV Filter Mini Calendar'
+ *
+ * @author	Laurent Foulloy (yolf.typo3@orange.fr)
+ * @version		1.0 
+ */
+ 
+/* General definition */
+.tx-savfilterminicalendar-pi1{
+  float:left;
+  margin-bottom:5px;  
+} 
+.tx-savfilterselectors-pi1 .savFilter{
+  float:left;
+  margin:0;
+  padding:0;  
+} 
+.tx-savfilterminicalendar-pi1 .container-savfilterminicalendar{
+  float:left;
+  width:170px;
+  color:#333333;
+  background-color:#f1fbfd;
+  border:1px #000099 solid;
+}
+
+/* Month selector */
+.tx-savfilterminicalendar-pi1 .container-savfilterminicalendar .monthSelect{  
+  float:left;
+  text-align:center;
+  font-weight:bold;
+  margin:0px;
+  padding:2px;
+  background-color:#9999cc;
+  color:#ffffff;   
+}
+.tx-savfilterminicalendar-pi1 .container-savfilterminicalendar .leftArrow {
+  float:left;
+}
+.tx-savfilterminicalendar-pi1 .container-savfilterminicalendar .month {
+  float:left;
+  width:140px;
+}
+.tx-savfilterminicalendar-pi1 .container-savfilterminicalendar .rightArrow {
+  float:right;
+}
+
+/* Days header */
+.tx-savfilterminicalendar-pi1 .container-savfilterminicalendar UL.daysHeader {
+  float:left;
+  width:170px;
+  background-color:#99cccc;
+  color:#ffffff;   
+  list-style:none; 
+  margin:0px;
+  padding:0px; 
+}
+.tx-savfilterminicalendar-pi1 .container-savfilterminicalendar UL.daysHeader LI.day {
+  float:left;
+  font-weight:bold;
+  width:20px;
+  text-align:center;
+  background-image:none;
+  margin:0px;
+  padding:2px;  
+}
+
+/* Calendar by week */
+.tx-savfilterminicalendar-pi1 .container-savfilterminicalendar UL.week{
+  float:left;
+  width:170px;
+  list-style:none; 
+  margin:0px;
+  padding:0px; 
+}
+.tx-savfilterminicalendar-pi1 .container-savfilterminicalendar UL.week LI.weekday {
+  float:left;
+  width:20px;
+  text-align:center;
+  background-image:none;
+  margin:0px;
+  padding:2px;  
+}
+.tx-savfilterminicalendar-pi1 .container-savfilterminicalendar UL.week LI.weekend {
+  float:left;
+  width:20px;
+  text-align:center;
+  background-image:none;
+  margin:0px;
+  padding:2px;      
+  color:inherit;  
+  background-color:#ddddee;
+}
+.tx-savfilterminicalendar-pi1 .container-savfilterminicalendar UL.week LI.today {
+  float:left;
+  width:20px;
+  text-align:center;
+  background-image:none;
+  margin:0px;
+  padding:2px;      
+  color:inherit;
+  background-color:#ffffff;
+  border:1px #000099 solid;
+  padding:1px;
+}
+.tx-savfilterminicalendar-pi1 .container-savfilterminicalendar UL.week LI.noday {
+  float:left;
+  width:20px;
+  text-align:center;
+  background-image:none;
+  margin:0px;
+  padding:2px;      
+}

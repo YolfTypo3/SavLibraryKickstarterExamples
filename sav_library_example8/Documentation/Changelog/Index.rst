@@ -1,0 +1,41 @@
+.. ==================================================
+.. FOR YOUR INFORMATION
+.. --------------------------------------------------
+.. -*- coding: utf-8 -*- with BOM.
+
+.. ==================================================
+.. DEFINE SOME TEXTROLES
+.. --------------------------------------------------
+.. role::   underline
+.. role::   typoscript(code)
+.. role::   ts(typoscript)
+   :class:  typoscript
+.. role::   php(code)
+
+
+Changelog
+=========
+
+.. tabularcolumns:: |r|p{13.7cm}|
+
+=======  ===========================================================================
+Version  Changes
+=======  ===========================================================================
+1.0.0    - Extension regenerated with SAV Library Kickstarter 1.0.0.
+0.2.0    - Extension regenerated with SAV Library Kickstarter 0.6.0.
+0.1.0    - Documentation converted to the reStructuredText format.
+         - Extension regenerated with SAV Library Kickstarter 0.5.0.
+0.0.6    - Extension regenerated with SAV Library Kickstarter 0.4.1.for 
+           compatibility with TYPO3 6.1 and 6.2.
+0.0.5    - Templates modified for a better processing of the icons in SAV Library Plus.
+0.0.4    - Extension regenerated to work with the SAV Library Plus extension by
+           default.
+0.0.3    - Flexform updated.
+0.0.2    - File “to_docbook.xml” added in the directory “res” (see the section
+           “Export to other formats” in Tutorial 8 of the SAV Library 
+           Extension Generator).  
+0.0.1    - Extension updated to the SAV Library Extension Generator version 3.0.0
+         - Manual updated to the new documentation template (doc\_template 1.2.5)
+         - Status changed to stable
+=======  ===========================================================================
+

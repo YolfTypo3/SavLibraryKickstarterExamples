@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'sav_meetings'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+      <label index="tx_savmeetings">SAV Meetings</label>
+			<label index="tx_savmeetings.date">Date</label>
+			<label index="tx_savmeetings.category">Category</label>
+			<label index="tx_savmeetings.participants">Participants</label>
+			<label index="tx_savmeetings.rel_item">Items</label>
+      <label index="tx_savmeetings_category">SAV Meetings (Category)</label>
+			<label index="tx_savmeetings_category.name">Name</label>
+      <label index="tx_savmeetings_item">SAV Meetings (Item)</label>
+			<label index="tx_savmeetings_item.subject">Subject</label>
+			<label index="tx_savmeetings_item.proposed_by">Proposed by</label>
+			<label index="tx_savmeetings_item.expected_duration">Expected duration</label>
+			<label index="tx_savmeetings_item.file">File</label>
+			<label index="tx_savmeetings_item.report">Report</label>
+      <label index="tt_content.list_type_pi1">SAV Meetings</label>
+		</languageKey>
+		<languageKey index="fr" type="array">
+      <label index="tx_savmeetings"></label>
+			<label index="tx_savmeetings.date"></label>
+			<label index="tx_savmeetings.category"></label>
+			<label index="tx_savmeetings.participants"></label>
+			<label index="tx_savmeetings.rel_item"></label>
+      <label index="tx_savmeetings_category"></label>
+			<label index="tx_savmeetings_category.name"></label>
+      <label index="tx_savmeetings_item"></label>
+			<label index="tx_savmeetings_item.subject"></label>
+			<label index="tx_savmeetings_item.proposed_by"></label>
+			<label index="tx_savmeetings_item.expected_duration"></label>
+			<label index="tx_savmeetings_item.file"></label>
+			<label index="tx_savmeetings_item.report"></label>
+			<label index="tt_content.list_type_pi1"></label>
+		</languageKey>
+	</data>
+</T3locallang>
+

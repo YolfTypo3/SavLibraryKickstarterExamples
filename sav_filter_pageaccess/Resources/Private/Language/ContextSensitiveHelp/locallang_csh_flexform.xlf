@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-03-06T10:42:41Z" product-name="sav_filter_pageaccess">
+		<header/>
+		<body>
+			<trans-unit id=".alttitle" xml:space="preserve">
+				<source>SAV Filter Page Access</source>
+			</trans-unit>
+			<trans-unit id=".description" xml:space="preserve">
+				<source>This plugin controls the page access with a key. Captcha can be activated. It can be easily used with the &quot;SAV Library Plus&quot; or &quot;SAV Library&quot; extensions.</source>
+			</trans-unit>
+			<trans-unit id="help.description" xml:space="preserve">
+				<source>SAV Filter Page Access</source>
+			</trans-unit>
+			<trans-unit id="help.details" xml:space="preserve">
+				<source>. &lt;b&gt;CSS File:&lt;/b&gt;
+CSS file to be used in replacement of the default CSS file.
+
+. &lt;b&gt;Create a link to the following page:&lt;/b&gt;
+If set, the extension will create a link in relation with the security selector.
+
+. &lt;b&gt;Security:&lt;/b&gt;
+Select here the type of security requested to access to the page (Validity date, Captcha, FE User Check, User check from table).
+
+. &lt;b&gt;Table for the security:&lt;/b&gt;
+Table in relation with the security selector.
+
+. &lt;b&gt;Field for the security:&lt;/b&gt;
+Field in relation with the security selector (the email for captcha will be saved here).
+
+. &lt;b&gt;Email sender:&lt;/b&gt;
+Email to identify the sender of the message containing the private link when Captcha is used. For example, use the webmaster email or any other email that makes sense.
+
+. &lt;b&gt;Uid for the field cruser_id:&lt;/b&gt;
+Uid that will be used as the cruser_id for the record associated with the user when Captcha is used. For example, use the uid of an administrator. 
+
+. &lt;b&gt;Key:&lt;/b&gt;
+The key is a private information that will be used to build the link.
+
+. &lt;b&gt;Validity of the link in hours:&lt;/b&gt;
+If you are not using captcha, you can give a validity date to links. 24 hours is the default value.
+
+. &lt;b&gt;Redirection page on error:&lt;/b&gt;
+Set the page to redirect to in case of errors. &lt;b&gt;This field is required.&lt;/b&gt;Be careful, for unknown reason, the required icon is not at the right place.</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

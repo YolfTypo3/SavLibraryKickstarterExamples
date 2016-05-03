@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="fr" datatype="plaintext" original="messages" date="2013-02-27T15:19:53Z" product-name="sav_filter_minicalendar">
+		<header/>
+		<body>
+			<trans-unit id="tt_content.list_type_pi1" xml:space="preserve" approved="yes">
+				<source>SAV Filter Mini Calendar</source>
+				<target>SAV Filtre Mini Calendrier</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

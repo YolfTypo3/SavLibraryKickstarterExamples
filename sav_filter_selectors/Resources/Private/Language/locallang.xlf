@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-03-06T11:50:44Z" product-name="sav_filter_selectors">
+		<header/>
+		<body>
+			<trans-unit id="pi1_title" xml:space="preserve">
+				<source>SAV Selectors</source>
+			</trans-unit>
+			<trans-unit id="pi1_plus_wiz_description" xml:space="preserve">
+				<source>Selectors</source>
+			</trans-unit>
+			<trans-unit id="button.searchButtonLabel" xml:space="preserve">
+				<source>Search</source>
+			</trans-unit>
+			<trans-unit id="error.incorrectPluginConfiguration_1" xml:space="preserve">
+				<source>Incorrect configuration of the plugin: %s.</source>
+			</trans-unit>
+			<trans-unit id="error.incorrectPluginConfiguration_2" xml:space="preserve">
+				<source>Edit and save the plugin configuration to take the flexform parameters into consideration.</source>
+			</trans-unit>
+			<trans-unit id="error.incorrectLanguageConfiguration" xml:space="preserve">
+				<source>Error in the xml language configuration. Message -&gt; %s.</source>
+			</trans-unit>
+			<trans-unit id="error.incorrectSession" xml:space="preserve">
+				<source>Error: incorrect session. Close your brower and try again.</source>
+			</trans-unit>
+			<trans-unit id="error.extensionNotLoaded" xml:space="preserve">
+				<source>The following extension should be loaded: %s.</source>
+			</trans-unit>
+			<trans-unit id="error.missingDot" xml:space="preserve">
+				<source>Separate the field name from the table name by a dot &quot;.&quot; in: %s.</source>
+			</trans-unit>
+			<trans-unit id="error.missingEqualSign" xml:space="preserve">
+				<source>The sign = is missing in parameter: %s.</source>
+			</trans-unit>
+			<trans-unit id="error.incorrectQuery" xml:space="preserve">
+				<source>Error: an error occurs probably due to an incorrect configuration. Check the parameters of the extension: %s.</source>
+			</trans-unit>
+			<trans-unit id="error.onlySelectQueryAllowed" xml:space="preserve">
+				<source>Error: only use SELECT query is allowed in extension: %s.</source>
+			</trans-unit>
+			<trans-unit id="pi_flexform.sheetTitle.sDEF" xml:space="preserve">
+				<source>General</source>
+			</trans-unit>
+			<trans-unit id="pi_flexform.help" xml:space="preserve">
+				<source>Help</source>
+			</trans-unit>
+			<trans-unit id="pi_flexform.fileCSS" xml:space="preserve">
+				<source>CSS File</source>
+			</trans-unit>
+			<trans-unit id="pi_flexform.pidList" xml:space="preserve">
+				<source>Storage page list</source>
+			</trans-unit>
+			<trans-unit id="pi_flexform.template" xml:space="preserve">
+				<source>Template</source>
+			</trans-unit>
+			<trans-unit id="pi_flexform.language" xml:space="preserve">
+				<source>Language</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

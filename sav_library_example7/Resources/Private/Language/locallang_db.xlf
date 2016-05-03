@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-04-30T22:02:18Z" product-name="sav_library_example7">
+		<header/>
+		<body>
+			<trans-unit id="tx_savlibraryexample7_guests" xml:space="preserve">
+				<source>SAV Example7 - Guest book</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample7_guests.firstname" xml:space="preserve">
+				<source>Firstname</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample7_guests.lastname" xml:space="preserve">
+				<source>Lastname</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample7_guests.email" xml:space="preserve">
+				<source>Email</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample7_guests.website" xml:space="preserve">
+				<source>Website</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample7_guests.message" xml:space="preserve">
+				<source>Message</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample7_guests.comment" xml:space="preserve">
+				<source>Comment</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample7_guests.date" xml:space="preserve">
+				<source>Date</source>
+			</trans-unit>
+			<trans-unit id="tt_content.list_type_pi1" xml:space="preserve">
+				<source>SAV Library Example7 - Guest book</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
+

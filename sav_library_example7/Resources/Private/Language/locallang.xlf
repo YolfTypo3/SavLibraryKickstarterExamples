@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2014-05-07T14:52:25Z" product-name="sav_library_example7">
+		<header/>
+		<body>
+			<trans-unit id="website" xml:space="preserve">
+				<source>Website</source>
+			</trans-unit>
+			<trans-unit id="email" xml:space="preserve">
+				<source>Email</source>
+			</trans-unit>
+			<trans-unit id="lastEntries" xml:space="preserve">
+				<source>Last entries in the guest book</source>
+			</trans-unit>
+			<trans-unit id="more" xml:space="preserve">
+				<source> More</source>
+			</trans-unit>
+			<trans-unit id="adminTitle" xml:space="preserve">
+				<source>Validation of the new guest inputs</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

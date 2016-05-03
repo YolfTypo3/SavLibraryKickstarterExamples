@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="fr" datatype="plaintext" original="messages" date="2014-05-07T14:44:32Z" product-name="sav_library_example2">
+		<header/>
+		<body>
+			<trans-unit id="tx_savlibraryexample2_cds" xml:space="preserve" approved="yes">
+				<source>CD Collection</source>
+				<target>Collection de CD</target>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample2_cds.artist" xml:space="preserve" approved="yes">
+				<source>Artist</source>
+				<target>Artiste</target>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample2_cds.album_title" xml:space="preserve" approved="yes">
+				<source>Title of CD</source>
+				<target>Titre du CD</target>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample2_cds.date_of_purchase" xml:space="preserve" approved="yes">
+				<source>When did I buy the CD ?</source>
+				<target>Date achat</target>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample2_cds.link_to_website" xml:space="preserve" approved="yes">
+				<source>Does the band have a website ?</source>
+				<target>Site web</target>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample2_cds.coverimage" xml:space="preserve" approved="yes">
+				<source>Cover image (JPG)</source>
+				<target>Image de couverture (JPG)</target>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample2_cds.category" xml:space="preserve" approved="yes">
+				<source>CD Category</source>
+				<target>Catégorie du CD</target>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample2_cds.description" xml:space="preserve" approved="yes">
+				<source>Description / Band story</source>
+				<target>Description</target>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample2_cat" xml:space="preserve" approved="yes">
+				<source>CD Category</source>
+				<target>Catégorie des CD</target>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample2_cat.title" xml:space="preserve" approved="yes">
+				<source>Title of the category</source>
+				<target>Titre de la catégorie</target>
+			</trans-unit>
+			<trans-unit id="tt_content.list_type_pi1" xml:space="preserve" approved="yes">
+				<source>SAV Library Example2 - CD Album</source>
+				<target>Collection de CD</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="fr" datatype="plaintext" original="messages" date="2014-05-07T14:52:25Z" product-name="sav_library_example7">
+		<header/>
+		<body>
+			<trans-unit id="website" xml:space="preserve" approved="yes">
+				<source>Website</source>
+				<target>Site web</target>
+			</trans-unit>
+			<trans-unit id="email" xml:space="preserve" approved="yes">
+				<source>Email</source>
+				<target>Mél</target>
+			</trans-unit>
+			<trans-unit id="lastEntries" xml:space="preserve" approved="yes">
+				<source>Last entries in the guest book</source>
+				<target>Dernières entrées dans le livre d'or</target>
+			</trans-unit>
+			<trans-unit id="more" xml:space="preserve" approved="yes">
+				<source> More</source>
+				<target> Suite</target>
+			</trans-unit>
+			<trans-unit id="adminTitle" xml:space="preserve" approved="yes">
+				<source>Validation of the new guest inputs</source>
+				<target>Validation des nouvelles entrées</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

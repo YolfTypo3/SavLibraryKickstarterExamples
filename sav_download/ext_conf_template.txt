@@ -1,0 +1,3 @@
+
+# cat=basic; type=boolean; label=Maintenance: Enable the maintenance status for the extension. It will display a maintenance message.
+maintenance = 0          

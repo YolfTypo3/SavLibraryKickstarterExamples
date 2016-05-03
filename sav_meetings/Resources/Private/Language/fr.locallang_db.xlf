@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="fr" datatype="plaintext" original="messages" date="2015-09-04T10:53:40Z" product-name="sav_meetings">
+		<header/>
+		<body>
+			<trans-unit id="tx_savmeetings" xml:space="preserve" approved="yes">
+				<source>SAV Meetings</source>
+				<target>SAV Meetings</target>
+			</trans-unit>
+			<trans-unit id="tx_savmeetings.date" xml:space="preserve" approved="yes">
+				<source>Date</source>
+				<target>Date</target>
+			</trans-unit>
+			<trans-unit id="tx_savmeetings.category" xml:space="preserve" approved="yes">
+				<source>Category</source>
+				<target>Catégorie</target>
+			</trans-unit>
+			<trans-unit id="tx_savmeetings.participants" xml:space="preserve" approved="yes">
+				<source>Participants</source>
+				<target>Participants</target>
+			</trans-unit>
+			<trans-unit id="tx_savmeetings.rel_item" xml:space="preserve" approved="yes">
+				<source>Items</source>
+				<target>Items</target>
+			</trans-unit>
+			<trans-unit id="tx_savmeetings_category" xml:space="preserve" approved="yes">
+				<source>SAV Meetings (Category)</source>
+				<target>SAV Meetings (Categorie)</target>
+			</trans-unit>
+			<trans-unit id="tx_savmeetings_category.name" xml:space="preserve" approved="yes">
+				<source>Name</source>
+				<target>Nom</target>
+			</trans-unit>
+			<trans-unit id="tx_savmeetings_item" xml:space="preserve" approved="yes">
+				<source>SAV Meetings (Item)</source>
+				<target>SAV Meetings (Item)</target>
+			</trans-unit>
+			<trans-unit id="tx_savmeetings_item.subject" xml:space="preserve" approved="yes">
+				<source>Subject</source>
+				<target>Sujet</target>
+			</trans-unit>
+			<trans-unit id="tx_savmeetings_item.proposed_by" xml:space="preserve" approved="yes">
+				<source>Proposed by</source>
+				<target>Proposé par</target>
+			</trans-unit>
+			<trans-unit id="tx_savmeetings_item.expected_duration" xml:space="preserve" approved="yes">
+				<source>Expected duration</source>
+				<target>Durée prévue</target>
+			</trans-unit>
+			<trans-unit id="tx_savmeetings_item.file" xml:space="preserve" approved="yes">
+				<source>File</source>
+				<target></target>
+			</trans-unit>
+			<trans-unit id="tx_savmeetings_item.report" xml:space="preserve" approved="yes">
+				<source>Report</source>
+				<target>Rapport</target>
+			</trans-unit>
+			<trans-unit id="tt_content.list_type_pi1" xml:space="preserve" approved="yes">
+				<source>SAV Meetings</source>
+				<target></target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

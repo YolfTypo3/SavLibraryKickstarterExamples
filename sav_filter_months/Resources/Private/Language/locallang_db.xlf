@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-02-27T15:20:28Z" product-name="sav_filter_months">
+		<header/>
+		<body>
+			<trans-unit id="tt_content.list_type_pi1" xml:space="preserve">
+				<source>SAV Filter Months</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

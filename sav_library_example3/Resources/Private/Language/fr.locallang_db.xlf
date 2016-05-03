@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="fr" datatype="plaintext" original="messages" date="2014-05-07T14:47:51Z" product-name="sav_library_example3">
+		<header/>
+		<body>
+			<trans-unit id="tx_savlibraryexample3_cds" xml:space="preserve" approved="yes">
+				<source>CD Collection (Advanced)</source>
+				<target>Collection de CD (Advanced)</target>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample3_cds.artist" xml:space="preserve" approved="yes">
+				<source>Artist</source>
+				<target>Artiste</target>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample3_cds.album_title" xml:space="preserve" approved="yes">
+				<source>Title of CD</source>
+				<target>Titre du CD</target>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample3_cds.date_of_purchase" xml:space="preserve" approved="yes">
+				<source>When did I buy the CD ?</source>
+				<target>Date achat</target>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample3_cds.link_to_website" xml:space="preserve" approved="yes">
+				<source>Does the band have a website ?</source>
+				<target>Site web</target>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample3_cds.coverimage" xml:space="preserve" approved="yes">
+				<source>Cover image (JPG)</source>
+				<target>Image de couverture (JPG)</target>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample3_cds.category" xml:space="preserve" approved="yes">
+				<source>CD Category</source>
+				<target>Catégorie du CD</target>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample3_cds.description" xml:space="preserve" approved="yes">
+				<source>Description / Band story</source>
+				<target>Description</target>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample3_cds.rel_lending" xml:space="preserve" approved="yes">
+				<source>Lendings</source>
+				<target>Prêts</target>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample3_cat" xml:space="preserve" approved="yes">
+				<source>CD Category (Advanced)</source>
+				<target>Catégorie des CD (Advanced)</target>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample3_cat.title" xml:space="preserve" approved="yes">
+				<source>Title of the category</source>
+				<target>Titre de la catégorie</target>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample3_lending" xml:space="preserve" approved="yes">
+				<source>CD Lending (Advanced)</source>
+				<target>Prêt des CD (Advanced)</target>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample3_lending.friend_name" xml:space="preserve" approved="yes">
+				<source>Name</source>
+				<target>Nom</target>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample3_lending.friend_phone" xml:space="preserve" approved="yes">
+				<source>Phone</source>
+				<target>Tél</target>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample3_lending.friend_email" xml:space="preserve" approved="yes">
+				<source>Email</source>
+				<target>Mél</target>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample3_lending.lending_date" xml:space="preserve" approved="yes">
+				<source>Lending date</source>
+				<target>Date prêt</target>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample3_lending.return_date" xml:space="preserve" approved="yes">
+				<source>Return date</source>
+				<target>Date retour</target>
+			</trans-unit>
+			<trans-unit id="tt_content.list_type_pi1" xml:space="preserve" approved="yes">
+				<source>SAV Library Example3 - CD Album (Advanced)</source>
+				<target>Collection de CD (Advanced)</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

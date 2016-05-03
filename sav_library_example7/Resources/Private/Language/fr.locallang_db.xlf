@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="fr" datatype="plaintext" original="messages" date="2014-05-07T14:52:29Z" product-name="sav_library_example7">
+		<header/>
+		<body>
+			<trans-unit id="tx_savlibraryexample7_guests" xml:space="preserve" approved="yes">
+				<source>SAV Example7 - Guest book</source>
+				<target>SAV Example7 - Livre d'or</target>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample7_guests.firstname" xml:space="preserve" approved="yes">
+				<source>Firstname</source>
+				<target>Prénom</target>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample7_guests.lastname" xml:space="preserve" approved="yes">
+				<source>Lastname</source>
+				<target>Nom</target>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample7_guests.email" xml:space="preserve" approved="yes">
+				<source>Email</source>
+				<target>Mél</target>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample7_guests.website" xml:space="preserve" approved="yes">
+				<source>Website</source>
+				<target>Site web</target>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample7_guests.message" xml:space="preserve" approved="yes">
+				<source>Message</source>
+				<target>Message</target>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample7_guests.comment" xml:space="preserve" approved="yes">
+				<source>Comment</source>
+				<target>Commentaire</target>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample7_guests.date" xml:space="preserve" approved="yes">
+				<source>Date</source>
+				<target>Date</target>
+			</trans-unit>
+			<trans-unit id="tt_content.list_type_pi1" xml:space="preserve" approved="yes">
+				<source>SAV Library Example7 - Guest book</source>
+				<target>SAV Example7 - Livre d'or</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

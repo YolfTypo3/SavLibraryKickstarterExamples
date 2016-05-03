@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="fr" datatype="plaintext" original="messages" date="2014-05-07T14:51:52Z" product-name="sav_library_example6">
+		<header/>
+		<body>
+			<trans-unit id="tx_savlibraryexample6" xml:space="preserve" approved="yes">
+				<source>SAV Example6 - Email and RTF</source>
+				<target>SAV Exemple6 - Mél et RTF</target>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample6.name" xml:space="preserve" approved="yes">
+				<source>Name</source>
+				<target>Nom</target>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample6.address" xml:space="preserve" approved="yes">
+				<source>Address</source>
+				<target>Adresse</target>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample6.registration" xml:space="preserve" approved="yes">
+				<source>Registration</source>
+				<target>Inscription</target>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample6.registration.I.0" xml:space="preserve" approved="yes">
+				<source>Conference </source>
+				<target></target>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample6.registration.I.1" xml:space="preserve" approved="yes">
+				<source>Proceedings</source>
+				<target></target>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample6.registration.I.2" xml:space="preserve" approved="yes">
+				<source>Meals</source>
+				<target></target>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample6.registration.I.3" xml:space="preserve" approved="yes">
+				<source>Banquet</source>
+				<target></target>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample6.email" xml:space="preserve" approved="yes">
+				<source>Email</source>
+				<target>Mél</target>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample6.email_flag" xml:space="preserve" approved="yes">
+				<source>Email sent ?</source>
+				<target>Mél envoyé ?</target>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample6.email_language" xml:space="preserve" approved="yes">
+				<source>Email language</source>
+				<target>Langue mél</target>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample6.email_language.I.0" xml:space="preserve" approved="yes">
+				<source>default</source>
+				<target></target>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample6.email_language.I.1" xml:space="preserve" approved="yes">
+				<source>French</source>
+				<target></target>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample6.invoice" xml:space="preserve" approved="yes">
+				<source>Invoice</source>
+				<target>Facture</target>
+			</trans-unit>
+			<trans-unit id="tt_content.list_type_pi1" xml:space="preserve" approved="yes">
+				<source>SAV Library Example6 - Email and RTF</source>
+				<target>SAV Exemple6 - mél et  RTF</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

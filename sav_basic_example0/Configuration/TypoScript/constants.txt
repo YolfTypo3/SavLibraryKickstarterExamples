@@ -1,0 +1,15 @@
+
+plugin.tx_savbasicexample0 {
+    view {
+        # cat=plugin.tx_savbasicexample0/file; type=string; label=Path to template root (FE)
+        templateRootPath = EXT:sav_basic_example0/Resources/Private/Templates/
+        # cat=plugin.tx_savbasicexample0/file; type=string; label=Path to template partials (FE)
+        partialRootPath = EXT:sav_basic_example0/Resources/Private/Partials/
+        # cat=plugin.tx_savbasicexample0/file; type=string; label=Path to template layouts (FE)
+        layoutRootPath = EXT:sav_basic_example0/Resources/Private/Layouts/
+    }
+    persistence {
+        # cat=plugin.tx_savbasicexample0//a; type=string; label=Default storage PID
+        storagePid =
+    }
+}

@@ -1,0 +1,71 @@
+/**
+ * Default CSS - Extension 'SAV Filter Alphabetic'
+ *
+ * @author		Yolf (yolf.typo3@orange.fr)
+ * @version		0.0
+ */
+
+    .tx-savfilterabc-pi1 LI.error {
+      background-color: inherit;
+      color: red;
+    }       
+
+    .tx-savfilterabc-pi1 DIV.container-savfilterabc {
+      float:left;
+      width:100%;
+      text-align:center;
+      background-color: #f1fbfd; 
+      color: inherit;
+      border: 1px  #000099 solid; 
+      margin: 0px 0px 5px 0px;
+      padding: 0px;
+    }    
+    .tx-savfilterabc-pi1 DIV.container-savfilterabc UL.abc {
+      background-color: #f1fbfd; 
+      color: inherit;
+      list-style: none;
+      padding: 2px;    
+      margin: 0px;
+     }    
+    .tx-savfilterabc-pi1 DIV.container-savfilterabc LI.letter { 
+      display: inline;
+      vertical-align: baseline;
+      background-image: none;
+      padding: 0px 0px 0px 0px;     
+      margin: 0px;
+    }      
+    .tx-savfilterabc-pi1 DIV.container-savfilterabc LI.search { 
+      display: inline;
+      vertical-align: baseline;
+      background: none;
+      padding: 0px 0px 0px 0px;   
+      margin: 0px;
+    }      
+    .tx-savfilterabc-pi1 DIV.container-savfilterabc LABEL {
+      display:none;
+    }
+    .tx-savfilterabc-pi1 DIV.container-savfilterabc INPUT.searchButton { 
+      padding: 0px; 
+      margin: 0px;
+    }      
+    .tx-savfilterabc-pi1 DIV.container-savfilterabc INPUT.search_box_text {
+      padding: 0px 0px 0px 10px; 
+      margin: 0px;
+    }    
+    .tx-savfilterabc-pi1 DIV.container-savfilterabc A.aRegular {
+      background-color: inherit;
+      color: #4176FF;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .tx-savfilterabc-pi1 DIV.container-savfilterabc A.aSelected {
+      background-color: inherit;
+      color: #EA6900;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .tx-savfilterabc-pi1 DIV.container-savfilterabc A.aRegular:hover, .tx-savfilterabc-pi1 DIV.container-savfilterabc A.aSelected:hover {
+      background-color: inherit;
+      color: #EA6900;
+    }
+

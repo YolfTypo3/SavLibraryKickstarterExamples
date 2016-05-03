@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-04-30T22:02:10Z" product-name="sav_library_example4">
+		<header/>
+		<body>
+			<trans-unit id="tx_savlibraryexample4_cds" xml:space="preserve">
+				<source>CD Collection (Improved)</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample4_cds.artist" xml:space="preserve">
+				<source>Artist</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample4_cds.album_title" xml:space="preserve">
+				<source>Title of CD</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample4_cds.date_of_purchase" xml:space="preserve">
+				<source>When did I buy the CD ?</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample4_cds.link_to_website" xml:space="preserve">
+				<source>Does the band have a website ?</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample4_cds.coverimage" xml:space="preserve">
+				<source>Cover image (JPG)</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample4_cds.category" xml:space="preserve">
+				<source>CD Category</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample4_cds.description" xml:space="preserve">
+				<source>Description / Band story</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample4_cds.rel_lending" xml:space="preserve">
+				<source>Lendings</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample4_cds.rel_friends" xml:space="preserve">
+				<source>Friends</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample4_cat" xml:space="preserve">
+				<source>CD Category (Improved)</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample4_cat.title" xml:space="preserve">
+				<source>Title of the category</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample4_lending" xml:space="preserve">
+				<source>CD Lending (Improved)</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample4_lending.friend_name" xml:space="preserve">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample4_lending.lending_date" xml:space="preserve">
+				<source>Lending date</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample4_lending.return_date" xml:space="preserve">
+				<source>Return date</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample4_friends" xml:space="preserve">
+				<source>CD Friends (Improved)</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample4_friends.friend_name" xml:space="preserve">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample4_friends.friend_phone" xml:space="preserve">
+				<source>Phone</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample4_friends.friend_email" xml:space="preserve">
+				<source>Email</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample4_friends.friend_preferred_music" xml:space="preserve">
+				<source>Preferred music</source>
+			</trans-unit>
+			<trans-unit id="tt_content.list_type_pi1" xml:space="preserve">
+				<source>SAV Library Example4 - CD Album (Improved)</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
+

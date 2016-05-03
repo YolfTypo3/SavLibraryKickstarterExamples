@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for plugin "tx_savfilterminicalendar_pi1"</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="pi1_title">SAV Filter Mini Calendar </label>
+			<label index="pi1_plus_wiz_description">Mini Calendar Filter</label>    
+      <label index="error.incorrectPluginConfiguration_1">Incorrect configuration of the plugin: %s.</label>
+      <label index="error.incorrectPluginConfiguration_2">Edit and save the plugin configuration to take the flexform parameters into consideration.</label>
+      <label index="error.incorrectLanguageConfiguration">Error in the xml language configuration. Message -> %s.</label>
+			<label index="error.incorrectSession">Error: incorrect session. Close your brower and try again.</label>
+			<label index="error.incorrectCSS">Error: unknown CSS file.</label>
+			<label index="error.incorrectQuery">Error: an error occurs probably due to an incorrect configuration. Check the parameters of the extension: %s.</label>
+      <label index="error.templateNeeded">A template file is needed.</label> 
+      <label index="pi_flexform.sheetTitle.sDEF">General</label>
+      <label index="pi_flexform.help">Help</label>  
+      <label index="pi_flexform.fileCSS">CSS File</label>      
+      <label index="pi_flexform.tableName">Table name</label>      
+      <label index="pi_flexform.dateFieldName">Date field name</label>      
+      <label index="pi_flexform.titleFieldName">Title field name</label>  
+      <label index="pi_flexform.pidList">Storage page list</label>
+      <label index="miniCalendarDay_1">Mo</label>
+			<label index="miniCalendarDay_2">Tu</label>
+			<label index="miniCalendarDay_3">We</label>
+			<label index="miniCalendarDay_4">Th</label>
+			<label index="miniCalendarDay_5">Fr</label>
+			<label index="miniCalendarDay_6">Sa</label>
+			<label index="miniCalendarDay_7">Su</label>
+    </languageKey>
+		<languageKey index="fr" type="array">
+			<label index="pi1_title">SAV Filtre Mini Calendrier</label>
+			<label index="pi1_plus_wiz_description">Filtre Mini Calendrier</label>    
+      <label index="error.incorrectPluginConfiguration_1">Congiguration incorrecte du plugin : %s.</label>
+      <label index="error.incorrectPluginConfiguration_2">Editer et sauvegarder la configuration pour prendre les paramètres en considération.</label>
+      <label index="error.incorrectLanguageConfiguration">Erreur dans la configuration xml pour le langage. Message -> %s.</label>
+			<label index="error.incorrectSession">Erreur : session incorrecte. Fermer toutes les fenêtres de votre navigateur et recommencer.</label>
+			<label index="error.incorrectCSS">Erreur : fichier CSS inconnu.</label>
+			<label index="error.incorrectQuery">Erreur: une erreur a été détectée probablement due à une configuration incorrecte. Vérifier les paramètres de l'extension : %s.</label>
+      <label index="error.templateNeeded">Un fichier template est nécessaire.</label> 
+      <label index="pi_flexform.sheetTitle.sDEF">Général</label>
+      <label index="pi_flexform.help">Aide</label>      
+      <label index="pi_flexform.fileCSS">Fichier CSS</label>      
+      <label index="pi_flexform.tableName">Nom de la table</label>      
+      <label index="pi_flexform.dateFieldName">Nom du champ "date"</label>      
+      <label index="pi_flexform.titleFieldName">Nom du champ "titre"</label>  
+      <label index="pi_flexform.pidList">Liste des pages de stockage</label>
+			<label index="miniCalendarDay_1">Lu</label>
+			<label index="miniCalendarDay_2">Ma</label>
+			<label index="miniCalendarDay_3">Me</label>
+			<label index="miniCalendarDay_4">Je</label>
+			<label index="miniCalendarDay_5">Ve</label>
+			<label index="miniCalendarDay_6">Sa</label>
+			<label index="miniCalendarDay_7">Di</label>
+    </languageKey>
+	</data>
+</T3locallang>

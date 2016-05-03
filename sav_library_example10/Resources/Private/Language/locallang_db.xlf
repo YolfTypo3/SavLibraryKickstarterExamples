@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-04-30T22:01:58Z" product-name="sav_library_example10">
+		<header/>
+		<body>
+			<trans-unit id="tx_savlibraryexample10" xml:space="preserve">
+				<source>SAV Example10</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample10.image" xml:space="preserve">
+				<source>Image</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample10.title" xml:space="preserve">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample10.description" xml:space="preserve">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample10.address" xml:space="preserve">
+				<source>Address</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample10.zip" xml:space="preserve">
+				<source>ZIP</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample10.city" xml:space="preserve">
+				<source>City</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample10.country" xml:space="preserve">
+				<source>Country</source>
+			</trans-unit>
+			<trans-unit id="tx_savlibraryexample10.map" xml:space="preserve">
+				<source>Map</source>
+			</trans-unit>
+			<trans-unit id="tt_content.list_type_pi1" xml:space="preserve">
+				<source>SAV Library Example10 - Using TypoScript</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
+
