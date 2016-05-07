@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-05-07T21:11:17Z" product-name="sav_filter_minicalendar">
+		<header/>
+		<body>
+			<trans-unit id=".alttitle" xml:space="preserve">
+				<source>SAV Filter Mini Calendar</source>
+			</trans-unit>
+			<trans-unit id=".description" xml:space="preserve">
+				<source>This plugin builds a mini calendar.  It can be easily used with the &quot;SAV Library Plus&quot; or &quot;SAV Library&quot; extensions.</source>
+			</trans-unit>
+			<trans-unit id="help.description" xml:space="preserve">
+				<source>SAV Filter Mini Calendar</source>
+			</trans-unit>
+			<trans-unit id="help.details" xml:space="preserve">
+				<source>. &lt;b&gt;CSS File:&lt;/b&gt;
+CSS file to be used in replacement of the default CSS file.
+
+. &lt;b&gt;Table name:&lt;/b&gt;
+Table name from which information are extracted.
+
+. &lt;b&gt;Date field name:&lt;/b&gt;
+Field name from which the date of events is extracted.
+
+. &lt;b&gt;Title field name:&lt;/b&gt;
+Field name from which the title of events is extracted.</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

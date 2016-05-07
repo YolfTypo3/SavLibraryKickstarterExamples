@@ -55,11 +55,11 @@ return array(
                         'fieldType' => 'Files',
                         'config' => array(
                             1 => array (
-                                        'imageFiles' => 1,
+                                'imageFiles' => 1,
                                 'selected' => 0,
                              ),
                             2 => array (
-                                        'imageFiles' => 1,
+                                'imageFiles' => 1,
                                 'selected' => 0,
                              ),
                             3 => array (
@@ -67,11 +67,11 @@ return array(
                                 'selected' => 0,
                              ),
                             4 => array (
-                                        'imageFiles' => 1,
+                                'imageFiles' => 1,
                                 'selected' => 0,
                              ),
                             5 => array (
-                                        'imageFiles' => 1,
+                                'imageFiles' => 1,
                                 'selected' => 0,
                              ),
                         ),

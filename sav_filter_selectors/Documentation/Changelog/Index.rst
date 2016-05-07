@@ -22,7 +22,7 @@ Changelog
 Version  Changes
 =======  ===========================================================================
 1.4.0    - Files reorganized. 
-         - Compatibility is now TYPO3 6.2 to 8.0.
+         - Compatibility is now TYPO3 6.2 to 8.1.
 1.3.0    - Documentation converted to the reStructuredText format.
          - Comptability with TYPO3 7.x.x added.
 1.2.0    - The extension "sav\_library" was updated as obsolete and therefore
@@ -41,7 +41,7 @@ Version  Changes
 1.0.2    - Documentation updated.
 1.0.1    - The manual was updated tothe new documentation template (doc\_template
            1.2.5).
-         - The § sign used for localization was changed to $ to be coherent with
+         - The ï¿½ sign used for localization was changed to $ to be coherent with
            the SAV Library Extension Generator.
 1.0.0    - 1st public release.
 =======  ===========================================================================

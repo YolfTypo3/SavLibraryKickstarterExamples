@@ -22,7 +22,7 @@ Changelog
 Version  Changes
 =======  ===========================================================================
 1.4.0    - Files reorganized. 
-         - Compatibility is now TYPO3 6.2 to 8.0.
+         - Compatibility is now TYPO3 6.2 to 8.1.
 1.3.0    - Documentation converted to the reStructuredText format.
          - Comptability with TYPO3 7.x.x added.
 1.2.0    - The extension "sav\_library" was updated as obsolete and therefore

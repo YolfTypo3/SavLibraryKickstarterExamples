@@ -24,6 +24,9 @@
 			<trans-unit id="error.incorrectSession" xml:space="preserve">
 				<source>Error : incorrect session. Close your brower and try again.</source>
 			</trans-unit>
+            <trans-unit id="error.incorrectCSS" xml:space="preserve">
+                <source>Error: unknown CSS file.</source>
+            </trans-unit>			
 			<trans-unit id="error.sr_freecapNotLoaded" xml:space="preserve">
 				<source>The extension &quot;sr_freecap&quot; is not loaded.</source>
 			</trans-unit>

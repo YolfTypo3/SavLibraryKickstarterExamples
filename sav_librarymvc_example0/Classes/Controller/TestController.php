@@ -206,6 +206,26 @@ class TestController extends \SAV\SavLibraryMvc\Controller\DefaultController
      * @var array
      */
     protected $subforms = array (
+        array (
+            'repository' => 'SAV\\SavLibrarymvcExample0\\Domain\\Repository\\Table1Repository',
+            'fieldName' => 'field19',
+            'foreignRepository' => 'SAV\\SavLibrarymvcExample0\\Domain\\Repository\\Table3Repository',
+        ),
+        array (
+            'repository' => 'SAV\\SavLibrarymvcExample0\\Domain\\Repository\\Table1Repository',
+            'fieldName' => 'field20',
+            'foreignRepository' => 'SAV\\SavLibrarymvcExample0\\Domain\\Repository\\Table4Repository',
+        ),
+        array (
+            'repository' => 'SAV\\SavLibrarymvcExample0\\Domain\\Repository\\Table1Repository',
+            'fieldName' => 'field23',
+            'foreignRepository' => 'SAV\\SavLibrarymvcExample0\\Domain\\Repository\\Table5Repository',
+        ),
+        array (
+            'repository' => 'SAV\\SavLibrarymvcExample0\\Domain\\Repository\\Table5Repository',
+            'fieldName' => 'field2',
+            'foreignRepository' => 'SAV\\SavLibrarymvcExample0\\Domain\\Repository\\Table6Repository',
+        ),
     );
  
     /**

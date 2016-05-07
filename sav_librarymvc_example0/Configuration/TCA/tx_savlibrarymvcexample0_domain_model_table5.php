@@ -58,21 +58,22 @@ return array(
                                 'selected' => 0,
                              ),
                             2 => array (
-                                        'subformKey' => 3,
+                                'subformKey' => 3,
                                 'selected' => 1,
                              ),
                             3 => array (
-                                        'edit' => 1,
-                                        'subformKey' => 3,
+                                'truc' => 'field2',
+                                'edit' => 1,
+                                'subformKey' => 3,
                                 'addDelete' => '1',
                                 'selected' => 1,
                              ),
                             4 => array (
-                                        'subformKey' => 3,
+                                'subformKey' => 3,
                                 'selected' => 0,
                              ),
                             5 => array (
-                                        'subformKey' => 3,
+                                'subformKey' => 3,
                                 'selected' => 0,
                              ),
                         ),

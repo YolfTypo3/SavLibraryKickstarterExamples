@@ -34,7 +34,7 @@ return array(
                              ),
                             3 => array (
                                 'edit' => 1,
-                                        'displayAsImage' => 1,
+                                'displayAsImage' => 1,
                                 'selected' => 1,
                              ),
                             4 => array (
@@ -342,7 +342,7 @@ return array(
                              ),
                             3 => array (
                                 'edit' => 1,
-                                        'size' => 50,
+                                'size' => 50,
                                 'selected' => 1,
                              ),
                             4 => array (
@@ -369,11 +369,11 @@ return array(
                         'fieldType' => 'Files',
                         'config' => array(
                             1 => array (
-                                        'imageFiles' => 1,
+                                'imageFiles' => 1,
                                 'selected' => 0,
                              ),
                             2 => array (
-                                        'imageFiles' => 1,
+                                'imageFiles' => 1,
                                 'func' => 'makeNewWindowLink',
                                 'selected' => 1,
                              ),
@@ -382,11 +382,11 @@ return array(
                                 'selected' => 1,
                              ),
                             4 => array (
-                                        'imageFiles' => 1,
+                                'imageFiles' => 1,
                                 'selected' => 0,
                              ),
                             5 => array (
-                                        'imageFiles' => 1,
+                                'imageFiles' => 1,
                                 'selected' => 0,
                              ),
                         ),
@@ -577,24 +577,25 @@ return array(
                                 'selected' => 0,
                              ),
                             2 => array (
-                                        'subformKey' => 0,
+                                'subformKey' => 0,
                                 'maxSubformItems' => '2',
                                 'selected' => 1,
                              ),
                             3 => array (
-                                        'edit' => 1,
-                                        'subformKey' => 0,
+                                'truc' => 'field19',
+                                'edit' => 1,
+                                'subformKey' => 0,
                                 'maxSubformItems' => '2',
                                 'addDelete' => '1',
                                 'addUpDown' => '1',
                                 'selected' => 1,
                              ),
                             4 => array (
-                                        'subformKey' => 0,
+                                'subformKey' => 0,
                                 'selected' => 0,
                              ),
                             5 => array (
-                                        'subformKey' => 0,
+                                'subformKey' => 0,
                                 'selected' => 0,
                              ),
                         ),
@@ -618,22 +619,23 @@ return array(
                                 'selected' => 0,
                              ),
                             2 => array (
-                                        'subformKey' => 1,
+                                'subformKey' => 1,
                                 'maxSubformItems' => '1',
                                 'selected' => 1,
                              ),
                             3 => array (
-                                        'edit' => 1,
-                                        'subformKey' => 1,
+                                'truc' => 'field20',
+                                'edit' => 1,
+                                'subformKey' => 1,
                                 'maxSubformItems' => '1',
                                 'selected' => 1,
                              ),
                             4 => array (
-                                        'subformKey' => 1,
+                                'subformKey' => 1,
                                 'selected' => 0,
                              ),
                             5 => array (
-                                        'subformKey' => 1,
+                                'subformKey' => 1,
                                 'selected' => 0,
                              ),
                         ),
@@ -664,7 +666,7 @@ return array(
                              ),
                             3 => array (
                                 'edit' => 1,
-                                        'displayAsImage' => 1,
+                                'displayAsImage' => 1,
                                 'selected' => 1,
                              ),
                             4 => array (
@@ -808,23 +810,24 @@ return array(
                                 'selected' => 0,
                              ),
                             2 => array (
-                                        'subformKey' => 2,
+                                'subformKey' => 2,
                                 'maxSubformItems' => '2',
                                 'selected' => 1,
                              ),
                             3 => array (
-                                        'edit' => 1,
-                                        'subformKey' => 2,
+                                'truc' => 'field23',
+                                'edit' => 1,
+                                'subformKey' => 2,
                                 'maxSubformItems' => '2',
                                 'addDelete' => '1',
                                 'selected' => 1,
                              ),
                             4 => array (
-                                        'subformKey' => 2,
+                                'subformKey' => 2,
                                 'selected' => 0,
                              ),
                             5 => array (
-                                        'subformKey' => 2,
+                                'subformKey' => 2,
                                 'selected' => 0,
                              ),
                         ),
@@ -983,7 +986,7 @@ return array(
                 'type' => 'select',  
                 'renderType' => 'selectSingle',
                 'items' => array(
-                    array('LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang.xlf:tx_savlibrarymvcexample0_domain_model_table1.field7.I.0',0),
+                    array('LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field7.I.0',0),
                 ),
                 'foreign_table' => 'tx_savlibrarymvcexample0_domain_model_table2',
                 'foreign_table_where' => ' ',
