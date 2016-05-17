@@ -379,7 +379,7 @@ class tx_savfilterselectors_pi1 extends \SAV\SavLibraryPlus\Filters\AbstractFilt
 
                     case 'selectfromquery':
                         // Executes the query
-                        $query = $this->cObj->substituteMarkerArrayCached($this->templateMatches[2][$key], $this->mA);
+                        $query = $this->cObj->substituteMarkerArray($this->templateMatches[2][$key], $this->mA, '@|@');
 
                         // Checks if the query is a SELECT query
                         if (! preg_match('/^\([ \r\t\n]*(?i)select /', $query)) {
