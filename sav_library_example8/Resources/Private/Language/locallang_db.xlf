@@ -1,61 +1,61 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2016-05-07T07:20:02Z" product-name="sav_library_example8">
-		<header/>
-		<body>
- 			<trans-unit id="fe_users.title" xml:space="preserve">
-				<source>Title:</source>
-			</trans-unit>
- 			<trans-unit id="fe_users.name" xml:space="preserve">
-				<source>Name:</source>
-			</trans-unit>
- 			<trans-unit id="fe_users.password" xml:space="preserve">
-				<source>Password:</source>
-			</trans-unit>
- 			<trans-unit id="fe_users.image" xml:space="preserve">
-				<source>Image:</source>
-			</trans-unit>
- 			<trans-unit id="fe_users.email" xml:space="preserve">
-				<source>Email:</source>
-			</trans-unit>
- 			<trans-unit id="fe_users.www" xml:space="preserve">
-				<source>www:</source>
-			</trans-unit>
- 			<trans-unit id="fe_users.telephone" xml:space="preserve">
-				<source>Phone:</source>
-			</trans-unit>
- 			<trans-unit id="fe_users.fax" xml:space="preserve">
-				<source>Fax:</source>
-			</trans-unit>
- 			<trans-unit id="fe_users.company" xml:space="preserve">
-				<source>Company:</source>
-			</trans-unit>
- 			<trans-unit id="fe_users.address" xml:space="preserve">
-				<source>Address:</source>
-			</trans-unit>
- 			<trans-unit id="fe_users.zip" xml:space="preserve">
-				<source>Zipcode:</source>
-			</trans-unit>
- 			<trans-unit id="fe_users.city" xml:space="preserve">
-				<source>City:</source>
-			</trans-unit>
- 			<trans-unit id="fe_users.country" xml:space="preserve">
-				<source>Country:</source>
-			</trans-unit>
- 			<trans-unit id="fe_users.usergroup" xml:space="preserve">
-				<source>Groups:</source>
-			</trans-unit>
- 			<trans-unit id="fe_users.TSconfig" xml:space="preserve">
-				<source>TS Config</source>
-			</trans-unit>
- 			<trans-unit id="fe_users.tx_savlibraryexample8_special" xml:space="preserve">
-				<source>Special</source>
-			</trans-unit>
-			<trans-unit id="tt_content.list_type_pi1" xml:space="preserve">
-				<source>SAV Library Example8 - FE Users Admin and Export</source>
-			</trans-unit>
-		</body>
-	</file>
+    <file source-language="en" datatype="plaintext" original="messages" date="2016-05-23T06:27:47Z" product-name="sav_library_example8">
+        <header/>
+        <body>
+             <trans-unit id="fe_users.title" xml:space="preserve">
+                <source>Title:</source>
+            </trans-unit>
+             <trans-unit id="fe_users.name" xml:space="preserve">
+                <source>Name:</source>
+            </trans-unit>
+             <trans-unit id="fe_users.password" xml:space="preserve">
+                <source>Password:</source>
+            </trans-unit>
+             <trans-unit id="fe_users.image" xml:space="preserve">
+                <source>Image:</source>
+            </trans-unit>
+             <trans-unit id="fe_users.email" xml:space="preserve">
+                <source>Email:</source>
+            </trans-unit>
+             <trans-unit id="fe_users.www" xml:space="preserve">
+                <source>www:</source>
+            </trans-unit>
+             <trans-unit id="fe_users.telephone" xml:space="preserve">
+                <source>Phone:</source>
+            </trans-unit>
+             <trans-unit id="fe_users.fax" xml:space="preserve">
+                <source>Fax:</source>
+            </trans-unit>
+             <trans-unit id="fe_users.company" xml:space="preserve">
+                <source>Company:</source>
+            </trans-unit>
+             <trans-unit id="fe_users.address" xml:space="preserve">
+                <source>Address:</source>
+            </trans-unit>
+             <trans-unit id="fe_users.zip" xml:space="preserve">
+                <source>Zipcode:</source>
+            </trans-unit>
+             <trans-unit id="fe_users.city" xml:space="preserve">
+                <source>City:</source>
+            </trans-unit>
+             <trans-unit id="fe_users.country" xml:space="preserve">
+                <source>Country:</source>
+            </trans-unit>
+             <trans-unit id="fe_users.usergroup" xml:space="preserve">
+                <source>Groups:</source>
+            </trans-unit>
+             <trans-unit id="fe_users.TSconfig" xml:space="preserve">
+                <source>TS Config</source>
+            </trans-unit>
+             <trans-unit id="fe_users.tx_savlibraryexample8_special" xml:space="preserve">
+                <source>Special</source>
+            </trans-unit>
+            <trans-unit id="tt_content.list_type_pi1" xml:space="preserve">
+                <source>SAV Library Example8 - FE Users Admin and Export</source>
+            </trans-unit>
+        </body>
+    </file>
 </xliff>
 

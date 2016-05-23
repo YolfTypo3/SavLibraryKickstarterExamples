@@ -12,7 +12,7 @@ return array(
         'enablecolumns' => array(
             'disabled' => 'hidden',
         ),
-        'iconfile' => 'EXT:sav_librarymvc_example0/Resources/Private/Icons/icon_tx_savlibrarymvcexample0_domain_model_table5.gif',
+        'iconfile' => 'EXT:sav_librarymvc_example0/Resources/Public/Icons/icon_tx_savlibrarymvcexample0_domain_model_table5.gif',
         'EXT' => array(
             'sav_library_mvc' => array(
                 'ctrl' => array(

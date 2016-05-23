@@ -12,7 +12,7 @@ return array(
         'enablecolumns' => array(
             'disabled' => 'hidden',
         ),
-        'iconfile' => 'EXT:sav_basic_example0/Resources/Private/Icons/icon_tx_savbasicexample0_domain_model_table1.gif',
+        'iconfile' => 'EXT:sav_basic_example0/Resources/Public/Icons/icon_tx_savbasicexample0_domain_model_table1.gif',
     ),
     'interface' => array(
         'showRecordFieldList' => 'hidden,field1,field2'

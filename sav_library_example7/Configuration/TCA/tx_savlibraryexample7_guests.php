@@ -12,7 +12,7 @@ return array(
         'enablecolumns' => array(
             'disabled' => 'hidden',
         ),
-        'iconfile' => 'EXT:sav_library_example7/Resources/Private/Icons/icon_tx_savlibraryexample7_guests.gif',
+        'iconfile' => 'EXT:sav_library_example7/Resources/Public/Icons/icon_tx_savlibraryexample7_guests.gif',
     ),
     'interface' => array(
         'showRecordFieldList' => 'hidden,firstname,lastname,email,website,message,comment,date'

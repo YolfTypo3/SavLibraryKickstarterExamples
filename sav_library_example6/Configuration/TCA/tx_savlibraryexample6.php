@@ -12,7 +12,7 @@ return array(
         'enablecolumns' => array(
             'disabled' => 'hidden',
         ),
-        'iconfile' => 'EXT:sav_library_example6/Resources/Private/Icons/icon_tx_savlibraryexample6.gif',
+        'iconfile' => 'EXT:sav_library_example6/Resources/Public/Icons/icon_tx_savlibraryexample6.gif',
     ),
     'interface' => array(
         'showRecordFieldList' => 'hidden,name,address,registration,email,email_flag,email_language,invoice'

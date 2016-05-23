@@ -14,7 +14,7 @@ return array(
         'enablecolumns' => array(
             'disabled' => 'hidden',
         ),
-        'iconfile' => 'EXT:sav_library_example0/Resources/Private/Icons/icon_tx_savlibraryexample0_table1.gif',
+        'iconfile' => 'EXT:sav_library_example0/Resources/Public/Icons/icon_tx_savlibraryexample0_table1.gif',
     ),
     'interface' => array(
         'showRecordFieldList' => 'hidden,field1,field2,field8,field9,field4,field5,field24,field7,field6,field12,field13,field14,field15,field16,field17,field18,field19,field20,field3,field11,field21,field22,field23,field10'
@@ -119,10 +119,10 @@ return array(
                 'type' => 'select',  
                 'renderType' => 'selectSingle',
                 'items' => array(
-                    array('LLL:EXT:sav_library_example0/Resources/Private/Language/locallang.xlf:tx_savlibraryexample0_table1.field7.I.0',0),
+                    array('LLL:EXT:sav_library_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample0_table1.field7.I.0',0),
                 ),
                 'foreign_table' => 'tx_savlibraryexample0_table2',
-                'foreign_table_where' => ' ORDER BY tx_savlibraryexample0_table2.field1',
+                'foreign_table_where' => 'AND 1 ORDER BY tx_savlibraryexample0_table2.field1',
                 'size' => 1,
                 'minitems' => 0,
                 'maxitems' => 1,
@@ -215,7 +215,7 @@ return array(
                 'type' => 'select',
                 'renderType' => 'selectMultipleSideBySide',
                 'foreign_table' => 'tx_savlibraryexample0_table2',
-                'foreign_table_where' => ' ORDER BY tx_savlibraryexample0_table2.field1',
+                'foreign_table_where' => 'AND 1 ORDER BY tx_savlibraryexample0_table2.field1',
                 'size' => 5,
                 'minitems' => 0,
                 'maxitems' => 100000,
@@ -228,7 +228,7 @@ return array(
                 'type' => 'select',
                 'renderType' => 'selectMultipleSideBySide',
                 'foreign_table' => 'tx_savlibraryexample0_table2',
-                'foreign_table_where' => ' ORDER BY tx_savlibraryexample0_table2.field1',
+                'foreign_table_where' => 'AND 1 ORDER BY tx_savlibraryexample0_table2.field1',
                 'size' => 5,
                 'minitems' => 0,
                 'maxitems' => 100000,

@@ -1,43 +1,46 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2016-05-07T07:19:42Z" product-name="sav_library_example2">
-		<header/>
-		<body>
-			<trans-unit id="tx_savlibraryexample2_cds" xml:space="preserve">
-				<source>CD Collection</source>
-			</trans-unit>
-			<trans-unit id="tx_savlibraryexample2_cds.artist" xml:space="preserve">
-				<source>Artist</source>
-			</trans-unit>
-			<trans-unit id="tx_savlibraryexample2_cds.album_title" xml:space="preserve">
-				<source>Title of CD</source>
-			</trans-unit>
-			<trans-unit id="tx_savlibraryexample2_cds.date_of_purchase" xml:space="preserve">
-				<source>When did I buy the CD ?</source>
-			</trans-unit>
-			<trans-unit id="tx_savlibraryexample2_cds.link_to_website" xml:space="preserve">
-				<source>Does the band have a website ?</source>
-			</trans-unit>
-			<trans-unit id="tx_savlibraryexample2_cds.coverimage" xml:space="preserve">
-				<source>Cover image (JPG)</source>
-			</trans-unit>
-			<trans-unit id="tx_savlibraryexample2_cds.category" xml:space="preserve">
-				<source>CD Category</source>
-			</trans-unit>
-			<trans-unit id="tx_savlibraryexample2_cds.description" xml:space="preserve">
-				<source>Description / Band story</source>
-			</trans-unit>
-			<trans-unit id="tx_savlibraryexample2_cat" xml:space="preserve">
-				<source>CD Category</source>
-			</trans-unit>
-			<trans-unit id="tx_savlibraryexample2_cat.title" xml:space="preserve">
-				<source>Title of the category</source>
-			</trans-unit>
-			<trans-unit id="tt_content.list_type_pi1" xml:space="preserve">
-				<source>SAV Library Example2 - CD Album</source>
-			</trans-unit>
-		</body>
-	</file>
+    <file source-language="en" datatype="plaintext" original="messages" date="2016-05-23T06:27:23Z" product-name="sav_library_example2">
+        <header/>
+        <body>
+            <trans-unit id="tx_savlibraryexample2_cds" xml:space="preserve">
+                <source>CD Collection</source>
+            </trans-unit>
+            <trans-unit id="tx_savlibraryexample2_cds.artist" xml:space="preserve">
+                <source>Artist</source>
+            </trans-unit>
+            <trans-unit id="tx_savlibraryexample2_cds.album_title" xml:space="preserve">
+                <source>Title of CD</source>
+            </trans-unit>
+            <trans-unit id="tx_savlibraryexample2_cds.date_of_purchase" xml:space="preserve">
+                <source>When did I buy the CD ?</source>
+            </trans-unit>
+            <trans-unit id="tx_savlibraryexample2_cds.link_to_website" xml:space="preserve">
+                <source>Does the band have a website ?</source>
+            </trans-unit>
+            <trans-unit id="tx_savlibraryexample2_cds.coverimage" xml:space="preserve">
+                <source>Cover image (JPG)</source>
+            </trans-unit>
+            <trans-unit id="tx_savlibraryexample2_cds.category" xml:space="preserve">
+                <source>CD Category</source>
+            </trans-unit>
+            <trans-unit id="tx_savlibraryexample2_cds.category.I.0" xml:space="preserve">
+                <source></source>
+            </trans-unit>
+            <trans-unit id="tx_savlibraryexample2_cds.description" xml:space="preserve">
+                <source>Description / Band story</source>
+            </trans-unit>
+            <trans-unit id="tx_savlibraryexample2_cat" xml:space="preserve">
+                <source>CD Category</source>
+            </trans-unit>
+            <trans-unit id="tx_savlibraryexample2_cat.title" xml:space="preserve">
+                <source>Title of the category</source>
+            </trans-unit>
+            <trans-unit id="tt_content.list_type_pi1" xml:space="preserve">
+                <source>SAV Library Example2 - CD Album</source>
+            </trans-unit>
+        </body>
+    </file>
 </xliff>
 

@@ -13,7 +13,7 @@ return array(
         'enablecolumns' => array(
             'disabled' => 'hidden',
         ),
-        'iconfile' => 'EXT:sav_library_example4/Resources/Private/Icons/icon_tx_savlibraryexample4_friends.gif',
+        'iconfile' => 'EXT:sav_library_example4/Resources/Public/Icons/icon_tx_savlibraryexample4_friends.gif',
     ),
     'interface' => array(
         'showRecordFieldList' => 'hidden,friend_name,friend_phone,friend_email,friend_preferred_music'

@@ -12,7 +12,7 @@ return array(
         'enablecolumns' => array(
             'disabled' => 'hidden',
         ),
-        'iconfile' => 'EXT:sav_library_example9/Resources/Private/Icons/icon_tx_savlibraryexample9.gif',
+        'iconfile' => 'EXT:sav_library_example9/Resources/Public/Icons/icon_tx_savlibraryexample9.gif',
     ),
     'interface' => array(
         'showRecordFieldList' => 'hidden,title,begin,end,category,graph'
@@ -66,7 +66,7 @@ return array(
                 'type' => 'select',  
                 'renderType' => 'selectSingle',
                 'items' => array(
-                    array('LLL:EXT:sav_library_example9/Resources/Private/Language/locallang.xlf:tx_savlibraryexample9.category.I.0',0),
+                    array('LLL:EXT:sav_library_example9/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample9.category.I.0',0),
                 ),
                 'foreign_table' => 'tx_savlibraryexample9_category',
                 'foreign_table_where' => ' ORDER BY tx_savlibraryexample9_category.crdate',

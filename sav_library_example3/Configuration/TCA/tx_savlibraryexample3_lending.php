@@ -12,7 +12,7 @@ return array(
         'enablecolumns' => array(
             'disabled' => 'hidden',
         ),
-        'iconfile' => 'EXT:sav_library_example3/Resources/Private/Icons/icon_tx_savlibraryexample3_lending.gif',
+        'iconfile' => 'EXT:sav_library_example3/Resources/Public/Icons/icon_tx_savlibraryexample3_lending.gif',
     ),
     'interface' => array(
         'showRecordFieldList' => 'hidden,friend_name,friend_phone,friend_email,lending_date,return_date'

@@ -14,7 +14,7 @@ return array(
         'enablecolumns' => array(
             'disabled' => 'hidden',
         ),
-        'iconfile' => 'EXT:sav_librarymvc_example0/Resources/Private/Icons/icon_tx_savlibrarymvcexample0_domain_model_table1.gif',
+        'iconfile' => 'EXT:sav_librarymvc_example0/Resources/Public/Icons/icon_tx_savlibrarymvcexample0_domain_model_table1.gif',
         'EXT' => array(
             'sav_library_mvc' => array(
                 'ctrl' => array(
@@ -989,7 +989,7 @@ return array(
                     array('LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field7.I.0',0),
                 ),
                 'foreign_table' => 'tx_savlibrarymvcexample0_domain_model_table2',
-                'foreign_table_where' => ' ',
+                'foreign_table_where' => 'AND 1 ',
                 'size' => 1,
                 'minitems' => 0,
                 'maxitems' => 1,
@@ -1080,7 +1080,7 @@ return array(
                 'type' => 'select',
                 'renderType' => 'selectMultipleSideBySide',
                 'foreign_table' => 'tx_savlibrarymvcexample0_domain_model_table2',
-                'foreign_table_where' => ' ORDER BY tx_savlibrarymvcexample0_domain_model_table2.field1',
+                'foreign_table_where' => 'AND 1 ORDER BY tx_savlibrarymvcexample0_domain_model_table2.field1',
                 'size' => 5,
                 'minitems' => 0,
                 'maxitems' => 100000,
@@ -1093,7 +1093,7 @@ return array(
                 'type' => 'select',
                 'renderType' => 'selectMultipleSideBySide',
                 'foreign_table' => 'tx_savlibrarymvcexample0_domain_model_table2',
-                'foreign_table_where' => ' ORDER BY tx_savlibrarymvcexample0_domain_model_table2.field1',
+                'foreign_table_where' => 'AND 1 ORDER BY tx_savlibrarymvcexample0_domain_model_table2.field1',
                 'size' => 5,
                 'minitems' => 0,
                 'maxitems' => 100000,

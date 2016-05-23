@@ -12,7 +12,7 @@ return array(
         'enablecolumns' => array(
             'disabled' => 'hidden',
         ),
-        'iconfile' => 'EXT:sav_download/Resources/Private/Icons/icon_tx_savdownload.gif',
+        'iconfile' => 'EXT:sav_download/Resources/Public/Icons/icon_tx_savdownload.gif',
     ),
     'interface' => array(
         'showRecordFieldList' => 'hidden,title,category,date,file'
@@ -42,10 +42,10 @@ return array(
                 'type' => 'select',  
                 'renderType' => 'selectSingle',
                 'items' => array(
-                    array('LLL:EXT:sav_download/Resources/Private/Language/locallang.xlf:tx_savdownload.category.I.0',0),
+                    array('LLL:EXT:sav_download/Resources/Private/Language/locallang_db.xlf:tx_savdownload.category.I.0',0),
                 ),
                 'foreign_table' => 'tx_savdownload_category',
-                'foreign_table_where' => ' ORDER BY tx_savdownload_category.name',
+                'foreign_table_where' => 'AND tx_savdownload_category.pid=###CURRENT_PID### ORDER BY tx_savdownload_category.name',
                 'size' => 1,
                 'minitems' => 0,
                 'maxitems' => 1,

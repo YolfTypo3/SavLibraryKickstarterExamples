@@ -12,7 +12,7 @@ return array(
         'enablecolumns' => array(
             'disabled' => 'hidden',
         ),
-        'iconfile' => 'EXT:sav_library_example4/Resources/Private/Icons/icon_tx_savlibraryexample4_lending.gif',
+        'iconfile' => 'EXT:sav_library_example4/Resources/Public/Icons/icon_tx_savlibraryexample4_lending.gif',
     ),
     'interface' => array(
         'showRecordFieldList' => 'hidden,friend_name,lending_date,return_date'
@@ -33,10 +33,10 @@ return array(
                 'type' => 'select',  
                 'renderType' => 'selectSingle',
                 'items' => array(
-                    array('LLL:EXT:sav_library_example4/Resources/Private/Language/locallang.xlf:tx_savlibraryexample4_lending.friend_name.I.0',0),
+                    array('LLL:EXT:sav_library_example4/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample4_lending.friend_name.I.0',0),
                 ),
                 'foreign_table' => 'tx_savlibraryexample4_friends',
-                'foreign_table_where' => ' ORDER BY tx_savlibraryexample4_friends.friend_name',
+                'foreign_table_where' => 'AND tx_savlibraryexample4_friends.pid=###CURRENT_PID### ORDER BY tx_savlibraryexample4_friends.friend_name',
                 'size' => 1,
                 'minitems' => 0,
                 'maxitems' => 1,

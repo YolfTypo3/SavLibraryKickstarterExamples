@@ -12,7 +12,7 @@ return array(
         'enablecolumns' => array(
             'disabled' => 'hidden',
         ),
-        'iconfile' => 'EXT:sav_library_example9/Resources/Private/Icons/icon_tx_savlibraryexample9_period.gif',
+        'iconfile' => 'EXT:sav_library_example9/Resources/Public/Icons/icon_tx_savlibraryexample9_period.gif',
     ),
     'interface' => array(
         'showRecordFieldList' => 'hidden,beginperiod,endperiod,periodtitle'

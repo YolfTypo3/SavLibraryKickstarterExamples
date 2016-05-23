@@ -12,7 +12,7 @@ return array(
         'enablecolumns' => array(
             'disabled' => 'hidden',
         ),
-        'iconfile' => 'EXT:sav_library_example4/Resources/Private/Icons/icon_tx_savlibraryexample4_cds.gif',
+        'iconfile' => 'EXT:sav_library_example4/Resources/Public/Icons/icon_tx_savlibraryexample4_cds.gif',
     ),
     'interface' => array(
         'showRecordFieldList' => 'hidden,artist,album_title,date_of_purchase,link_to_website,coverimage,category,description,rel_lending,rel_friends'
@@ -103,10 +103,10 @@ return array(
                 'type' => 'select',  
                 'renderType' => 'selectSingle',
                 'items' => array(
-                    array('LLL:EXT:sav_library_example4/Resources/Private/Language/locallang.xlf:tx_savlibraryexample4_cds.category.I.0',0),
+                    array('LLL:EXT:sav_library_example4/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample4_cds.category.I.0',0),
                 ),
                 'foreign_table' => 'tx_savlibraryexample4_cat',
-                'foreign_table_where' => ' ORDER BY tx_savlibraryexample4_cat.crdate',
+                'foreign_table_where' => 'AND tx_savlibraryexample4_cat.pid=###CURRENT_PID### ORDER BY tx_savlibraryexample4_cat.crdate',
                 'size' => 1,
                 'minitems' => 0,
                 'maxitems' => 1,
