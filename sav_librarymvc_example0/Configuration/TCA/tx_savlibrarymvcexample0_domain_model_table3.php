@@ -85,6 +85,8 @@ return array(
                         ),
                     ),
                 ),
+                'controllers' => array(
+                ),
             ),
         ),
     ),

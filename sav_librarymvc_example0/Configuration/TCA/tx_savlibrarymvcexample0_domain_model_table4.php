@@ -51,6 +51,8 @@ return array(
                         ),
                     ),
                 ),
+                'controllers' => array(
+                ),
             ),
         ),
     ),

@@ -91,6 +91,8 @@ return array(
                         ),
                     ),
                 ),
+                'controllers' => array(
+                ),
             ),
         ),
     ),

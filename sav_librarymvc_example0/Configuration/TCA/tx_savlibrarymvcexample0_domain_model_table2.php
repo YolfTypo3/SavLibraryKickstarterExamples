@@ -50,6 +50,8 @@ return array(
                         ),
                     ),
                 ),
+                'controllers' => array(
+                ),
             ),
         ),
     ),
