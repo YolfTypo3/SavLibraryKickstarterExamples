@@ -1,0 +1,15 @@
+<f:layout name="Default.html" />
+
+<f:section name="content">
+
+	   <f:form>
+	       <f:form.hidden name="filter" value="{filterContext.filter}" />
+	       <ul>
+	       <f:for each="{items}" as="item">
+	           <li class="{item.type}"><f:render partial="{item.type}.html"
+                arguments="{item:item, filterContext:filterContext}" /></li>   
+	       </f:for>
+	       </ul>
+       </f:form>
+
+</f:section>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="fr" datatype="plaintext" original="messages" date="2016-11-04T16:50:09Z" product-name="sav_filters_mvc">
+		<header/>
+		<body>
+            <trans-unit id="extensionFlexform.type" xml:space="preserve">
+                <source>Type</source>
+                <target>Type</target>
+            </trans-unit>   	
+            	
+            <trans-unit id="extensionFlexform.type.1" xml:space="preserve">
+                <source>Alphabetic filter</source>
+                <target>Filtre "Alphabétique"</target>
+            </trans-unit>	
+            <trans-unit id="extensionFlexform.type.2" xml:space="preserve">
+                <source>Months filter</source>
+                <target>Filtre "Mois"</target>
+            </trans-unit> 
+            <trans-unit id="extensionFlexform.type.3" xml:space="preserve">
+                <source>Search filter</source>
+                <target>Filtre "Rechercher"</target>
+            </trans-unit>  
+            <trans-unit id="extensionFlexform.type.4" xml:space="preserve">
+                <source>Selectors filter</source>
+                <target>Filtre "Sélecteurs"</target>
+            </trans-unit>  
+             <trans-unit id="extensionFlexform.type.5" xml:space="preserve">
+                <source>Mini calendar filter</source>
+                <target>Filter "Mini Calendrier"</target>
+            </trans-unit>  
+
+            <trans-unit id="extensionFlexform.item" xml:space="preserve">
+                <source>Add an item</source>
+                <target>Ajouter un item</target>
+            </trans-unit>   
+            <trans-unit id="extensionFlexform.item.type.1" xml:space="preserve">
+                <source>Selector box</source>
+                <target>Sélecteur</target>
+            </trans-unit>   
+            <trans-unit id="extensionFlexform.item.type.2" xml:space="preserve">
+                <source>Search box</source>
+                <target>Boîte de recherche</target>
+            </trans-unit>   
+            <trans-unit id="extensionFlexform.item.type.3" xml:space="preserve">
+                <source>Submit button</source>
+                <target>Bouton de validation</target>
+            </trans-unit>                                   
+                       
+            <trans-unit id="extensionFlexform.modelName" xml:space="preserve">
+                <source>Model name</source>
+                <target>Nom du modèle</target>
+            </trans-unit>
+            <trans-unit id="extensionFlexform.fieldName" xml:space="preserve">
+                <source>Field name</source>
+                <target>Nom du champ</target>
+            </trans-unit>  
+            <trans-unit id="extensionFlexform.fieldNameForDate" xml:space="preserve">
+                <source>Field name for the date</source>
+                <target>Nom du champ pour la date</target>
+            </trans-unit> 
+            <trans-unit id="extensionFlexform.fieldNameForTitle" xml:space="preserve">
+                <source>Field name for the title</source>
+                <target>Nom du champ pour le titre</target>
+            </trans-unit>                               
+            <trans-unit id="extensionFlexform.searchFields" xml:space="preserve">
+                <source>Search fields</source>
+                <target>Champs pour la recherche</target>
+            </trans-unit>    
+            <trans-unit id="extensionFlexform.backwardMonths" xml:space="preserve">
+                <source>Backward months</source>
+                <target>Nombre de mois en arrière</target>
+            </trans-unit>  
+            <trans-unit id="extensionFlexform.forwardMonths" xml:space="preserve">
+                <source>Forward months</source>
+                <target>Nombre de mois en avant</target>
+            </trans-unit>    
+                                  
+            <trans-unit id="all" xml:space="preserve">
+                <source>All</source>
+                <target>Tous</target>
+            </trans-unit> 
+            
+            <trans-unit id="searchFilter.placeholder" xml:space="preserve">
+                <source>Search</source>
+                <target>Rechercher</target>
+            </trans-unit>                
+            
+            <trans-unit id="error.typeMustBe" xml:space="preserve">
+                <source>Error in "%s". The type of the field "%s" must be %s.</source>
+                <target>Erreur dans "%s". Le type du champ "%s" doit être %s.</target>
+            </trans-unit>                    
+            <trans-unit id="error.unknownMethod" xml:space="preserve">
+                <source>Error in "%s". Unknown method %s. Check if the field is in the model.</source>
+                <target>Erreur dans "%s". Méthode %s inconnue. Vérifier si le champ est dans le modèle.</target>
+            </trans-unit>     
+            
+            <trans-unit id="button.search" xml:space="preserve">
+                <source>Search</source>
+                <target>Rechercher</target>
+            </trans-unit>  
+            <trans-unit id="button.previousMonth" xml:space="preserve">
+                <source>Previous month</source>
+                <target>Mois précédent</target>                
+            </trans-unit>    
+            <trans-unit id="button.nextMonth" xml:space="preserve">
+                <source>Next</source>
+                <target>Mois suivant</target>                
+            </trans-unit>
+            <trans-unit id="button.currentMonth" xml:space="preserve">
+                <source>Current month</source>
+                <target>Mois courant</target>                
+            </trans-unit> 
+                                                                                                                           		
+		</body>
+	</file>
+</xliff>
