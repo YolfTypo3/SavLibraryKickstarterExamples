@@ -1,7 +1,7 @@
 <?php
 
-return array(
-    'ctrl' => array(
+return [
+    'ctrl' => [
         'title' => 'LLL:EXT:sav_meetings/Resources/Private/Language/locallang_db.xlf:tx_savmeetings_item',
         'label' => 'uid',
         'tstamp' => 'tstamp',
@@ -9,61 +9,61 @@ return array(
         'cruser_id' => 'cruser_id',
         'default_sortby' => 'ORDER BY tx_savmeetings_item.crdate ',
         'delete' => 'deleted',
-        'enablecolumns' => array(
+        'enablecolumns' => [
             'disabled' => 'hidden',
-        ),
+        ],
         'iconfile' => 'EXT:sav_meetings/Resources/Public/Icons/icon_tx_savmeetings_item.gif',
-    ),
-    'interface' => array(
+    ],
+    'interface' => [
         'showRecordFieldList' => 'hidden,subject,proposed_by,expected_duration,file,report'
-    ),
-    'columns' => array(
-        'hidden' => array(
+    ],
+    'columns' => [
+        'hidden' => [
             'exclude' => 1,
             'label'  => 'LLL:EXT:lang/locallang_general.xlf:LGL.hidden',
-            'config' => array(
+            'config' => [
                 'type'  => 'check',
                 'default' => 0,
-            )
-        ),
-        'subject' => array(
+            ]
+        ],
+        'subject' => [
             'exclude' => 1,
             'label'  => 'LLL:EXT:sav_meetings/Resources/Private/Language/locallang_db.xlf:tx_savmeetings_item.subject',
-            'config' => array(
+            'config' => [
                 'type' => 'input',
                 'size' => '30',
                 'eval' => 'trim'
-            ),
-        ),
-        'proposed_by' => array(
+            ],
+        ],
+        'proposed_by' => [
             'exclude' => 1,
             'label'  => 'LLL:EXT:sav_meetings/Resources/Private/Language/locallang_db.xlf:tx_savmeetings_item.proposed_by',
-            'config' => array(
+            'config' => [
                 'type' => 'select',  
                 'renderType' => 'selectSingle',
-                'items' => array(
-                    array('LLL:EXT:sav_meetings/Resources/Private/Language/locallang_db.xlf:tx_savmeetings_item.proposed_by.I.0',0),
-                ),
+                'items' => [
+                    ['LLL:EXT:sav_meetings/Resources/Private/Language/locallang_db.xlf:tx_savmeetings_item.proposed_by.I.0', 0],
+                ],
                 'foreign_table' => 'fe_users',
                 'foreign_table_where' => ' ',
                 'size' => 1,
                 'minitems' => 0,
                 'maxitems' => 1,
-            ),
-        ),
-        'expected_duration' => array(
+            ],
+        ],
+        'expected_duration' => [
             'exclude' => 1,
             'label'  => 'LLL:EXT:sav_meetings/Resources/Private/Language/locallang_db.xlf:tx_savmeetings_item.expected_duration',
-            'config' => array(
+            'config' => [
                 'type' => 'input',
                 'size' => '30',
                 'eval' => 'trim'
-            ),
-        ),
-        'file' => array(
+            ],
+        ],
+        'file' => [
             'exclude' => 1,
             'label'  => 'LLL:EXT:sav_meetings/Resources/Private/Language/locallang_db.xlf:tx_savmeetings_item.file',
-            'config' => array(
+            'config' => [
                 'type' => 'group',
                 'internal_type' => 'file',
                 'allowed' => '',
@@ -73,44 +73,44 @@ return array(
                 'size' => 1,
                 'minitems' => 0,
                 'maxitems' => 3,
-            ),
-        ),
-        'report' => array(
+            ],
+        ],
+        'report' => [
             'exclude' => 1,
             'label'  => 'LLL:EXT:sav_meetings/Resources/Private/Language/locallang_db.xlf:tx_savmeetings_item.report',
-            'config' => array(
+            'config' => [
                 'type' => 'text',
                 'cols' => '30',
                 'rows' => '5',
-                'wizards' => array(
+                'wizards' => [
                     '_PADDING' => 2,
-                    'RTE' => array(
+                    'RTE' => [
                         'notNewRecords' => 1,
                         'RTEonly' => 1,
                         'type'  => 'script',
                         'title' => 'Full screen Rich Text Editing',
-                        'icon'  => (version_compare(TYPO3_version, '7', '<') ? 'wizard_rte2.gif' : 'EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_rte.gif'),
-                        'module' => array(
+                        'icon'  => (version_compare(TYPO3_version, '7', '<') ? 'wizard_rte2.gif' : 'actions-wizard-rte'),
+                        'module' => [
                             'name' => 'wizard_rte',
-                        ),
-                    ),
-                ),
-            ),
-        ),
-    ),
-    'types' => array(
-        '0' => array(
+                        ],
+                    ],
+                ],
+            ],
+        ],
+    ],
+    'types' => [
+        '0' => [
             'showitem' => 'hidden, subject, proposed_by, expected_duration, file, report' . (version_compare(TYPO3_version, '7.3', '<') ? ';;;richtext[]:rte_transform[mode=ts]' : '') . '',
-            'columnsOverrides' => array(
-                'report' => array(
+            'columnsOverrides' => [
+                'report' => [
                     'defaultExtras' => 'richtext[]:rte_transform' . (version_compare(TYPO3_version, '8', '<') ? '[mode=ts]' : ''),
-                ),
-            ),
-        ),
-    ),
-    'palettes' => array(
-        '1' => array('showitem' => '')
-    ),
-);
+                ],
+            ],
+        ],
+    ],
+    'palettes' => [
+        '1' => ['showitem' => '']
+    ],
+];
 
 ?>

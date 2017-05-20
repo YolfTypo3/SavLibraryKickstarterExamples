@@ -4,7 +4,7 @@ namespace SAV\SavLibrarymvcExample0\Domain\Model;
 /**
 *  Copyright notice
 *
-*  (c) 2016  <yolf.typo3@orange.fr>
+*  (c) 2017  <yolf.typo3@orange.fr>
 *  All rights reserved
 *
 *  This script is part of the TYPO3 project. The TYPO3 project is
@@ -391,7 +391,7 @@ class Table1 extends \SAV\SavLibraryMvc\Domain\Model\DefaultModel
     /**
      * Getter for field7.
      *
-     * @return \SAV\SavLibrarymvcExample0\Domain\Model\Table2
+     * @return \SAV\SavLibrarymvcExample0\Domain\Model\Table2    
      */
     public function getField7()
     {
@@ -401,7 +401,7 @@ class Table1 extends \SAV\SavLibraryMvc\Domain\Model\DefaultModel
     /**
      * Setter for field7.
      *
-     * @param \SAV\SavLibrarymvcExample0\Domain\Model\Table2 $field7
+     * @param \SAV\SavLibrarymvcExample0\Domain\Model\Table2     $field7
      * @return void
      */
     public function setField7($field7)

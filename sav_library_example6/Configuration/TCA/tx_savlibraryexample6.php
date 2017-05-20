@@ -1,7 +1,7 @@
 <?php
 
-return array(
-    'ctrl' => array(
+return [
+    'ctrl' => [
         'title' => 'LLL:EXT:sav_library_example6/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample6',
         'label' => 'name',
         'tstamp' => 'tstamp',
@@ -9,123 +9,123 @@ return array(
         'cruser_id' => 'cruser_id',
         'default_sortby' => 'ORDER BY tx_savlibraryexample6.name ',
         'delete' => 'deleted',
-        'enablecolumns' => array(
+        'enablecolumns' => [
             'disabled' => 'hidden',
-        ),
+        ],
         'iconfile' => 'EXT:sav_library_example6/Resources/Public/Icons/icon_tx_savlibraryexample6.gif',
-    ),
-    'interface' => array(
+    ],
+    'interface' => [
         'showRecordFieldList' => 'hidden,name,address,registration,email,email_flag,email_language,invoice'
-    ),
-    'columns' => array(
-        'hidden' => array(
+    ],
+    'columns' => [
+        'hidden' => [
             'exclude' => 1,
             'label'  => 'LLL:EXT:lang/locallang_general.xlf:LGL.hidden',
-            'config' => array(
+            'config' => [
                 'type'  => 'check',
                 'default' => 0,
-            )
-        ),
-        'name' => array(
+            ]
+        ],
+        'name' => [
             'exclude' => 1,
             'label'  => 'LLL:EXT:sav_library_example6/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample6.name',
-            'config' => array(
+            'config' => [
                 'type' => 'input',
                 'size' => '30',
                 'eval' => 'trim'
-            ),
-        ),
-        'address' => array(
+            ],
+        ],
+        'address' => [
             'exclude' => 1,
             'label'  => 'LLL:EXT:sav_library_example6/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample6.address',
-            'config' => array(
+            'config' => [
                 'type' => 'text',
                 'cols' => '30',
                 'rows' => '5',
-            ),
-        ),
-        'registration' => array(
+            ],
+        ],
+        'registration' => [
             'exclude' => 1,
             'label'  => 'LLL:EXT:sav_library_example6/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample6.registration',
-            'config' => array(
+            'config' => [
                 'type' => 'check',
                 'cols' => 4,
-                'items' => array(
+                'items' => [
                         array('LLL:EXT:sav_library_example6/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample6.registration.I.0', ''),
                         array('LLL:EXT:sav_library_example6/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample6.registration.I.1', ''),
                         array('LLL:EXT:sav_library_example6/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample6.registration.I.2', ''),
                         array('LLL:EXT:sav_library_example6/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample6.registration.I.3', ''),
-                ),
-            ),
-        ),
-        'email' => array(
+                ],
+            ],
+        ],
+        'email' => [
             'exclude' => 1,
             'label'  => 'LLL:EXT:sav_library_example6/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample6.email',
-            'config' => array(
+            'config' => [
                 'type' => 'input',
                 'size' => '30',
                 'eval' => 'trim'
-            ),
-        ),
-        'email_flag' => array(
+            ],
+        ],
+        'email_flag' => [
             'exclude' => 1,
             'label'  => 'LLL:EXT:sav_library_example6/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample6.email_flag',
-            'config' => array(
+            'config' => [
                 'type' => 'check',
                 'default' => 0
-            ),
-        ),
-        'email_language' => array(
+            ],
+        ],
+        'email_language' => [
             'exclude' => 1,
             'label'  => 'LLL:EXT:sav_library_example6/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample6.email_language',
-            'config' => array(
+            'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
-                'items' => array (
-                    array ('LLL:EXT:sav_library_example6/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample6.email_language.I.0', 'default'),
-                    array ('LLL:EXT:sav_library_example6/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample6.email_language.I.1', 'fr'),
-                ),
+                'items' => [
+                    ['LLL:EXT:sav_library_example6/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample6.email_language.I.0', 'default'],
+                    ['LLL:EXT:sav_library_example6/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample6.email_language.I.1', 'fr'],
+                ],
                 'size' => 1,
                 'maxitems' => 1,
-            ),
-        ),
-        'invoice' => array(
+            ],
+        ],
+        'invoice' => [
             'exclude' => 1,
             'label'  => 'LLL:EXT:sav_library_example6/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample6.invoice',
-            'config' => array (
+            'config' => [
                 'type'  => 'input',
                 'size'  => '15',
                 'max' => '255',
                 'checkbox'  => '',
                 'eval'  => 'trim',
-                'wizards' => array(
+                'wizards' => [
                     '_PADDING'  => 2,
-                    'link'  => array(
+                    'link'  => [
                         'type'  => 'popup',
-                        'title' => 'Link',
-                        'icon'  => (version_compare(TYPO3_version, '7', '<') ? 'link_popup.gif' : 'EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_link.gif'),           
-                        'module' => array(
-                            'name' => (version_compare(TYPO3_version, '7', '<') ? 'wizard_element_browser' : 'wizard_link'),
-                            'urlParameters' => array(             
+                        'title' => 'Link',         
+                        'icon'  => 'actions-wizard-link',           
+                        'module' => [
+                            'name' => 'wizard_link',
+                            'urlParameters' => [             
                                 'mode' => 'wizard',
-                            )
-                        ),    
+                            ]
+                        ],    
                         'JSopenParams'  => 'height=300,width=500,status=0,menubar=0,scrollbars=1',
-                    )
-                ),
-            ),
-        ),
-    ),
-    'types' => array(
-        '0' => array(
+                    ]
+                ],
+            ],
+        ],
+    ],
+    'types' => [
+        '0' => [
             'showitem' => 'hidden, name, address, registration, email, email_flag, email_language, invoice',
-            'columnsOverrides' => array(
-            ),
-        ),
-    ),
-    'palettes' => array(
-        '1' => array('showitem' => '')
-    ),
-);
+            'columnsOverrides' => [
+            ],
+        ],
+    ],
+    'palettes' => [
+        '1' => ['showitem' => '']
+    ],
+];
 
 ?>

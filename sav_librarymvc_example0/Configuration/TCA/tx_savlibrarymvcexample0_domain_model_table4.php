@@ -1,7 +1,7 @@
 <?php
 
-return array(
-    'ctrl' => array(
+return [
+    'ctrl' => [
         'title' => 'LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table4',
         'label' => 'field1',
         'tstamp' => 'tstamp',
@@ -9,85 +9,90 @@ return array(
         'cruser_id' => 'cruser_id',
         'default_sortby' => 'ORDER BY tx_savlibrarymvcexample0_domain_model_table4.crdate ',
         'delete' => 'deleted',
-        'enablecolumns' => array(
+        'enablecolumns' => [
             'disabled' => 'hidden',
-        ),
+        ],
         'iconfile' => 'EXT:sav_librarymvc_example0/Resources/Public/Icons/icon_tx_savlibrarymvcexample0_domain_model_table4.gif',
-        'EXT' => array(
-            'sav_library_mvc' => array(
-                'ctrl' => array(
-                ),
-                'columns' => array(
-                    'field1' => array(
+        'EXT' => [
+            'sav_library_mvc' => [
+                'ctrl' => [
+                ],
+                'columns' => [
+                    'field1' => [
                         'fieldType' => 'String',
-                        'config' => array(
-                            1 => array (
+                        'config' => [
+                            1 => [
                                 'selected' => 0,
-                             ),
-                            2 => array (
+                             ],
+                            2 => [
                                 'selected' => 1,
-                             ),
-                            3 => array (
+                             ],
+                            3 => [
                                 'edit' => 1,
                                 'selected' => 1,
-                             ),
-                            4 => array (
+                             ],
+                            4 => [
                                 'selected' => 0,
-                             ),
-                            5 => array (
+                             ],
+                            5 => [
                                 'selected' => 0,
-                             ),
-                        ),
-                        'folders' => array(
+                             ],
+                        ],
+                        'folders' => [
                             2 => '6',
                             3 => '6',
-                        ),
-                       'order' => array(
+                        ],
+                       'order' => [
                             1 => '1',
                             2 => '1',
                             3 => '1',
                             4 => '1',
                             5 => '1',
-                        ),
-                    ),
-                ),
-                'controllers' => array(
-                ),
-            ),
-        ),
-    ),
-    'interface' => array(
+                        ],
+                    ],
+                ],
+                'controllers' => [
+                ],              
+            ],
+        ],
+    ],
+    'interface' => [
         'showRecordFieldList' => 'hidden,field1'
-    ),
-    'columns' => array(
-        'hidden' => array(
+    ],
+    'columns' => [
+        'hidden' => [
             'exclude' => 1,
             'label'  => 'LLL:EXT:lang/locallang_general.xlf:LGL.hidden',
-            'config' => array(
+            'config' => [
                 'type'  => 'check',
                 'default' => 0,
-            )
-        ),
-        'field1' => array(
+            ]
+        ],
+        'cruser_id_frontend' => [
+            'config'  => [
+                'type' => 'passthrough',
+            ],
+        ],
+        'field1' => [
             'exclude' => 1,
             'label'  => 'LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table4.field1',
-            'config' => array(
+            'config' => [
                 'type' => 'input',
                 'size' => '30',
                 'eval' => 'trim'
-            ),
-        ),
-    ),
-    'types' => array(
-        '0' => array(
+            ],
+        ],
+    ],
+    'types' => [
+        '0' => [
             'showitem' => 'hidden, field1',
-            'columnsOverrides' => array(
-            ),
-        ),
-    ),
-    'palettes' => array(
-        '1' => array('showitem' => '')
-    ),
-);
+            'columnsOverrides' => [
+            ],
+        ],
+    ],
+    'palettes' => [
+        '1' => ['showitem' => '']
+    ],
+];
 
 ?>

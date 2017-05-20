@@ -4,7 +4,7 @@ namespace SAV\SavLibrarymvcExample0\Domain\Repository;
 /**
 *  Copyright notice
 *
-*  (c) 2016 Laurent Foulloy <yolf.typo3@orange.fr>
+*  (c) 2017 Laurent Foulloy <yolf.typo3@orange.fr>
 *  All rights reserved
 *
 *  This script is part of the TYPO3 project. The TYPO3 project is
@@ -31,25 +31,7 @@ namespace SAV\SavLibrarymvcExample0\Domain\Repository;
 class Table1Repository extends \SAV\SavLibraryMvc\Domain\Repository\DefaultRepository
 {
 
-    /**
-     * Defines the where clause
-     *
-     * @param \TYPO3\CMS\Extbase\Persistence\QueryInterface $query
-     * @return void
-     */
-    protected function whereClause($query)
-    {
-    }
 
-    /**
-     * Defines the order by clause
-     *
-     * @param \TYPO3\CMS\Extbase\Persistence\QueryInterface $query
-     * @return void
-     */
-    protected function orderByClause($query)
-    {
-    }
 
     /**
      * Defines the order by clause associated with the whereTag "field1+"

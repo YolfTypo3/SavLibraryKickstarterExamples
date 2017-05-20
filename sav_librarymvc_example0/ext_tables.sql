@@ -8,17 +8,7 @@ CREATE TABLE tx_savlibrarymvcexample0_domain_model_table1 (
     tstamp int(11) DEFAULT '0' NOT NULL,
     crdate int(11) DEFAULT '0' NOT NULL,
     cruser_id int(11) DEFAULT '0' NOT NULL,
-    t3ver_oid int(11) DEFAULT '0' NOT NULL,
-    t3ver_id int(11) DEFAULT '0' NOT NULL,
-    t3ver_wsid int(11) DEFAULT '0' NOT NULL,
-    t3ver_label varchar(30) DEFAULT '' NOT NULL,
-    t3ver_state tinyint(4) DEFAULT '0' NOT NULL,
-    t3ver_stage tinyint(4) DEFAULT '0' NOT NULL,
-    t3ver_count int(11) DEFAULT '0' NOT NULL,
-    t3ver_tstamp int(11) DEFAULT '0' NOT NULL,
-    t3_origuid int(11) DEFAULT '0' NOT NULL,
-    deleted tinyint(4) DEFAULT '0' NOT NULL,
-    hidden tinyint(4) DEFAULT '0' NOT NULL,
+    cruser_id_frontend int(11) DEFAULT '0' NOT NULL,
     field2 tinyint(3) DEFAULT '0' NOT NULL,
     field1 tinytext,
     field8 text,
@@ -43,7 +33,6 @@ CREATE TABLE tx_savlibrarymvcexample0_domain_model_table1 (
     field24 decimal(11,2) DEFAULT '0.00' NOT NULL,
 
     PRIMARY KEY (uid),
-    KEY t3ver_oid (t3ver_oid,t3ver_wsid),
     KEY parent (pid)
 );
 
@@ -106,6 +95,7 @@ CREATE TABLE tx_savlibrarymvcexample0_domain_model_table2 (
     cruser_id int(11) DEFAULT '0' NOT NULL,
     deleted tinyint(4) DEFAULT '0' NOT NULL,
     hidden tinyint(4) DEFAULT '0' NOT NULL,
+    cruser_id_frontend int(11) DEFAULT '0' NOT NULL,
     field1 tinytext,
 
     PRIMARY KEY (uid),
@@ -123,6 +113,7 @@ CREATE TABLE tx_savlibrarymvcexample0_domain_model_table3 (
     cruser_id int(11) DEFAULT '0' NOT NULL,
     deleted tinyint(4) DEFAULT '0' NOT NULL,
     hidden tinyint(4) DEFAULT '0' NOT NULL,
+    cruser_id_frontend int(11) DEFAULT '0' NOT NULL,
     field1 tinytext,
     field2 int(11) DEFAULT '0' NOT NULL,
 
@@ -141,6 +132,7 @@ CREATE TABLE tx_savlibrarymvcexample0_domain_model_table4 (
     cruser_id int(11) DEFAULT '0' NOT NULL,
     deleted tinyint(4) DEFAULT '0' NOT NULL,
     hidden tinyint(4) DEFAULT '0' NOT NULL,
+    cruser_id_frontend int(11) DEFAULT '0' NOT NULL,
     field1 tinytext,
 
     PRIMARY KEY (uid),
@@ -158,6 +150,7 @@ CREATE TABLE tx_savlibrarymvcexample0_domain_model_table5 (
     cruser_id int(11) DEFAULT '0' NOT NULL,
     deleted tinyint(4) DEFAULT '0' NOT NULL,
     hidden tinyint(4) DEFAULT '0' NOT NULL,
+    cruser_id_frontend int(11) DEFAULT '0' NOT NULL,
     field1 tinytext,
     field2 int(11) DEFAULT '0' NOT NULL,
 
@@ -200,6 +193,7 @@ CREATE TABLE tx_savlibrarymvcexample0_domain_model_table6 (
     cruser_id int(11) DEFAULT '0' NOT NULL,
     deleted tinyint(4) DEFAULT '0' NOT NULL,
     hidden tinyint(4) DEFAULT '0' NOT NULL,
+    cruser_id_frontend int(11) DEFAULT '0' NOT NULL,
     field1 tinytext,
     field2 int(11) unsigned DEFAULT '0',
 

@@ -1,7 +1,7 @@
 <?php
 
-return array(
-    'ctrl' => array(
+return [
+    'ctrl' => [
         'title' => 'LLL:EXT:sav_library_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample0_table5',
         'label' => 'uid',
         'tstamp' => 'tstamp',
@@ -9,36 +9,36 @@ return array(
         'cruser_id' => 'cruser_id',
         'default_sortby' => 'ORDER BY tx_savlibraryexample0_table5.crdate ',
         'delete' => 'deleted',
-        'enablecolumns' => array(
+        'enablecolumns' => [
             'disabled' => 'hidden',
-        ),
+        ],
         'iconfile' => 'EXT:sav_library_example0/Resources/Public/Icons/icon_tx_savlibraryexample0_table5.gif',
-    ),
-    'interface' => array(
+    ],
+    'interface' => [
         'showRecordFieldList' => 'hidden,field1,field2'
-    ),
-    'columns' => array(
-        'hidden' => array(
+    ],
+    'columns' => [
+        'hidden' => [
             'exclude' => 1,
             'label'  => 'LLL:EXT:lang/locallang_general.xlf:LGL.hidden',
-            'config' => array(
+            'config' => [
                 'type'  => 'check',
                 'default' => 0,
-            )
-        ),
-        'field1' => array(
+            ]
+        ],
+        'field1' => [
             'exclude' => 1,
             'label'  => 'LLL:EXT:sav_library_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample0_table5.field1',
-            'config' => array(
+            'config' => [
                 'type' => 'input',
                 'size' => '30',
                 'eval' => 'trim'
-            ),
-        ),
-        'field2' => array(
+            ],
+        ],
+        'field2' => [
             'exclude' => 1,
             'label'  => 'LLL:EXT:sav_library_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample0_table5.field2',
-            'config' => array(
+            'config' => [
                 'type' => 'inline',
                 'foreign_table' =>  'tx_savlibraryexample0_table6',
                 'foreign_sortby' => 'sorting',
@@ -46,24 +46,24 @@ return array(
                 'minitems' => 0,
                 'maxitems' => 999999,
                 'MM' => 'tx_savlibraryexample0_table5_field2_mm',
-                'appearance' => array(
+                'appearance' => [
                     'newRecordLinkPosition' => 'bottom',
                     'collapseAll' => 1,
                     'expandSingle' => 1,
-                ),
-            ),
-        ),
-    ),
-    'types' => array(
-        '0' => array(
+                ],
+            ],
+        ],
+    ],
+    'types' => [
+        '0' => [
             'showitem' => 'hidden, field1, field2',
-            'columnsOverrides' => array(
-            ),
-        ),
-    ),
-    'palettes' => array(
-        '1' => array('showitem' => '')
-    ),
-);
+            'columnsOverrides' => [
+            ],
+        ],
+    ],
+    'palettes' => [
+        '1' => ['showitem' => '']
+    ],
+];
 
 ?>

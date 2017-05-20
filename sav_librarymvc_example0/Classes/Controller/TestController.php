@@ -4,7 +4,7 @@ namespace SAV\SavLibrarymvcExample0\Controller;
 /**
 *  Copyright notice
 *
-*  (c) 2016 Laurent Foulloy <yolf.typo3@orange.fr>
+*  (c) 2017 Laurent Foulloy <yolf.typo3@orange.fr>
 *
 *  All rights reserved
 *

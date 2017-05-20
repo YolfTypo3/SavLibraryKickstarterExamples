@@ -4,7 +4,7 @@ namespace SAV\SavLibrarymvcExample0\Domain\Repository;
 /**
 *  Copyright notice
 *
-*  (c) 2016 Laurent Foulloy <yolf.typo3@orange.fr>
+*  (c) 2017 Laurent Foulloy <yolf.typo3@orange.fr>
 *  All rights reserved
 *
 *  This script is part of the TYPO3 project. The TYPO3 project is
