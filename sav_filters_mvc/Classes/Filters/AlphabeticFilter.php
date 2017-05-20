@@ -104,8 +104,10 @@ class AlphabeticFilter extends AbstractFilter
             }
             return $query->logicalOr($constraints);
         } elseif ($arguments == 'all') {
-            // All is selected
-            return null;
+            // All is selected, return a constraint always true
+            $constraints = array();
+            $constraints[] = $query->greaterThan('uid', 0);
+            return $query->logicalOr($constraints);
         } elseif (! empty($searchValue)) {
             // A search is requested
             $searchFields = explode(',', self::getFilterSetting('searchFields'));

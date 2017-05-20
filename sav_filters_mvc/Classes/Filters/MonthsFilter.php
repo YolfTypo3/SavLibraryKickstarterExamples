@@ -91,7 +91,7 @@ class MonthsFilter extends AbstractFilter
 
             // Computes the interval in months from the begining of the year
             $differenceFromFirstDayOfYear = (new \DateTime('first day of January this year'))->diff($fieldValue);
-            $intervalInMonths = $differenceFromFirstDayOfYear->m + $differenceFromFirstDayOfYear->y * 12;
+            $intervalInMonths = (int) $differenceFromFirstDayOfYear->format('%R%m');
 
             // Marks the month as active if in the allowed range
             if ($intervalInMonths >= - $backwardMonths && $intervalInMonths < 12 + $forwardMonths) {
@@ -125,8 +125,10 @@ class MonthsFilter extends AbstractFilter
         // Builds the query constraints
         if ($selected !== null) {
             if ($selected == 'all') {
-                // All is selected
-                return $query;
+                // All is selected, return a constraint always true
+                $constraints = array();
+                $constraints[] = $query->greaterThan('uid', 0);
+                return $query->logicalOr($constraints);
             } else {
                 // A month is selected
                 $currentMonthName = \DateTime::createFromFormat('Y-m', $selected)->format('F Y');
