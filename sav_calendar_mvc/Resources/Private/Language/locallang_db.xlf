@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2017-05-19T19:33:45Z" product-name="sav_calendar_mvc">
+        <header/>
+        <body>
+            <trans-unit id="tx_savcalendarmvc_domain_model_event" xml:space="preserve">
+                <source>Event</source>
+            </trans-unit>
+            <trans-unit id="tx_savcalendarmvc_domain_model_event.category" xml:space="preserve">
+                <source>Category</source>
+            </trans-unit>
+            <trans-unit id="tx_savcalendarmvc_domain_model_event.category.I.0" xml:space="preserve">
+                <source></source>
+            </trans-unit>
+            <trans-unit id="tx_savcalendarmvc_domain_model_event.title" xml:space="preserve">
+                <source>Title</source>
+            </trans-unit>
+            <trans-unit id="tx_savcalendarmvc_domain_model_event.date_begin" xml:space="preserve">
+                <source>Begin</source>
+            </trans-unit>
+            <trans-unit id="tx_savcalendarmvc_domain_model_event.date_end" xml:space="preserve">
+                <source>End</source>
+            </trans-unit>
+            <trans-unit id="tx_savcalendarmvc_domain_model_event.location" xml:space="preserve">
+                <source>Location</source>
+            </trans-unit>
+            <trans-unit id="tx_savcalendarmvc_domain_model_event.description" xml:space="preserve">
+                <source>Description</source>
+            </trans-unit>
+            <trans-unit id="tx_savcalendarmvc_domain_model_event.link" xml:space="preserve">
+                <source>Link</source>
+            </trans-unit>
+            <trans-unit id="tx_savcalendarmvc_domain_model_event.organized_by" xml:space="preserve">
+                <source>Organized by</source>
+            </trans-unit>
+            <trans-unit id="tx_savcalendarmvc_domain_model_event.email" xml:space="preserve">
+                <source>Email</source>
+            </trans-unit>
+            <trans-unit id="tx_savcalendarmvc_domain_model_category" xml:space="preserve">
+                <source>Category</source>
+            </trans-unit>
+            <trans-unit id="tx_savcalendarmvc_domain_model_category.title" xml:space="preserve">
+                <source>Title</source>
+            </trans-unit>
+            <trans-unit id="tt_content.list_type_pi1" xml:space="preserve">
+                <source>SAV Calendar Mvc</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
+

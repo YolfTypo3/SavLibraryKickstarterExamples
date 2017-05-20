@@ -1,0 +1,32 @@
+
+
+plugin.tx_savcalendarmvc {
+    view {
+        templateRootPaths.10 = {$plugin.tx_savcalendarmvc.view.templateRootPath}
+        partialRootPaths.10 = {$plugin.tx_savcalendarmvc.view.partialRootPath}
+        layoutRootPaths.10 = {$plugin.tx_savcalendarmvc.view.layoutRootPath}
+    }
+    persistence {
+        storagePid = {$plugin.tx_savcalendarmvc.persistence.storagePid}
+    }
+}
+config.tx_extbase.persistence.classes {
+    SAV\SavCalendarMvc\Domain\Model\Event {
+        mapping {
+            tableName = tx_savcalendarmvc_domain_model_event
+            columns {
+                crdate.mapOnProperty = crdate
+                cruser_id.mapOnProperty = cruserId
+            }
+        }
+    }
+    SAV\SavCalendarMvc\Domain\Model\Category {
+        mapping {
+            tableName = tx_savcalendarmvc_domain_model_category
+            columns {
+                crdate.mapOnProperty = crdate
+                cruser_id.mapOnProperty = cruserId
+            }
+        }
+    }
+}
