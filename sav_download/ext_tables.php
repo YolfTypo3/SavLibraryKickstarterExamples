@@ -19,10 +19,10 @@ $TCA['tt_content']['types']['list']['subtypes_addlist'][$_EXTKEY . '_pi1'] = 'pi
 );
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPlugin(
-    array (
+    [
         'LLL:EXT:sav_download/Resources/Private/Language/locallang_db.xlf:tt_content.list_type_pi1',
         $_EXTKEY . '_pi1',
-    ),
+    ],
     'list_type'
 );
 

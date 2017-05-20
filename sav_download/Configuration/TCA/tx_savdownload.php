@@ -1,7 +1,7 @@
 <?php
 
-return array(
-    'ctrl' => array(
+return [
+    'ctrl' => [
         'title' => 'LLL:EXT:sav_download/Resources/Private/Language/locallang_db.xlf:tx_savdownload',
         'label' => 'title',
         'tstamp' => 'tstamp',
@@ -9,64 +9,62 @@ return array(
         'cruser_id' => 'cruser_id',
         'default_sortby' => 'ORDER BY tx_savdownload.crdate ',
         'delete' => 'deleted',
-        'enablecolumns' => array(
+        'enablecolumns' => [
             'disabled' => 'hidden',
-        ),
+        ],
         'iconfile' => 'EXT:sav_download/Resources/Public/Icons/icon_tx_savdownload.gif',
-    ),
-    'interface' => array(
+    ],
+    'interface' => [
         'showRecordFieldList' => 'hidden,title,category,date,file'
-    ),
-    'columns' => array(
-        'hidden' => array(
+    ],
+    'columns' => [
+        'hidden' => [
             'exclude' => 1,
             'label'  => 'LLL:EXT:lang/locallang_general.xlf:LGL.hidden',
-            'config' => array(
+            'config' => [
                 'type'  => 'check',
                 'default' => 0,
-            )
-        ),
-        'title' => array(
+            ]
+        ],
+        'title' => [
             'exclude' => 1,
             'label'  => 'LLL:EXT:sav_download/Resources/Private/Language/locallang_db.xlf:tx_savdownload.title',
-            'config' => array(
+            'config' => [
                 'type' => 'input',
                 'size' => '30',
                 'eval' => 'trim,required'
-            ),
-        ),
-        'category' => array(
+            ],
+        ],
+        'category' => [
             'exclude' => 1,
             'label'  => 'LLL:EXT:sav_download/Resources/Private/Language/locallang_db.xlf:tx_savdownload.category',
-            'config' => array(
+            'config' => [
                 'type' => 'select',  
                 'renderType' => 'selectSingle',
-                'items' => array(
-                    array('LLL:EXT:sav_download/Resources/Private/Language/locallang_db.xlf:tx_savdownload.category.I.0',0),
-                ),
+                'items' => [
+                    ['LLL:EXT:sav_download/Resources/Private/Language/locallang_db.xlf:tx_savdownload.category.I.0', 0],
+                ],
                 'foreign_table' => 'tx_savdownload_category',
                 'foreign_table_where' => 'AND tx_savdownload_category.pid=###CURRENT_PID### ORDER BY tx_savdownload_category.name',
                 'size' => 1,
                 'minitems' => 0,
                 'maxitems' => 1,
-            ),
-        ),
-        'date' => array(
+            ],
+        ],
+        'date' => [
             'exclude' => 1,
             'label'  => 'LLL:EXT:sav_download/Resources/Private/Language/locallang_db.xlf:tx_savdownload.date',
-            'config' => array(
-                'type' => 'input',
-                'size' => '12',
-                'max' => '20',
-                'eval' => 'datetime',
-                'checkbox' => '0',
-                'default' => '0'
-            ),
-        ),
-        'file' => array(
+            'config' => [
+                'type' => 'input', 
+                'renderType' => 'inputDateTime',    
+                'eval' => 'datetime', 
+                'default' => '0'      
+            ],
+        ],
+        'file' => [
             'exclude' => 1,
             'label'  => 'LLL:EXT:sav_download/Resources/Private/Language/locallang_db.xlf:tx_savdownload.file',
-            'config' => array(
+            'config' => [
                 'type' => 'group',
                 'internal_type' => 'file',
                 'allowed' => '',
@@ -76,19 +74,19 @@ return array(
                 'size' => 1,
                 'minitems' => 0,
                 'maxitems' => 1,
-            ),
-        ),
-    ),
-    'types' => array(
-        '0' => array(
+            ],
+        ],
+    ],
+    'types' => [
+        '0' => [
             'showitem' => 'hidden, title, category, date, file',
-            'columnsOverrides' => array(
-            ),
-        ),
-    ),
-    'palettes' => array(
-        '1' => array('showitem' => '')
-    ),
-);
+            'columnsOverrides' => [
+            ],
+        ],
+    ],
+    'palettes' => [
+        '1' => ['showitem' => '']
+    ],
+];
 
 ?>

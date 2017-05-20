@@ -1,7 +1,7 @@
 <?php
 
-return array(
-    'ctrl' => array(
+return [
+    'ctrl' => [
         'title' => 'LLL:EXT:sav_library_example4/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample4_friends',
         'label' => 'friend_name',
         'tstamp' => 'tstamp',
@@ -10,54 +10,54 @@ return array(
         'type' => 'friend_name',
         'default_sortby' => 'ORDER BY tx_savlibraryexample4_friends.friend_name ',
         'delete' => 'deleted',
-        'enablecolumns' => array(
+        'enablecolumns' => [
             'disabled' => 'hidden',
-        ),
+        ],
         'iconfile' => 'EXT:sav_library_example4/Resources/Public/Icons/icon_tx_savlibraryexample4_friends.gif',
-    ),
-    'interface' => array(
+    ],
+    'interface' => [
         'showRecordFieldList' => 'hidden,friend_name,friend_phone,friend_email,friend_preferred_music'
-    ),
-    'columns' => array(
-        'hidden' => array(
+    ],
+    'columns' => [
+        'hidden' => [
             'exclude' => 1,
             'label'  => 'LLL:EXT:lang/locallang_general.xlf:LGL.hidden',
-            'config' => array(
+            'config' => [
                 'type'  => 'check',
                 'default' => 0,
-            )
-        ),
-        'friend_name' => array(
+            ]
+        ],
+        'friend_name' => [
             'exclude' => 1,
             'label'  => 'LLL:EXT:sav_library_example4/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample4_friends.friend_name',
-            'config' => array(
+            'config' => [
                 'type' => 'input',
                 'size' => '30',
                 'eval' => 'trim,required'
-            ),
-        ),
-        'friend_phone' => array(
+            ],
+        ],
+        'friend_phone' => [
             'exclude' => 1,
             'label'  => 'LLL:EXT:sav_library_example4/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample4_friends.friend_phone',
-            'config' => array(
+            'config' => [
                 'type' => 'input',
                 'size' => '30',
                 'eval' => 'trim'
-            ),
-        ),
-        'friend_email' => array(
+            ],
+        ],
+        'friend_email' => [
             'exclude' => 1,
             'label'  => 'LLL:EXT:sav_library_example4/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample4_friends.friend_email',
-            'config' => array(
+            'config' => [
                 'type' => 'input',
                 'size' => '30',
                 'eval' => 'trim'
-            ),
-        ),
-        'friend_preferred_music' => array(
+            ],
+        ],
+        'friend_preferred_music' => [
             'exclude' => 1,
             'label'  => 'LLL:EXT:sav_library_example4/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample4_friends.friend_preferred_music',
-            'config' => array(
+            'config' => [
                 'type' => 'select',
                 'renderType' => 'selectMultipleSideBySide',
                 'foreign_table' => 'tx_savlibraryexample4_cat',
@@ -65,19 +65,19 @@ return array(
                 'size' => 4,
                 'minitems' => 0,
                 'maxitems' => 100000,
-            ),
-        ),
-    ),
-    'types' => array(
-        '0' => array(
+            ],
+        ],
+    ],
+    'types' => [
+        '0' => [
             'showitem' => 'hidden, friend_name, friend_phone, friend_email, friend_preferred_music',
-            'columnsOverrides' => array(
-            ),
-        ),
-    ),
-    'palettes' => array(
-        '1' => array('showitem' => '')
-    ),
-);
+            'columnsOverrides' => [
+            ],
+        ],
+    ],
+    'palettes' => [
+        '1' => ['showitem' => '']
+    ],
+];
 
 ?>

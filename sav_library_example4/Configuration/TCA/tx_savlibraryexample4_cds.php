@@ -1,7 +1,7 @@
 <?php
 
-return array(
-    'ctrl' => array(
+return [
+    'ctrl' => [
         'title' => 'LLL:EXT:sav_library_example4/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample4_cds',
         'label' => 'album_title',
         'tstamp' => 'tstamp',
@@ -9,83 +9,81 @@ return array(
         'cruser_id' => 'cruser_id',
         'default_sortby' => 'ORDER BY tx_savlibraryexample4_cds.album_title ',
         'delete' => 'deleted',
-        'enablecolumns' => array(
+        'enablecolumns' => [
             'disabled' => 'hidden',
-        ),
+        ],
         'iconfile' => 'EXT:sav_library_example4/Resources/Public/Icons/icon_tx_savlibraryexample4_cds.gif',
-    ),
-    'interface' => array(
+    ],
+    'interface' => [
         'showRecordFieldList' => 'hidden,artist,album_title,date_of_purchase,link_to_website,coverimage,category,description,rel_lending,rel_friends'
-    ),
-    'columns' => array(
-        'hidden' => array(
+    ],
+    'columns' => [
+        'hidden' => [
             'exclude' => 1,
             'label'  => 'LLL:EXT:lang/locallang_general.xlf:LGL.hidden',
-            'config' => array(
+            'config' => [
                 'type'  => 'check',
                 'default' => 0,
-            )
-        ),
-        'artist' => array(
+            ]
+        ],
+        'artist' => [
             'exclude' => 1,
             'label'  => 'LLL:EXT:sav_library_example4/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample4_cds.artist',
-            'config' => array(
+            'config' => [
                 'type' => 'input',
                 'size' => '30',
                 'eval' => 'trim,required'
-            ),
-        ),
-        'album_title' => array(
+            ],
+        ],
+        'album_title' => [
             'exclude' => 1,
             'label'  => 'LLL:EXT:sav_library_example4/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample4_cds.album_title',
-            'config' => array(
+            'config' => [
                 'type' => 'input',
                 'size' => '30',
                 'eval' => 'trim,required'
-            ),
-        ),
-        'date_of_purchase' => array(
+            ],
+        ],
+        'date_of_purchase' => [
             'exclude' => 1,
             'label'  => 'LLL:EXT:sav_library_example4/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample4_cds.date_of_purchase',
-            'config' => array(
-                'type' => 'input',
-                'size' => '8',
-                'max' => '20',
-                'eval' => 'date',
-                'checkbox' => '0',
-                'default' => '0'
-            ),
-        ),
-        'link_to_website' => array(
+            'config' => [
+                'type' => 'input', 
+                'renderType' => 'inputDateTime',    
+                'eval' => 'date',  
+                'default' => '0'     
+            ],
+        ],
+        'link_to_website' => [
             'exclude' => 1,
             'label'  => 'LLL:EXT:sav_library_example4/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample4_cds.link_to_website',
-            'config' => array (
+            'config' => [
                 'type'  => 'input',
                 'size'  => '15',
                 'max' => '255',
                 'checkbox'  => '',
                 'eval'  => 'trim',
-                'wizards' => array(
+                'wizards' => [
                     '_PADDING'  => 2,
-                    'link'  => array(
+                    'link'  => [
                         'type'  => 'popup',
-                        'title' => 'Link',
-                        'icon'  => (version_compare(TYPO3_version, '7', '<') ? 'link_popup.gif' : 'EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_link.gif'),           
-                        'module' => array(
-                            'name' => (version_compare(TYPO3_version, '7', '<') ? 'wizard_element_browser' : 'wizard_link'),
-                            'urlParameters' => array(             
+                        'title' => 'Link',         
+                        'icon'  => 'actions-wizard-link',           
+                        'module' => [
+                            'name' => 'wizard_link',
+                            'urlParameters' => [             
                                 'mode' => 'wizard',
-                            )
-                        ),    
+                            ]
+                        ],    
                         'JSopenParams'  => 'height=300,width=500,status=0,menubar=0,scrollbars=1',
-                    )
-                ),
-            ),
-        ),
-        'coverimage' => array(
+                    ]
+                ],
+            ],
+        ],
+        'coverimage' => [
             'exclude' => 1,
             'label'  => 'LLL:EXT:sav_library_example4/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample4_cds.coverimage',
-            'config' => array(
+            'config' => [
                 'type' => 'group',
                 'internal_type' => 'file',
                 'allowed' => $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext'],
@@ -94,50 +92,50 @@ return array(
                 'size' => 1,
                 'minitems' => 0,
                 'maxitems' => 1,
-            ),
-        ),
-        'category' => array(
+            ],
+        ],
+        'category' => [
             'exclude' => 1,
             'label'  => 'LLL:EXT:sav_library_example4/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample4_cds.category',
-            'config' => array(
+            'config' => [
                 'type' => 'select',  
                 'renderType' => 'selectSingle',
-                'items' => array(
-                    array('LLL:EXT:sav_library_example4/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample4_cds.category.I.0',0),
-                ),
+                'items' => [
+                    ['LLL:EXT:sav_library_example4/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample4_cds.category.I.0', 0],
+                ],
                 'foreign_table' => 'tx_savlibraryexample4_cat',
                 'foreign_table_where' => 'AND tx_savlibraryexample4_cat.pid=###CURRENT_PID### ORDER BY tx_savlibraryexample4_cat.crdate',
                 'size' => 1,
                 'minitems' => 0,
                 'maxitems' => 1,
-            ),
-        ),
-        'description' => array(
+            ],
+        ],
+        'description' => [
             'exclude' => 1,
             'label'  => 'LLL:EXT:sav_library_example4/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample4_cds.description',
-            'config' => array(
+            'config' => [
                 'type' => 'text',
                 'cols' => '30',
                 'rows' => '5',
-                'wizards' => array(
+                'wizards' => [
                     '_PADDING' => 2,
-                    'RTE' => array(
+                    'RTE' => [
                         'notNewRecords' => 1,
                         'RTEonly' => 1,
                         'type'  => 'script',
                         'title' => 'Full screen Rich Text Editing',
-                        'icon'  => (version_compare(TYPO3_version, '7', '<') ? 'wizard_rte2.gif' : 'EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_rte.gif'),
-                        'module' => array(
+                        'icon'  => (version_compare(TYPO3_version, '7', '<') ? 'wizard_rte2.gif' : 'actions-wizard-rte'),
+                        'module' => [
                             'name' => 'wizard_rte',
-                        ),
-                    ),
-                ),
-            ),
-        ),
-        'rel_lending' => array(
+                        ],
+                    ],
+                ],
+            ],
+        ],
+        'rel_lending' => [
             'exclude' => 1,
             'label'  => 'LLL:EXT:sav_library_example4/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample4_cds.rel_lending',
-            'config' => array(
+            'config' => [
                 'type' => 'inline',
                 'foreign_table' =>  'tx_savlibraryexample4_lending',
                 'foreign_sortby' => 'sorting',
@@ -145,17 +143,17 @@ return array(
                 'minitems' => 0,
                 'maxitems' => 5,
                 'MM' => 'tx_savlibraryexample4_cds_rel_lending_mm',
-                'appearance' => array(
+                'appearance' => [
                     'newRecordLinkPosition' => 'bottom',
                     'collapseAll' => 1,
                     'expandSingle' => 1,
-                ),
-            ),
-        ),
-        'rel_friends' => array(
+                ],
+            ],
+        ],
+        'rel_friends' => [
             'exclude' => 1,
             'label'  => 'LLL:EXT:sav_library_example4/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample4_cds.rel_friends',
-            'config' => array(
+            'config' => [
                 'type' => 'inline',
                 'foreign_table' =>  'tx_savlibraryexample4_friends',
                 'foreign_sortby' => 'sorting',
@@ -163,27 +161,27 @@ return array(
                 'minitems' => 0,
                 'maxitems' => 999999,
                 'norelation' => 1,
-                'appearance' => array(
+                'appearance' => [
                     'newRecordLinkPosition' => 'bottom',
                     'collapseAll' => 1,
                     'expandSingle' => 1,
-                ),
-            ),
-        ),
-    ),
-    'types' => array(
-        '0' => array(
+                ],
+            ],
+        ],
+    ],
+    'types' => [
+        '0' => [
             'showitem' => 'hidden, artist, album_title, date_of_purchase, link_to_website, coverimage, category, description' . (version_compare(TYPO3_version, '7.3', '<') ? ';;;richtext[]:rte_transform[mode=ts]' : '') . ', rel_lending, rel_friends',
-            'columnsOverrides' => array(
-                'description' => array(
+            'columnsOverrides' => [
+                'description' => [
                     'defaultExtras' => 'richtext[]:rte_transform' . (version_compare(TYPO3_version, '8', '<') ? '[mode=ts]' : ''),
-                ),
-            ),
-        ),
-    ),
-    'palettes' => array(
-        '1' => array('showitem' => '')
-    ),
-);
+                ],
+            ],
+        ],
+    ],
+    'palettes' => [
+        '1' => ['showitem' => '']
+    ],
+];
 
 ?>

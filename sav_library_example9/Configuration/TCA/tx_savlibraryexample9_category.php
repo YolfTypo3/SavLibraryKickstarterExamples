@@ -1,7 +1,7 @@
 <?php
 
-return array(
-    'ctrl' => array(
+return [
+    'ctrl' => [
         'title' => 'LLL:EXT:sav_library_example9/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample9_category',
         'label' => 'name',
         'tstamp' => 'tstamp',
@@ -9,52 +9,52 @@ return array(
         'cruser_id' => 'cruser_id',
         'default_sortby' => 'ORDER BY tx_savlibraryexample9_category.crdate ',
         'delete' => 'deleted',
-        'enablecolumns' => array(
+        'enablecolumns' => [
             'disabled' => 'hidden',
-        ),
+        ],
         'iconfile' => 'EXT:sav_library_example9/Resources/Public/Icons/icon_tx_savlibraryexample9_category.gif',
-    ),
-    'interface' => array(
+    ],
+    'interface' => [
         'showRecordFieldList' => 'hidden,name,color'
-    ),
-    'columns' => array(
-        'hidden' => array(
+    ],
+    'columns' => [
+        'hidden' => [
             'exclude' => 1,
             'label'  => 'LLL:EXT:lang/locallang_general.xlf:LGL.hidden',
-            'config' => array(
+            'config' => [
                 'type'  => 'check',
                 'default' => 0,
-            )
-        ),
-        'name' => array(
+            ]
+        ],
+        'name' => [
             'exclude' => 1,
             'label'  => 'LLL:EXT:sav_library_example9/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample9_category.name',
-            'config' => array(
+            'config' => [
                 'type' => 'input',
                 'size' => '30',
                 'eval' => 'trim'
-            ),
-        ),
-        'color' => array(
+            ],
+        ],
+        'color' => [
             'exclude' => 1,
             'label'  => 'LLL:EXT:sav_library_example9/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample9_category.color',
-            'config' => array(
+            'config' => [
                 'type' => 'input',
                 'size' => '30',
                 'eval' => 'trim'
-            ),
-        ),
-    ),
-    'types' => array(
-        '0' => array(
+            ],
+        ],
+    ],
+    'types' => [
+        '0' => [
             'showitem' => 'hidden, name, color',
-            'columnsOverrides' => array(
-            ),
-        ),
-    ),
-    'palettes' => array(
-        '1' => array('showitem' => '')
-    ),
-);
+            'columnsOverrides' => [
+            ],
+        ],
+    ],
+    'palettes' => [
+        '1' => ['showitem' => '']
+    ],
+];
 
 ?>
