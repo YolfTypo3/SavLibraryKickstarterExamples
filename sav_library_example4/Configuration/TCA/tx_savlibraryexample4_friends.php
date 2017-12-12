@@ -71,8 +71,6 @@ return [
     'types' => [
         '0' => [
             'showitem' => 'hidden, friend_name, friend_phone, friend_email, friend_preferred_music',
-            'columnsOverrides' => [
-            ],
         ],
     ],
     'palettes' => [

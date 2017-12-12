@@ -1,6 +1,6 @@
 <?php
 
-namespace SAV\SavLibrarymvcExample0\Domain\Model;
+namespace YolfTypo3\SavLibrarymvcExample0\Domain\Model;
 /**
 *  Copyright notice
 *
@@ -27,7 +27,7 @@ namespace SAV\SavLibrarymvcExample0\Domain\Model;
  * Table5 model for the extension SavLibrarymvcExample0
  *
  */
-class Table5 extends \SAV\SavLibraryMvc\Domain\Model\DefaultModel
+class Table5 extends \YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel
 {
     /**
      * The field1 variable.
@@ -40,7 +40,7 @@ class Table5 extends \SAV\SavLibraryMvc\Domain\Model\DefaultModel
     /**
      * The field2 variable.
      *
-     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\SAV\SavLibrarymvcExample0\Domain\Model\Table6>
+     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table6>
      * @validate raw
      */
     protected $field2;
@@ -77,7 +77,7 @@ class Table5 extends \SAV\SavLibraryMvc\Domain\Model\DefaultModel
     /**
      * Getter for field2.
      *
-     * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\SAV\SavLibrarymvcExample0\Domain\Model\Table6>
+     * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table6>
      */
     public function getField2()
     {
@@ -87,7 +87,7 @@ class Table5 extends \SAV\SavLibraryMvc\Domain\Model\DefaultModel
     /**
      * Setter for field2.
      *
-     * @param  \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\SAV\SavLibrarymvcExample0\Domain\Model\Table6> $field2
+     * @param  \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table6> $field2
      * @return void
      */
     public function setField2($field2)
@@ -99,10 +99,10 @@ class Table5 extends \SAV\SavLibraryMvc\Domain\Model\DefaultModel
     /**
      * Adds a field2
      * 
-     * @param \SAV\SavLibrarymvcExample0\Domain\Model\Table6 $field2
+     * @param \YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table6 $field2
      * @return void
      */
-    public function addField2(\SAV\SavLibrarymvcExample0\Domain\Model\Table6 $field2)
+    public function addField2(\YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table6 $field2)
     {
         $this->field2->attach($field2);
     }
@@ -110,10 +110,10 @@ class Table5 extends \SAV\SavLibraryMvc\Domain\Model\DefaultModel
     /**
      * Removes a field2
      * 
-     * @param \SAV\SavLibrarymvcExample0\Domain\Model\Table6 $field2
+     * @param \YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table6 $field2
      * @return void
      */
-    public function removeField2(\SAV\SavLibrarymvcExample0\Domain\Model\Table6 $field2)
+    public function removeField2(\YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table6 $field2)
     {
         $this->field2->detach($field2);
     }

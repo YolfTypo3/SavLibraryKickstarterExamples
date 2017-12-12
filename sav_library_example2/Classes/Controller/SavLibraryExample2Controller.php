@@ -1,5 +1,6 @@
 <?php
-use \TYPO3\CMS\Core\Utility\GeneralUtility;
+
+namespace YolfTypo3\SavLibraryExample2\Controller;
 
 /***************************************************************
 *  Copyright notice
@@ -21,16 +22,19 @@ use \TYPO3\CMS\Core\Utility\GeneralUtility;
 *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 *  GNU General Public License for more details.
 *
-*  This copyright notice MUST APPEAR in all copies of the script!
+*  This copyright notice MUST APPEAR in all copies of the script
 ***************************************************************/
+
+use \TYPO3\CMS\Core\Utility\GeneralUtility;
 
 /**
  * Plugin 'SAV Library Example2 - CD Album' for the 'sav_library_example2' extension.
  *
  * @author Laurent Foulloy <yolf.typo3@orange.fr>
- * @package savlibraryexample2
+ * @package TYPO3
+ * @subpackage sav_library_example2
  */
-class tx_savlibraryexample2_pi1 extends \TYPO3\CMS\Frontend\Plugin\AbstractPlugin {
+class SavLibraryExample2Controller extends \TYPO3\CMS\Frontend\Plugin\AbstractPlugin {
 
 	/**
 	 * Should be same as classname of the plugin, used for CSS classes, variables
@@ -40,19 +44,12 @@ class tx_savlibraryexample2_pi1 extends \TYPO3\CMS\Frontend\Plugin\AbstractPlugi
 	public $prefixId = 'tx_savlibraryexample2_pi1';
 
 	/**
-	 * Path to the plugin class script relative to extension directory
-	 *
-	 * @var string
-	 */
-	public $scriptRelPath = 'Classes/Controller/SavLibraryExample2Controller.php';
-
-	/**
 	 * Extension key.
 	 *
 	 * @var string
 	 */
 	public $extKey = 'sav_library_example2';
-	
+
 	/**
 	 * The main function
 	 *
@@ -64,14 +61,13 @@ class tx_savlibraryexample2_pi1 extends \TYPO3\CMS\Frontend\Plugin\AbstractPlugi
 	public function main($content, $configuration) {
 
 	  // Creates the SavLibraryPlus controller
-	  $controller = GeneralUtility::makeInstance(\SAV\SavLibraryPlus\Controller\Controller::class);
+	  $controller = GeneralUtility::makeInstance(\YolfTypo3\SavLibraryPlus\Controller\Controller::class);
 
 	  // Gets the extension configuration manager
 	  $extensionConfigurationManager = $controller->getExtensionConfigurationManager();
 
 	  // Injects the extension in the extension configuration manager
 	  $extensionConfigurationManager->injectExtension($this);
-
 	  // Injects the typoScript configuration in the extension configuration manager
 	  $extensionConfigurationManager->injectTypoScriptConfiguration($configuration);
 
@@ -80,7 +76,7 @@ class tx_savlibraryexample2_pi1 extends \TYPO3\CMS\Frontend\Plugin\AbstractPlugi
 
 	  // Renders the form
 	  $out = $controller->render();
-	          
+
 	  return $out;
 	}
 }

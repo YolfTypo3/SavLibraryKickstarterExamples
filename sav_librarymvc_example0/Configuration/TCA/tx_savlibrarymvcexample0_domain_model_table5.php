@@ -144,8 +144,6 @@ return [
     'types' => [
         '0' => [
             'showitem' => 'hidden, field1, field2',
-            'columnsOverrides' => [
-            ],
         ],
     ],
     'palettes' => [

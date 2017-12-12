@@ -1,0 +1,26 @@
+{
+    "name": "yolftypo3/sav-library-example6",
+    "description": "Sending an email and generating a RTF file with the SAV Library",
+    "type": "typo3-cms-extension",
+    "license": "GPL-2.0+",
+    "authors": [
+        {
+        "name": "Laurent Foulloy",
+        "email": "yolf.typo3@orange.fr",
+        "role": "Developer"
+        }
+    ],
+    "replace": {
+        "sav_library_example6": "self.version",
+        "typo3-ter/sav-library-example6": "self.version"
+    },
+    "require": {
+        "typo3/cms-core": ">=6.2,<9.0",
+        "typo3-ter/sav-library-plus": ">=1"
+    },
+    "autoload": {
+        "psr-4": {
+            "YolfTypo3\\SavLibraryExample6\\": "Classes/"
+        }
+    }
+}

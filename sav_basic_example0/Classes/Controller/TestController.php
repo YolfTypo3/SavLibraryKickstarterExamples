@@ -1,6 +1,6 @@
 <?php
 
-namespace SAV\SavBasicExample0\Controller;
+namespace YolfTypo3\SavBasicExample0\Controller;
 
 /**
 *  Copyright notice

@@ -1054,19 +1054,7 @@ return [
                 'type' => 'text',
                 'cols' => '30',
                 'rows' => '5',
-                'wizards' => [
-                    '_PADDING' => 2,
-                    'RTE' => [
-                        'notNewRecords' => 1,
-                        'RTEonly' => 1,
-                        'type'  => 'script',
-                        'title' => 'Full screen Rich Text Editing',
-                        'icon'  => (version_compare(TYPO3_version, '7', '<') ? 'wizard_rte2.gif' : 'actions-wizard-rte'),
-                        'module' => [
-                            'name' => 'wizard_rte',
-                        ],
-                    ],
-                ],
+                'enableRichtext' => true,
             ],
         ],
         'field4' => [
@@ -1141,25 +1129,11 @@ return [
             'label'  => 'LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field12',
             'config' => [
                 'type'  => 'input',
+                'renderType' => 'inputLink',
                 'size'  => '15',
                 'max' => '255',
                 'checkbox'  => '',
                 'eval'  => 'trim',
-                'wizards' => [
-                    '_PADDING'  => 2,
-                    'link'  => [
-                        'type'  => 'popup',
-                        'title' => 'Link',         
-                        'icon'  => 'actions-wizard-link',           
-                        'module' => [
-                            'name' => 'wizard_link',
-                            'urlParameters' => [             
-                                'mode' => 'wizard',
-                            ]
-                        ],    
-                        'JSopenParams'  => 'height=300,width=500,status=0,menubar=0,scrollbars=1',
-                    ]
-                ],
             ],
         ],
         'field13' => [
@@ -1334,11 +1308,6 @@ return [
     'types' => [
         '0' => [
             'showitem' => 'field2, field1, field8, field9' . (version_compare(TYPO3_version, '7.3', '<') ? ';;;richtext[]:rte_transform[mode=ts]' : '') . ', field4, field5, field10, field7, field6, field12, field13, field14, field15, field16, field17, field18, field19, field20, field3, field11, field21, field22, field23, field24',
-            'columnsOverrides' => [
-                'field9' => [
-                    'defaultExtras' => 'richtext[]:rte_transform' . (version_compare(TYPO3_version, '8', '<') ? '[mode=ts]' : ''),
-                ],
-            ],
         ],
     ],
     'palettes' => [

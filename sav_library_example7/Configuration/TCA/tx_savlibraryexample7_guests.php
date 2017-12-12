@@ -58,25 +58,11 @@ return [
             'label'  => 'LLL:EXT:sav_library_example7/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample7_guests.website',
             'config' => [
                 'type'  => 'input',
+                'renderType' => 'inputLink',
                 'size'  => '15',
                 'max' => '255',
                 'checkbox'  => '',
                 'eval'  => 'trim',
-                'wizards' => [
-                    '_PADDING'  => 2,
-                    'link'  => [
-                        'type'  => 'popup',
-                        'title' => 'Link',         
-                        'icon'  => 'actions-wizard-link',           
-                        'module' => [
-                            'name' => 'wizard_link',
-                            'urlParameters' => [             
-                                'mode' => 'wizard',
-                            ]
-                        ],    
-                        'JSopenParams'  => 'height=300,width=500,status=0,menubar=0,scrollbars=1',
-                    ]
-                ],
             ],
         ],
         'message' => [
@@ -101,8 +87,6 @@ return [
     'types' => [
         '0' => [
             'showitem' => 'hidden, firstname, lastname, email, website, message, comment, date',
-            'columnsOverrides' => [
-            ],
         ],
     ],
     'palettes' => [

@@ -39,8 +39,6 @@ return [
     'types' => [
         '0' => [
             'showitem' => 'hidden, field1',
-            'columnsOverrides' => [
-            ],
         ],
     ],
     'palettes' => [

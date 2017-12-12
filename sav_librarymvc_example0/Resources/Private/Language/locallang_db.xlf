@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 
 <xliff version="1.0">
-    <file source-language="en" datatype="plaintext" original="messages" date="2017-05-20T07:51:13Z" product-name="sav_librarymvc_example0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2017-12-12T13:43:01Z" product-name="sav_librarymvc_example0">
         <header/>
         <body>
             <trans-unit id="tx_savlibrarymvcexample0_domain_model_table1" xml:space="preserve">

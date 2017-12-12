@@ -5,7 +5,7 @@ if (!defined ('TYPO3_MODE')) {
 }
 // Configures the Dispatcher
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
-    'SAV.' . $_EXTKEY,
+    'YolfTypo3.' . $_EXTKEY,
     'Test',
     [
         'Test' => 'show',

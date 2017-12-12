@@ -1,6 +1,6 @@
 <?php
 
-namespace SAV\SavLibrarymvcExample0\Domain\Model;
+namespace YolfTypo3\SavLibrarymvcExample0\Domain\Model;
 /**
 *  Copyright notice
 *
@@ -27,7 +27,7 @@ namespace SAV\SavLibrarymvcExample0\Domain\Model;
  * Table1 model for the extension SavLibrarymvcExample0
  *
  */
-class Table1 extends \SAV\SavLibraryMvc\Domain\Model\DefaultModel
+class Table1 extends \YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel
 {
     /**
      * The field2 variable.
@@ -88,7 +88,7 @@ class Table1 extends \SAV\SavLibraryMvc\Domain\Model\DefaultModel
     /**
      * The field7 variable.
      *
-     * @var \SAV\SavLibrarymvcExample0\Domain\Model\Table2
+     * @var \YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table2
      * @validate raw
      */
     protected $field7;
@@ -152,7 +152,7 @@ class Table1 extends \SAV\SavLibraryMvc\Domain\Model\DefaultModel
     /**
      * The field18 variable.
      *
-     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\SAV\SavLibrarymvcExample0\Domain\Model\Table2>
+     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table2>
      * @validate raw
      */
     protected $field18;
@@ -160,7 +160,7 @@ class Table1 extends \SAV\SavLibraryMvc\Domain\Model\DefaultModel
     /**
      * The field19 variable.
      *
-     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\SAV\SavLibrarymvcExample0\Domain\Model\Table3>
+     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table3>
      * @validate raw
      */
     protected $field19;
@@ -168,7 +168,7 @@ class Table1 extends \SAV\SavLibraryMvc\Domain\Model\DefaultModel
     /**
      * The field20 variable.
      *
-     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\SAV\SavLibrarymvcExample0\Domain\Model\Table4>
+     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table4>
      * @validate raw
      */
     protected $field20;
@@ -208,7 +208,7 @@ class Table1 extends \SAV\SavLibraryMvc\Domain\Model\DefaultModel
     /**
      * The field23 variable.
      *
-     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\SAV\SavLibrarymvcExample0\Domain\Model\Table5>
+     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table5>
      * @validate raw
      */
     protected $field23;
@@ -391,7 +391,7 @@ class Table1 extends \SAV\SavLibraryMvc\Domain\Model\DefaultModel
     /**
      * Getter for field7.
      *
-     * @return \SAV\SavLibrarymvcExample0\Domain\Model\Table2    
+     * @return \YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table2    
      */
     public function getField7()
     {
@@ -401,7 +401,7 @@ class Table1 extends \SAV\SavLibraryMvc\Domain\Model\DefaultModel
     /**
      * Setter for field7.
      *
-     * @param \SAV\SavLibrarymvcExample0\Domain\Model\Table2     $field7
+     * @param \YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table2     $field7
      * @return void
      */
     public function setField7($field7)
@@ -549,7 +549,7 @@ class Table1 extends \SAV\SavLibraryMvc\Domain\Model\DefaultModel
      */
     public function getField17()
     {
-        return \SAV\SavLibraryMvc\Utility\Conversion::commaSeparatedStringToStringArray($this->field17);
+        return \YolfTypo3\SavLibraryMvc\Utility\Conversion::commaSeparatedStringToStringArray($this->field17);
     }
 
     /**
@@ -567,7 +567,7 @@ class Table1 extends \SAV\SavLibraryMvc\Domain\Model\DefaultModel
     /**
      * Getter for field18.
      *
-     * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\SAV\SavLibrarymvcExample0\Domain\Model\Table2>
+     * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table2>
      */
     public function getField18()
     {
@@ -577,7 +577,7 @@ class Table1 extends \SAV\SavLibraryMvc\Domain\Model\DefaultModel
     /**
      * Setter for field18.
      *
-     * @param  \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\SAV\SavLibrarymvcExample0\Domain\Model\Table2> $field18
+     * @param  \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table2> $field18
      * @return void
      */
     public function setField18($field18)
@@ -588,10 +588,10 @@ class Table1 extends \SAV\SavLibraryMvc\Domain\Model\DefaultModel
     /**
      * Adds a field18
      * 
-     * @param \SAV\SavLibrarymvcExample0\Domain\Model\Table2 $field18
+     * @param \YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table2 $field18
      * @return void
      */
-    public function addField18(\SAV\SavLibrarymvcExample0\Domain\Model\Table2 $field18)
+    public function addField18(\YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table2 $field18)
     {
         $this->field18->attach($field18);
     }
@@ -599,10 +599,10 @@ class Table1 extends \SAV\SavLibraryMvc\Domain\Model\DefaultModel
     /**
      * Removes a field18
      * 
-     * @param \SAV\SavLibrarymvcExample0\Domain\Model\Table2 $field18
+     * @param \YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table2 $field18
      * @return void
      */
-    public function removeField18(\SAV\SavLibrarymvcExample0\Domain\Model\Table2 $field18)
+    public function removeField18(\YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table2 $field18)
     {
         $this->field18->detach($field18);
     }
@@ -610,7 +610,7 @@ class Table1 extends \SAV\SavLibraryMvc\Domain\Model\DefaultModel
     /**
      * Getter for field19.
      *
-     * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\SAV\SavLibrarymvcExample0\Domain\Model\Table3>
+     * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table3>
      */
     public function getField19()
     {
@@ -620,7 +620,7 @@ class Table1 extends \SAV\SavLibraryMvc\Domain\Model\DefaultModel
     /**
      * Setter for field19.
      *
-     * @param  \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\SAV\SavLibrarymvcExample0\Domain\Model\Table3> $field19
+     * @param  \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table3> $field19
      * @return void
      */
     public function setField19($field19)
@@ -632,10 +632,10 @@ class Table1 extends \SAV\SavLibraryMvc\Domain\Model\DefaultModel
     /**
      * Adds a field19
      * 
-     * @param \SAV\SavLibrarymvcExample0\Domain\Model\Table3 $field19
+     * @param \YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table3 $field19
      * @return void
      */
-    public function addField19(\SAV\SavLibrarymvcExample0\Domain\Model\Table3 $field19)
+    public function addField19(\YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table3 $field19)
     {
         $this->field19->attach($field19);
     }
@@ -643,10 +643,10 @@ class Table1 extends \SAV\SavLibraryMvc\Domain\Model\DefaultModel
     /**
      * Removes a field19
      * 
-     * @param \SAV\SavLibrarymvcExample0\Domain\Model\Table3 $field19
+     * @param \YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table3 $field19
      * @return void
      */
-    public function removeField19(\SAV\SavLibrarymvcExample0\Domain\Model\Table3 $field19)
+    public function removeField19(\YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table3 $field19)
     {
         $this->field19->detach($field19);
     }
@@ -654,7 +654,7 @@ class Table1 extends \SAV\SavLibraryMvc\Domain\Model\DefaultModel
     /**
      * Getter for field20.
      *
-     * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\SAV\SavLibrarymvcExample0\Domain\Model\Table4>
+     * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table4>
      */
     public function getField20()
     {
@@ -664,7 +664,7 @@ class Table1 extends \SAV\SavLibraryMvc\Domain\Model\DefaultModel
     /**
      * Setter for field20.
      *
-     * @param  \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\SAV\SavLibrarymvcExample0\Domain\Model\Table4> $field20
+     * @param  \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table4> $field20
      * @return void
      */
     public function setField20($field20)
@@ -676,10 +676,10 @@ class Table1 extends \SAV\SavLibraryMvc\Domain\Model\DefaultModel
     /**
      * Adds a field20
      * 
-     * @param \SAV\SavLibrarymvcExample0\Domain\Model\Table4 $field20
+     * @param \YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table4 $field20
      * @return void
      */
-    public function addField20(\SAV\SavLibrarymvcExample0\Domain\Model\Table4 $field20)
+    public function addField20(\YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table4 $field20)
     {
         $this->field20->attach($field20);
     }
@@ -687,10 +687,10 @@ class Table1 extends \SAV\SavLibraryMvc\Domain\Model\DefaultModel
     /**
      * Removes a field20
      * 
-     * @param \SAV\SavLibrarymvcExample0\Domain\Model\Table4 $field20
+     * @param \YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table4 $field20
      * @return void
      */
-    public function removeField20(\SAV\SavLibrarymvcExample0\Domain\Model\Table4 $field20)
+    public function removeField20(\YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table4 $field20)
     {
         $this->field20->detach($field20);
     }
@@ -702,7 +702,7 @@ class Table1 extends \SAV\SavLibraryMvc\Domain\Model\DefaultModel
      */
     public function getField3()
     {
-        return \SAV\SavLibraryMvc\Utility\Conversion::integerToBooleanArray($this->field3);
+        return \YolfTypo3\SavLibraryMvc\Utility\Conversion::integerToBooleanArray($this->field3);
     }
 
     /**
@@ -786,7 +786,7 @@ class Table1 extends \SAV\SavLibraryMvc\Domain\Model\DefaultModel
     /**
      * Getter for field23.
      *
-     * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\SAV\SavLibrarymvcExample0\Domain\Model\Table5>
+     * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table5>
      */
     public function getField23()
     {
@@ -796,7 +796,7 @@ class Table1 extends \SAV\SavLibraryMvc\Domain\Model\DefaultModel
     /**
      * Setter for field23.
      *
-     * @param  \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\SAV\SavLibrarymvcExample0\Domain\Model\Table5> $field23
+     * @param  \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table5> $field23
      * @return void
      */
     public function setField23($field23)
@@ -808,10 +808,10 @@ class Table1 extends \SAV\SavLibraryMvc\Domain\Model\DefaultModel
     /**
      * Adds a field23
      * 
-     * @param \SAV\SavLibrarymvcExample0\Domain\Model\Table5 $field23
+     * @param \YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table5 $field23
      * @return void
      */
-    public function addField23(\SAV\SavLibrarymvcExample0\Domain\Model\Table5 $field23)
+    public function addField23(\YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table5 $field23)
     {
         $this->field23->attach($field23);
     }
@@ -819,10 +819,10 @@ class Table1 extends \SAV\SavLibraryMvc\Domain\Model\DefaultModel
     /**
      * Removes a field23
      * 
-     * @param \SAV\SavLibrarymvcExample0\Domain\Model\Table5 $field23
+     * @param \YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table5 $field23
      * @return void
      */
-    public function removeField23(\SAV\SavLibrarymvcExample0\Domain\Model\Table5 $field23)
+    public function removeField23(\YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table5 $field23)
     {
         $this->field23->detach($field23);
     }

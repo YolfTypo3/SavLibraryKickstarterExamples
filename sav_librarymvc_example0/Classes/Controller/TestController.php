@@ -1,6 +1,6 @@
 <?php
 
-namespace SAV\SavLibrarymvcExample0\Controller;
+namespace YolfTypo3\SavLibrarymvcExample0\Controller;
 /**
 *  Copyright notice
 *
@@ -30,13 +30,13 @@ namespace SAV\SavLibrarymvcExample0\Controller;
  *
  */
 
-class TestController extends \SAV\SavLibraryMvc\Controller\DefaultController
+class TestController extends \YolfTypo3\SavLibraryMvc\Controller\DefaultController
 {
 
     /**
      * Main repository
      *
-     * @var \SAV\SavLibrarymvcExample0\Domain\Repository\Table1Repository
+     * @var \YolfTypo3\SavLibrarymvcExample0\Domain\Repository\Table1Repository
      * @inject
      */
     protected $mainRepository = NULL;
@@ -48,34 +48,34 @@ class TestController extends \SAV\SavLibraryMvc\Controller\DefaultController
      */
     protected $subforms = array (
         array (
-            'repository' => 'SAV\\SavLibrarymvcExample0\\Domain\\Repository\\Table1Repository',
+            'repository' => 'YolfTypo3\\SavLibrarymvcExample0\\Domain\\Repository\\Table1Repository',
             'fieldName' => 'field19',
-            'foreignRepository' => 'SAV\\SavLibrarymvcExample0\\Domain\\Repository\\Table3Repository',
+            'foreignRepository' => 'YolfTypo3\\SavLibrarymvcExample0\\Domain\\Repository\\Table3Repository',
         ),
         array (
-            'repository' => 'SAV\\SavLibrarymvcExample0\\Domain\\Repository\\Table1Repository',
+            'repository' => 'YolfTypo3\\SavLibrarymvcExample0\\Domain\\Repository\\Table1Repository',
             'fieldName' => 'field20',
-            'foreignRepository' => 'SAV\\SavLibrarymvcExample0\\Domain\\Repository\\Table4Repository',
+            'foreignRepository' => 'YolfTypo3\\SavLibrarymvcExample0\\Domain\\Repository\\Table4Repository',
         ),
         array (
-            'repository' => 'SAV\\SavLibrarymvcExample0\\Domain\\Repository\\Table1Repository',
+            'repository' => 'YolfTypo3\\SavLibrarymvcExample0\\Domain\\Repository\\Table1Repository',
             'fieldName' => 'field23',
-            'foreignRepository' => 'SAV\\SavLibrarymvcExample0\\Domain\\Repository\\Table5Repository',
+            'foreignRepository' => 'YolfTypo3\\SavLibrarymvcExample0\\Domain\\Repository\\Table5Repository',
         ),
         array (
-            'repository' => 'SAV\\SavLibrarymvcExample0\\Domain\\Repository\\Table5Repository',
+            'repository' => 'YolfTypo3\\SavLibrarymvcExample0\\Domain\\Repository\\Table5Repository',
             'fieldName' => 'field2',
-            'foreignRepository' => 'SAV\\SavLibrarymvcExample0\\Domain\\Repository\\Table6Repository',
+            'foreignRepository' => 'YolfTypo3\\SavLibrarymvcExample0\\Domain\\Repository\\Table6Repository',
         ),
     );
  
     /**
      * Save action for this controller
      *
-     * @param \SAV\SavLibrarymvcExample0\Domain\Model\Table1 $data
+     * @param \YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table1 $data
      * @return void
      */
-    public function saveAction(\SAV\SavLibrarymvcExample0\Domain\Model\Table1 $data)
+    public function saveAction(\YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table1 $data)
     {
         $this->save($data);
     }

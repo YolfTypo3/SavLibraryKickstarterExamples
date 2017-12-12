@@ -1,6 +1,6 @@
 <?php
 
-namespace SAV\SavLibrarymvcExample0\Domain\Repository;
+namespace YolfTypo3\SavLibrarymvcExample0\Domain\Repository;
 /**
 *  Copyright notice
 *
@@ -28,7 +28,7 @@ namespace SAV\SavLibrarymvcExample0\Domain\Repository;
  * Repository for the Table3 model in the extension SavLibrarymvcExample0
  *
  */
-class Table3Repository extends \SAV\SavLibraryMvc\Domain\Repository\DefaultRepository
+class Table3Repository extends \YolfTypo3\SavLibraryMvc\Domain\Repository\DefaultRepository
 {
 
 }

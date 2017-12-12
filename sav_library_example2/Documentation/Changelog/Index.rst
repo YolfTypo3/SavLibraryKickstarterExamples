@@ -21,6 +21,7 @@ Changelog
 =======  ===========================================================================
 Version  Changes
 =======  ===========================================================================
+1.1.0    - Extension regenerated with SAV Library Kickstarter 1.1.0.
 1.0.0    - Extension regenerated with SAV Library Kickstarter 1.0.0.
 0.2.0    - Extension regenerated with SAV Library Kickstarter 0.6.0.
 0.1.0    - Documentation converted to the reStructuredText format.

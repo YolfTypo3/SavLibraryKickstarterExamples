@@ -1,6 +1,6 @@
 <?php
 
-namespace SAV\SavBasicExample0\Domain\Repository;
+namespace YolfTypo3\SavBasicExample0\Domain\Repository;
 /**
 *  Copyright notice
 *

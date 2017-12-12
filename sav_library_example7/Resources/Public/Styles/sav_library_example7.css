@@ -23,8 +23,8 @@
 .sav_library_example7_list .savLibraryPlus .listView .items .item {width:300px;clear:left; border:1px #ddeeee solid;background-color:#ffffff;margin-bottom:10px;padding:0px;}
 .sav_library_example7_list .savLibraryPlus .colLeft {float:left;width:100px;}
 .sav_library_example7_list .savLibraryPlus .colRight {float:left;width:200px;}
-.sav_library_example7_list .savLibraryPlus .listView .name {background-color:#ddeeee;padding:2px 5px 2px 5px;font-weight:bold;}
-.sav_library_example7_list .savLibraryPlus .listView .date {padding:2px 5px 2px 0px;font-style:italic;}
+.sav_library_example7_list .savLibraryPlus .listView .name {float:none;background-color:#ddeeee;padding:2px 5px 2px 5px;font-weight:bold;}
+.sav_library_example7_list .savLibraryPlus .listView .date {padding:0px 5px 0px 0px;font-style:italic;}
 .sav_library_example7_list .savLibraryPlus .listView .website {padding:2px 5px 2px 5px;}
 .sav_library_example7_list .savLibraryPlus .listView .email {padding:2px 5px 2px 5px;}
 .sav_library_example7_list .savLibraryPlus .listView .message {padding:2px 5px 5px 5px;}
@@ -37,4 +37,5 @@
 .sav_library_example7_teaser .savLibraryPlus .listView .name {padding:2px 2px 2px 2px;font-weight:bold;}
 .sav_library_example7_teaser .savLibraryPlus .listView .date {padding:2px 5px 2px 0px;font-style:italic;}
 .sav_library_example7_teaser .savLibraryPlus .listView .message {padding:2px 2px 5px 2px;}
+.sav_library_example7_teaser .savLibraryPlus .listView .message a {float:none;}
 .sav_library_example7_teaser .footer {display:none;}

@@ -77,8 +77,6 @@ return [
     'types' => [
         '0' => [
             'showitem' => 'hidden, friend_name, friend_phone, friend_email, lending_date, return_date',
-            'columnsOverrides' => [
-            ],
         ],
     ],
     'palettes' => [

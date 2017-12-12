@@ -66,8 +66,6 @@ return [
     'types' => [
         '0' => [
             'showitem' => 'hidden, friend_name, lending_date, return_date',
-            'columnsOverrides' => [
-            ],
         ],
     ],
     'palettes' => [

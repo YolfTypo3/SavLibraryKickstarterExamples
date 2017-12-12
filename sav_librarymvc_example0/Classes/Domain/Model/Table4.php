@@ -1,6 +1,6 @@
 <?php
 
-namespace SAV\SavLibrarymvcExample0\Domain\Model;
+namespace YolfTypo3\SavLibrarymvcExample0\Domain\Model;
 /**
 *  Copyright notice
 *
@@ -27,7 +27,7 @@ namespace SAV\SavLibrarymvcExample0\Domain\Model;
  * Table4 model for the extension SavLibrarymvcExample0
  *
  */
-class Table4 extends \SAV\SavLibraryMvc\Domain\Model\DefaultModel
+class Table4 extends \YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel
 {
     /**
      * The field1 variable.

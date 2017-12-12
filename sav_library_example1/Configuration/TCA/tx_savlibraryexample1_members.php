@@ -89,8 +89,6 @@ return [
     'types' => [
         '0' => [
             'showitem' => 'hidden, firstname, lastname, street, zipcode, city, image',
-            'columnsOverrides' => [
-            ],
         ],
     ],
     'palettes' => [

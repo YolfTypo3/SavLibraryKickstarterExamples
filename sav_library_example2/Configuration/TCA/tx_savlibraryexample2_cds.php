@@ -59,25 +59,11 @@ return [
             'label'  => 'LLL:EXT:sav_library_example2/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample2_cds.link_to_website',
             'config' => [
                 'type'  => 'input',
+                'renderType' => 'inputLink',
                 'size'  => '15',
                 'max' => '255',
                 'checkbox'  => '',
                 'eval'  => 'trim',
-                'wizards' => [
-                    '_PADDING'  => 2,
-                    'link'  => [
-                        'type'  => 'popup',
-                        'title' => 'Link',         
-                        'icon'  => 'actions-wizard-link',           
-                        'module' => [
-                            'name' => 'wizard_link',
-                            'urlParameters' => [             
-                                'mode' => 'wizard',
-                            ]
-                        ],    
-                        'JSopenParams'  => 'height=300,width=500,status=0,menubar=0,scrollbars=1',
-                    ]
-                ],
             ],
         ],
         'coverimage' => [
@@ -117,30 +103,13 @@ return [
                 'type' => 'text',
                 'cols' => '30',
                 'rows' => '5',
-                'wizards' => [
-                    '_PADDING' => 2,
-                    'RTE' => [
-                        'notNewRecords' => 1,
-                        'RTEonly' => 1,
-                        'type'  => 'script',
-                        'title' => 'Full screen Rich Text Editing',
-                        'icon'  => (version_compare(TYPO3_version, '7', '<') ? 'wizard_rte2.gif' : 'actions-wizard-rte'),
-                        'module' => [
-                            'name' => 'wizard_rte',
-                        ],
-                    ],
-                ],
+                'enableRichtext' => true,
             ],
         ],
     ],
     'types' => [
         '0' => [
             'showitem' => 'hidden, artist, album_title, date_of_purchase, link_to_website, coverimage, category, description' . (version_compare(TYPO3_version, '7.3', '<') ? ';;;richtext[]:rte_transform[mode=ts]' : '') . '',
-            'columnsOverrides' => [
-                'description' => [
-                    'defaultExtras' => 'richtext[]:rte_transform' . (version_compare(TYPO3_version, '8', '<') ? '[mode=ts]' : ''),
-                ],
-            ],
         ],
     ],
     'palettes' => [

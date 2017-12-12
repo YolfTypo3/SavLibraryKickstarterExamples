@@ -14,6 +14,7 @@ $TCA['tt_content']['types']['list']['subtypes_addlist'][$_EXTKEY . '_pi1'] = 'pi
     'FILE:EXT:' . $_EXTKEY . '/Configuration/Flexforms/ExtensionFlexform.xml'
 );
 
+// Adds the plugin
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPlugin(
     [
         'LLL:EXT:sav_library_example8/Resources/Private/Language/locallang_db.xlf:tt_content.list_type_pi1',

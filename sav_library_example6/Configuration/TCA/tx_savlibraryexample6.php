@@ -94,33 +94,17 @@ return [
             'label'  => 'LLL:EXT:sav_library_example6/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample6.invoice',
             'config' => [
                 'type'  => 'input',
+                'renderType' => 'inputLink',
                 'size'  => '15',
                 'max' => '255',
                 'checkbox'  => '',
                 'eval'  => 'trim',
-                'wizards' => [
-                    '_PADDING'  => 2,
-                    'link'  => [
-                        'type'  => 'popup',
-                        'title' => 'Link',         
-                        'icon'  => 'actions-wizard-link',           
-                        'module' => [
-                            'name' => 'wizard_link',
-                            'urlParameters' => [             
-                                'mode' => 'wizard',
-                            ]
-                        ],    
-                        'JSopenParams'  => 'height=300,width=500,status=0,menubar=0,scrollbars=1',
-                    ]
-                ],
             ],
         ],
     ],
     'types' => [
         '0' => [
             'showitem' => 'hidden, name, address, registration, email, email_flag, email_language, invoice',
-            'columnsOverrides' => [
-            ],
         ],
     ],
     'palettes' => [
