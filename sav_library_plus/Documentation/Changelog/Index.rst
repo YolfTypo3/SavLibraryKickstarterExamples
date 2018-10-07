@@ -25,22 +25,22 @@ Version  Changes
          - Compatibility changed to TYPO3 8.9.
          - composer.json added
          - Vendor name changed
-         
+
 1.0.1    - Comptability changed to TYPO3 8.1.
          - New attribute rteStyleSheet added for the rich text editor item viewer.
-         
+
 1.0.0    - Several bugs corrected (see the forge).
          - Compatibility with TYPO3 8.0.1 added.
          - css, javaScript and icon files transfered to the directory Resources/Public.
          - Compatiblility with TYPO3 versions lower than 6.x removed.
-         
+
 0.3.0    - Documentation converted to the reStructuredText format.
          - New feature in export view: query can be used to export data
            (see Tutorial 8).
          - The queriers have been simplified to provide faster queries.
          - Localized records are now handled.
          - Compatibility with TYPO3 7.x.x added.
-         
+
 0.2.1    - Several warnings generated when using arrays corrected.
          - js file for the calendar in Deutch corrected (Thanks to Erwin Winkel).
          - New type â€œcurrencyâ€� added (Feature #52986).
@@ -68,7 +68,7 @@ Version  Changes
            them in the iconRoot directory defined by iconRootPath. Icon file
            extensions can be either .gif or .png or .jpg or .jpeg.
          - documentation and csh files updated.
-         - Compatibility with TYP03 6.0 added.
+         - Compatibility with TYPO3 6.0 added.
 
 0.0.4    - Feature #39265 added. The former â€œiconsDirâ€� and â€œimagesDirâ€� are now
            replaced respectively by â€œiconRootPathâ€�, â€œimageRootPathâ€�. The values
