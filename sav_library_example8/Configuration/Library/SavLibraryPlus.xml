@@ -2,7 +2,7 @@
 
 <SavLibraryPlus>
     <general type="array">
-        <version>1.1.0</version>
+        <version>1.2.0</version>
         <overridedTablesForLocalization>
         </overridedTablesForLocalization>
         <saveAndNew type="array">
@@ -91,6 +91,7 @@
                     <a58663706 type="array">
                         <config type="array">
                             <fusion>begin</fusion>
+                            <updateshowonlyfield>1</updateshowonlyfield>
                             <tableName>fe_users</tableName>
                             <fieldName>title</fieldName>
                             <fieldType>ShowOnly</fieldType>
@@ -100,6 +101,7 @@
                     <a206471204 type="array">
                         <config type="array">
                             <fusion>end</fusion>
+                            <updateshowonlyfield>1</updateshowonlyfield>
                             <tableName>fe_users</tableName>
                             <fieldName>name</fieldName>
                             <fieldType>ShowOnly</fieldType>
@@ -108,6 +110,7 @@
                     </a206471204>
                     <a69528782 type="array">
                         <config type="array">
+                            <updateshowonlyfield>1</updateshowonlyfield>
                             <tableName>fe_users</tableName>
                             <fieldName>password</fieldName>
                             <fieldType>ShowOnly</fieldType>
@@ -126,6 +129,7 @@
                     <a154457928 type="array">
                         <config type="array">
                             <fusion>begin</fusion>
+                            <updateshowonlyfield>1</updateshowonlyfield>
                             <tableName>fe_users</tableName>
                             <fieldName>email</fieldName>
                             <fieldType>ShowOnly</fieldType>
@@ -135,6 +139,7 @@
                     <a63742366 type="array">
                         <config type="array">
                             <fusion>end</fusion>
+                            <updateshowonlyfield>1</updateshowonlyfield>
                             <tableName>fe_users</tableName>
                             <fieldName>www</fieldName>
                             <fieldType>ShowOnly</fieldType>
@@ -144,6 +149,7 @@
                     <a159376346 type="array">
                         <config type="array">
                             <fusion>begin</fusion>
+                            <updateshowonlyfield>1</updateshowonlyfield>
                             <tableName>fe_users</tableName>
                             <fieldName>telephone</fieldName>
                             <fieldType>ShowOnly</fieldType>
@@ -153,6 +159,7 @@
                     <a41580534 type="array">
                         <config type="array">
                             <fusion>end</fusion>
+                            <updateshowonlyfield>1</updateshowonlyfield>
                             <tableName>fe_users</tableName>
                             <fieldName>fax</fieldName>
                             <fieldType>ShowOnly</fieldType>
@@ -161,6 +168,7 @@
                     </a41580534>
                     <a36341044 type="array">
                         <config type="array">
+                            <updateshowonlyfield>1</updateshowonlyfield>
                             <tableName>fe_users</tableName>
                             <fieldName>company</fieldName>
                             <fieldType>ShowOnly</fieldType>
@@ -169,6 +177,7 @@
                     </a36341044>
                     <a42564584 type="array">
                         <config type="array">
+                            <updateshowonlyfield>1</updateshowonlyfield>
                             <tableName>fe_users</tableName>
                             <fieldName>address</fieldName>
                             <fieldType>ShowOnly</fieldType>
@@ -178,6 +187,7 @@
                     <a56147394 type="array">
                         <config type="array">
                             <fusion>begin</fusion>
+                            <updateshowonlyfield>1</updateshowonlyfield>
                             <tableName>fe_users</tableName>
                             <fieldName>zip</fieldName>
                             <fieldType>ShowOnly</fieldType>
@@ -186,6 +196,7 @@
                     </a56147394>
                     <a68166738 type="array">
                         <config type="array">
+                            <updateshowonlyfield>1</updateshowonlyfield>
                             <tableName>fe_users</tableName>
                             <fieldName>city</fieldName>
                             <fieldType>ShowOnly</fieldType>
@@ -195,6 +206,7 @@
                     <a181816398 type="array">
                         <config type="array">
                             <fusion>end</fusion>
+                            <updateshowonlyfield>1</updateshowonlyfield>
                             <tableName>fe_users</tableName>
                             <fieldName>country</fieldName>
                             <fieldType>ShowOnly</fieldType>
@@ -428,6 +440,7 @@
                     <a58663706 type="array">
                         <config type="array">
                             <fusion>begin</fusion>
+                            <updateshowonlyfield>1</updateshowonlyfield>
                             <tableName>fe_users</tableName>
                             <fieldName>title</fieldName>
                             <fieldType>ShowOnly</fieldType>
@@ -437,6 +450,7 @@
                     <a206471204 type="array">
                         <config type="array">
                             <fusion>end</fusion>
+                            <updateshowonlyfield>1</updateshowonlyfield>
                             <tableName>fe_users</tableName>
                             <fieldName>name</fieldName>
                             <fieldType>ShowOnly</fieldType>
@@ -445,6 +459,7 @@
                     </a206471204>
                     <a69528782 type="array">
                         <config type="array">
+                            <updateshowonlyfield>1</updateshowonlyfield>
                             <tableName>fe_users</tableName>
                             <fieldName>password</fieldName>
                             <fieldType>ShowOnly</fieldType>
@@ -454,6 +469,7 @@
                     <a106858894 type="array">
                         <config type="array">
                             <maxitems>1</maxitems>
+                            <updateshowonlyfield>1</updateshowonlyfield>
                             <tableName>fe_users</tableName>
                             <fieldName>image</fieldName>
                             <fieldType>ShowOnly</fieldType>
@@ -463,6 +479,7 @@
                     <a154457928 type="array">
                         <config type="array">
                             <fusion>begin</fusion>
+                            <updateshowonlyfield>1</updateshowonlyfield>
                             <tableName>fe_users</tableName>
                             <fieldName>email</fieldName>
                             <fieldType>ShowOnly</fieldType>
@@ -472,6 +489,7 @@
                     <a63742366 type="array">
                         <config type="array">
                             <fusion>end</fusion>
+                            <updateshowonlyfield>1</updateshowonlyfield>
                             <tableName>fe_users</tableName>
                             <fieldName>www</fieldName>
                             <fieldType>ShowOnly</fieldType>
@@ -481,6 +499,7 @@
                     <a159376346 type="array">
                         <config type="array">
                             <fusion>begin</fusion>
+                            <updateshowonlyfield>1</updateshowonlyfield>
                             <tableName>fe_users</tableName>
                             <fieldName>telephone</fieldName>
                             <fieldType>ShowOnly</fieldType>
@@ -490,6 +509,7 @@
                     <a41580534 type="array">
                         <config type="array">
                             <fusion>end</fusion>
+                            <updateshowonlyfield>1</updateshowonlyfield>
                             <tableName>fe_users</tableName>
                             <fieldName>fax</fieldName>
                             <fieldType>ShowOnly</fieldType>
@@ -498,6 +518,7 @@
                     </a41580534>
                     <a36341044 type="array">
                         <config type="array">
+                            <updateshowonlyfield>1</updateshowonlyfield>
                             <tableName>fe_users</tableName>
                             <fieldName>company</fieldName>
                             <fieldType>ShowOnly</fieldType>
@@ -506,6 +527,7 @@
                     </a36341044>
                     <a42564584 type="array">
                         <config type="array">
+                            <updateshowonlyfield>1</updateshowonlyfield>
                             <tableName>fe_users</tableName>
                             <fieldName>address</fieldName>
                             <fieldType>ShowOnly</fieldType>
@@ -515,6 +537,7 @@
                     <a56147394 type="array">
                         <config type="array">
                             <fusion>begin</fusion>
+                            <updateshowonlyfield>1</updateshowonlyfield>
                             <tableName>fe_users</tableName>
                             <fieldName>zip</fieldName>
                             <fieldType>ShowOnly</fieldType>
@@ -523,6 +546,7 @@
                     </a56147394>
                     <a68166738 type="array">
                         <config type="array">
+                            <updateshowonlyfield>1</updateshowonlyfield>
                             <tableName>fe_users</tableName>
                             <fieldName>city</fieldName>
                             <fieldType>ShowOnly</fieldType>
@@ -532,6 +556,7 @@
                     <a181816398 type="array">
                         <config type="array">
                             <fusion>end</fusion>
+                            <updateshowonlyfield>1</updateshowonlyfield>
                             <tableName>fe_users</tableName>
                             <fieldName>country</fieldName>
                             <fieldType>ShowOnly</fieldType>
@@ -541,6 +566,7 @@
                     <a16381176 type="array">
                         <config type="array">
                             <maxitems>5</maxitems>
+                            <updateshowonlyfield>1</updateshowonlyfield>
                             <tableName>fe_users</tableName>
                             <fieldName>usergroup</fieldName>
                             <fieldType>ShowOnly</fieldType>
@@ -549,6 +575,7 @@
                     </a16381176>
                     <a107428174 type="array">
                         <config type="array">
+                            <updateshowonlyfield>1</updateshowonlyfield>
                             <tableName>fe_users</tableName>
                             <fieldName>TSconfig</fieldName>
                             <fieldType>ShowOnly</fieldType>

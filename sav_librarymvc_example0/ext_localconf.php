@@ -1,12 +1,12 @@
 <?php
 
-if (!defined ('TYPO3_MODE')) {
-    die ('Access denied.');
-}
+defined('TYPO3_MODE') or die();
+
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addUserTSConfig('options.saveDocNew.table3=1');
+
 // Configures the Dispatcher
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
-    'YolfTypo3.' . $_EXTKEY,
+    'YolfTypo3.sav_librarymvc_example0',
     'Pi1',
     [
     // The first controller and its first action will be the default
@@ -14,7 +14,7 @@ if (!defined ('TYPO3_MODE')) {
     ],
     // Non-cachable controller actions
     [
-    'Test' => 'edit,save,delete,deleteInSubform,upInSubform,downInSubform,,deleteFile',
+    'Test' => 'edit,save,delete,deleteInSubform,upInSubform,downInSubform,deleteFile',
     ]
 );
 

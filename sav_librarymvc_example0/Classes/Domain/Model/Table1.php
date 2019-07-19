@@ -1,42 +1,26 @@
 <?php
 
 namespace YolfTypo3\SavLibrarymvcExample0\Domain\Model;
-/**
-*  Copyright notice
-*
-*  (c) 2017  <yolf.typo3@orange.fr>
-*  All rights reserved
-*
-*  This script is part of the TYPO3 project. The TYPO3 project is
-*  free software; you can redistribute it and/or modify
-*  it under the terms of the GNU General Public License as published by
-*  the Free Software Foundation; either version 2 of the License, or
-*  (at your option) any later version.
-*
-*  The GNU General Public License can be found at
-*  http://www.gnu.org/copyleft/gpl.html.
-*
-*  This script is distributed in the hope that it will be useful,
-*  but WITHOUT ANY WARRANTY; without even the implied warranty of
-*  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-*  GNU General Public License for more details.
-*
-*  This copyright notice MUST APPEAR in all copies of the script
-*/
+
+/*
+ * This file is part of the TYPO3 CMS project.
+ *
+ * It is free software; you can redistribute it and/or modify it under
+ * the terms of the GNU General Public License, either version 2
+ * of the License, or any later version.
+ *
+ * For the full copyright and license information, please read the
+ * LICENSE.txt file that was distributed with TYPO3 source code.
+ *
+ * The TYPO3 project - inspiring people to share
+ */
+
 /**
  * Table1 model for the extension SavLibrarymvcExample0
  *
  */
 class Table1 extends \YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel
 {
-    /**
-     * The field2 variable.
-     *
-     * @var boolean
-     * @validate raw
-     */
-    protected $field2;
-
     /**
      * The field1 variable.
      *
@@ -46,20 +30,12 @@ class Table1 extends \YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel
     protected $field1;
 
     /**
-     * The field8 variable.
+     * The field3 variable.
      *
-     * @var string
-     * @validate text
-     */
-    protected $field8;
-
-    /**
-     * The field9 variable.
-     *
-     * @var string
+     * @var integer
      * @validate raw
      */
-    protected $field9;
+    protected $field3;
 
     /**
      * The field4 variable.
@@ -78,12 +54,12 @@ class Table1 extends \YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel
     protected $field5;
 
     /**
-     * The field10 variable.
+     * The field6 variable.
      *
      * @var integer
-     * @validate integer
+     * @validate raw
      */
-    protected $field10;
+    protected $field6;
 
     /**
      * The field7 variable.
@@ -94,12 +70,36 @@ class Table1 extends \YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel
     protected $field7;
 
     /**
-     * The field6 variable.
+     * The field8 variable.
      *
-     * @var integer
+     * @var string
+     * @validate text
+     */
+    protected $field8;
+
+    /**
+     * The field9 variable.
+     *
+     * @var string
      * @validate raw
      */
-    protected $field6;
+    protected $field9;
+
+    /**
+     * The field10 variable.
+     *
+     * @var integer
+     * @validate integer
+     */
+    protected $field10;
+
+    /**
+     * The field11 variable.
+     *
+     * @var string
+     * @validate raw
+     */
+    protected $field11;
 
     /**
      * The field12 variable.
@@ -118,20 +118,20 @@ class Table1 extends \YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel
     protected $field13;
 
     /**
-     * The field14 variable.
-     *
-     * @var string
-     * @validate raw
-     */
-    protected $field14;
-
-    /**
      * The field15 variable.
      *
      * @var string
      * @validate raw
      */
     protected $field15;
+
+    /**
+     * The field14 variable.
+     *
+     * @var string
+     * @validate raw
+     */
+    protected $field14;
 
     /**
      * The field16 variable.
@@ -166,28 +166,12 @@ class Table1 extends \YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel
     protected $field19;
 
     /**
-     * The field20 variable.
+     * The field2 variable.
      *
-     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table4>
+     * @var boolean
      * @validate raw
      */
-    protected $field20;
-
-    /**
-     * The field3 variable.
-     *
-     * @var integer
-     * @validate raw
-     */
-    protected $field3;
-
-    /**
-     * The field11 variable.
-     *
-     * @var string
-     * @validate raw
-     */
-    protected $field11;
+    protected $field2;
 
     /**
      * The field21 variable.
@@ -204,6 +188,14 @@ class Table1 extends \YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel
      * @validate raw
      */
     protected $field22;
+
+    /**
+     * The field20 variable.
+     *
+     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table4>
+     * @validate raw
+     */
+    protected $field20;
 
     /**
      * The field23 variable.
@@ -235,28 +227,6 @@ class Table1 extends \YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel
         $this->field23 = new \TYPO3\CMS\Extbase\Persistence\ObjectStorage();
     }
     /**
-     * Getter for field2.
-     *
-     * @return boolean
-     */
-    public function getField2()
-    {
-        return $this->field2;
-    }
-
-    /**
-     * Setter for field2.
-     *
-     * @param boolean $field2
-     * @return void
-     */
-    public function setField2($field2)
-    {
-        $this->field2 = $field2;
-    }
-
-
-    /**
      * Getter for field1.
      *
      * @return string
@@ -279,46 +249,24 @@ class Table1 extends \YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel
 
 
     /**
-     * Getter for field8.
+     * Getter for field3.
      *
-     * @return string
+     * @return array
      */
-    public function getField8()
+    public function getField3()
     {
-        return $this->field8;
+        return \YolfTypo3\SavLibraryMvc\Utility\Conversion::integerToBooleanArray($this->field3);
     }
 
     /**
-     * Setter for field8.
+     * Setter for field3.
      *
-     * @param string $field8
+     * @param integer $field3
      * @return void
      */
-    public function setField8($field8)
+    public function setField3($field3)
     {
-        $this->field8 = $field8;
-    }
-
-
-    /**
-     * Getter for field9.
-     *
-     * @return string
-     */
-    public function getField9()
-    {
-        return $this->field9;
-    }
-
-    /**
-     * Setter for field9.
-     *
-     * @param string $field9
-     * @return void
-     */
-    public function setField9($field9)
-    {
-        $this->field9 = $field9;
+        $this->field3 = $field3;
     }
 
 
@@ -367,24 +315,24 @@ class Table1 extends \YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel
 
 
     /**
-     * Getter for field10.
+     * Getter for field6.
      *
      * @return integer
      */
-    public function getField10()
+    public function getField6()
     {
-        return $this->field10;
+        return $this->field6;
     }
 
     /**
-     * Setter for field10.
+     * Setter for field6.
      *
-     * @param integer $field10
+     * @param integer $field6
      * @return void
      */
-    public function setField10($field10)
+    public function setField6($field6)
     {
-        $this->field10 = $field10;
+        $this->field6 = $field6;
     }
 
 
@@ -411,24 +359,90 @@ class Table1 extends \YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel
 
 
     /**
-     * Getter for field6.
+     * Getter for field8.
      *
-     * @return integer
+     * @return string
      */
-    public function getField6()
+    public function getField8()
     {
-        return $this->field6;
+        return $this->field8;
     }
 
     /**
-     * Setter for field6.
+     * Setter for field8.
      *
-     * @param integer $field6
+     * @param string $field8
      * @return void
      */
-    public function setField6($field6)
+    public function setField8($field8)
     {
-        $this->field6 = $field6;
+        $this->field8 = $field8;
+    }
+
+
+    /**
+     * Getter for field9.
+     *
+     * @return string
+     */
+    public function getField9()
+    {
+        return $this->field9;
+    }
+
+    /**
+     * Setter for field9.
+     *
+     * @param string $field9
+     * @return void
+     */
+    public function setField9($field9)
+    {
+        $this->field9 = $field9;
+    }
+
+
+    /**
+     * Getter for field10.
+     *
+     * @return integer
+     */
+    public function getField10()
+    {
+        return $this->field10;
+    }
+
+    /**
+     * Setter for field10.
+     *
+     * @param integer $field10
+     * @return void
+     */
+    public function setField10($field10)
+    {
+        $this->field10 = $field10;
+    }
+
+
+    /**
+     * Getter for field11.
+     *
+     * @return string
+     */
+    public function getField11()
+    {
+        return $this->field11;
+    }
+
+    /**
+     * Setter for field11.
+     *
+     * @param string $field11
+     * @return void
+     */
+    public function setField11($field11)
+    {
+        $this->field11 = $field11;
     }
 
 
@@ -477,28 +491,6 @@ class Table1 extends \YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel
 
 
     /**
-     * Getter for field14.
-     *
-     * @return string
-     */
-    public function getField14()
-    {
-        return $this->field14;
-    }
-
-    /**
-     * Setter for field14.
-     *
-     * @param string $field14
-     * @return void
-     */
-    public function setField14($field14)
-    {
-        $this->field14 = $field14;
-    }
-
-
-    /**
      * Getter for field15.
      *
      * @return string
@@ -517,6 +509,28 @@ class Table1 extends \YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel
     public function setField15($field15)
     {
         $this->field15 = $field15;
+    }
+
+
+    /**
+     * Getter for field14.
+     *
+     * @return string
+     */
+    public function getField14()
+    {
+        return $this->field14;
+    }
+
+    /**
+     * Setter for field14.
+     *
+     * @param string $field14
+     * @return void
+     */
+    public function setField14($field14)
+    {
+        $this->field14 = $field14;
     }
 
 
@@ -652,90 +666,24 @@ class Table1 extends \YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel
     }
 
     /**
-     * Getter for field20.
+     * Getter for field2.
      *
-     * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table4>
+     * @return boolean
      */
-    public function getField20()
+    public function getField2()
     {
-        return $this->field20;
+        return $this->field2;
     }
 
     /**
-     * Setter for field20.
+     * Setter for field2.
      *
-     * @param  \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table4> $field20
+     * @param boolean $field2
      * @return void
      */
-    public function setField20($field20)
+    public function setField2($field2)
     {
-        $this->field20 = $field20;
-        $this->field20->_memorizeCleanState();
-    }
-
-    /**
-     * Adds a field20
-     * 
-     * @param \YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table4 $field20
-     * @return void
-     */
-    public function addField20(\YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table4 $field20)
-    {
-        $this->field20->attach($field20);
-    }
-
-    /**
-     * Removes a field20
-     * 
-     * @param \YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table4 $field20
-     * @return void
-     */
-    public function removeField20(\YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table4 $field20)
-    {
-        $this->field20->detach($field20);
-    }
-
-    /**
-     * Getter for field3.
-     *
-     * @return array
-     */
-    public function getField3()
-    {
-        return \YolfTypo3\SavLibraryMvc\Utility\Conversion::integerToBooleanArray($this->field3);
-    }
-
-    /**
-     * Setter for field3.
-     *
-     * @param integer $field3
-     * @return void
-     */
-    public function setField3($field3)
-    {
-        $this->field3 = $field3;
-    }
-
-
-    /**
-     * Getter for field11.
-     *
-     * @return string
-     */
-    public function getField11()
-    {
-        return $this->field11;
-    }
-
-    /**
-     * Setter for field11.
-     *
-     * @param string $field11
-     * @return void
-     */
-    public function setField11($field11)
-    {
-        $this->field11 = $field11;
+        $this->field2 = $field2;
     }
 
 
@@ -782,6 +730,50 @@ class Table1 extends \YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel
         $this->field22 = $field22;
     }
 
+
+    /**
+     * Getter for field20.
+     *
+     * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table4>
+     */
+    public function getField20()
+    {
+        return $this->field20;
+    }
+
+    /**
+     * Setter for field20.
+     *
+     * @param  \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table4> $field20
+     * @return void
+     */
+    public function setField20($field20)
+    {
+        $this->field20 = $field20;
+        $this->field20->_memorizeCleanState();
+    }
+
+    /**
+     * Adds a field20
+     * 
+     * @param \YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table4 $field20
+     * @return void
+     */
+    public function addField20(\YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table4 $field20)
+    {
+        $this->field20->attach($field20);
+    }
+
+    /**
+     * Removes a field20
+     * 
+     * @param \YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table4 $field20
+     * @return void
+     */
+    public function removeField20(\YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table4 $field20)
+    {
+        $this->field20->detach($field20);
+    }
 
     /**
      * Getter for field23.

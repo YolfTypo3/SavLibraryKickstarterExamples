@@ -1,11 +1,11 @@
 <?php
 
-if (!defined ('TYPO3_MODE')) {
- 	die ('Access denied.');
-}
+defined('TYPO3_MODE') or die();
+
+
 // Configures the Dispatcher
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
-    'YolfTypo3.' . $_EXTKEY,
+    'YolfTypo3.sav_basic_example0',
     'Test',
     [
         'Test' => 'show',

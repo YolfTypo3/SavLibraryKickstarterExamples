@@ -8,7 +8,10 @@ return [
         'crdate' => 'crdate',
         'cruser_id' => 'cruser_id',
         'origUid' => 't3_origuid',
-        'versioningWS' => TRUE,
+        'versioningWS' => true,
+        'languageField' => 'sys_language_uid',
+        'transOrigPointerField' => 'l18n_parent',
+        'transOrigDiffSourceField' => 'l18n_diffsource',
         'default_sortby' => 'ORDER BY tx_savlibraryexample0_table1.crdate ',
         'delete' => 'deleted',
         'enablecolumns' => [
@@ -20,6 +23,47 @@ return [
         'showRecordFieldList' => 'hidden,field1,field2,field8,field9,field4,field5,field24,field7,field6,field12,field13,field14,field15,field16,field17,field18,field19,field20,field3,field11,field21,field22,field23,field10'
     ],
     'columns' => [
+        'sys_language_uid' => [
+            'exclude' => 1,
+            'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.language',
+            'config' => [
+                'type' => 'select',
+                'renderType' => 'selectSingleBox',
+                'foreign_table' => 'sys_language',
+                'foreign_table_where' => 'ORDER BY sys_language.title',
+                'items' => [
+                    ['LLL:EXT:lang/locallang_general.xlf:LGL.allLanguages', -1],
+                    ['LLL:EXT:lang/locallang_general.xlf:LGL.default_value', 0]
+                ]
+            ]
+        ],
+        'l18n_parent' => [
+            'displayCond' => 'FIELD:sys_language_uid:>:0',
+            'exclude' => 1,
+            'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.l18n_parent',
+            'config' => [
+                'type' => 'select',
+                'renderType' => 'selectSingleBox',
+                'items' => [
+                    ['', 0],
+                ],
+                'foreign_table' => 'tx_savlibraryexample0_table1',
+                'foreign_table_where' => 'AND tx_savlibraryexample0_table1.uid=###CURRENT_PID### AND tx_savlibraryexample0_table1.sys_language_uid IN (-1,0)', 
+            ]
+        ],
+        'l18n_diffsource' => [
+           'config'=> [
+                'type'=>'passthrough'
+                ]
+        ],
+        't3ver_label' => [
+            'displayCond' => 'FIELD:t3ver_label:REQ:true',
+            'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.versionLabel',
+            'config' => [
+                'type'=>'none',
+                'cols' => 27
+            ]
+        ],
         'hidden' => [
             'exclude' => 1,
             'label'  => 'LLL:EXT:lang/locallang_general.xlf:LGL.hidden',
@@ -68,9 +112,9 @@ return [
             'exclude' => 1,
             'label'  => 'LLL:EXT:sav_library_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample0_table1.field4',
             'config' => [
-                'type' => 'input', 
-                'renderType' => 'inputDateTime',    
-                'eval' => 'date',  
+                'type' => 'input',
+                'renderType' => 'inputDateTime',
+                'eval' => 'date',
                 'default' => '0'     
             ],
         ],
@@ -78,10 +122,10 @@ return [
             'exclude' => 1,
             'label'  => 'LLL:EXT:sav_library_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample0_table1.field5',
             'config' => [
-                'type' => 'input', 
-                'renderType' => 'inputDateTime',    
-                'eval' => 'datetime', 
-                'default' => '0'      
+                'type' => 'input',
+                'renderType' => 'inputDateTime',
+                'eval' => 'datetime',
+                'default' => '0'
             ],
         ],
         'field24' => [
@@ -106,7 +150,7 @@ return [
                     ['LLL:EXT:sav_library_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample0_table1.field7.I.0', 0],
                 ],
                 'foreign_table' => 'tx_savlibraryexample0_table2',
-                'foreign_table_where' => 'AND 1 ORDER BY tx_savlibraryexample0_table2.field1',
+                'foreign_table_where' => 'AND 1 AND tx_savlibraryexample0_table2.sys_language_uid IN (-1,0) ORDER BY tx_savlibraryexample0_table2.field1',
                 'size' => 1,
                 'minitems' => 0,
                 'maxitems' => 1,
@@ -185,7 +229,7 @@ return [
                 'type' => 'select',
                 'renderType' => 'selectMultipleSideBySide',
                 'foreign_table' => 'tx_savlibraryexample0_table2',
-                'foreign_table_where' => 'AND 1 ORDER BY tx_savlibraryexample0_table2.field1',
+                'foreign_table_where' => 'AND 1 AND tx_savlibraryexample0_table2.sys_language_uid IN (-1,0) ORDER BY tx_savlibraryexample0_table2.field1',
                 'size' => 5,
                 'minitems' => 0,
                 'maxitems' => 100000,
@@ -198,7 +242,7 @@ return [
                 'type' => 'select',
                 'renderType' => 'selectMultipleSideBySide',
                 'foreign_table' => 'tx_savlibraryexample0_table2',
-                'foreign_table_where' => 'AND 1 ORDER BY tx_savlibraryexample0_table2.field1',
+                'foreign_table_where' => 'AND 1 AND tx_savlibraryexample0_table2.sys_language_uid IN (-1,0) ORDER BY tx_savlibraryexample0_table2.field1',
                 'size' => 5,
                 'minitems' => 0,
                 'maxitems' => 100000,
@@ -248,10 +292,10 @@ return [
                 'type' => 'check',
                 'cols' => 4,
                 'items' => [
-                        array('LLL:EXT:sav_library_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample0_table1.field3.I.1', ''),
-                        array('LLL:EXT:sav_library_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample0_table1.field3.I.2', ''),
-                        array('LLL:EXT:sav_library_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample0_table1.field3.I.3', ''),
-                        array('LLL:EXT:sav_library_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample0_table1.field3.I.4', ''),
+                        ['LLL:EXT:sav_library_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample0_table1.field3.I.1', ''],
+                        ['LLL:EXT:sav_library_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample0_table1.field3.I.2', ''],
+                        ['LLL:EXT:sav_library_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample0_table1.field3.I.3', ''],
+                        ['LLL:EXT:sav_library_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample0_table1.field3.I.4', ''],
                 ],
             ],
         ],
@@ -316,7 +360,7 @@ return [
     ],
     'types' => [
         '0' => [
-            'showitem' => 'hidden, field1, field2, field8, field9' . (version_compare(TYPO3_version, '7.3', '<') ? ';;;richtext[]:rte_transform[mode=ts]' : '') . ', field4, field5, field24, field7, field6, field12, field13, field14, field15, field16, field17, field18, field19, field20, field3, field11, field21, field22, field23, field10',
+            'showitem' => 'hidden, field1, field2, field8, field9' . ', field4, field5, field24, field7, field6, field12, field13, field14, field15, field16, field17, field18, field19, field20, field3, field11, field21, field22, field23, field10',
         ],
     ],
     'palettes' => [

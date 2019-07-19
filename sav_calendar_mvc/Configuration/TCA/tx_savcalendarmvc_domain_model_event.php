@@ -430,10 +430,8 @@ return [
             'label'  => 'LLL:EXT:sav_calendar_mvc/Resources/Private/Language/locallang_db.xlf:tx_savcalendarmvc_domain_model_event.date_begin',
             'config' => [
                 'type' => 'input',
-                'size' => '12',
-                'max' => '20',
+                'renderType' => 'inputDateTime',
                 'eval' => 'datetime',
-                'checkbox' => '0',
                 'default' => '0'
             ],
         ],
@@ -442,10 +440,8 @@ return [
             'label'  => 'LLL:EXT:sav_calendar_mvc/Resources/Private/Language/locallang_db.xlf:tx_savcalendarmvc_domain_model_event.date_end',
             'config' => [
                 'type' => 'input',
-                'size' => '12',
-                'max' => '20',
+                'renderType' => 'inputDateTime',
                 'eval' => 'datetime',
-                'checkbox' => '0',
                 'default' => '0'
             ],
         ],
@@ -465,19 +461,7 @@ return [
                 'type' => 'text',
                 'cols' => '30',
                 'rows' => '5',
-                'wizards' => [
-                    '_PADDING' => 2,
-                    'RTE' => [
-                        'notNewRecords' => 1,
-                        'RTEonly' => 1,
-                        'type'  => 'script',
-                        'title' => 'Full screen Rich Text Editing',
-                        'icon'  => (version_compare(TYPO3_version, '7', '<') ? 'wizard_rte2.gif' : 'actions-wizard-rte'),
-                        'module' => [
-                            'name' => 'wizard_rte',
-                        ],
-                    ],
-                ],
+                'enableRichtext' => true,
             ],
         ],
         'link' => [
@@ -485,25 +469,11 @@ return [
             'label'  => 'LLL:EXT:sav_calendar_mvc/Resources/Private/Language/locallang_db.xlf:tx_savcalendarmvc_domain_model_event.link',
             'config' => [
                 'type'  => 'input',
+                'renderType' => 'inputLink',
                 'size'  => '15',
                 'max' => '255',
                 'checkbox'  => '',
                 'eval'  => 'trim',
-                'wizards' => [
-                    '_PADDING'  => 2,
-                    'link'  => [
-                        'type'  => 'popup',
-                        'title' => 'Link',         
-                        'icon'  => 'actions-wizard-link',           
-                        'module' => [
-                            'name' => 'wizard_link',
-                            'urlParameters' => [             
-                                'mode' => 'wizard',
-                            ]
-                        ],    
-                        'JSopenParams'  => 'height=300,width=500,status=0,menubar=0,scrollbars=1',
-                    ]
-                ],
             ],
         ],
         'organized_by' => [
@@ -527,12 +497,7 @@ return [
     ],
     'types' => [
         '0' => [
-            'showitem' => 'hidden, category, title, date_begin, date_end, location, description' . (version_compare(TYPO3_version, '7.3', '<') ? ';;;richtext[]:rte_transform[mode=ts]' : '') . ', link, organized_by, email',
-            'columnsOverrides' => [
-                'description' => [
-                    'defaultExtras' => 'richtext[]:rte_transform' . (version_compare(TYPO3_version, '8', '<') ? '[mode=ts]' : ''),
-                ],
-            ],
+            'showitem' => 'hidden, category, title, date_begin, date_end, location, description' . ', link, organized_by, email',
         ],
     ],
     'palettes' => [

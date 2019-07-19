@@ -16,44 +16,6 @@ return [
                 'ctrl' => [
                 ],
                 'columns' => [
-                    'field2' => [
-                        'fieldType' => 'Checkbox',
-                        'config' => [
-                            1 => [
-                                'displayAsImage' => 1,
-                                'selected' => 0,
-                             ],
-                            2 => [
-                                'displayAsImage' => 1,
-                                'selected' => 1,
-                             ],
-                            3 => [
-                                'edit' => 1,
-                                'displayAsImage' => 1,
-                                'selected' => 1,
-                             ],
-                            4 => [
-                                'displayAsImage' => 1,
-                                'selected' => 1,
-                             ],
-                            5 => [
-                                'displayAsImage' => 1,
-                                'selected' => 1,
-                             ],
-                        ],
-                        'folders' => [
-                            2 => '1',
-                            3 => '1',
-                            5 => '1',
-                        ],
-                       'order' => [
-                            1 => '19',
-                            2 => '2',
-                            3 => '1',
-                            4 => '2',
-                            5 => '2',
-                        ],
-                    ],
                     'field1' => [
                         'fieldType' => 'String',
                         'config' => [
@@ -90,71 +52,43 @@ return [
                             5 => '1',
                         ],
                     ],
-                    'field8' => [
-                        'fieldType' => 'Text',
+                    'field3' => [
+                        'fieldType' => 'Checkboxes',
                         'config' => [
                             1 => [
-                                'selected' => 0,
+                                'displayAsImage' => 1,
+                                'selected' => 1,
                              ],
                             2 => [
+                                'displayAsImage' => 1,
+                                'cols' => '1',
                                 'selected' => 1,
                              ],
                             3 => [
                                 'edit' => 1,
+                                'displayAsImage' => 1,
                                 'selected' => 1,
                              ],
                             4 => [
-                                'selected' => 0,
+                                'displayAsImage' => 1,
+                                'selected' => 1,
                              ],
                             5 => [
-                                'selected' => 0,
+                                'displayAsImage' => 1,
+                                'selected' => 1,
                              ],
                         ],
                         'folders' => [
-                            2 => '2',
-                            3 => '2',
-                            5 => '0',
+                            2 => '1',
+                            3 => '1',
+                            5 => '1',
                         ],
                        'order' => [
-                            1 => '7',
-                            2 => '3',
-                            3 => '3',
-                            4 => '4',
-                            5 => '3',
-                        ],
-                    ],
-                    'field9' => [
-                        'fieldType' => 'RichTextEditor',
-                        'config' => [
-                            1 => [
-                                'selected' => 0,
-                             ],
-                            2 => [
-                                'selected' => 1,
-                             ],
-                            3 => [
-                                'edit' => 1,
-                                'height' => '200',
-                                'selected' => 1,
-                             ],
-                            4 => [
-                                'selected' => 0,
-                             ],
-                            5 => [
-                                'selected' => 0,
-                             ],
-                        ],
-                        'folders' => [
-                            2 => '2',
-                            3 => '2',
-                            5 => '0',
-                        ],
-                       'order' => [
-                            1 => '8',
-                            2 => '4',
-                            3 => '4',
-                            4 => '5',
-                            5 => '4',
+                            1 => '2',
+                            2 => '19',
+                            3 => '19',
+                            4 => '3',
+                            5 => '19',
                         ],
                     ],
                     'field4' => [
@@ -196,7 +130,7 @@ return [
                         'fieldType' => 'DateTime',
                         'config' => [
                             1 => [
-                                'selected' => 0,
+                                'selected' => 1,
                              ],
                             2 => [
                                 'selected' => 1,
@@ -226,77 +160,11 @@ return [
                             5 => '6',
                         ],
                     ],
-                    'field10' => [
-                        'fieldType' => 'Integer',
-                        'config' => [
-                            1 => [
-                                'selected' => 0,
-                             ],
-                            2 => [
-                                'selected' => 1,
-                             ],
-                            3 => [
-                                'edit' => 1,
-                                'selected' => 1,
-                             ],
-                            4 => [
-                                'selected' => 0,
-                             ],
-                            5 => [
-                                'selected' => 0,
-                             ],
-                        ],
-                        'folders' => [
-                            2 => '3',
-                            3 => '3',
-                            5 => '0',
-                        ],
-                       'order' => [
-                            1 => '9',
-                            2 => '24',
-                            3 => '7',
-                            4 => '8',
-                            5 => '7',
-                        ],
-                    ],
-                    'field7' => [
-                        'fieldType' => 'RelationOneToManyAsSelectorbox',
-                        'config' => [
-                            1 => [
-                                'selected' => 0,
-                             ],
-                            2 => [
-                                'selected' => 1,
-                             ],
-                            3 => [
-                                'edit' => 1,
-                                'selected' => 1,
-                             ],
-                            4 => [
-                                'selected' => 0,
-                             ],
-                            5 => [
-                                'selected' => 0,
-                             ],
-                        ],
-                        'folders' => [
-                            2 => '4',
-                            3 => '4',
-                            5 => '0',
-                        ],
-                       'order' => [
-                            1 => '6',
-                            2 => '8',
-                            3 => '8',
-                            4 => '9',
-                            5 => '8',
-                        ],
-                    ],
                     'field6' => [
                         'fieldType' => 'Selectorbox',
                         'config' => [
                             1 => [
-                                'selected' => 0,
+                                'selected' => 1,
                              ],
                             2 => [
                                 'selected' => 1,
@@ -325,11 +193,181 @@ return [
                             5 => '9',
                         ],
                     ],
+                    'field7' => [
+                        'fieldType' => 'RelationOneToManyAsSelectorbox',
+                        'config' => [
+                            1 => [
+                                'selected' => 1,
+                             ],
+                            2 => [
+                                'selected' => 1,
+                             ],
+                            3 => [
+                                'edit' => 1,
+                                'selected' => 1,
+                             ],
+                            4 => [
+                                'selected' => 0,
+                             ],
+                            5 => [
+                                'selected' => 0,
+                             ],
+                        ],
+                        'folders' => [
+                            2 => '4',
+                            3 => '4',
+                            5 => '0',
+                        ],
+                       'order' => [
+                            1 => '6',
+                            2 => '8',
+                            3 => '8',
+                            4 => '9',
+                            5 => '8',
+                        ],
+                    ],
+                    'field8' => [
+                        'fieldType' => 'Text',
+                        'config' => [
+                            1 => [
+                                'selected' => 1,
+                             ],
+                            2 => [
+                                'selected' => 1,
+                             ],
+                            3 => [
+                                'edit' => 1,
+                                'selected' => 1,
+                             ],
+                            4 => [
+                                'selected' => 0,
+                             ],
+                            5 => [
+                                'selected' => 0,
+                             ],
+                        ],
+                        'folders' => [
+                            2 => '2',
+                            3 => '2',
+                            5 => '0',
+                        ],
+                       'order' => [
+                            1 => '7',
+                            2 => '3',
+                            3 => '3',
+                            4 => '4',
+                            5 => '3',
+                        ],
+                    ],
+                    'field9' => [
+                        'fieldType' => 'RichTextEditor',
+                        'config' => [
+                            1 => [
+                                'selected' => 1,
+                             ],
+                            2 => [
+                                'selected' => 1,
+                             ],
+                            3 => [
+                                'edit' => 1,
+                                'height' => '200',
+                                'selected' => 1,
+                             ],
+                            4 => [
+                                'selected' => 0,
+                             ],
+                            5 => [
+                                'selected' => 0,
+                             ],
+                        ],
+                        'folders' => [
+                            2 => '2',
+                            3 => '2',
+                            5 => '0',
+                        ],
+                       'order' => [
+                            1 => '8',
+                            2 => '4',
+                            3 => '4',
+                            4 => '5',
+                            5 => '4',
+                        ],
+                    ],
+                    'field10' => [
+                        'fieldType' => 'Integer',
+                        'config' => [
+                            1 => [
+                                'selected' => 1,
+                             ],
+                            2 => [
+                                'selected' => 1,
+                             ],
+                            3 => [
+                                'edit' => 1,
+                                'selected' => 1,
+                             ],
+                            4 => [
+                                'selected' => 0,
+                             ],
+                            5 => [
+                                'selected' => 0,
+                             ],
+                        ],
+                        'folders' => [
+                            2 => '3',
+                            3 => '3',
+                            5 => '0',
+                        ],
+                       'order' => [
+                            1 => '9',
+                            2 => '24',
+                            3 => '7',
+                            4 => '8',
+                            5 => '7',
+                        ],
+                    ],
+                    'field11' => [
+                        'fieldType' => 'RadioButtons',
+                        'config' => [
+                            1 => [
+                                'displayAsImage' => 1,
+                                'selected' => 1,
+                             ],
+                            2 => [
+                                'displayAsImage' => 1,
+                                'selected' => 1,
+                             ],
+                            3 => [
+                                'edit' => 1,
+                                'selected' => 1,
+                             ],
+                            4 => [
+                                'displayAsImage' => 1,
+                                'selected' => 0,
+                             ],
+                            5 => [
+                                'displayAsImage' => 1,
+                                'selected' => 0,
+                             ],
+                        ],
+                        'folders' => [
+                            2 => '1',
+                            3 => '1',
+                            5 => '0',
+                        ],
+                       'order' => [
+                            1 => '10',
+                            2 => '20',
+                            3 => '20',
+                            4 => '20',
+                            5 => '20',
+                        ],
+                    ],
                     'field12' => [
                         'fieldType' => 'Link',
                         'config' => [
                             1 => [
-                                'selected' => 0,
+                                'selected' => 1,
                              ],
                             2 => [
                                 'message' => 'Click here',
@@ -365,7 +403,7 @@ return [
                         'config' => [
                             1 => [
                                 'imageFiles' => 1,
-                                'selected' => 0,
+                                'selected' => 1,
                              ],
                             2 => [
                                 'imageFiles' => 1,
@@ -398,44 +436,11 @@ return [
                             5 => '11',
                         ],
                     ],
-                    'field14' => [
-                        'fieldType' => 'String',
-                        'config' => [
-                            1 => [
-                                'selected' => 0,
-                             ],
-                            2 => [
-                                'selected' => 1,
-                             ],
-                            3 => [
-                                'edit' => 1,
-                                'selected' => 1,
-                             ],
-                            4 => [
-                                'selected' => 0,
-                             ],
-                            5 => [
-                                'selected' => 0,
-                             ],
-                        ],
-                        'folders' => [
-                            3 => '7',
-                            2 => '7',
-                            5 => '0',
-                        ],
-                       'order' => [
-                            1 => '14',
-                            2 => '12',
-                            3 => '12',
-                            4 => '13',
-                            5 => '12',
-                        ],
-                    ],
                     'field15' => [
                         'fieldType' => 'String',
                         'config' => [
                             1 => [
-                                'selected' => 0,
+                                'selected' => 1,
                              ],
                             2 => [
                                 'selected' => 1,
@@ -464,15 +469,49 @@ return [
                             5 => '13',
                         ],
                     ],
+                    'field14' => [
+                        'fieldType' => 'String',
+                        'config' => [
+                            1 => [
+                                'selected' => 1,
+                             ],
+                            2 => [
+                                'selected' => 1,
+                             ],
+                            3 => [
+                                'edit' => 1,
+                                'selected' => 1,
+                             ],
+                            4 => [
+                                'selected' => 0,
+                             ],
+                            5 => [
+                                'selected' => 0,
+                             ],
+                        ],
+                        'folders' => [
+                            3 => '7',
+                            2 => '7',
+                            5 => '0',
+                        ],
+                       'order' => [
+                            1 => '14',
+                            2 => '12',
+                            3 => '12',
+                            4 => '13',
+                            5 => '12',
+                        ],
+                    ],
                     'field16' => [
                         'fieldType' => 'Graph',
                         'config' => [
                             1 => [
-                                'selected' => 0,
+                                'selected' => 1,
                              ],
                             2 => [
-                                'graphTemplate' => 'typo3conf/ext/sav_jpgraph/Resources/Private/Templates/pieex4.xml',
-                                'markers' => 'data#data=notEmpty[###field14###],data#legend=notEmpty[###field15###]',
+                                'graphTemplate' => 'typo3conf/ext/sav_charts/Resources/Private/Templates/ChartsExamples/PieChartAdvanced.xml',
+                                'tags' => 'marker#title=Graph in SAV Library Plus, data#data=notEmpty[###field14###],
+        data#labels=notEmpty[###field15###]',
                                 'selected' => 1,
                              ],
                             3 => [
@@ -503,7 +542,7 @@ return [
                         'fieldType' => 'RelationManyToManyAsDoubleSelectorbox',
                         'config' => [
                             1 => [
-                                'selected' => 0,
+                                'selected' => 1,
                              ],
                             2 => [
                                 'selected' => 1,
@@ -536,7 +575,7 @@ return [
                         'fieldType' => 'RelationManyToManyAsDoubleSelectorbox',
                         'config' => [
                             1 => [
-                                'selected' => 0,
+                                'selected' => 1,
                              ],
                             2 => [
                                 'selected' => 1,
@@ -569,7 +608,7 @@ return [
                         'fieldType' => 'RelationManyToManyAsSubform',
                         'config' => [
                             1 => [
-                                'selected' => 0,
+                                'selected' => 1,
                              ],
                             2 => [
                                 'subformKey' => 0,
@@ -577,7 +616,6 @@ return [
                                 'selected' => 1,
                              ],
                             3 => [
-                                'truc' => 'field19',
                                 'edit' => 1,
                                 'subformKey' => 0,
                                 'maxSubformItems' => '2',
@@ -607,56 +645,15 @@ return [
                             5 => '17',
                         ],
                     ],
-                    'field20' => [
-                        'fieldType' => 'RelationManyToManyAsSubform',
-                        'config' => [
-                            1 => [
-                                'selected' => 0,
-                             ],
-                            2 => [
-                                'subformKey' => 1,
-                                'maxSubformItems' => '1',
-                                'selected' => 1,
-                             ],
-                            3 => [
-                                'truc' => 'field20',
-                                'edit' => 1,
-                                'subformKey' => 1,
-                                'maxSubformItems' => '1',
-                                'selected' => 1,
-                             ],
-                            4 => [
-                                'subformKey' => 1,
-                                'selected' => 0,
-                             ],
-                            5 => [
-                                'subformKey' => 1,
-                                'selected' => 0,
-                             ],
-                        ],
-                        'folders' => [
-                            3 => '6',
-                            2 => '6',
-                            5 => '0',
-                        ],
-                       'order' => [
-                            1 => '22',
-                            2 => '18',
-                            3 => '18',
-                            4 => '19',
-                            5 => '18',
-                        ],
-                    ],
-                    'field3' => [
-                        'fieldType' => 'Checkboxes',
+                    'field2' => [
+                        'fieldType' => 'Checkbox',
                         'config' => [
                             1 => [
                                 'displayAsImage' => 1,
-                                'selected' => 0,
+                                'selected' => 1,
                              ],
                             2 => [
                                 'displayAsImage' => 1,
-                                'cols' => '1',
                                 'selected' => 1,
                              ],
                             3 => [
@@ -679,48 +676,11 @@ return [
                             5 => '1',
                         ],
                        'order' => [
-                            1 => '2',
-                            2 => '19',
-                            3 => '19',
-                            4 => '3',
-                            5 => '19',
-                        ],
-                    ],
-                    'field11' => [
-                        'fieldType' => 'RadioButtons',
-                        'config' => [
-                            1 => [
-                                'displayAsImage' => 1,
-                                'selected' => 0,
-                             ],
-                            2 => [
-                                'displayAsImage' => 1,
-                                'selected' => 1,
-                             ],
-                            3 => [
-                                'edit' => 1,
-                                'selected' => 1,
-                             ],
-                            4 => [
-                                'displayAsImage' => 1,
-                                'selected' => 0,
-                             ],
-                            5 => [
-                                'displayAsImage' => 1,
-                                'selected' => 0,
-                             ],
-                        ],
-                        'folders' => [
-                            2 => '1',
+                            1 => '19',
+                            2 => '2',
                             3 => '1',
-                            5 => '0',
-                        ],
-                       'order' => [
-                            1 => '10',
-                            2 => '20',
-                            3 => '20',
-                            4 => '20',
-                            5 => '20',
+                            4 => '2',
+                            5 => '2',
                         ],
                     ],
                     'field21' => [
@@ -728,7 +688,7 @@ return [
                         'config' => [
                             1 => [
                                 'displayAsImage' => 1,
-                                'selected' => 0,
+                                'selected' => 1,
                              ],
                             2 => [
                                 'displayAsImage' => 1,
@@ -765,7 +725,7 @@ return [
                         'config' => [
                             1 => [
                                 'renderType' => 'Text',
-                                'selected' => 0,
+                                'selected' => 1,
                              ],
                             2 => [
                                 'renderType' => 'Text',
@@ -798,11 +758,50 @@ return [
                             5 => '22',
                         ],
                     ],
+                    'field20' => [
+                        'fieldType' => 'RelationManyToManyAsSubform',
+                        'config' => [
+                            1 => [
+                                'selected' => 1,
+                             ],
+                            2 => [
+                                'subformKey' => 1,
+                                'maxSubformItems' => '1',
+                                'selected' => 1,
+                             ],
+                            3 => [
+                                'edit' => 1,
+                                'subformKey' => 1,
+                                'maxSubformItems' => '1',
+                                'selected' => 1,
+                             ],
+                            4 => [
+                                'subformKey' => 1,
+                                'selected' => 0,
+                             ],
+                            5 => [
+                                'subformKey' => 1,
+                                'selected' => 0,
+                             ],
+                        ],
+                        'folders' => [
+                            3 => '6',
+                            2 => '6',
+                            5 => '0',
+                        ],
+                       'order' => [
+                            1 => '22',
+                            2 => '18',
+                            3 => '18',
+                            4 => '19',
+                            5 => '18',
+                        ],
+                    ],
                     'field23' => [
                         'fieldType' => 'RelationManyToManyAsSubform',
                         'config' => [
                             1 => [
-                                'selected' => 0,
+                                'selected' => 1,
                              ],
                             2 => [
                                 'subformKey' => 2,
@@ -810,7 +809,6 @@ return [
                                 'selected' => 1,
                              ],
                             3 => [
-                                'truc' => 'field23',
                                 'edit' => 1,
                                 'subformKey' => 2,
                                 'maxSubformItems' => '2',
@@ -842,7 +840,7 @@ return [
                         'fieldType' => 'Currency',
                         'config' => [
                             1 => [
-                                'selected' => 0,
+                                'selected' => 1,
                              ],
                             2 => [
                                 'selected' => 1,
@@ -1013,20 +1011,12 @@ return [
         ],
     ],
     'interface' => [
-        'showRecordFieldList' => ',field2,field1,field8,field9,field4,field5,field10,field7,field6,field12,field13,field14,field15,field16,field17,field18,field19,field20,field3,field11,field21,field22,field23,field24'
+        'showRecordFieldList' => ',field1,field3,field4,field5,field6,field7,field8,field9,field10,field11,field12,field13,field15,field14,field16,field17,field18,field19,field2,field21,field22,field20,field23,field24'
     ],
     'columns' => [
         'cruser_id_frontend' => [
             'config'  => [
                 'type' => 'passthrough',
-            ],
-        ],
-        'field2' => [
-            'exclude' => 1,
-            'label'  => 'LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field2',
-            'config' => [
-                'type' => 'check',
-                'default' => 0
             ],
         ],
         'field1' => [
@@ -1036,6 +1026,71 @@ return [
                 'type' => 'input',
                 'size' => '30',
                 'eval' => 'trim,required'
+            ],
+        ],
+        'field3' => [
+            'exclude' => 1,
+            'label'  => 'LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field3',
+            'config' => [
+                'type' => 'check',
+                'cols' => 4,
+                'items' => [
+                        ['LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field3.I.1', ''],
+                        ['LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field3.I.2', ''],
+                        ['LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field3.I.3', ''],
+                        ['LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field3.I.4', ''],
+                ],
+            ],
+        ],
+        'field4' => [
+            'exclude' => 1,
+            'label'  => 'LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field4',
+            'config' => [
+                'type' => 'input',
+                'renderType' => 'inputDateTime',
+                'eval' => 'date',
+                'default' => '0'     
+            ],
+        ],
+        'field5' => [
+            'exclude' => 1,
+            'label'  => 'LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field5',
+            'config' => [
+                'type' => 'input',
+                'renderType' => 'inputDateTime',
+                'eval' => 'datetime',
+                'default' => '0'
+            ],
+        ],
+        'field6' => [
+            'exclude' => 1,
+            'label'  => 'LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field6',
+            'config' => [
+                'type' => 'select',
+                'renderType' => 'selectSingle',
+                'items' => [
+                    ['LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field6.I.1', '1'],
+                    ['LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field6.I.2', '2'],
+                    ['LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field6.I.3', '3'],
+                ],
+                'size' => 1,
+                'maxitems' => 1,
+            ],
+        ],
+        'field7' => [
+            'exclude' => 1,
+            'label'  => 'LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field7',
+            'config' => [
+                'type' => 'select',  
+                'renderType' => 'selectSingle',
+                'items' => [
+                    ['LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field7.I.0', 0],
+                ],
+                'foreign_table' => 'tx_savlibrarymvcexample0_domain_model_table2',
+                'foreign_table_where' => 'AND 1 ',
+                'size' => 1,
+                'minitems' => 0,
+                'maxitems' => 1,
             ],
         ],
         'field8' => [
@@ -1057,26 +1112,6 @@ return [
                 'enableRichtext' => true,
             ],
         ],
-        'field4' => [
-            'exclude' => 1,
-            'label'  => 'LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field4',
-            'config' => [
-                'type' => 'input', 
-                'renderType' => 'inputDateTime',    
-                'eval' => 'date',  
-                'default' => '0'     
-            ],
-        ],
-        'field5' => [
-            'exclude' => 1,
-            'label'  => 'LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field5',
-            'config' => [
-                'type' => 'input', 
-                'renderType' => 'inputDateTime',    
-                'eval' => 'datetime', 
-                'default' => '0'      
-            ],
-        ],
         'field10' => [
             'exclude' => 1,
             'label'  => 'LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field10',
@@ -1093,35 +1128,16 @@ return [
                 'default' => 0
             ],
         ],
-        'field7' => [
+        'field11' => [
             'exclude' => 1,
-            'label'  => 'LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field7',
+            'label'  => 'LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field11',
             'config' => [
-                'type' => 'select',  
-                'renderType' => 'selectSingle',
+                'type' => 'radio',
                 'items' => [
-                    ['LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field7.I.0', 0],
+                    ['LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field11.I.1', ''],
+                    ['LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field11.I.2', '1'],
+                    ['LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field11.I.3', '3'],
                 ],
-                'foreign_table' => 'tx_savlibrarymvcexample0_domain_model_table2',
-                'foreign_table_where' => 'AND 1 ',
-                'size' => 1,
-                'minitems' => 0,
-                'maxitems' => 1,
-            ],
-        ],
-        'field6' => [
-            'exclude' => 1,
-            'label'  => 'LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field6',
-            'config' => [
-                'type' => 'select',
-                'renderType' => 'selectSingle',
-                'items' => [
-                    ['LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field6.I.1', '1'],
-                    ['LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field6.I.2', '2'],
-                    ['LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field6.I.3', '3'],
-                ],
-                'size' => 1,
-                'maxitems' => 1,
             ],
         ],
         'field12' => [
@@ -1148,18 +1164,18 @@ return [
                 ''
             ),
         ],
-        'field14' => [
+        'field15' => [
             'exclude' => 1,
-            'label'  => 'LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field14',
+            'label'  => 'LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field15',
             'config' => [
                 'type' => 'input',
                 'size' => '30',
                 'eval' => 'trim'
             ],
         ],
-        'field15' => [
+        'field14' => [
             'exclude' => 1,
-            'label'  => 'LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field15',
+            'label'  => 'LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field14',
             'config' => [
                 'type' => 'input',
                 'size' => '30',
@@ -1218,6 +1234,26 @@ return [
                 ],
             ],
         ],
+        'field2' => [
+            'exclude' => 1,
+            'label'  => 'LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field2',
+            'config' => [
+                'type' => 'check',
+                'default' => 0
+            ],
+        ],
+        'field21' => [
+            'exclude' => 1,
+            'label'  => 'LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field21',
+            'config' => [
+                'type' => 'radio',
+                'items' => [
+                    ['LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field21.I.1', ''],
+                    ['LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field21.I.2', '1'],
+                    ['LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field21.I.3', '2'],
+                ],
+            ],
+        ],
         'field20' => [
             'exclude' => 1,
             'label'  => 'LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field20',
@@ -1233,44 +1269,6 @@ return [
                     'newRecordLinkPosition' => 'bottom',
                     'collapseAll' => 1,
                     'expandSingle' => 1,
-                ],
-            ],
-        ],
-        'field3' => [
-            'exclude' => 1,
-            'label'  => 'LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field3',
-            'config' => [
-                'type' => 'check',
-                'cols' => 4,
-                'items' => [
-                        array('LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field3.I.1', ''),
-                        array('LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field3.I.2', ''),
-                        array('LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field3.I.3', ''),
-                        array('LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field3.I.4', ''),
-                ],
-            ],
-        ],
-        'field11' => [
-            'exclude' => 1,
-            'label'  => 'LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field11',
-            'config' => [
-                'type' => 'radio',
-                'items' => [
-                    ['LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field11.I.1', ''],
-                    ['LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field11.I.2', '1'],
-                    ['LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field11.I.3', '3'],
-                ],
-            ],
-        ],
-        'field21' => [
-            'exclude' => 1,
-            'label'  => 'LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field21',
-            'config' => [
-                'type' => 'radio',
-                'items' => [
-                    ['LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field21.I.1', ''],
-                    ['LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field21.I.2', '1'],
-                    ['LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field21.I.3', '2'],
                 ],
             ],
         ],
@@ -1307,7 +1305,7 @@ return [
     ],
     'types' => [
         '0' => [
-            'showitem' => 'field2, field1, field8, field9' . (version_compare(TYPO3_version, '7.3', '<') ? ';;;richtext[]:rte_transform[mode=ts]' : '') . ', field4, field5, field10, field7, field6, field12, field13, field14, field15, field16, field17, field18, field19, field20, field3, field11, field21, field22, field23, field24',
+            'showitem' => 'field1, field3, field4, field5, field6, field7, field8, field9' . ', field10, field11, field12, field13, field15, field14, field16, field17, field18, field19, field2, field21, field22, field20, field23, field24',
         ],
     ],
     'palettes' => [

@@ -48,8 +48,9 @@ return [
             'exclude' => 1,
             'label'  => 'LLL:EXT:sav_library_example4/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample4_cds.date_of_purchase',
             'config' => [
-                'type' => 'input', 
-                'renderType' => 'inputDateTime',    
+                'type' => 'input',
+                'renderType' => 'inputDateTime',
+                'eval' => 'datetime',
                 'eval' => 'date',  
                 'default' => '0'     
             ],
@@ -145,7 +146,7 @@ return [
     ],
     'types' => [
         '0' => [
-            'showitem' => 'hidden, artist, album_title, date_of_purchase, link_to_website, coverimage, category, description' . (version_compare(TYPO3_version, '7.3', '<') ? ';;;richtext[]:rte_transform[mode=ts]' : '') . ', rel_lending, rel_friends',
+            'showitem' => 'hidden, artist, album_title, date_of_purchase, link_to_website, coverimage, category, description' . ', rel_lending, rel_friends',
         ],
     ],
     'palettes' => [

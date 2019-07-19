@@ -120,9 +120,9 @@ return [
             'exclude' => 1,
             'label'  => 'LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table3.field2',
             'config' => [
-                'type' => 'input', 
-                'renderType' => 'inputDateTime',    
-                'eval' => 'date',  
+                'type' => 'input',
+                'renderType' => 'inputDateTime',
+                'eval' => 'date',
                 'default' => '0'     
             ],
         ],

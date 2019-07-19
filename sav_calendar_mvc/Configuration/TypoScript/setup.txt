@@ -11,7 +11,7 @@ plugin.tx_savcalendarmvc {
     }
 }
 config.tx_extbase.persistence.classes {
-    SAV\SavCalendarMvc\Domain\Model\Event {
+    SAV\SavCalendarMvc\Domain\Model\ {
         mapping {
             tableName = tx_savcalendarmvc_domain_model_event
             columns {
@@ -20,7 +20,7 @@ config.tx_extbase.persistence.classes {
             }
         }
     }
-    SAV\SavCalendarMvc\Domain\Model\Category {
+    SAV\SavCalendarMvc\Domain\Model\ {
         mapping {
             tableName = tx_savcalendarmvc_domain_model_category
             columns {

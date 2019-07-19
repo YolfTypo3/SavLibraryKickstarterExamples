@@ -1,24 +1,21 @@
 <?php
 
-if (!defined ('TYPO3_MODE')) {
- 	die ('Access denied.');
-}
+defined('TYPO3_MODE') or die();
 
 // Configures the Dispatcher
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
-    'SAV.' . $_EXTKEY,
+    'YolfTypo3.sav_filters_mvc',
     'Default',
-    array (
+    [
         'Default' => 'default',
-    ),
+    ],
     // Non-cachable controller actions
-    array (
+    [
         'Default' => 'default',
-    )
+    ]
 );
 
 // Adds a page module hook
-$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['cms/layout/class.tx_cms_layout.php']['list_type_Info']['savfiltersmvc_default'][$_EXTKEY] =
-\SAV\SavFiltersMvc\Hooks\PageLayoutView::class . '->getExtensionInformation';
-
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['cms/layout/class.tx_cms_layout.php']['list_type_Info']['savfiltersmvc_default']['sav_filters_mvc'] =
+\YolfTypo3\SavFiltersMvc\Hooks\PageLayoutView::class . '->getExtensionInformation';
 ?>

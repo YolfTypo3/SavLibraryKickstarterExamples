@@ -1,39 +1,28 @@
 <?php
-namespace SAV\SavFiltersMvc\Filters;
+namespace YolfTypo3\SavFiltersMvc\Filters;
 
-/**
- * Copyright notice
+/*
+ * This file is part of the TYPO3 CMS project.
  *
- * (c) 2016 Laurent Foulloy <yolf.typo3@orange.fr>
+ * It is free software; you can redistribute it and/or modify it under
+ * the terms of the GNU General Public License, either version 2
+ * of the License, or any later version.
  *
- * All rights reserved
+ * For the full copyright and license information, please read the
+ * LICENSE.txt file that was distributed with TYPO3 source code.
  *
- * This script is part of the TYPO3 project. The TYPO3 project is
- * free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * The GNU General Public License can be found at
- * http://www.gnu.org/copyleft/gpl.html.
- *
- * This script is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
- * GNU General Public License for more details.
- *
- * This copyright notice MUST APPEAR in all copies of the script
+ * The TYPO3 project - inspiring people to share
  */
+
 use TYPO3\CMS\Core\Utility\ClassNamingUtility;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
-use SAV\SavFiltersMvc\Filters\AbstractFilter;
+use YolfTypo3\SavFiltersMvc\Filters\AbstractFilter;
 
 /**
  * Alphabetic filter
  */
 class MonthsFilter extends AbstractFilter
 {
-
     /**
      * Render
      *
@@ -49,15 +38,15 @@ class MonthsFilter extends AbstractFilter
         $repository = $this->objectManager->get($repositoryClassName);
 
         // Inits the months array
-        $values = array();
+        $values = [];
         $backwardMonths = self::getFilterSetting('backwardMonths');
         $forwardMonths = self::getFilterSetting('forwardMonths');
         for ($i = - $backwardMonths; $i < 12 + $forwardMonths; $i ++) {
             $monthName = ucfirst(strftime('%b', strtotime($i . 'months 01/01/2000')));
-            $values[$i] = array(
+            $values[$i] = [
                 'label' => $monthName,
                 'active' => 0,
-            );
+            ];
         }
 
         // Gets the rows
@@ -67,20 +56,26 @@ class MonthsFilter extends AbstractFilter
         $fieldName = self::getFilterSetting('fieldName');
         $getter = 'get' . GeneralUtility::underscoredToUpperCamelCase($fieldName);
         if (! method_exists($modelClassName, $getter)) {
-            $this->addErrorMessage('error.unknownMethod', array(
-                $this->getFilterName(),
-                $fieldName . '()'
-            ));
+            $this->addErrorMessage(
+                'error.unknownMethod',
+                [
+                    $this->getFilterName(),
+                    $fieldName . '()'
+                ]
+            );
             return;
         }
 
         // Checks if the type of the field is \DateTime
         if ($rows->count() > 0 && ! $rows[0]->_getProperty($fieldName) instanceof \DateTime) {
-            $this->addErrorMessage('error.typeMustBe', array(
-                $this->getFilterName(),
-                $fieldName,
-                '\DateTime'
-            ));
+            $this->addErrorMessage(
+                'error.typeMustBe',
+                [
+                    $this->getFilterName(),
+                    $fieldName,
+                    '\DateTime'
+                ]
+            );
             return;
         }
 
@@ -126,7 +121,7 @@ class MonthsFilter extends AbstractFilter
         if ($selected !== null) {
             if ($selected == 'all') {
                 // All is selected, return a constraint always true
-                $constraints = array();
+                $constraints = [];
                 $constraints[] = $query->greaterThan('uid', 0);
                 return $query->logicalOr($constraints);
             } else {
@@ -134,7 +129,7 @@ class MonthsFilter extends AbstractFilter
                 $currentMonthName = \DateTime::createFromFormat('Y-m', $selected)->format('F Y');
 
                 $fieldName = self::getFilterSetting('fieldName');
-                $constraints = array();
+                $constraints = [];
                 $constraints[] = $query->logicalAnd(
                     $query->greaterThanOrEqual($fieldName, new \DateTime('first day of ' . $currentMonthName)),
                     $query->lessThan($fieldName, new \DateTime('first day of ' . $currentMonthName . ' 1 month'))
@@ -146,7 +141,7 @@ class MonthsFilter extends AbstractFilter
         } elseif (! empty($searchValue)) {
             // A search is requested
             $searchFields = explode(',', self::getFilterSetting('searchFields'));
-            $constraints = array();
+            $constraints = [];
             foreach ($searchFields as $searchField) {
                 $constraints[] = $query->like($searchField, '%' . $searchValue . '%');
             }

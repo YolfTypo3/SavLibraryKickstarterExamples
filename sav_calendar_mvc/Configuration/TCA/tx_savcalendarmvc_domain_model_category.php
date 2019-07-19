@@ -82,8 +82,6 @@ return [
     'types' => [
         '0' => [
             'showitem' => 'hidden, title',
-            'columnsOverrides' => [
-            ],
         ],
     ],
     'palettes' => [

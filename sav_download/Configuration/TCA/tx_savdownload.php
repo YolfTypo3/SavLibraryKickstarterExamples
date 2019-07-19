@@ -55,10 +55,10 @@ return [
             'exclude' => 1,
             'label'  => 'LLL:EXT:sav_download/Resources/Private/Language/locallang_db.xlf:tx_savdownload.date',
             'config' => [
-                'type' => 'input', 
-                'renderType' => 'inputDateTime',    
-                'eval' => 'datetime', 
-                'default' => '0'      
+                'type' => 'input',
+                'renderType' => 'inputDateTime',
+                'eval' => 'datetime',
+                'default' => '0'
             ],
         ],
         'file' => [
@@ -80,8 +80,6 @@ return [
     'types' => [
         '0' => [
             'showitem' => 'hidden, title, category, date, file',
-            'columnsOverrides' => [
-            ],
         ],
     ],
     'palettes' => [

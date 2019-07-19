@@ -2,7 +2,7 @@
 
 <SavLibraryPlus>
     <general type="array">
-        <version>1.1.0</version>
+        <version>1.2.0</version>
         <overridedTablesForLocalization>
         </overridedTablesForLocalization>
         <saveAndNew type="array">
@@ -278,6 +278,7 @@
                                                 <tableName>tx_savlibraryexample0_table3</tableName>
                                                 <fieldName>field1</fieldName>
                                                 <fieldType>String</fieldType>
+                                                <subformItem>1</subformItem>
                                             </config>
                                         </a76475737>
                                         <a198859448 type="array">
@@ -285,6 +286,7 @@
                                                 <tableName>tx_savlibraryexample0_table3</tableName>
                                                 <fieldName>field2</fieldName>
                                                 <fieldType>Date</fieldType>
+                                                <subformItem>1</subformItem>
                                             </config>
                                         </a198859448>
                                     </fields>
@@ -306,6 +308,7 @@
                                                 <tableName>tx_savlibraryexample0_table4</tableName>
                                                 <fieldName>field1</fieldName>
                                                 <fieldType>String</fieldType>
+                                                <subformItem>1</subformItem>
                                             </config>
                                         </a115492047>
                                     </fields>
@@ -327,6 +330,7 @@
                                                 <tableName>tx_savlibraryexample0_table5</tableName>
                                                 <fieldName>field1</fieldName>
                                                 <fieldType>String</fieldType>
+                                                <subformItem>1</subformItem>
                                             </config>
                                         </a43105885>
                                         <a102615827 type="array">
@@ -334,6 +338,7 @@
                                                 <tableName>tx_savlibraryexample0_table5</tableName>
                                                 <fieldName>field2</fieldName>
                                                 <fieldType>RelationManyToManyAsSubform</fieldType>
+                                                <subformItem>1</subformItem>
                                                 <subform type="array">
                                                     <a217895432 type="array">
                                                         <fields type="array">
@@ -342,6 +347,7 @@
                                                                     <tableName>tx_savlibraryexample0_table6</tableName>
                                                                     <fieldName>field1</fieldName>
                                                                     <fieldType>String</fieldType>
+                                                                    <subformItem>1</subformItem>
                                                                 </config>
                                                             </a102556090>
                                                         </fields>
@@ -382,8 +388,9 @@
                     </a89444654>
                     <a15195489 type="array">
                         <config type="array">
-                            <graphtemplate>typo3conf/ext/sav_jpgraph/Resources/Private/Templates/pieex4.xml</graphtemplate>
-                            <markers>data#data=notEmpty[###field14###],data#legend=notEmpty[###field15###]</markers>
+                            <graphtemplate>typo3conf/ext/sav_charts/Resources/Private/Templates/ChartsExamples/PieChartAdvanced.xml</graphtemplate>
+                            <tags>marker#title=Graph in SAV Library Plus, data#data=notEmpty[###field14###],
+data#labels=notEmpty[###field15###]</tags>
                             <tableName>tx_savlibraryexample0_table1</tableName>
                             <fieldName>field16</fieldName>
                             <fieldType>Graph</fieldType>
@@ -595,6 +602,7 @@
                                                 <tableName>tx_savlibraryexample0_table3</tableName>
                                                 <fieldName>field1</fieldName>
                                                 <fieldType>String</fieldType>
+                                                <subformItem>1</subformItem>
                                             </config>
                                         </a76475737>
                                         <a198859448 type="array">
@@ -603,6 +611,7 @@
                                                 <tableName>tx_savlibraryexample0_table3</tableName>
                                                 <fieldName>field2</fieldName>
                                                 <fieldType>Date</fieldType>
+                                                <subformItem>1</subformItem>
                                             </config>
                                         </a198859448>
                                     </fields>
@@ -624,6 +633,7 @@
                                                 <tableName>tx_savlibraryexample0_table4</tableName>
                                                 <fieldName>field1</fieldName>
                                                 <fieldType>String</fieldType>
+                                                <subformItem>1</subformItem>
                                             </config>
                                         </a115492047>
                                     </fields>
@@ -645,6 +655,7 @@
                                                 <tableName>tx_savlibraryexample0_table5</tableName>
                                                 <fieldName>field1</fieldName>
                                                 <fieldType>String</fieldType>
+                                                <subformItem>1</subformItem>
                                             </config>
                                         </a43105885>
                                         <a102615827 type="array">
@@ -652,6 +663,7 @@
                                                 <tableName>tx_savlibraryexample0_table5</tableName>
                                                 <fieldName>field2</fieldName>
                                                 <fieldType>RelationManyToManyAsSubform</fieldType>
+                                                <subformItem>1</subformItem>
                                                 <subform type="array">
                                                     <a217895432 type="array">
                                                         <fields type="array">
@@ -660,6 +672,7 @@
                                                                     <tableName>tx_savlibraryexample0_table6</tableName>
                                                                     <fieldName>field1</fieldName>
                                                                     <fieldType>String</fieldType>
+                                                                    <subformItem>1</subformItem>
                                                                 </config>
                                                             </a102556090>
                                                         </fields>

@@ -1,8 +1,8 @@
 <?php
 
-namespace SAV\SavFiltersMvc\Hooks;
+namespace YolfTypo3\SavFiltersMvc\Hooks;
 
-/**
+/*
  * This file is part of the TYPO3 CMS project.
  *
  * It is free software; you can redistribute it and/or modify it under
@@ -10,9 +10,9 @@ namespace SAV\SavFiltersMvc\Hooks;
  * of the License, or any later version.
  *
  * For the full copyright and license information, please read the
- * LICENSE.txt file that was distributed with this source code.
+ * LICENSE.txt file that was distributed with TYPO3 source code.
  *
- * The TYPO3 project - inspiring people to share!
+ * The TYPO3 project - inspiring people to share
  */
 
 use TYPO3\CMS\Core\Utility\GeneralUtility;
@@ -53,7 +53,6 @@ class PageLayoutView
      */
     public function getExtensionInformation(array $params)
     {
-
         $result = $params['pObj']->linkEditContent('<strong>' . $this->getLanguageService()->sL(self::LANGUAGE_ROOT_PATH . 'locallang_db.xlf:' . 'tt_content.list_type_pi1', true) . '</strong><br>', $params['row']);
 
         if ($params['row']['list_type'] == self::LIST_TYPE ) {

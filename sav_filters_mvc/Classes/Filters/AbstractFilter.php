@@ -1,42 +1,31 @@
 <?php
-namespace SAV\SavFiltersMvc\Filters;
+namespace YolfTypo3\SavFiltersMvc\Filters;
 
-/**
- * Copyright notice
+/*
+ * This file is part of the TYPO3 CMS project.
  *
- * (c) 2016 Laurent Foulloy <yolf.typo3@orange.fr>
+ * It is free software; you can redistribute it and/or modify it under
+ * the terms of the GNU General Public License, either version 2
+ * of the License, or any later version.
  *
- * All rights reserved
+ * For the full copyright and license information, please read the
+ * LICENSE.txt file that was distributed with TYPO3 source code.
  *
- * This script is part of the TYPO3 project. The TYPO3 project is
- * free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * The GNU General Public License can be found at
- * http://www.gnu.org/copyleft/gpl.html.
- *
- * This script is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
- * GNU General Public License for more details.
- *
- * This copyright notice MUST APPEAR in all copies of the script
+ * The TYPO3 project - inspiring people to share
  */
-use SAV\SavFiltersMvc\Controller\DefaultController;
+
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Utility\LocalizationUtility;
 use TYPO3\CMS\Core\Collection\NameableCollectionInterface;
+use YolfTypo3\SavFiltersMvc\Controller\DefaultController;
 
 /**
  * Alphabetic filter
  */
 abstract class AbstractFilter
 {
-
     /**
-     * @var boolean
+     * @var bool
      */
     protected static $filterIsSelected = FALSE;
 
@@ -48,10 +37,10 @@ abstract class AbstractFilter
     /**
      * @var array
      */
-    protected static $filterSettings = NULL;
+    protected static $filterSettings = null;
 
     /**
-     * @var \SAV\SavFiltersMvc\Controller\DefaultController
+     * @var \YolfTypo3\SavFiltersMvc\Controller\DefaultController
      */
     protected $controller;
 
@@ -63,7 +52,7 @@ abstract class AbstractFilter
     /**
      * @var boolean
      */
-    protected static $keepWhereClause = False;
+    protected static $keepWhereClause = false;
 
     /**
      * Injects the object manager
@@ -80,7 +69,7 @@ abstract class AbstractFilter
     /**
      * sets the controller
      *
-     * @param \SAV\SavFiltersMvc\Controller\DefaultController $controller
+     * @param \YolfTypo3\SavFiltersMvc\Controller\DefaultController $controller
      * @return void
      */
     public function setController($controller)
@@ -174,9 +163,9 @@ abstract class AbstractFilter
             $filterContext = self::getFilterContextFromSession();
             if (empty($filterContext)) {
                 $filterClassName = self::getFilterClassName();
-                $filterContext = array(
+                $filterContext = [
                    'filter' => GeneralUtility::md5int($filterClassName),
-                );
+                ];
             }
         }
 
@@ -197,12 +186,12 @@ abstract class AbstractFilter
             $filterContext = GeneralUtility::_POST('tx_savfiltersmvc_default');
 
             if ($filterContext['filter'] != GeneralUtility::md5int($filterClassName)) {
-                self::$filterIsSelected = FALSE;
-                return array();
+                self::$filterIsSelected = false;
+                return [];
             }
         }
 
-        self::$filterIsSelected = TRUE;
+        self::$filterIsSelected = true;
         return $filterContext;
     }
 
@@ -219,7 +208,7 @@ abstract class AbstractFilter
 
         $filterClassName = self::getFilterClassName();
         if ($sessionFilters[$filterClassName]['pageId'] != $GLOBALS['TSFE']->id || $sessionSelectedFilter != $filterClassName) {
-            return array();
+            return [];
         } else {
             return $sessionFilters[$filterClassName]['context'];
         }
@@ -238,7 +227,7 @@ abstract class AbstractFilter
 
         $filterClassName = self::getFilterClassName();
         if ($sessionFilters[$filterClassName]['pageId'] != $GLOBALS['TSFE']->id || $sessionSelectedFilter != $filterClassName) {
-            return array();
+            return [];
         } else {
             return $sessionFilters[$filterClassName]['settings'];
         }
@@ -255,11 +244,11 @@ abstract class AbstractFilter
         if (self::$filterIsSelected) {
             $sessionFilters = self::getVariableFromSession('filters');
             $filterClassName = self::getFilterClassName();
-            $sessionFilters[$filterClassName] = array(
+            $sessionFilters[$filterClassName] = [
                 'pageId' => self::getPageId(),
                 'context' => self::$filterContext,
                 'settings' => self::$filterSettings
-            );
+            ];
 
             // Sets session data
             $GLOBALS['TSFE']->fe_user->setKey('ses', 'selectedFilter', $filterClassName);

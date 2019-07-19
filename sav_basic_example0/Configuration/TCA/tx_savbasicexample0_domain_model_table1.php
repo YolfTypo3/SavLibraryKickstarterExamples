@@ -39,9 +39,9 @@ return [
             'exclude' => 1,
             'label'  => 'LLL:EXT:sav_basic_example0/Resources/Private/Language/locallang_db.xlf:tx_savbasicexample0_domain_model_table1.field2',
             'config' => [
-                'type' => 'input', 
-                'renderType' => 'inputDateTime',    
-                'eval' => 'date',  
+                'type' => 'input',
+                'renderType' => 'inputDateTime',
+                'eval' => 'date',
                 'default' => '0'     
             ],
         ],

@@ -26,17 +26,16 @@
                             <label>LLL:EXT:sav_library_plus/Resources/Private/Language/locallang.xlf:pi_flexform.formId</label>
                             <config>
                                 <type>select</type>
+                                <renderType>selectSingle</renderType>
                                 <items  type="array">
                                     <numIndex  index="0"  type="array">
                                         <numIndex  index="0"></numIndex>
                                         <numIndex  index="1"></numIndex>
                                     </numIndex>
-                                    
                                     <numIndex  index="1"  type="array">
                                         <numIndex  index="0">Contact</numIndex>
                                         <numIndex  index="1">1</numIndex>
                                     </numIndex>
-                                    
                                 </items>
                                 <maxitems>1</maxitems>
                             </config>
@@ -56,6 +55,7 @@
                             <label>LLL:EXT:sav_library_plus/Resources/Private/Language/locallang.xlf:pi_flexform.showNoAvailableInformation</label>
                             <config>
                                 <type>select</type>
+                                <renderType>selectSingle</renderType>
                                 <items  type="array">
                                     <numIndex  index="0"  type="array">
                                         <numIndex  index="0">LLL:EXT:sav_library_plus/Resources/Private/Language/locallang.xlf:pi_flexform.showNoAvailableInformation.I.0</numIndex>
@@ -125,7 +125,6 @@
                                 <size>3</size>
                                 <maxitems>22</maxitems>
                                 <minitems>0</minitems>
-                                <show_thumbs>1</show_thumbs>
                             </config>
                         </TCEforms>
                     </allowedGroups>
@@ -179,9 +178,8 @@
                             <label>LLL:EXT:sav_library_plus/Resources/Private/Language/locallang.xlf:pi_flexform.inputStartDate</label>
                             <config>
                                 <type>input</type>
+                                <renderType>inputDateTime</renderType>
                                 <eval>datetime</eval>
-                                <size>12</size>
-                                <max>20</max>
                                 <default>0</default>
                             </config>
                         </TCEforms>
@@ -191,9 +189,8 @@
                             <label>LLL:EXT:sav_library_plus/Resources/Private/Language/locallang.xlf:pi_flexform.inputEndDate</label>
                             <config>
                                 <type>input</type>
+                                <renderType>inputDateTime</renderType>
                                 <eval>datetime</eval>
-                                <size>12</size>
-                                <max>20</max>
                                 <default>0</default>
                             </config>
                         </TCEforms>
@@ -203,6 +200,7 @@
                             <label>LLL:EXT:sav_library_plus/Resources/Private/Language/locallang.xlf:pi_flexform.dateUserRestriction</label>
                             <config>
                                 <type>select</type>
+                                <renderType>selectSingle</renderType>
                                 <items  type="array">
                                     <numIndex  index="0"  type="array">
                                         <numIndex  index="0">LLL:EXT:sav_library_plus/Resources/Private/Language/locallang.xlf:pi_flexform.dateUserRestriction.I.0</numIndex>
@@ -284,7 +282,6 @@
                             </config>
                         </TCEforms>
                     </allowExec>
-                    
                 </el>
             </ROOT>
         </sAdvanced>    
@@ -316,7 +313,6 @@
                                 <size>1</size>
                                 <maxitems>1</maxitems>
                                 <minitems>0</minitems>
-                                <show_thumbs>1</show_thumbs>
                             </config>
                         </TCEforms>
                     </helpPageListView>
@@ -330,7 +326,6 @@
                                 <size>1</size>
                                 <maxitems>1</maxitems>
                                 <minitems>0</minitems>
-                                <show_thumbs>1</show_thumbs>
                             </config>
                         </TCEforms>
                     </helpPageSingleView>
@@ -344,7 +339,6 @@
                                 <size>1</size>
                                 <maxitems>1</maxitems>
                                 <minitems>0</minitems>
-                                <show_thumbs>1</show_thumbs>
                             </config>
                         </TCEforms>
                     </helpPageEditView>

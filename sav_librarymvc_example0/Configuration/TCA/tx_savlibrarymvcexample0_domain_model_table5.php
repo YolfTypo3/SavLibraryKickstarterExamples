@@ -62,7 +62,6 @@ return [
                                 'selected' => 1,
                              ],
                             3 => [
-                                'truc' => 'field2',
                                 'edit' => 1,
                                 'subformKey' => 3,
                                 'addDelete' => '1',

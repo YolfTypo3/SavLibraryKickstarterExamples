@@ -1,4 +1,3 @@
-
 plugin.tx_savfiltersmvc {
     view {
         # cat=plugin.tx_savfiltersmvc/file; type=string; label=Path to template root (FE)

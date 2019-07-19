@@ -30,10 +30,10 @@ return [
             'exclude' => 1,
             'label'  => 'LLL:EXT:sav_meetings/Resources/Private/Language/locallang_db.xlf:tx_savmeetings.date',
             'config' => [
-                'type' => 'input', 
-                'renderType' => 'inputDateTime',    
-                'eval' => 'datetime', 
-                'default' => '0'      
+                'type' => 'input',
+                'renderType' => 'inputDateTime',
+                'eval' => 'datetime',
+                'default' => '0'
             ],
         ],
         'category' => [
@@ -87,8 +87,6 @@ return [
     'types' => [
         '0' => [
             'showitem' => 'hidden, date, category, participants, rel_item',
-            'columnsOverrides' => [
-            ],
         ],
     ],
     'palettes' => [

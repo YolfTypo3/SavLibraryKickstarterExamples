@@ -15,8 +15,8 @@
         "typo3-ter/sav-library-example6": "self.version"
     },
     "require": {
-        "typo3/cms-core": ">=6.2,<9.0",
-        "typo3-ter/sav-library-plus": ">=1"
+        "typo3/cms-core": ">=8.0,<=9.0",
+        "typo3-ter/sav-library-plus": ">=1.2"
     },
     "autoload": {
         "psr-4": {

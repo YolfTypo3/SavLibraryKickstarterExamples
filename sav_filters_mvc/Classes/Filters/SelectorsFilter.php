@@ -1,32 +1,22 @@
 <?php
-namespace SAV\SavFiltersMvc\Filters;
+namespace YolfTypo3\SavFiltersMvc\Filters;
 
-/**
- * Copyright notice
+/*
+ * This file is part of the TYPO3 CMS project.
  *
- * (c) 2016 Laurent Foulloy <yolf.typo3@orange.fr>
+ * It is free software; you can redistribute it and/or modify it under
+ * the terms of the GNU General Public License, either version 2
+ * of the License, or any later version.
  *
- * All rights reserved
+ * For the full copyright and license information, please read the
+ * LICENSE.txt file that was distributed with TYPO3 source code.
  *
- * This script is part of the TYPO3 project. The TYPO3 project is
- * free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * The GNU General Public License can be found at
- * http://www.gnu.org/copyleft/gpl.html.
- *
- * This script is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
- * GNU General Public License for more details.
- *
- * This copyright notice MUST APPEAR in all copies of the script
+ * The TYPO3 project - inspiring people to share
  */
+
 use TYPO3\CMS\Core\Utility\ClassNamingUtility;
-use SAV\SavFiltersMvc\Filters\AbstractFilter;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
+use YolfTypo3\SavFiltersMvc\Filters\AbstractFilter;
 
 /**
  * Selectors filter
@@ -38,9 +28,9 @@ class SelectorsFilter extends AbstractFilter
     const SUBMIT_BUTTON = 3;
 
     /**
-     * @var boolean
+     * @var bool
      */
-    protected static $keepWhereClause = TRUE;
+    protected static $keepWhereClause = true;
 
     /**
      * Render
@@ -50,7 +40,7 @@ class SelectorsFilter extends AbstractFilter
     public function renderFilter()
     {
         // Initializes the items
-        $items = array();
+        $items = [];
 
         // Gets the item settings
         $itemSettings = $this->getFilterSettings();
@@ -81,10 +71,13 @@ class SelectorsFilter extends AbstractFilter
                         // Gets the getter for the foreign field
                         $getter = 'get' . GeneralUtility::underscoredToUpperCamelCase($fieldName);
                         if (! method_exists($modelClassName, $getter)) {
-                            $this->addErrorMessage('error.unknownMethod', array(
-                                $this->getFilterName(),
-                                $getter . '()'
-                            ));
+                            $this->addErrorMessage(
+                                'error.unknownMethod',
+                                [
+                                    $this->getFilterName(),
+                                    $getter . '()'
+                                ]
+                            );
                             return;
                         }
 
@@ -99,7 +92,7 @@ class SelectorsFilter extends AbstractFilter
                             // Gets the rows
                             $rows = $repository->findAll();
                         } else {
-                            $rows = array();
+                            $rows = [];
                         }
 
                         // Gets the field label
@@ -107,25 +100,25 @@ class SelectorsFilter extends AbstractFilter
 
                     }
 
-                    $items[] = array(
+                    $items[] = [
                         'type' => 'SelectorBox',
                         'values' => $rows,
                         'fieldName' => $fieldName,
                         'fieldLabel' => $fieldLabel,
-                    );
+                    ];
                     break;
 
                 case self::SEARCH_BOX:
-                    $items[] = array(
+                    $items[] = [
                         'type' => 'SearchBox',
                         'fieldName' => $fieldName,
-                    );
+                    ];
                     break;
 
                 case self::SUBMIT_BUTTON:
-                    $items[] = array(
+                    $items[] = [
                         'type' => 'SubmitButton',
-                    );
+                    ];
                     break;
             }
 
@@ -148,10 +141,10 @@ class SelectorsFilter extends AbstractFilter
         $selectors = self::getParameterFromFilterContext('selectors');
         $searchValue = self::getParameterFromFilterContext('searchValue');
 
-        $globalConstraints = array();
+        $globalConstraints = [];
         if (!empty($selectors)) {
             // Builds the selectors constraints
-            $selectorsConstraints = array();
+            $selectorsConstraints = [];
             foreach ($selectors as $selectorKey => $selector) {
                 if (!empty($selector)) {
                     $selectorsConstraints[] = $query->equals($selectorKey, $selector);
@@ -167,7 +160,7 @@ class SelectorsFilter extends AbstractFilter
             $searchFields = explode(',', self::getSearchFields());
 
             // Builds the search constraints
-            $searchConstraints = array();
+            $searchConstraints = [];
             foreach ($searchFields as $searchField) {
                 $searchConstraints[] = $query->like($searchField, '%' . $searchValue . '%');
             }

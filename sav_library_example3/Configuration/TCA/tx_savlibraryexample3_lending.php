@@ -57,8 +57,9 @@ return [
             'exclude' => 1,
             'label'  => 'LLL:EXT:sav_library_example3/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample3_lending.lending_date',
             'config' => [
-                'type' => 'input', 
-                'renderType' => 'inputDateTime',    
+                'type' => 'input',
+                'renderType' => 'inputDateTime',
+                'eval' => 'datetime',
                 'eval' => 'date',  
                 'default' => '0'     
             ],
@@ -67,8 +68,9 @@ return [
             'exclude' => 1,
             'label'  => 'LLL:EXT:sav_library_example3/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample3_lending.return_date',
             'config' => [
-                'type' => 'input', 
-                'renderType' => 'inputDateTime',    
+                'type' => 'input',
+                'renderType' => 'inputDateTime',
+                'eval' => 'datetime',
                 'eval' => 'date',  
                 'default' => '0'     
             ],

@@ -1,39 +1,28 @@
 <?php
-namespace SAV\SavFiltersMvc\Filters;
+namespace YolfTypo3\SavFiltersMvc\Filters;
 
-/**
- * Copyright notice
+/*
+ * This file is part of the TYPO3 CMS project.
  *
- * (c) 2016 Laurent Foulloy <yolf.typo3@orange.fr>
+ * It is free software; you can redistribute it and/or modify it under
+ * the terms of the GNU General Public License, either version 2
+ * of the License, or any later version.
  *
- * All rights reserved
+ * For the full copyright and license information, please read the
+ * LICENSE.txt file that was distributed with TYPO3 source code.
  *
- * This script is part of the TYPO3 project. The TYPO3 project is
- * free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * The GNU General Public License can be found at
- * http://www.gnu.org/copyleft/gpl.html.
- *
- * This script is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
- * GNU General Public License for more details.
- *
- * This copyright notice MUST APPEAR in all copies of the script
+ * The TYPO3 project - inspiring people to share
  */
+
 use TYPO3\CMS\Core\Utility\ClassNamingUtility;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
-use SAV\SavFiltersMvc\Filters\AbstractFilter;
+use YolfTypo3\SavFiltersMvc\Filters\AbstractFilter;
 
 /**
  * Alphabetic filter
  */
 class MiniCalendarFilter extends AbstractFilter
 {
-
     /**
      * Render
      *
@@ -60,7 +49,7 @@ class MiniCalendarFilter extends AbstractFilter
         $currentMonthName = $currentMonth->format('F Y');
 
         // Sets the days header
-        $daysHeader = array();
+        $daysHeader = [];
         for ($i = 0; $i < 7; $i ++) {
             $daysHeader[] = strftime('%a', strtotime('next Monday +' . $i . ' days'));
         }
@@ -75,11 +64,11 @@ class MiniCalendarFilter extends AbstractFilter
         $values = [];
         $emptyDays = (new \DateTime('last Monday of ' . $currentMonthName . ' -1 month '))->diff(new \DateTime('first day of ' . $currentMonthName))->d;
         for ($i = 0; $i < $emptyDays; $i ++) {
-            $values[] = array(
+            $values[] = [
                 'active' => 0,
                 'label' => (new \DateTime('last Monday of ' . $currentMonthName . ' -1 month ' . $i . 'day'))->format('d'),
                 'class' => 'notInMonth',
-            );
+            ];
         }
 
         $daysInMonth = (new \DateTime($currentMonthName))->format('t');
@@ -93,26 +82,26 @@ class MiniCalendarFilter extends AbstractFilter
             if ($month . '-' . ($i + 1) == (new \DateTime('now '))->format('Y-m-j')) {
                 $class .= ' today';
             }
-            $values[] = array(
+            $values[] = [
                 'active' => 0,
                 'label' => $i + 1,
                 'class' => $class,
                 'title' => '',
-            );
+            ];
         }
 
         for ($i = $emptyDays + $daysInMonth, $counter = 1; $i < 42; $i ++, $counter ++) {
-            $values[] = array(
+            $values[] = [
                 'active' => 0,
                 'label' => $counter,
                 'class' => 'notInMonth',
-            );
+            ];
         }
 
         // Gets the rows in the selected month
         $fieldNameForDate = self::getFilterSetting('fieldNameForDate');
         $query = $repository->createQuery();
-        $constraints = array();
+        $constraints = [];
         $constraints[] = $query->logicalAnd(
             $query->greaterThanOrEqual($fieldNameForDate, new \DateTime('first day of ' . $currentMonthName)),
             $query->lessThan($fieldNameForDate, new \DateTime('first day of ' . $currentMonthName . ' 1 month'))
@@ -123,20 +112,26 @@ class MiniCalendarFilter extends AbstractFilter
         // Gets the getter for the date
         $getterForDate = 'get' . GeneralUtility::underscoredToUpperCamelCase($fieldNameForDate);
         if (! method_exists($modelClassName, $getterForDate)) {
-            $this->addErrorMessage('error.unknownMethod', array(
-                $this->getFilterName(),
-                $getterForDate . '()'
-            ));
+            $this->addErrorMessage(
+                'error.unknownMethod',
+                [
+                    $this->getFilterName(),
+                    $getterForDate . '()'
+                ]
+            );
             return;
         }
 
         // Checks if the type of the field is \DateTime
         if ($rows->count() > 0 && ! $rows[0]->_getProperty($fieldNameForDate) instanceof \DateTime) {
-            $this->addErrorMessage('error.typeMustBe', array(
-                $this->getFilterName(),
-                $fieldNameForDate,
-                '\DateTime'
-            ));
+            $this->addErrorMessage(
+                'error.typeMustBe',
+                [
+                    $this->getFilterName(),
+                    $fieldNameForDate,
+                    '\DateTime'
+                ]
+            );
             return;
         }
 
@@ -144,10 +139,13 @@ class MiniCalendarFilter extends AbstractFilter
         $fieldNameForTitle = self::getFilterSetting('fieldNameForTitle');
         $getterForTitle = 'get' . GeneralUtility::underscoredToUpperCamelCase($fieldNameForTitle);
         if (! method_exists($modelClassName, $getterForTitle)) {
-            $this->addErrorMessage('error.unknownMethod', array(
-                $this->getFilterName(),
-                $getterForTitle . '()'
-            ));
+            $this->addErrorMessage(
+                'error.unknownMethod',
+                [
+                    $this->getFilterName(),
+                    $getterForTitle . '()'
+                ]
+            );
             return;
         }
 
@@ -159,12 +157,12 @@ class MiniCalendarFilter extends AbstractFilter
         }
 
         // Assigns the variables
-        $this->controller->getView()->assign('month', array(
-            'backward' =>  (new \DateTime('first day of ' . $currentMonthName . ' -1 month'))->format('Y-m'),
-            'current' => (new \DateTime())->format('Y-m'),
-            'active' => (new \DateTime('first day of ' . $currentMonthName))->format('Y-m'),
-            'forward' => (new \DateTime('first day of ' . $currentMonthName . ' 1 month'))->format('Y-m'),
-            )
+        $this->controller->getView()->assign('month', [
+                'backward' =>  (new \DateTime('first day of ' . $currentMonthName . ' -1 month'))->format('Y-m'),
+                'current' => (new \DateTime())->format('Y-m'),
+                'active' => (new \DateTime('first day of ' . $currentMonthName))->format('Y-m'),
+                'forward' => (new \DateTime('first day of ' . $currentMonthName . ' 1 month'))->format('Y-m'),
+            ]
         );
         $this->controller->getView()->assign('currentMonthHeader', $currentMonthHeader);
         $this->controller->getView()->assign('daysHeader', $daysHeader);
@@ -188,7 +186,7 @@ class MiniCalendarFilter extends AbstractFilter
 
         // Builds the query constraints
         $fieldNameForDate = self::getFilterSetting('fieldNameForDate');
-        $constraints = array();
+        $constraints = [];
         if ($month !== null) {
             if ($selected !== null) {
                 $currentDate = $month . '-' . $selected;

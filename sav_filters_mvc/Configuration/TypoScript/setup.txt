@@ -1,5 +1,3 @@
-
-
 plugin.tx_savfiltersmvc {
     view {
         templateRootPaths.10 = {$plugin.tx_savfiltersmvc.view.templateRootPath}
