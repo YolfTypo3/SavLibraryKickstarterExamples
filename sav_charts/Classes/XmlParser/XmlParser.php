@@ -13,8 +13,8 @@ namespace YolfTypo3\SavCharts\XmlParser;
  *
  * The TYPO3 project - inspiring people to share!
  */
-
 use TYPO3\CMS\Core\Utility\GeneralUtility;
+use YolfTypo3\SavCharts\Compatibility\EnvironmentCompatibility;
 use YolfTypo3\SavCharts\Controller\DefaultController;
 
 /**
@@ -22,6 +22,7 @@ use YolfTypo3\SavCharts\Controller\DefaultController;
  */
 class XmlParser
 {
+
     /**
      * Allowed chart tags
      *
@@ -183,7 +184,7 @@ class XmlParser
      *
      * @return \YolfTypo3\SavCharts\Controller\DefaultController $controller
      */
-    public static function getController() : DefaultController
+    public static function getController(): DefaultController
     {
         return self::$controller;
     }
@@ -277,12 +278,9 @@ class XmlParser
             }
             return $xmlTagResult->getXmlTagValue();
         } else {
-            return self::getController()->addError(
-                'error.referenceNotWellFormed',
-                [
-                    $reference
-                ]
-            );
+            return self::getController()->addError('error.referenceNotWellFormed', [
+                $reference
+            ]);
         }
     }
 
@@ -297,12 +295,9 @@ class XmlParser
     {
         $className = self::getClassName($xmlTag);
         if ($className === false) {
-            return self::getController()->addError(
-                'error.unknownClass',
-                [
-                    $xmlTag
-                ]
-            );
+            return self::getController()->addError('error.unknownClass', [
+                $xmlTag
+            ]);
         }
 
         // Creates the xml tag object
@@ -384,14 +379,11 @@ class XmlParser
         if ($this->xml === false) {
             $errors = libxml_get_errors();
             // Displays the first error
-            self::getController()->addError(
-                'error.xmlSyntaxError',
-                [
-                    $errors[0]->message,
-                    $errors[0]->line,
-                    $fileName
-                ]
-            );
+            self::getController()->addError('error.xmlSyntaxError', [
+                $errors[0]->message,
+                $errors[0]->line,
+                $fileName
+            ]);
             return;
         }
         $this->isLoaded = true;
@@ -422,14 +414,11 @@ class XmlParser
         if ($this->xml === false) {
             $errors = libxml_get_errors();
             // Display the first error
-            self::getController()->addError(
-                'error.xmlSyntaxError',
-                [
-                    $errors[0]->message,
-                    $errors[0]->line,
-                    $xmlString
-                ]
-            );
+            self::getController()->addError('error.xmlSyntaxError', [
+                $errors[0]->message,
+                $errors[0]->line,
+                $xmlString
+            ]);
             return;
         }
         $this->isLoaded = true;
@@ -493,12 +482,9 @@ class XmlParser
                     // Calls the method if it exists
                     $xmlTagObject->$childName($child);
                 } else {
-                    return self::getController()->addError(
-                        'error.unknownXmlTag',
-                        [
-                            $childName
-                        ]
-                    );
+                    return self::getController()->addError('error.unknownXmlTag', [
+                        $childName
+                    ]);
                 }
             }
         }
@@ -546,13 +532,10 @@ class XmlParser
                 // Gets the key
                 $key = (string) $child->attributes()->key;
                 if ($key == '') {
-                    return self::getController()->addError(
-                        'error.missingAttribute',
-                        [
-                            'key',
-                            'item'
-                        ]
-                    );
+                    return self::getController()->addError('error.missingAttribute', [
+                        'key',
+                        'item'
+                    ]);
                 }
                 if (self::isReference($key) !== false) {
                     $key = self::getValueFromReference($key);
@@ -617,7 +600,7 @@ class XmlParser
      *
      * @return array
      */
-    public function postProcessing() : array
+    public function postProcessing(): array
     {
         // Creates the directory for the csv file
         if (! is_dir('typo3temp/sav_charts')) {
@@ -652,19 +635,15 @@ class XmlParser
             foreach (self::$xmlTagResults['plugin'] as $xmlTagResultKey => $xmlTagResult) {
                 // Gets the xml tag value
                 $pluginFileName = $xmlTagResult->getXmlTagValue();
-                if (!file_exists($pluginFileName)) {
-                    return self::getController()->addError(
-                        'error.unknownFile',
-                        [
-                            $pluginFileName
-                        ]
-                    );
+                if (! file_exists($pluginFileName)) {
+                    return self::getController()->addError('error.unknownFile', [
+                        $pluginFileName
+                    ]);
                 }
                 $javaScriptFooterInlineCode[] = file_get_contents($pluginFileName) . ',';
             }
         }
         $javaScriptFooterInlineCode[] = ']);';
-
 
         // Processes the charts
         foreach (self::$xmlTagResults as $xmlTagKey => $xmlTag) {
@@ -694,22 +673,25 @@ class XmlParser
 
                         // Processes the callbacks if any
                         if (preg_match_all('/"<!--(###)?(.*?)(###)?-->"/', $options, $matches)) {
-                            foreach($matches[0] as $matchKey => $match) {
-                                if (!empty($matches[1][$matchKey])) {
+                            foreach ($matches[0] as $matchKey => $match) {
+                                if (! empty($matches[1][$matchKey])) {
                                     // The call back is provided by its file name
                                     $callbackFileName = str_replace('\/', '/', $matches[2][$matchKey]);
-                                    if (!file_exists($callbackFileName)) {
-                                        return self::getController()->addError(
-                                            'error.unknownFile',
-                                            [
-                                                $callbackFileName
-                                            ]
-                                        );
+                                    if (! file_exists($callbackFileName)) {
+                                        return self::getController()->addError('error.unknownFile', [
+                                            $callbackFileName
+                                        ]);
                                     }
-                                    $options =str_replace($match, file_get_contents($callbackFileName), $options);
+                                    $options = str_replace($match, file_get_contents($callbackFileName), $options);
                                 } else {
-                                    $callback = str_replace(['\n', '\/'], [chr(10), '/'], $matches[2][$matchKey]);
-                                    $options =str_replace($match, $callback, $options);
+                                    $callback = str_replace([
+                                        '\n',
+                                        '\/'
+                                    ], [
+                                        chr(10),
+                                        '/'
+                                    ], $matches[2][$matchKey]);
+                                    $options = str_replace($match, $callback, $options);
                                 }
                             }
                         }
@@ -723,7 +705,7 @@ class XmlParser
                     $csvFileName = '';
                     if (isset($xmlTagValue['csv'])) {
                         $csvFileName = 'typo3temp/sav_charts/img_' . $chartId . '.csv';
-                        $fileHandle = fopen(PATH_site . $csvFileName, 'w');
+                        $fileHandle = fopen(EnvironmentCompatibility::getSitePath() . $csvFileName, 'w');
                         fwrite($fileHandle, $xmlTagValue['csv']);
                         fclose($fileHandle);
                     }
@@ -784,7 +766,7 @@ class XmlParser
      *
      * @return array
      */
-    public function processQuery(string $queryManagerName, string $uid, array $markers) : array
+    public function processQuery(string $queryManagerName, string $uid, array $markers): array
     {
 
         // Gets the class from the hook
@@ -800,12 +782,9 @@ class XmlParser
         }
 
         if ($hookFound === false) {
-            self::getController()->addError(
-                'error.queryManagerMissing',
-                [
-                    $queryManagerName
-                ]
-            );
+            self::getController()->addError('error.queryManagerMissing', [
+                $queryManagerName
+            ]);
             return false;
         }
 
@@ -826,7 +805,7 @@ class XmlParser
      *
      * @return string
      */
-    protected function addXmlPrologue(string $xmlString) : string
+    protected function addXmlPrologue(string $xmlString): string
     {
         $out = '<?xml version="1.0" encoding="utf-8"?>
       <charts>
@@ -904,13 +883,10 @@ class XmlParser
                 // The reference is indexed by a for xml tag key or value.
                 $xmlForTagResult = XmlParser::getXmlTagResult('for', $matches['indexForId']);
                 if ($xmlForTagResult === null) {
-                    return self::getController()->addError(
-                        'error.incorrectReferenceValue',
-                        [
-                            'for',
-                            $matches['indexForId']
-                        ]
-                    );
+                    return self::getController()->addError('error.incorrectReferenceValue', [
+                        'for',
+                        $matches['indexForId']
+                    ]);
                 }
                 $xmlForTagValue = $xmlForTagResult->getXmlTagValue();
                 $index = $xmlForTagValue[$matches['indexForIdIndexWord']];
@@ -919,13 +895,10 @@ class XmlParser
                 // The reference is the curent key or value of a for xml tag.
                 $xmlForTagResult = XmlParser::getXmlTagResult('for', $matches['id']);
                 if ($xmlForTagResult === null) {
-                    return self::getController()->addError(
-                        'error.incorrectReferenceValue',
-                        [
-                            'for',
-                            $matches['id']
-                        ]
-                    );
+                    return self::getController()->addError('error.incorrectReferenceValue', [
+                        'for',
+                        $matches['id']
+                    ]);
                 }
                 $xmlForTagValue = $xmlForTagResult->getXmlTagValue();
                 $index = $matches['indexWord'];
@@ -937,12 +910,9 @@ class XmlParser
                 return $xmlTagValue;
             }
         } else {
-            return self::getController()->addError(
-                'error.referenceNotWellFormed',
-                [
-                    $reference
-                ]
-            );
+            return self::getController()->addError('error.referenceNotWellFormed', [
+                $reference
+            ]);
         }
     }
 
@@ -953,7 +923,7 @@ class XmlParser
      *
      * @return string
      */
-    public static function replaceSpecialChars(string $data) : string
+    public static function replaceSpecialChars(string $data): string
     {
         $data = str_replace('\r', chr(10), $data);
         $data = str_replace('\n', chr(10), $data);
