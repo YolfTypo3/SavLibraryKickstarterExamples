@@ -1,48 +1,36 @@
-.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
+.. include:: Includes.txt
 
-.. ==================================================
-.. DEFINE SOME TEXTROLES
-.. --------------------------------------------------
-.. role::   underline
-.. role::   typoscript(code)
-.. role::   ts(typoscript)
-   :class:  typoscript
-.. role::   php(code)
+.. _start:
 
-====================
+==================== 
 SAV Library Example0
-====================
+==================== 
 
-.. only:: html
-
-  :Classification:
+:Extension key:
     sav_library_example0
 
-  :Version:
+:Version:
     |release|
 
-  :Language:
+:Language:
     en
 
-  :Description:
-    Test extension to illustrate the SAV Library Plus.
+:Description:
+    An extension to illustrate the SAV Library Plus
 
-  :Keywords:
-    sav_library_example, sav_library_plus, sav_library_kickstarter
+:Keywords:
+	sav_library_example0    
 
-  :Copyright:
-    2010-2014
+:Copyright:
+    2019
 
-  :Author:
+:Author:
     Laurent Foulloy
 
-  :Email:
+:Email:
     yolf.typo3@orange.fr
 
-  :License:
+:License:
     This document is published under the Open Content License
     available from http://www.opencontent.org/opl.shtml
 
@@ -53,7 +41,6 @@ SAV Library Example0
   a GNU/GPL CMS/Framework available from `www.typo3.org <http://www.typo3.org/>`_.
 
 
-
 Table of Contents
 =================
 
@@ -61,7 +48,7 @@ Table of Contents
    :maxdepth: 5
    :titlesonly:
    :glob:
-
+  
    Introduction/Index
    Changelog/Index
 

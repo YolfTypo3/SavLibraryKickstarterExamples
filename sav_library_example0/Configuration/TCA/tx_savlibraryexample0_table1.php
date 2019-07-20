@@ -186,16 +186,15 @@ return [
         'field13' => [
             'exclude' => 1,
             'label'  => 'LLL:EXT:sav_library_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample0_table1.field13',
-            'config' => [
-                'type' => 'group',
-                'internal_type' => 'file',
-                'allowed' => $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext'],
-                'max_size' => $GLOBALS['TYPO3_CONF_VARS']['BE']['maxFileSize'],
-                'uploadfolder' => 'uploads/tx_savlibraryexample0',
-                'size' => 2,
-                'minitems' => 0,
-                'maxitems' => 2,
-            ],
+            'config' =>	\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig(
+                	'field13',
+                	[
+                    	'maxitems' => 2,
+                    	'uploadfolder' => 'user_upload',
+                	],
+                	$GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext'],
+                	''
+            ),
         ],
         'field14' => [
             'exclude' => 1,

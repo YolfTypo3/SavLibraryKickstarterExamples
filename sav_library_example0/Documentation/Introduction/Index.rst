@@ -1,23 +1,13 @@
-.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
+.. include:: ../Includes.txt
 
-.. ==================================================
-.. DEFINE SOME TEXTROLES
-.. --------------------------------------------------
-.. role::   underline
-.. role::   typoscript(code)
-.. role::   ts(typoscript)
-   :class:  typoscript
-.. role::   php(code)
+.. _introduction:
 
-
+============
 Introduction
 ============
 
 What does it do?
-----------------
+================
 
 This extension was created with the `SAV Library Kickstarter <https://typo3.org/extensions/repository/view/sav_library_kickstarter>`_ in
 order to be used with the `SAV Library Plus
@@ -56,15 +46,15 @@ SAV Library Plus extension.
 
 
 Screenshots
------------
+===========
 
 List view
-^^^^^^^^^
+---------
 
 .. figure:: ../Images/ScreenshotsListView.png 
 
 Single view
-^^^^^^^^^^^
+-----------
 
 .. figure:: ../Images/ScreenshotsSingleViewCheckboxesAndRadioFolder.png 
 
@@ -81,7 +71,7 @@ Single view
 .. figure:: ../Images/ScreenshotsSingleViewGraphFolder.png  
 
 Edit view
-^^^^^^^^^
+---------
 
 .. figure:: ../Images/ScreenshotsEditViewCheckboxesAndRadioFolder.png 
 
@@ -99,14 +89,14 @@ Edit view
 
 
 Changing dynamically the folder
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------------
 
 .. figure:: ../Images/ScreenshotsChangingTheViewFolderOff.png 
 
 .. figure:: ../Images/ScreenshotsChangingTheViewFolderOn.png   
 
 Changing dynamically the view
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-----------------------------
 
 .. figure:: ../Images/ScreenshotsEditViewView1.png  
 
