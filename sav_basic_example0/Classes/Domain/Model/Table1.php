@@ -25,7 +25,6 @@ class Table1 extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * The field1 variable.
      *
      * @var string
-     * @validate raw
      */
     protected $field1;
 
@@ -33,7 +32,6 @@ class Table1 extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * The field2 variable.
      *
      * @var \DateTime
-     * @validate (datetime or empty)
      */
     protected $field2;
 
