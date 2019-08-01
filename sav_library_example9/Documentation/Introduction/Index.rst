@@ -1,23 +1,13 @@
-.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
+.. include:: ../Includes.txt
 
-.. ==================================================
-.. DEFINE SOME TEXTROLES
-.. --------------------------------------------------
-.. role::   underline
-.. role::   typoscript(code)
-.. role::   ts(typoscript)
-   :class:  typoscript
-.. role::   php(code)
+.. _introduction:
 
-
+============
 Introduction
 ============
 
-What does it do?
-----------------
+What Does it Do?
+================
 
 This extension was created with the `SAV Library Kickstarter <http://t
 ypo3.org/extensions/repository/view/sav_library_kickstarter>`_ in
@@ -65,15 +55,16 @@ They have a name and a color which will be used in the Gantt graph.
 
 
 Screenshots
------------
+===========
 
 Admin Edit and List Views
-^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------
 
 .. figure:: ../Images/ScreenshotsAdminEditView.png 
 
 .. figure:: ../Images/ScreenshotsAdminListView.png 
 
 List View
-^^^^^^^^^
+---------
+
 .. figure:: ../Images/ScreenshotsListView.png

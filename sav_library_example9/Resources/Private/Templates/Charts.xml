@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<charts>	
+	<pieChart id="graph1" data="data#pieChartData" options="data#pieChartOptions">
+	    <query id="graph1">
+	    	<setQueryManager name="savcharts" uid="marker#uidQueryGraph1" uidMainTable="marker#uidMainTable" />
+	    </query>
+	    
+        <data id="labelsGraph1">
+            Sun, Cloud, Rain
+        </data> 	    
+	    
+        <data id="valuesGraph1">
+            <setDataFromQueryRow query="graph1" fields="sun,cloud,rain" />
+        </data>
+        
+        <!-- Loads the color template --> 
+        <template id="color">
+            <loadTemplate fileName="typo3conf/ext/sav_charts/Resources/Private/Templates/ChartsExamples/DefaultColors.xml"/>
+        </template>   
+        
+        <data id="set0Graph1">
+            <item key="data" value="data#valuesGraph1" />
+            <item key="backgroundColor" value="data#middleIntensityColors" />
+            <item key="hoverBackgroundColor" value="data#veryHighIntensityColors" />           
+        </data> 
+                
+        <data id="dataSetsGraph1">
+            <item key="0" value="data#set0Graph1" />           
+        </data>    
+                
+        <data id="pieChartData">
+            <item key="labels" value="data#labelsGraph1" />           
+            <item key="datasets" value="data#dataSetsGraph1" />       
+        </data>   
+        
+        <data id="pieChartOptions">
+            <item key="title">
+            	<item key="display">1</item>
+            	<item key="text">Days with:</item>
+            </item>         
+        </data>		  
+        		
+	</pieChart>
+	
+	<lineChart id="graph2" data="data#lineChartData" options="data#lineChartOptions" >
+			
+        <marker id="labelSet0Graph2">Min</marker>
+        <marker id="labelSet1Graph2">Max</marker>		
+
+	    <query id="graph2">
+	    	<setQueryManager name="savcharts" uid="marker#uidQueryGraph2" uidMainTable="marker#uidMainTable" />
+	    </query>
+	    		
+		<data id="labelsGraph2">
+			<setDataFromQuery query="graph2" field="label" />
+		</data>
+	
+		<data id="dataSet0Graph2">
+			<setDataFromQuery query="graph2" field="value1" />
+		</data>
+		
+		<data id="dataSet1Graph2">
+			<setDataFromQuery query="graph2" field="value2" />
+		</data>			
+	
+		<data id="set0Graph2">
+            <item key="label" value="marker#labelSet0Graph2" />
+            <item key="backgroundColor">rgba(220,220,220,0.2)</item>
+            <item key="pointColor">rgba(220,220,220,1)</item>
+            <item key="pointBackgroundColor">#fff</item>
+            <item key="pointHoverBackgroundColor">rgba(220,220,220,1)</item>
+            <item key="data" value="data#dataSet0Graph2" />
+		</data>	
+	
+		<data id="set1Graph2">
+            <item key="label" value="marker#labelSet1Graph2" />
+            <item key="backgroundColor">rgba(151,187,205,0.2)</item>
+            <item key="pointColor">rgba(151,187,205,1)</item>
+            <item key="pointBackgroundColor">#fff</item>
+            <item key="pointHoverBackgroundColor">rgba(151,187,205,1)</item>            
+            <item key="data" value="data#dataSet1Graph2" />
+		</data>		
+	
+		<data id="dataSetsGraph2">
+			<item key="0" value="data#set0Graph2" />
+			<item key="1" value="data#set1Graph2" />
+		</data>		
+	
+		<data id="lineChartData">
+			<item key="labels" value="data#labelsGraph2" />			
+			<item key="datasets" value="data#dataSetsGraph2" />		
+		</data>	
+		
+        <data id="lineChartOptions">
+            <item key="title">
+            	<item key="display">1</item>
+            	<item key="text">Temperatures</item>
+            </item> 
+        </data>		
+		
+	</lineChart>	
+</charts>	

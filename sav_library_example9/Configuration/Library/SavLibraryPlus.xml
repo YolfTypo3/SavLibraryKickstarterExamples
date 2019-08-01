@@ -2,34 +2,22 @@
 
 <SavLibraryPlus>
     <general type="array">
-        <version>1.0.2</version>
+        <version>9.5.0</version>
         <overridedTablesForLocalization>
         </overridedTablesForLocalization>
         <saveAndNew type="array">
             <numIndex index="tx_savlibraryexample9">1</numIndex>
-            <numIndex index="tx_savlibraryexample9_category">1</numIndex>
-            <numIndex index="tx_savlibraryexample9_period">1</numIndex>
+            <numIndex index="tx_savlibraryexample9_graph1">1</numIndex>
+            <numIndex index="tx_savlibraryexample9_graph2">1</numIndex>
 		</saveAndNew>
     </general>
     <forms type="array">
         <numIndex index="1" type="array">
-            <title>Admin</title>
+            <title>Default</title>
             <listView>1</listView>
             <singleView>2</singleView>
             <editView>3</editView>
             <query>1</query>
-            <formView></formView>
-            <specialView>0</specialView>
-            <userPlugin></userPlugin>
-            <viewsWithCondition>
-            </viewsWithCondition>
-        </numIndex>
-        <numIndex index="2" type="array">
-            <title>Display</title>
-            <listView>4</listView>
-            <singleView>0</singleView>
-            <editView>0</editView>
-            <query>2</query>
             <formView></formView>
             <specialView>0</specialView>
             <userPlugin></userPlugin>
@@ -41,14 +29,6 @@
         <numIndex index="1" type="array">
             <itemTemplate>&lt;ul&gt;
   &lt;li&gt;###title###&lt;/li&gt;
-  &lt;li&gt;###begin###&lt;/li&gt;
-  &lt;li&gt;###end###&lt;/li&gt;
-  &lt;li&gt;###category###&lt;/li&gt;
-&lt;/ul&gt;</itemTemplate>
-        </numIndex>
-        <numIndex index="4" type="array">
-            <itemTemplate>&lt;ul&gt;
-  &lt;li&gt;###render[tx_savlibraryexample9.graph]###&lt;/li&gt;
 &lt;/ul&gt;</itemTemplate>
         </numIndex>
     </templates>
@@ -62,9 +42,6 @@
                     <config type="array">
                         <field>&lt;ul&gt;
   &lt;li&gt;###title###&lt;/li&gt;
-  &lt;li&gt;###begin###&lt;/li&gt;
-  &lt;li&gt;###end###&lt;/li&gt;
-  &lt;li&gt;###category###&lt;/li&gt;
 &lt;/ul&gt;</field>
                     </config>
                 </title>
@@ -77,27 +54,6 @@
                             <fieldType>String</fieldType>
                         </config>
                     </a165177209>
-                    <a112753775 type="array">
-                        <config type="array">
-                            <tableName>tx_savlibraryexample9</tableName>
-                            <fieldName>begin</fieldName>
-                            <fieldType>DateTime</fieldType>
-                        </config>
-                    </a112753775>
-                    <a47121989 type="array">
-                        <config type="array">
-                            <tableName>tx_savlibraryexample9</tableName>
-                            <fieldName>end</fieldName>
-                            <fieldType>DateTime</fieldType>
-                        </config>
-                    </a47121989>
-                    <a28782600 type="array">
-                        <config type="array">
-                            <tableName>tx_savlibraryexample9</tableName>
-                            <fieldName>category</fieldName>
-                            <fieldType>RelationOneToManyAsSelectorbox</fieldType>
-                        </config>
-                    </a28782600>
                 </fields>
             </a217895432>
         </numIndex>
@@ -119,27 +75,20 @@
                             <fieldType>String</fieldType>
                         </config>
                     </a165177209>
-                    <a112753775 type="array">
+                    <a1024838 type="array">
                         <config type="array">
+                            <cutlabel>1</cutlabel>
+                            <graphtemplate>typo3conf/ext/sav_library_example9/Resources/Private/Templates/Charts.xml</graphtemplate>
+                            <allowqueries>1</allowqueries>
+                            <tags>marker#uidQueryGraph1 = 1,
+  marker#uidQueryGraph2 = 2,
+  marker#uidMainTable = ###uidMainTable###,
+</tags>
                             <tableName>tx_savlibraryexample9</tableName>
-                            <fieldName>begin</fieldName>
-                            <fieldType>DateTime</fieldType>
+                            <fieldName>graph</fieldName>
+                            <fieldType>Graph</fieldType>
                         </config>
-                    </a112753775>
-                    <a47121989 type="array">
-                        <config type="array">
-                            <tableName>tx_savlibraryexample9</tableName>
-                            <fieldName>end</fieldName>
-                            <fieldType>DateTime</fieldType>
-                        </config>
-                    </a47121989>
-                    <a28782600 type="array">
-                        <config type="array">
-                            <tableName>tx_savlibraryexample9</tableName>
-                            <fieldName>category</fieldName>
-                            <fieldType>RelationOneToManyAsSelectorbox</fieldType>
-                        </config>
-                    </a28782600>
+                    </a1024838>
                 </fields>
             </a217895432>
         </numIndex>
@@ -161,78 +110,90 @@
                             <fieldType>String</fieldType>
                         </config>
                     </a165177209>
-                    <a112753775 type="array">
-                        <config type="array">
-                            <nodefault>1</nodefault>
-                            <tableName>tx_savlibraryexample9</tableName>
-                            <fieldName>begin</fieldName>
-                            <fieldType>DateTime</fieldType>
-                        </config>
-                    </a112753775>
-                    <a47121989 type="array">
-                        <config type="array">
-                            <nodefault>1</nodefault>
-                            <tableName>tx_savlibraryexample9</tableName>
-                            <fieldName>end</fieldName>
-                            <fieldType>DateTime</fieldType>
-                        </config>
-                    </a47121989>
-                    <a28782600 type="array">
+                    <a114758955 type="array">
                         <config type="array">
                             <tableName>tx_savlibraryexample9</tableName>
-                            <fieldName>category</fieldName>
-                            <fieldType>RelationOneToManyAsSelectorbox</fieldType>
+                            <fieldName>graph1</fieldName>
+                            <fieldType>RelationManyToManyAsSubform</fieldType>
+                            <subform type="array">
+                                <a217895432 type="array">
+                                    <fields type="array">
+                                        <a180630440 type="array">
+                                            <config type="array">
+                                                <tableName>tx_savlibraryexample9_graph1</tableName>
+                                                <fieldName>sun</fieldName>
+                                                <fieldType>Numeric</fieldType>
+                                                <subformItem>1</subformItem>
+                                            </config>
+                                        </a180630440>
+                                        <a147354787 type="array">
+                                            <config type="array">
+                                                <tableName>tx_savlibraryexample9_graph1</tableName>
+                                                <fieldName>cloud</fieldName>
+                                                <fieldType>Numeric</fieldType>
+                                                <subformItem>1</subformItem>
+                                            </config>
+                                        </a147354787>
+                                        <a47340651 type="array">
+                                            <config type="array">
+                                                <tableName>tx_savlibraryexample9_graph1</tableName>
+                                                <fieldName>rain</fieldName>
+                                                <fieldType>Numeric</fieldType>
+                                                <subformItem>1</subformItem>
+                                            </config>
+                                        </a47340651>
+                                    </fields>
+                                </a217895432>
+                            </subform>
                         </config>
-                    </a28782600>
-                </fields>
-            </a217895432>
-        </numIndex>
-        <numIndex index="4" type="array">
-            <a217895432 type="array">
-                <config type="array">
-                    <label>0</label>
-				</config>
-                <title type="array">
-                    <config type="array">
-                        <field></field>
-                    </config>
-                </title>
-                <fields type="array">
-                    <a1024838 type="array">
+                    </a114758955>
+                    <a191082900 type="array">
                         <config type="array">
-                            <graphtemplate>typo3conf/ext/sav_library_example9/Resources/Private/Files/events.xml</graphtemplate>
-                            <markers>marker#begin = ###beginPeriod###,
- marker#end = ###endPeriod###</markers>
+                            <adddelete>1</adddelete>
+                            <addupdown>1</addupdown>
                             <tableName>tx_savlibraryexample9</tableName>
-                            <fieldName>graph</fieldName>
-                            <fieldType>Graph</fieldType>
+                            <fieldName>graph2</fieldName>
+                            <fieldType>RelationManyToManyAsSubform</fieldType>
+                            <subform type="array">
+                                <a217895432 type="array">
+                                    <fields type="array">
+                                        <a49406976 type="array">
+                                            <config type="array">
+                                                <tableName>tx_savlibraryexample9_graph2</tableName>
+                                                <fieldName>label</fieldName>
+                                                <fieldType>String</fieldType>
+                                                <subformItem>1</subformItem>
+                                            </config>
+                                        </a49406976>
+                                        <a183434059 type="array">
+                                            <config type="array">
+                                                <tableName>tx_savlibraryexample9_graph2</tableName>
+                                                <fieldName>value1</fieldName>
+                                                <fieldType>Numeric</fieldType>
+                                                <subformItem>1</subformItem>
+                                            </config>
+                                        </a183434059>
+                                        <a170654231 type="array">
+                                            <config type="array">
+                                                <tableName>tx_savlibraryexample9_graph2</tableName>
+                                                <fieldName>value2</fieldName>
+                                                <fieldType>Numeric</fieldType>
+                                                <subformItem>1</subformItem>
+                                            </config>
+                                        </a170654231>
+                                    </fields>
+                                </a217895432>
+                            </subform>
                         </config>
-                    </a1024838>
+                    </a191082900>
                 </fields>
             </a217895432>
         </numIndex>
     </views>
     <queries type="array">
         <numIndex index="1" type="array">
-            <title>Admin_Query</title>
+            <title>Default</title>
             <mainTable>tx_savlibraryexample9</mainTable>
-            <whereClause>year(from_unixtime(tx_savlibraryexample9.begin)) = year(now())</whereClause>
-            <orderByClause>tx_savlibraryexample9.begin desc</orderByClause>
- 		</numIndex>
-        <numIndex index="2" type="array">
-            <title>Display_Query</title>
-            <mainTable>tx_savlibraryexample9_period</mainTable>
-            <foreignTables>,tx_savlibraryexample9</foreignTables>
-            <aliases>CONCAT(
- YEAR(FROM_UNIXTIME(begin)),
- DATE_FORMAT(FROM_UNIXTIME(beginperiod),'-%m-%d %H:%i:%s')
-) AS beginPeriod,
-CONCAT(
- YEAR(FROM_UNIXTIME(begin)),
- DATE_FORMAT(FROM_UNIXTIME(endperiod),'-%m-%d %H:%i:%s')
-) AS endPeriod</aliases>
-            <whereClause> YEAR(FROM_UNIXTIME(begin)) = YEAR(NOW())</whereClause>
-            <groupByClause>tx_savlibraryexample9_period.uid</groupByClause>
  		</numIndex>
 	</queries>
 

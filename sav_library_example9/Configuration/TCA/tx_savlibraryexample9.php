@@ -15,7 +15,7 @@ return [
         'iconfile' => 'EXT:sav_library_example9/Resources/Public/Icons/icon_tx_savlibraryexample9.gif',
     ],
     'interface' => [
-        'showRecordFieldList' => 'hidden,title,begin,end,category,graph'
+        'showRecordFieldList' => 'hidden,title,graph1,graph2,graph'
     ],
     'columns' => [
         'hidden' => [
@@ -35,40 +35,40 @@ return [
                 'eval' => 'trim'
             ],
         ],
-        'begin' => [
+        'graph1' => [
             'exclude' => 1,
-            'label'  => 'LLL:EXT:sav_library_example9/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample9.begin',
+            'label'  => 'LLL:EXT:sav_library_example9/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample9.graph1',
             'config' => [
-                'type' => 'input', 
-                'renderType' => 'inputDateTime',    
-                'eval' => 'datetime', 
-                'default' => '0'      
-            ],
-        ],
-        'end' => [
-            'exclude' => 1,
-            'label'  => 'LLL:EXT:sav_library_example9/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample9.end',
-            'config' => [
-                'type' => 'input', 
-                'renderType' => 'inputDateTime',    
-                'eval' => 'datetime', 
-                'default' => '0'      
-            ],
-        ],
-        'category' => [
-            'exclude' => 1,
-            'label'  => 'LLL:EXT:sav_library_example9/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample9.category',
-            'config' => [
-                'type' => 'select',  
-                'renderType' => 'selectSingle',
-                'items' => [
-                    ['LLL:EXT:sav_library_example9/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample9.category.I.0', 0],
-                ],
-                'foreign_table' => 'tx_savlibraryexample9_category',
-                'foreign_table_where' => ' ORDER BY tx_savlibraryexample9_category.crdate',
+                'type' => 'inline',
+                'foreign_table' => 'tx_savlibraryexample9_graph1',
+                'foreign_sortby' => 'sorting',
                 'size' => 1,
                 'minitems' => 0,
                 'maxitems' => 1,
+                'MM' => 'tx_savlibraryexample9_graph1_mm',
+                'appearance' => [
+                    'newRecordLinkPosition' => 'bottom',
+                    'collapseAll' => 1,
+                    'expandSingle' => 1,
+                ],
+            ],
+        ],
+        'graph2' => [
+            'exclude' => 1,
+            'label'  => 'LLL:EXT:sav_library_example9/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample9.graph2',
+            'config' => [
+                'type' => 'inline',
+                'foreign_table' => 'tx_savlibraryexample9_graph2',
+                'foreign_sortby' => 'sorting',
+                'size' => 1,
+                'minitems' => 0,
+                'maxitems' => 999999,
+                'MM' => 'tx_savlibraryexample9_graph2_mm',
+                'appearance' => [
+                    'newRecordLinkPosition' => 'bottom',
+                    'collapseAll' => 1,
+                    'expandSingle' => 1,
+                ],
             ],
         ],
         'graph' => [
@@ -81,9 +81,7 @@ return [
     ],
     'types' => [
         '0' => [
-            'showitem' => 'hidden, title, begin, end, category, graph',
-            'columnsOverrides' => [
-            ],
+            'showitem' => 'hidden, title, graph1, graph2, graph',
         ],
     ],
     'palettes' => [

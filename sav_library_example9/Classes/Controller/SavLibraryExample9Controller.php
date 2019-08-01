@@ -1,58 +1,42 @@
 <?php
-use \TYPO3\CMS\Core\Utility\GeneralUtility;
 
-/***************************************************************
-*  Copyright notice
-*
-*  (c) 2017 Laurent Foulloy <yolf.typo3@orange.fr>
-*  All rights reserved
-*
-*  This script is part of the TYPO3 project. The TYPO3 project is
-*  free software; you can redistribute it and/or modify
-*  it under the terms of the GNU General Public License as published by
-*  the Free Software Foundation; either version 2 of the License, or
-*  (at your option) any later version.
-*
-*  The GNU General Public License can be found at
-*  http://www.gnu.org/copyleft/gpl.html.
-*
-*  This script is distributed in the hope that it will be useful,
-*  but WITHOUT ANY WARRANTY; without even the implied warranty of
-*  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-*  GNU General Public License for more details.
-*
-*  This copyright notice MUST APPEAR in all copies of the script!
-***************************************************************/
+namespace YolfTypo3\SavLibraryExample9\Controller;
+
+/*
+ * This file is part of the TYPO3 CMS project.
+ *
+ * It is free software; you can redistribute it and/or modify it under
+ * the terms of the GNU General Public License, either version 2
+ * of the License, or any later version.
+ *
+ * For the full copyright and license information, please read the
+ * LICENSE.txt file that was distributed with TYPO3 source code.
+ *
+ * The TYPO3 project - inspiring people to share
+ */
+
+use TYPO3\CMS\Core\Utility\GeneralUtility;
 
 /**
- * Plugin 'SAV Library Example9 - XML JpGraph' for the 'sav_library_example9' extension.
+ * Plugin 'SAV Library Example9 - Graphs' for the 'sav_library_example9' extension.
  *
  * @author Laurent Foulloy <yolf.typo3@orange.fr>
- * @package savlibraryexample9
+ * @package sav_library_example9
  */
-class tx_savlibraryexample9_pi1 extends \TYPO3\CMS\Frontend\Plugin\AbstractPlugin {
-
+class SavLibraryExample9Controller extends \TYPO3\CMS\Frontend\Plugin\AbstractPlugin 
+{
 	/**
-	 * Should be same as classname of the plugin, used for CSS classes, variables
-	 *
+	 * PrefixId
 	 * @var string
 	 */
 	public $prefixId = 'tx_savlibraryexample9_pi1';
 
 	/**
-	 * Path to the plugin class script relative to extension directory
-	 *
-	 * @var string
-	 */
-	public $scriptRelPath = 'Classes/Controller/SavLibraryExample9Controller.php';
-
-	/**
-	 * Extension key.
-	 *
+	 * Extension key
 	 * @var string
 	 */
 	public $extKey = 'sav_library_example9';
-	
+
 	/**
 	 * The main function
 	 *
@@ -61,17 +45,16 @@ class tx_savlibraryexample9_pi1 extends \TYPO3\CMS\Frontend\Plugin\AbstractPlugi
 	 *
 	 * @return string the plugin content
 	 */            
-	public function main($content, $configuration) {
-
+	public function main(string $content, array $configuration) : string
+	{
 	  // Creates the SavLibraryPlus controller
-	  $controller = GeneralUtility::makeInstance(\SAV\SavLibraryPlus\Controller\Controller::class);
+	  $controller = GeneralUtility::makeInstance(\YolfTypo3\SavLibraryPlus\Controller\Controller::class);
 
 	  // Gets the extension configuration manager
 	  $extensionConfigurationManager = $controller->getExtensionConfigurationManager();
 
 	  // Injects the extension in the extension configuration manager
 	  $extensionConfigurationManager->injectExtension($this);
-
 	  // Injects the typoScript configuration in the extension configuration manager
 	  $extensionConfigurationManager->injectTypoScriptConfiguration($configuration);
 
@@ -80,7 +63,7 @@ class tx_savlibraryexample9_pi1 extends \TYPO3\CMS\Frontend\Plugin\AbstractPlugi
 
 	  // Renders the form
 	  $out = $controller->render();
-	          
+
 	  return $out;
 	}
 }

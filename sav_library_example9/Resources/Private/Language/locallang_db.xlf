@@ -1,53 +1,50 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 
 <xliff version="1.0">
-    <file source-language="en" datatype="plaintext" original="messages" date="2017-05-20T07:56:54Z" product-name="sav_library_example9">
+    <file source-language="en" datatype="plaintext" original="messages" date="2019-07-30T16:13:52Z" product-name="sav_library_example9">
         <header/>
         <body>
             <trans-unit id="tx_savlibraryexample9" xml:space="preserve">
-                <source>Events</source>
+                <source>SAV Library Example9</source>
             </trans-unit>
             <trans-unit id="tx_savlibraryexample9.title" xml:space="preserve">
                 <source>Title</source>
             </trans-unit>
-            <trans-unit id="tx_savlibraryexample9.begin" xml:space="preserve">
-                <source>Begin</source>
+            <trans-unit id="tx_savlibraryexample9.graph1" xml:space="preserve">
+                <source>Graph 1</source>
             </trans-unit>
-            <trans-unit id="tx_savlibraryexample9.end" xml:space="preserve">
-                <source>End</source>
-            </trans-unit>
-            <trans-unit id="tx_savlibraryexample9.category" xml:space="preserve">
-                <source>Category</source>
-            </trans-unit>
-            <trans-unit id="tx_savlibraryexample9.category.I.0" xml:space="preserve">
-                <source></source>
+            <trans-unit id="tx_savlibraryexample9.graph2" xml:space="preserve">
+                <source>Graph 2</source>
             </trans-unit>
             <trans-unit id="tx_savlibraryexample9.graph" xml:space="preserve">
                 <source>Graph</source>
             </trans-unit>
-            <trans-unit id="tx_savlibraryexample9_category" xml:space="preserve">
-                <source>Events (Category)</source>
+            <trans-unit id="tx_savlibraryexample9_graph1" xml:space="preserve">
+                <source>SAV Library Example9 - Graph 1</source>
             </trans-unit>
-            <trans-unit id="tx_savlibraryexample9_category.name" xml:space="preserve">
-                <source>Name</source>
+            <trans-unit id="tx_savlibraryexample9_graph1.sun" xml:space="preserve">
+                <source>Sunny days</source>
             </trans-unit>
-            <trans-unit id="tx_savlibraryexample9_category.color" xml:space="preserve">
-                <source>Color</source>
+            <trans-unit id="tx_savlibraryexample9_graph1.cloud" xml:space="preserve">
+                <source>Cloudy days</source>
             </trans-unit>
-            <trans-unit id="tx_savlibraryexample9_period" xml:space="preserve">
-                <source>Events (Period)</source>
+            <trans-unit id="tx_savlibraryexample9_graph1.rain" xml:space="preserve">
+                <source>Rainy days</source>
             </trans-unit>
-            <trans-unit id="tx_savlibraryexample9_period.beginperiod" xml:space="preserve">
-                <source>Begin</source>
+            <trans-unit id="tx_savlibraryexample9_graph2" xml:space="preserve">
+                <source>SAV Library Example9 - Graph 2</source>
             </trans-unit>
-            <trans-unit id="tx_savlibraryexample9_period.endperiod" xml:space="preserve">
-                <source>End</source>
+            <trans-unit id="tx_savlibraryexample9_graph2.label" xml:space="preserve">
+                <source>Label</source>
             </trans-unit>
-            <trans-unit id="tx_savlibraryexample9_period.periodtitle" xml:space="preserve">
-                <source>Title</source>
+            <trans-unit id="tx_savlibraryexample9_graph2.value1" xml:space="preserve">
+                <source>Value 1</source>
+            </trans-unit>
+            <trans-unit id="tx_savlibraryexample9_graph2.value2" xml:space="preserve">
+                <source>Value 2</source>
             </trans-unit>
             <trans-unit id="tt_content.list_type_pi1" xml:space="preserve">
-                <source>SAV Library Example9 - XML JpGraph</source>
+                <source>SAV Library Example9 - Graphs</source>
             </trans-unit>
         </body>
     </file>
