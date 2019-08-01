@@ -21,6 +21,7 @@ use TYPO3\CMS\Core\Page\PageRenderer;
 use TYPO3\CMS\Core\TypoScript\TypoScriptService;
 use TYPO3\CMS\Extbase\Configuration\FrontendConfigurationManager;
 use TYPO3\CMS\Extbase\Utility\LocalizationUtility;
+use TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer;
 use YolfTypo3\SavCharts\Domain\Repository\QueryRepository;
 use YolfTypo3\SavCharts\XmlParser\XmlParser;
 
@@ -53,7 +54,7 @@ class DefaultController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
     protected $queryRepository;
 
     /**
-     * Initializes the controller before invoking an action method.
+     * Injects the query repository.
      *
      * @param QueryRepository $queryRepository
      */
@@ -95,7 +96,7 @@ class DefaultController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
     /**
      * Gets the query repository
      *
-     * @return \YolfTypo3\SavCharts\Domain\Repository\QueryRepository
+     * @return QueryRepository
      */
     public function getQueryRepository()
     {
@@ -103,13 +104,16 @@ class DefaultController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
     }
 
     /**
-     * Gets the content object
+     * Gets the content object renderer
      *
-     * @return \TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer
+     * @return ContentObjectRenderer
      */
     public function getContentObjectRenderer()
     {
-        return $this->configurationManager->getContentObject();
+        // @extensionScannerIgnoreLine
+        $contentObject = $this->configurationManager->getContentObject();
+
+        return $contentObject;
     }
 
     /**

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 
 <xliff version="1.0">
-    <file source-language="en" datatype="plaintext" original="messages" date="2019-07-20T14:48:35Z" product-name="sav_charts">
+    <file source-language="en" datatype="plaintext" original="messages" date="2019-08-01T07:50:58Z" product-name="sav_charts">
         <header/>
         <body>
             <trans-unit id="tx_savcharts_domain_model_database" xml:space="preserve">
@@ -9,18 +9,6 @@
             </trans-unit>
             <trans-unit id="tx_savcharts_domain_model_database.title" xml:space="preserve">
                 <source>Title</source>
-            </trans-unit>
-            <trans-unit id="tx_savcharts_domain_model_database.handlertype" xml:space="preserve">
-                <source>Handler Type</source>
-            </trans-unit>
-            <trans-unit id="tx_savcharts_domain_model_database.handlertype.I.1" xml:space="preserve">
-                <source>native</source>
-            </trans-unit>
-            <trans-unit id="tx_savcharts_domain_model_database.handlertype.I.2" xml:space="preserve">
-                <source>adodb</source>
-            </trans-unit>
-            <trans-unit id="tx_savcharts_domain_model_database.handlertype.I.3" xml:space="preserve">
-                <source>userdefined</source>
             </trans-unit>
             <trans-unit id="tx_savcharts_domain_model_database.driver" xml:space="preserve">
                 <source>Driver</source>

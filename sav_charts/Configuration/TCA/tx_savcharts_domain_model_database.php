@@ -15,7 +15,7 @@ return [
         'iconfile' => 'EXT:sav_charts/Resources/Public/Icons/icon_tx_savcharts_domain_model_database.gif',
     ],
     'interface' => [
-        'showRecordFieldList' => 'hidden,title,handlertype,driver,tables,host,port,socket,name,username,userpassword,persistent'
+        'showRecordFieldList' => 'hidden,title,driver,tables,host,port,socket,name,username,userpassword,persistent'
     ],
     'columns' => [
         'hidden' => [
@@ -34,22 +34,6 @@ return [
                 'size' => '30',
                 'eval' => 'trim'
             ],
-        ],
-        'handlertype' => [
-            'exclude' => 1,
-            'label'  => 'LLL:EXT:sav_charts/Resources/Private/Language/locallang_db.xlf:tx_savcharts_domain_model_database.handlertype',
-            'config' => [
-                'type' => 'select',
-                'renderType' => 'selectSingle',
-                'items' => [
-                    ['LLL:EXT:sav_charts/Resources/Private/Language/locallang_db.xlf:tx_savcharts_domain_model_database.handlertype.I.1', '0'],
-                    ['LLL:EXT:sav_charts/Resources/Private/Language/locallang_db.xlf:tx_savcharts_domain_model_database.handlertype.I.2', '1'],
-                    ['LLL:EXT:sav_charts/Resources/Private/Language/locallang_db.xlf:tx_savcharts_domain_model_database.handlertype.I.3', '2'],
-                ],
-                'size' => 1,
-                'maxitems' => 1,
-            ],
-            'displayCond' => 'USER:YolfTypo3\\SavCharts\\Compatibility\\TcaDisplayCondition->isTypo3VersionLowerThan8',
         ],
         'driver' => [
             'exclude' => 1,
@@ -141,7 +125,7 @@ return [
     ],
     'types' => [
         '0' => [
-            'showitem' => 'hidden, title, handlertype, driver, tables, host, port, socket, name, username, userpassword, persistent',
+            'showitem' => 'hidden, title, driver, tables, host, port, socket, name, username, userpassword, persistent',
         ],
     ],
     'palettes' => [

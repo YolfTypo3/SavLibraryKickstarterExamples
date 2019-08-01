@@ -29,13 +29,6 @@ class Database extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     protected $title;
 
     /**
-     * The handlertype variable.
-     *
-     * @var integer
-     */
-    protected $handlertype;
-
-    /**
      * The driver variable.
      *
      * @var string
@@ -124,27 +117,6 @@ class Database extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     public function setTitle($title)
     {
         $this->title = $title;
-    }    
-
-    /**
-     * Getter for handlertype.
-     *
-     * @return integer
-     */
-    public function getHandlertype()
-    {
-        return $this->handlertype;
-    }
-
-    /**
-     * Setter for handlertype.
-     *
-     * @param integer $handlertype
-     * @return void
-     */
-    public function setHandlertype($handlertype)
-    {
-        $this->handlertype = $handlertype;
     }    
 
     /**

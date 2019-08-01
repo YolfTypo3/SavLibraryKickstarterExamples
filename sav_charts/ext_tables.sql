@@ -12,7 +12,6 @@ CREATE TABLE tx_savcharts_domain_model_database (
     deleted tinyint(4) unsigned DEFAULT '0' NOT NULL,
     hidden tinyint(4) unsigned DEFAULT '0' NOT NULL,
     title tinytext,
-    handlertype int(11) DEFAULT '0' NOT NULL,
     driver tinytext,
     tables text,
     host tinytext,
