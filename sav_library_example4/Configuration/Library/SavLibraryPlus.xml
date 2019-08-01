@@ -2,7 +2,7 @@
 
 <SavLibraryPlus>
     <general type="array">
-        <version>1.2.0</version>
+        <version>9.5.0</version>
         <overridedTablesForLocalization>
         </overridedTablesForLocalization>
         <saveAndNew type="array">
@@ -187,6 +187,7 @@
                                                 <tableName>tx_savlibraryexample4_friends</tableName>
                                                 <fieldName>friend_name</fieldName>
                                                 <fieldType>String</fieldType>
+                                                <subformItem>1</subformItem>
                                             </config>
                                         </a3433043>
                                         <a178041819 type="array">
@@ -195,6 +196,7 @@
                                                 <tableName>tx_savlibraryexample4_friends</tableName>
                                                 <fieldName>friend_phone</fieldName>
                                                 <fieldType>String</fieldType>
+                                                <subformItem>1</subformItem>
                                             </config>
                                         </a178041819>
                                         <a253857786 type="array">
@@ -203,6 +205,7 @@
                                                 <tableName>tx_savlibraryexample4_friends</tableName>
                                                 <fieldName>friend_email</fieldName>
                                                 <fieldType>String</fieldType>
+                                                <subformItem>1</subformItem>
                                             </config>
                                         </a253857786>
                                         <a17417746 type="array">
@@ -210,6 +213,7 @@
                                                 <tableName>tx_savlibraryexample4_friends</tableName>
                                                 <fieldName>friend_preferred_music</fieldName>
                                                 <fieldType>RelationManyToManyAsDoubleSelectorbox</fieldType>
+                                                <subformItem>1</subformItem>
                                             </config>
                                         </a17417746>
                                     </fields>
@@ -243,6 +247,7 @@
                                                 <tableName>tx_savlibraryexample4_lending</tableName>
                                                 <fieldName>friend_name</fieldName>
                                                 <fieldType>RelationOneToManyAsSelectorbox</fieldType>
+                                                <subformItem>1</subformItem>
                                             </config>
                                         </a253437308>
                                         <a137036008 type="array">
@@ -251,6 +256,7 @@
                                                 <tableName>tx_savlibraryexample4_lending</tableName>
                                                 <fieldName>lending_date</fieldName>
                                                 <fieldType>Date</fieldType>
+                                                <subformItem>1</subformItem>
                                             </config>
                                         </a137036008>
                                         <a179456241 type="array">
@@ -259,6 +265,7 @@
                                                 <tableName>tx_savlibraryexample4_lending</tableName>
                                                 <fieldName>return_date</fieldName>
                                                 <fieldType>Date</fieldType>
+                                                <subformItem>1</subformItem>
                                             </config>
                                         </a179456241>
                                     </fields>
@@ -371,6 +378,7 @@
                                                 <tableName>tx_savlibraryexample4_friends</tableName>
                                                 <fieldName>friend_name</fieldName>
                                                 <fieldType>String</fieldType>
+                                                <subformItem>1</subformItem>
                                             </config>
                                         </a3433043>
                                         <a178041819 type="array">
@@ -379,6 +387,7 @@
                                                 <tableName>tx_savlibraryexample4_friends</tableName>
                                                 <fieldName>friend_phone</fieldName>
                                                 <fieldType>String</fieldType>
+                                                <subformItem>1</subformItem>
                                             </config>
                                         </a178041819>
                                         <a253857786 type="array">
@@ -387,6 +396,7 @@
                                                 <tableName>tx_savlibraryexample4_friends</tableName>
                                                 <fieldName>friend_email</fieldName>
                                                 <fieldType>String</fieldType>
+                                                <subformItem>1</subformItem>
                                             </config>
                                         </a253857786>
                                         <a17417746 type="array">
@@ -394,6 +404,7 @@
                                                 <tableName>tx_savlibraryexample4_friends</tableName>
                                                 <fieldName>friend_preferred_music</fieldName>
                                                 <fieldType>RelationManyToManyAsDoubleSelectorbox</fieldType>
+                                                <subformItem>1</subformItem>
                                             </config>
                                         </a17417746>
                                     </fields>
@@ -431,6 +442,7 @@
                                                 <tableName>tx_savlibraryexample4_lending</tableName>
                                                 <fieldName>friend_name</fieldName>
                                                 <fieldType>RelationOneToManyAsSelectorbox</fieldType>
+                                                <subformItem>1</subformItem>
                                             </config>
                                         </a253437308>
                                         <a137036008 type="array">
@@ -440,6 +452,7 @@
                                                 <tableName>tx_savlibraryexample4_lending</tableName>
                                                 <fieldName>lending_date</fieldName>
                                                 <fieldType>Date</fieldType>
+                                                <subformItem>1</subformItem>
                                             </config>
                                         </a137036008>
                                         <a179456241 type="array">
@@ -449,6 +462,7 @@
                                                 <tableName>tx_savlibraryexample4_lending</tableName>
                                                 <fieldName>return_date</fieldName>
                                                 <fieldType>Date</fieldType>
+                                                <subformItem>1</subformItem>
                                             </config>
                                         </a179456241>
                                     </fields>

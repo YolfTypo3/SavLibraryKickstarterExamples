@@ -3,7 +3,7 @@
 .. _markerTags:
 
 ===========
-Marker tags
+Marker Tags
 ===========
 
 

@@ -59,8 +59,7 @@ return [
             'config' => [
                 'type' => 'input',
                 'renderType' => 'inputDateTime',
-                'eval' => 'datetime',
-                'eval' => 'date',  
+                'eval' => 'date',
                 'default' => '0'     
             ],
         ],
@@ -70,8 +69,7 @@ return [
             'config' => [
                 'type' => 'input',
                 'renderType' => 'inputDateTime',
-                'eval' => 'datetime',
-                'eval' => 'date',  
+                'eval' => 'date',
                 'default' => '0'     
             ],
         ],

@@ -50,8 +50,7 @@ return [
             'config' => [
                 'type' => 'input',
                 'renderType' => 'inputDateTime',
-                'eval' => 'datetime',
-                'eval' => 'date',  
+                'eval' => 'date',
                 'default' => '0'     
             ],
         ],
@@ -70,16 +69,15 @@ return [
         'coverimage' => [
             'exclude' => 1,
             'label'  => 'LLL:EXT:sav_library_example4/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample4_cds.coverimage',
-            'config' => [
-                'type' => 'group',
-                'internal_type' => 'file',
-                'allowed' => $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext'],
-                'max_size' => $GLOBALS['TYPO3_CONF_VARS']['BE']['maxFileSize'],
-                'uploadfolder' => 'uploads/tx_savlibraryexample4',
-                'size' => 1,
-                'minitems' => 0,
-                'maxitems' => 1,
-            ],
+            'config' =>	\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig(
+                	'coverimage',
+                	[
+                    	'maxitems' => 1,
+                    	'uploadfolder' => 'user_upload',
+                	],
+                	$GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext'],
+                	''
+            ),
         ],
         'category' => [
             'exclude' => 1,

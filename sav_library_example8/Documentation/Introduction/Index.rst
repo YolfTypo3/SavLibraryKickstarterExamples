@@ -1,23 +1,13 @@
-.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
+.. include:: ../Includes.txt
 
-.. ==================================================
-.. DEFINE SOME TEXTROLES
-.. --------------------------------------------------
-.. role::   underline
-.. role::   typoscript(code)
-.. role::   ts(typoscript)
-   :class:  typoscript
-.. role::   php(code)
+.. _introduction:
 
-
+============
 Introduction
 ============
 
-What does it do?
-----------------
+What Does it Do?
+================
 
 This extension was created with the `SAV Library Kickstarter <http://t
 ypo3.org/extensions/repository/view/sav_library_kickstarter>`_ in
@@ -65,23 +55,23 @@ want to build two forms:
 
 
 Screenshots
------------
+===========
 
 User List View
-^^^^^^^^^^^^^^^
+--------------
 .. figure:: ../Images/ScreenshotsUserListView.png 
 
 User Edit View
-^^^^^^^^^^^^^^^
+--------------
 .. figure:: ../Images/ScreenshotsUserEditView.png 
 
-Admin List View with an export icon
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Admin List View With an Export Icon
+-----------------------------------
 
 .. figure:: ../Images/ScreenshotsAdminListView.png 
 
 Admin Export View
-^^^^^^^^^^^^^^^^^
+-----------------
 
 .. figure:: ../Images/ScreenshotsAdminExportView.png 
 

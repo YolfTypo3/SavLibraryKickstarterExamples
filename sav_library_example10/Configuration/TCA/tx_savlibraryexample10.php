@@ -15,7 +15,7 @@ return [
         'iconfile' => 'EXT:sav_library_example10/Resources/Public/Icons/icon_tx_savlibraryexample10.gif',
     ],
     'interface' => [
-        'showRecordFieldList' => 'hidden,image,title,description,address,zip,city,country,map'
+        'showRecordFieldList' => 'hidden,image,poi,description,poi_uid,map'
     ],
     'columns' => [
         'hidden' => [
@@ -29,24 +29,32 @@ return [
         'image' => [
             'exclude' => 1,
             'label'  => 'LLL:EXT:sav_library_example10/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample10.image',
+            'config' =>	\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig(
+                	'image',
+                	[
+                    	'maxitems' => 1,
+                    	'uploadfolder' => 'user_upload',
+                	],
+                	$GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext'],
+                	''
+            ),
+        ],
+        'poi' => [
+            'exclude' => 1,
+            'label'  => 'LLL:EXT:sav_library_example10/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample10.poi',
             'config' => [
-                'type' => 'group',
-                'internal_type' => 'file',
-                'allowed' => $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext'],
-                'max_size' => $GLOBALS['TYPO3_CONF_VARS']['BE']['maxFileSize'],
-                'uploadfolder' => 'uploads/tx_savlibraryexample10',
+                'type' => 'inline',
+                'foreign_table' => 'tx_maps2_domain_model_poicollection',
+                'foreign_sortby' => 'sorting',
                 'size' => 1,
                 'minitems' => 0,
                 'maxitems' => 1,
-            ],
-        ],
-        'title' => [
-            'exclude' => 1,
-            'label'  => 'LLL:EXT:sav_library_example10/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample10.title',
-            'config' => [
-                'type' => 'input',
-                'size' => '30',
-                'eval' => 'trim'
+                'MM' => 'tx_savlibraryexample10_poi_mm',
+                'appearance' => [
+                    'newRecordLinkPosition' => 'bottom',
+                    'collapseAll' => 1,
+                    'expandSingle' => 1,
+                ],
             ],
         ],
         'description' => [
@@ -58,46 +66,10 @@ return [
                 'rows' => '5',
             ],
         ],
-        'address' => [
-            'exclude' => 1,
-            'label'  => 'LLL:EXT:sav_library_example10/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample10.address',
-            'config' => [
-                'type' => 'input',
-                'size' => '30',
-                'eval' => 'trim'
-            ],
-        ],
-        'zip' => [
-            'exclude' => 1,
-            'label'  => 'LLL:EXT:sav_library_example10/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample10.zip',
-            'config' => [
-                'type' => 'input',
-                'size' => '5',
-                'eval' => 'trim'
-            ],
-        ],
-        'city' => [
-            'exclude' => 1,
-            'label'  => 'LLL:EXT:sav_library_example10/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample10.city',
-            'config' => [
-                'type' => 'input',
-                'size' => '30',
-                'eval' => 'trim'
-            ],
-        ],
-        'country' => [
-            'exclude' => 1,
-            'label'  => 'LLL:EXT:sav_library_example10/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample10.country',
-            'config' => [
-                'type' => 'input',
-                'size' => '30',
-                'eval' => 'trim'
-            ],
-        ],
     ],
     'types' => [
         '0' => [
-            'showitem' => 'hidden, image, title, description, address, zip, city, country, map',
+            'showitem' => 'hidden, image, poi, description, poi_uid, map',
             'columnsOverrides' => [
             ],
         ],

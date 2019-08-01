@@ -1,23 +1,13 @@
-.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
+.. include:: ../Includes.txt
 
-.. ==================================================
-.. DEFINE SOME TEXTROLES
-.. --------------------------------------------------
-.. role::   underline
-.. role::   typoscript(code)
-.. role::   ts(typoscript)
-   :class:  typoscript
-.. role::   php(code)
+.. _introduction:
 
-
+============
 Introduction
 ============
 
-What does it do?
-----------------
+What Does it Do?
+================
 
 This extension was created with the `SAV Library Kickstarter <http://t
 ypo3.org/extensions/repository/view/sav_library_kickstarter>`_ in
@@ -49,8 +39,7 @@ The SAV Library Kickstarter includes:
 
 This example creates a contact list with the first name, last name,
 street, zip code, city and an image of the contact. It is taken from
-`http://www.typo3journal.info/articles/developpement.html
-<http://www.typo3journal.info/articles/developpement.html>`_ .
+the former Typo3Journal.
 
 .. important::
 
@@ -59,21 +48,21 @@ street, zip code, city and an image of the contact. It is taken from
 
 
 Screenshots
------------
+===========
 
-List view
-^^^^^^^^^
+List View
+---------
 
 .. figure:: ../Images/ScreenshotsListView.png 
 
-Single view
-^^^^^^^^^^^
+Single View
+-----------
 
 .. figure:: ../Images/ScreenshotsSingleView.png 
 
 
-Edit view
-^^^^^^^^^
+Edit View
+---------
 
 .. figure:: ../Images/ScreenshotsEditView.png 
 

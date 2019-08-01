@@ -6,10 +6,11 @@
 Introduction
 ============
 
-What does it do?
+What Does it Do?
 ================
 
-This extension was created with the `SAV Library Kickstarter <https://typo3.org/extensions/repository/view/sav_library_kickstarter>`_ in
+This extension was created with the `SAV Library Kickstarter 
+<https://typo3.org/extensions/repository/view/sav_library_kickstarter>`_ in
 order to be used with the `SAV Library Plus
 <https://typo3.org/extensions/repository/view/sav_library_plus>`_
 extension.
@@ -48,12 +49,12 @@ SAV Library Plus extension.
 Screenshots
 ===========
 
-List view
+List View
 ---------
 
 .. figure:: ../Images/ScreenshotsListView.png 
 
-Single view
+Single View
 -----------
 
 .. figure:: ../Images/ScreenshotsSingleViewCheckboxesAndRadioFolder.png 
@@ -70,7 +71,7 @@ Single view
 
 .. figure:: ../Images/ScreenshotsSingleViewGraphFolder.png  
 
-Edit view
+Edit View
 ---------
 
 .. figure:: ../Images/ScreenshotsEditViewCheckboxesAndRadioFolder.png 
@@ -88,14 +89,14 @@ Edit view
 .. figure:: ../Images/ScreenshotsEditViewGraphFolder.png  
 
 
-Changing dynamically the folder
+Changing Dynamically the Folder
 -------------------------------
 
 .. figure:: ../Images/ScreenshotsChangingTheViewFolderOff.png 
 
 .. figure:: ../Images/ScreenshotsChangingTheViewFolderOn.png   
 
-Changing dynamically the view
+Changing Dynamically the View
 -----------------------------
 
 .. figure:: ../Images/ScreenshotsEditViewView1.png  

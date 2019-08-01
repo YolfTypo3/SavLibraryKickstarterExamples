@@ -1,23 +1,13 @@
-.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
+.. include:: ../Includes.txt
 
-.. ==================================================
-.. DEFINE SOME TEXTROLES
-.. --------------------------------------------------
-.. role::   underline
-.. role::   typoscript(code)
-.. role::   ts(typoscript)
-   :class:  typoscript
-.. role::   php(code)
+.. _introduction:
 
-
+============
 Introduction
 ============
 
-What does it do?
-----------------
+What Does it Do?
+================
 
 This extension was created with the `SAV Library Kickstarter <http://t
 ypo3.org/extensions/repository/view/sav_library_kickstarter>`_ in
@@ -73,23 +63,26 @@ This extension uses a table with the following fields:
 
 
 Screenshots
------------
+===========
 
 Guest Edit View
-^^^^^^^^^^^^^^^
+---------------
+
 .. figure:: ../Images/ScreenshotsGuestEditView.png 
 
 Guest Admin List and Edit Views
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------------
 
 .. figure:: ../Images/ScreenshotsGuestAdminListView.png 
 
 .. figure:: ../Images/ScreenshotsGuestAdminEditView.png 
 
 List View
-^^^^^^^^^
+---------
+
 .. figure:: ../Images/ScreenshotsListView.png
 
 Teaser View
-^^^^^^^^^^^
+-----------
+
 .. figure:: ../Images/ScreenshotsTeaserView.png 

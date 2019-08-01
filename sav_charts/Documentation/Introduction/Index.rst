@@ -6,7 +6,7 @@
 Introduction
 ============
 
-What does it do?
+What Does it Do?
 ================
 
 This extension makes it possible to develop templates in XML to display charts using the 
@@ -30,8 +30,8 @@ The following charts type are available :
 
 .. tip::
 
-    SAV Charts is provided with several basic templates and more advanced templates which simplify
-    the implementation of charts with several sets of data.
+   SAV Charts is provided with several basic templates and more advanced 
+   templates which simplify the implementation of charts with several sets of data.
     
      
 Screenshots

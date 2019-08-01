@@ -2,7 +2,7 @@
 
 <SavLibraryPlus>
     <general type="array">
-        <version>1.2.0</version>
+        <version>9.5.0</version>
         <overridedTablesForLocalization>
         </overridedTablesForLocalization>
         <saveAndNew type="array">
@@ -66,8 +66,8 @@
                         <config type="array">
                             <func>makeItemLink</func>
                             <edit>1</edit>
-                            <width>50</width>
-                            <height>50</height>
+                            <width>50px</width>
+                            <height>50px</height>
                             <tableName>fe_users</tableName>
                             <fieldName>image</fieldName>
                             <fieldType>ShowOnly</fieldType>

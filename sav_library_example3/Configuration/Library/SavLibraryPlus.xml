@@ -2,7 +2,7 @@
 
 <SavLibraryPlus>
     <general type="array">
-        <version>1.2.0</version>
+        <version>9.5.0</version>
         <overridedTablesForLocalization>
         </overridedTablesForLocalization>
         <saveAndNew type="array">
@@ -186,6 +186,7 @@
                                                 <tableName>tx_savlibraryexample3_lending</tableName>
                                                 <fieldName>friend_name</fieldName>
                                                 <fieldType>String</fieldType>
+                                                <subformItem>1</subformItem>
                                             </config>
                                         </a6930333>
                                         <a136312335 type="array">
@@ -194,6 +195,7 @@
                                                 <tableName>tx_savlibraryexample3_lending</tableName>
                                                 <fieldName>friend_phone</fieldName>
                                                 <fieldType>String</fieldType>
+                                                <subformItem>1</subformItem>
                                             </config>
                                         </a136312335>
                                         <a114383223 type="array">
@@ -203,6 +205,7 @@
                                                 <tableName>tx_savlibraryexample3_lending</tableName>
                                                 <fieldName>friend_email</fieldName>
                                                 <fieldType>String</fieldType>
+                                                <subformItem>1</subformItem>
                                             </config>
                                         </a114383223>
                                         <a117478451 type="array">
@@ -211,6 +214,7 @@
                                                 <tableName>tx_savlibraryexample3_lending</tableName>
                                                 <fieldName>lending_date</fieldName>
                                                 <fieldType>Date</fieldType>
+                                                <subformItem>1</subformItem>
                                             </config>
                                         </a117478451>
                                         <a267929780 type="array">
@@ -219,6 +223,7 @@
                                                 <tableName>tx_savlibraryexample3_lending</tableName>
                                                 <fieldName>return_date</fieldName>
                                                 <fieldType>Date</fieldType>
+                                                <subformItem>1</subformItem>
                                             </config>
                                         </a267929780>
                                     </fields>
@@ -331,6 +336,7 @@
                                                 <tableName>tx_savlibraryexample3_lending</tableName>
                                                 <fieldName>friend_name</fieldName>
                                                 <fieldType>String</fieldType>
+                                                <subformItem>1</subformItem>
                                             </config>
                                         </a6930333>
                                         <a136312335 type="array">
@@ -340,6 +346,7 @@
                                                 <tableName>tx_savlibraryexample3_lending</tableName>
                                                 <fieldName>friend_phone</fieldName>
                                                 <fieldType>String</fieldType>
+                                                <subformItem>1</subformItem>
                                             </config>
                                         </a136312335>
                                         <a114383223 type="array">
@@ -348,6 +355,7 @@
                                                 <tableName>tx_savlibraryexample3_lending</tableName>
                                                 <fieldName>friend_email</fieldName>
                                                 <fieldType>String</fieldType>
+                                                <subformItem>1</subformItem>
                                             </config>
                                         </a114383223>
                                         <a117478451 type="array">
@@ -357,6 +365,7 @@
                                                 <tableName>tx_savlibraryexample3_lending</tableName>
                                                 <fieldName>lending_date</fieldName>
                                                 <fieldType>Date</fieldType>
+                                                <subformItem>1</subformItem>
                                             </config>
                                         </a117478451>
                                         <a267929780 type="array">
@@ -366,6 +375,7 @@
                                                 <tableName>tx_savlibraryexample3_lending</tableName>
                                                 <fieldName>return_date</fieldName>
                                                 <fieldType>Date</fieldType>
+                                                <subformItem>1</subformItem>
                                             </config>
                                         </a267929780>
                                     </fields>

@@ -74,16 +74,15 @@ return [
         'image' => [
             'exclude' => 1,
             'label'  => 'LLL:EXT:sav_library_example1/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample1_members.image',
-            'config' => [
-                'type' => 'group',
-                'internal_type' => 'file',
-                'allowed' => $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext'],
-                'max_size' => $GLOBALS['TYPO3_CONF_VARS']['BE']['maxFileSize'],
-                'uploadfolder' => 'uploads/tx_savlibraryexample1',
-                'size' => 1,
-                'minitems' => 0,
-                'maxitems' => 1,
-            ],
+            'config' =>	\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig(
+                	'image',
+                	[
+                    	'maxitems' => 1,
+                    	'uploadfolder' => 'user_upload',
+                	],
+                	$GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext'],
+                	''
+            ),
         ],
     ],
     'types' => [

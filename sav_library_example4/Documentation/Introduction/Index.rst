@@ -1,23 +1,13 @@
-.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
+.. include:: ../Includes.txt
 
-.. ==================================================
-.. DEFINE SOME TEXTROLES
-.. --------------------------------------------------
-.. role::   underline
-.. role::   typoscript(code)
-.. role::   ts(typoscript)
-   :class:  typoscript
-.. role::   php(code)
+.. _introduction:
 
-
+============
 Introduction
 ============
 
-What does it do?
-----------------
+What Does it Do?
+================
 
 This extension was created with the `SAV Library Kickstarter <http://t
 ypo3.org/extensions/repository/view/sav_library_kickstarter>`_ in
@@ -60,16 +50,16 @@ and SAV Library Example3.
 
 
 Screenshots
------------
+===========
 
-Single view
-^^^^^^^^^^^
+Single View
+-----------
 
 .. figure:: ../Images/ScreenshotsSingleView.png 
 
 
-Edit view
-^^^^^^^^^
+Edit View
+---------
 
 .. figure:: ../Images/ScreenshotsEditView.png 
 

@@ -10,10 +10,11 @@
         "role": "Developer"
         }
     ],
-    "replace": {
-        "sav_library_example7": "self.version",
-        "typo3-ter/sav-library-example7": "self.version"
-    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "sav_library_example7"
+        }
+    },    
     "require": {
         "typo3/cms-core": ">=8.7,<10.0",
         "typo3-ter/sav-library-plus": ">=1.2"

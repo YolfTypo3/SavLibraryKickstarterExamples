@@ -1,57 +1,44 @@
-.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
+.. include:: Includes.txt
 
-.. ==================================================
-.. DEFINE SOME TEXTROLES
-.. --------------------------------------------------
-.. role::   underline
-.. role::   typoscript(code)
-.. role::   ts(typoscript)
-   :class:  typoscript
-.. role::   php(code)
+.. _start:
 
-====================
+==================== 
 SAV Library Example8
-====================
+==================== 
 
-.. only:: html
+:Extension key:
+   sav_library_example8
 
-  :Classification:
-    sav_library_example8
+:Version:
+   |release|
 
-  :Version:
-    |release|
+:Language:
+   en
 
-  :Language:
-    en
+:Description:
+   FE Users Admin and Export
 
-  :Description:
-    FE Users Admin and Export.
+:Keywords:
+   sav_library_example8    
 
-  :Keywords:
-    sav_library_example, sav_library_plus, sav_library_kickstarter
+:Copyright:
+   2019
 
-  :Copyright:
-    2010-2014
+:Author:
+   Laurent Foulloy
 
-  :Author:
-    Laurent Foulloy
+:Email:
+   yolf.typo3@orange.fr
 
-  :Email:
-    yolf.typo3@orange.fr
+:License:
+   This document is published under the Open Content License
+   available from http://www.opencontent.org/opl.shtml
 
-  :License:
-    This document is published under the Open Content License
-    available from http://www.opencontent.org/opl.shtml
+:Rendered:
+   |today|
 
-  :Rendered:
-    |today|
-
-  The content of this document is related to TYPO3,
-  a GNU/GPL CMS/Framework available from `www.typo3.org <http://www.typo3.org/>`_.
-
+The content of this document is related to TYPO3,
+a GNU/GPL CMS/Framework available from `www.typo3.org <http://www.typo3.org/>`_.
 
 
 Table of Contents
@@ -61,7 +48,6 @@ Table of Contents
    :maxdepth: 5
    :titlesonly:
    :glob:
-
+  
    Introduction/Index
    Changelog/Index
-

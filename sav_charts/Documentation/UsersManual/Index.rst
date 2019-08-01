@@ -3,7 +3,7 @@
 .. _userManual:
 
 ============
-Users manual
+Users Manual
 ============
 
 #. Download the extension and install it.

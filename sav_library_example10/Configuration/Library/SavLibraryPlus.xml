@@ -2,7 +2,7 @@
 
 <SavLibraryPlus>
     <general type="array">
-        <version>1.2.0</version>
+        <version>9.5.0</version>
         <overridedTablesForLocalization>
         </overridedTablesForLocalization>
         <saveAndNew type="array">
@@ -44,8 +44,7 @@
                     <a9598752 type="array">
                         <config type="array">
                             <func>makeItemLink</func>
-                            <tsproperties>file = uploads/tx_savlibraryexample10/###image###
-file.width= 100
+                            <tsproperties>file.width= 100
 </tsproperties>
                             <tableName>tx_savlibraryexample10</tableName>
                             <fieldName>image</fieldName>
@@ -70,8 +69,7 @@ file.width= 100
                         <config type="array">
                             <wrapitem>&lt;div class=&quot;container&quot;&gt;&lt;div class=&quot;image&quot;&gt; | &lt;/div&gt;</wrapitem>
                             <cutlabel>1</cutlabel>
-                            <tsproperties>file = uploads/tx_savlibraryexample10/###image###
-  file.width = 300
+                            <tsproperties>file.width = 300
   imageLinkWrap = 1
   imageLinkWrap.enable = 1
 </tsproperties>
@@ -80,14 +78,31 @@ file.width= 100
                             <fieldType>Files</fieldType>
                         </config>
                     </a9598752>
-                    <a210704446 type="array">
+                    <a217321293 type="array">
                         <config type="array">
+                            <cutlabel>1</cutlabel>
                             <wrapitem>&lt;div class=&quot;info&quot;&gt;&lt;div class=&quot;name&quot;&gt; | &lt;/div&gt;</wrapitem>
                             <tableName>tx_savlibraryexample10</tableName>
-                            <fieldName>title</fieldName>
-                            <fieldType>String</fieldType>
+                            <fieldName>poi</fieldName>
+                            <fieldType>RelationManyToManyAsSubform</fieldType>
+                            <subform type="array">
+                                <a217895432 type="array">
+                                    <fields type="array">
+                                        <a256655301 type="array">
+                                            <config type="array">
+                                                <cutlabel>1</cutlabel>
+                                                <tableName>tx_maps2_domain_model_poicollection</tableName>
+                                                <fieldName>title</fieldName>
+                                                <fieldType>ShowOnly</fieldType>
+                                                <renderType>String</renderType>
+                                                <subformItem>1</subformItem>
+                                            </config>
+                                        </a256655301>
+                                    </fields>
+                                </a217895432>
+                            </subform>
                         </config>
-                    </a210704446>
+                    </a217321293>
                     <a90773530 type="array">
                         <config type="array">
                             <wrapitem>&lt;div class=&quot;description&quot;&gt; | &lt;/div&gt;&lt;/div&gt;</wrapitem>
@@ -96,34 +111,52 @@ file.width= 100
                             <fieldType>Text</fieldType>
                         </config>
                     </a90773530>
+                    <a140341624 type="array">
+                        <config type="array">
+                            <cutif>true</cutif>
+                            <tsobject>CONTENT</tsobject>
+                            <tsproperties>table = tx_maps2_domain_model_poicollection
+  select {
+    join = tx_savlibraryexample10_poi_mm ON tx_maps2_domain_model_poicollection.uid = tx_savlibraryexample10_poi_mm.uid_foreign
+    selectFields = tx_maps2_domain_model_poicollection.uid
+    where = uid_local = ###uidMainTable###
+    }
+renderObj = TEXT
+renderObj.field = uid
+</tsproperties>
+                            <renderfieldinmarker>poi_uid</renderfieldinmarker>
+                            <tableName>tx_savlibraryexample10</tableName>
+                            <fieldName>poi_uid</fieldName>
+                            <fieldType>ShowOnly</fieldType>
+                            <renderType>String</renderType>
+                        </config>
+                    </a140341624>
                     <a79811241 type="array">
                         <config type="array">
                             <wrapitem>&lt;div class=&quot;map&quot;&gt; | &lt;/div&gt;&lt;/div&gt;</wrapitem>
                             <cutlabel>1</cutlabel>
-                            <tsobject>COA</tsobject>
-                            <tsproperties>10 = &lt; plugin.tx_wecmap_pi1
-10{
-  height = 300
-  width = 300
-  showDirections = 0
-  prefillAddress = 0
-  initialMapType = G_NORMAL_MAP
-  controls{
-    mapControlSize = small
-    showOverviewMap = 0
-    showMapType = 1
-    showScale = 0
-  }
-  markers.1 {
-    title = ###title###
-    street = ###address###
-    city = ###city###
-    zip = ###zip###
-    country = ###country###
-  }
+                            <tsobject>USER</tsobject>
+                            <tsproperties>userFunc = TYPO3\CMS\Extbase\Core\Bootstrap-&gt;run
+    extensionName = Maps2
+    pluginName = Maps2
+    vendorName = JWeiland
+    action = show
+     switchableControllerActions {
+          PoiCollection {
+            1 = show
+          }
+     }
+    settings &lt; plugin.tx_maps2.settings
+    settings {
+       zoom = 18
+       poiCollection = ###poi_uid###
+       category =
+       mapWidth = 100%
+       mapHeight = 300
+    }
 }
 </tsproperties>
-                            <cutif>address = EMPTY</cutif>
+                            <showif>0 &lt; ###poi_uid###</showif>
                             <tableName>tx_savlibraryexample10</tableName>
                             <fieldName>map</fieldName>
                             <fieldType>ShowOnly</fieldType>
@@ -151,13 +184,6 @@ file.width= 100
                             <fieldType>Files</fieldType>
                         </config>
                     </a9598752>
-                    <a210704446 type="array">
-                        <config type="array">
-                            <tableName>tx_savlibraryexample10</tableName>
-                            <fieldName>title</fieldName>
-                            <fieldType>String</fieldType>
-                        </config>
-                    </a210704446>
                     <a90773530 type="array">
                         <config type="array">
                             <tableName>tx_savlibraryexample10</tableName>
@@ -165,34 +191,81 @@ file.width= 100
                             <fieldType>Text</fieldType>
                         </config>
                     </a90773530>
-                    <a170253813 type="array">
+                    <a217321293 type="array">
                         <config type="array">
                             <tableName>tx_savlibraryexample10</tableName>
-                            <fieldName>address</fieldName>
-                            <fieldType>String</fieldType>
+                            <fieldName>poi</fieldName>
+                            <fieldType>RelationManyToManyAsSubform</fieldType>
+                            <subform type="array">
+                                <a217895432 type="array">
+                                    <fields type="array">
+                                        <a256655301 type="array">
+                                            <config type="array">
+                                                <updateshowonlyfield>1</updateshowonlyfield>
+                                                <tableName>tx_maps2_domain_model_poicollection</tableName>
+                                                <fieldName>title</fieldName>
+                                                <fieldType>ShowOnly</fieldType>
+                                                <renderType>String</renderType>
+                                                <subformItem>1</subformItem>
+                                            </config>
+                                        </a256655301>
+                                        <a232115474 type="array">
+                                            <config type="array">
+                                                <updateshowonlyfield>1</updateshowonlyfield>
+                                                <tableName>tx_maps2_domain_model_poicollection</tableName>
+                                                <fieldName>address</fieldName>
+                                                <fieldType>ShowOnly</fieldType>
+                                                <renderType>String</renderType>
+                                                <subformItem>1</subformItem>
+                                            </config>
+                                        </a232115474>
+                                        <a90542099 type="array">
+                                            <config type="array">
+                                                <updateshowonlyfield>1</updateshowonlyfield>
+                                                <tableName>tx_maps2_domain_model_poicollection</tableName>
+                                                <fieldName>latitude</fieldName>
+                                                <fieldType>ShowOnly</fieldType>
+                                                <renderType>Numeric</renderType>
+                                                <subformItem>1</subformItem>
+                                            </config>
+                                        </a90542099>
+                                        <a162799315 type="array">
+                                            <config type="array">
+                                                <updateshowonlyfield>1</updateshowonlyfield>
+                                                <tableName>tx_maps2_domain_model_poicollection</tableName>
+                                                <fieldName>longitude</fieldName>
+                                                <fieldType>ShowOnly</fieldType>
+                                                <renderType>Numeric</renderType>
+                                                <subformItem>1</subformItem>
+                                            </config>
+                                        </a162799315>
+                                        <a14904670 type="array">
+                                            <config type="array">
+                                                <updateshowonlyfield>1</updateshowonlyfield>
+                                                <value>osm</value>
+                                                <tableName>tx_maps2_domain_model_poicollection</tableName>
+                                                <fieldName>map_provider</fieldName>
+                                                <fieldType>ShowOnly</fieldType>
+                                                <renderType>String</renderType>
+                                                <subformItem>1</subformItem>
+                                            </config>
+                                        </a14904670>
+                                        <a18252698 type="array">
+                                            <config type="array">
+                                                <updateshowonlyfield>1</updateshowonlyfield>
+                                                <value>Point</value>
+                                                <tableName>tx_maps2_domain_model_poicollection</tableName>
+                                                <fieldName>configuration_map</fieldName>
+                                                <fieldType>ShowOnly</fieldType>
+                                                <renderType>String</renderType>
+                                                <subformItem>1</subformItem>
+                                            </config>
+                                        </a18252698>
+                                    </fields>
+                                </a217895432>
+                            </subform>
                         </config>
-                    </a170253813>
-                    <a155668924 type="array">
-                        <config type="array">
-                            <tableName>tx_savlibraryexample10</tableName>
-                            <fieldName>zip</fieldName>
-                            <fieldType>String</fieldType>
-                        </config>
-                    </a155668924>
-                    <a217877709 type="array">
-                        <config type="array">
-                            <tableName>tx_savlibraryexample10</tableName>
-                            <fieldName>city</fieldName>
-                            <fieldType>String</fieldType>
-                        </config>
-                    </a217877709>
-                    <a166208576 type="array">
-                        <config type="array">
-                            <tableName>tx_savlibraryexample10</tableName>
-                            <fieldName>country</fieldName>
-                            <fieldType>String</fieldType>
-                        </config>
-                    </a166208576>
+                    </a217321293>
                 </fields>
             </a217895432>
         </numIndex>

@@ -1,6 +1,6 @@
 {
     "name": "yolftypo3/sav-library-example1",
-    "description": "A simple contact list (from  http://www.typo3journal.info/articles/developpement/developpement-extensions-1.html)",
+    "description": "A simple contact list (from the former Typo3Journal)",
     "type": "typo3-cms-extension",
     "license": "GPL-2.0+",
     "authors": [
@@ -10,12 +10,13 @@
         "role": "Developer"
         }
     ],
-    "replace": {
-        "sav_library_example1": "self.version",
-        "typo3-ter/sav-library-example1": "self.version"
-    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "sav_library_example1"
+        }
+    },    
     "require": {
-        "typo3/cms-core": ">=8.0,<10.0",
+        "typo3/cms-core": ">=8.7,<10.0",
         "typo3-ter/sav-library-plus": ">=1.2"
     },
     "autoload": {

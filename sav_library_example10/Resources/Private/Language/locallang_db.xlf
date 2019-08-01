@@ -1,35 +1,116 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 
 <xliff version="1.0">
-    <file source-language="en" datatype="plaintext" original="messages" date="2018-01-18T19:19:08Z" product-name="sav_library_example10">
+    <file source-language="en" datatype="plaintext" original="messages" date="2019-07-29T12:49:56Z" product-name="sav_library_example10">
         <header/>
         <body>
             <trans-unit id="tx_savlibraryexample10" xml:space="preserve">
-                <source>SAV Example10</source>
+                <source>SAV Library Example10</source>
             </trans-unit>
             <trans-unit id="tx_savlibraryexample10.image" xml:space="preserve">
                 <source>Image</source>
             </trans-unit>
-            <trans-unit id="tx_savlibraryexample10.title" xml:space="preserve">
-                <source>Title</source>
+            <trans-unit id="tx_savlibraryexample10.poi" xml:space="preserve">
+                <source>Point of interest</source>
             </trans-unit>
             <trans-unit id="tx_savlibraryexample10.description" xml:space="preserve">
                 <source>Description</source>
             </trans-unit>
-            <trans-unit id="tx_savlibraryexample10.address" xml:space="preserve">
-                <source>Address</source>
-            </trans-unit>
-            <trans-unit id="tx_savlibraryexample10.zip" xml:space="preserve">
-                <source>ZIP</source>
-            </trans-unit>
-            <trans-unit id="tx_savlibraryexample10.city" xml:space="preserve">
-                <source>City</source>
-            </trans-unit>
-            <trans-unit id="tx_savlibraryexample10.country" xml:space="preserve">
-                <source>Country</source>
+            <trans-unit id="tx_savlibraryexample10.poi_uid" xml:space="preserve">
+                <source>Only used to get the pio uid</source>
             </trans-unit>
             <trans-unit id="tx_savlibraryexample10.map" xml:space="preserve">
                 <source>Map</source>
+            </trans-unit>
+             <trans-unit id="tx_maps2_domain_model_poicollection.sys_language_uid" xml:space="preserve">
+                <source>Language</source>
+            </trans-unit>
+             <trans-unit id="tx_maps2_domain_model_poicollection.l10n_parent" xml:space="preserve">
+                <source>Transl.Orig</source>
+            </trans-unit>
+             <trans-unit id="tx_maps2_domain_model_poicollection.l10n_diffsource" xml:space="preserve">
+                <source></source>
+            </trans-unit>
+             <trans-unit id="tx_maps2_domain_model_poicollection.t3ver_label" xml:space="preserve">
+                <source>Versioning Label</source>
+            </trans-unit>
+             <trans-unit id="tx_maps2_domain_model_poicollection.hidden" xml:space="preserve">
+                <source>Hide</source>
+            </trans-unit>
+             <trans-unit id="tx_maps2_domain_model_poicollection.starttime" xml:space="preserve">
+                <source>Publish Date</source>
+            </trans-unit>
+             <trans-unit id="tx_maps2_domain_model_poicollection.endtime" xml:space="preserve">
+                <source>Expiration Date</source>
+            </trans-unit>
+             <trans-unit id="tx_maps2_domain_model_poicollection.collection_type" xml:space="preserve">
+                <source>Type</source>
+            </trans-unit>
+             <trans-unit id="tx_maps2_domain_model_poicollection.title" xml:space="preserve">
+                <source>Title</source>
+            </trans-unit>
+             <trans-unit id="tx_maps2_domain_model_poicollection.address" xml:space="preserve">
+                <source>address</source>
+            </trans-unit>
+             <trans-unit id="tx_maps2_domain_model_poicollection.latitude" xml:space="preserve">
+                <source>Latitude for map position</source>
+            </trans-unit>
+             <trans-unit id="tx_maps2_domain_model_poicollection.longitude" xml:space="preserve">
+                <source>Longitude for map position</source>
+            </trans-unit>
+             <trans-unit id="tx_maps2_domain_model_poicollection.map_provider" xml:space="preserve">
+                <source>Choose a preferred Map Provider to render the map for this record. This option is only valid for the TYPO3 backend and will reload the form if you switch to another value.</source>
+            </trans-unit>
+             <trans-unit id="tx_maps2_domain_model_poicollection.configuration_map" xml:space="preserve">
+                <source>Configure position on Map</source>
+            </trans-unit>
+             <trans-unit id="tx_maps2_domain_model_poicollection.radius" xml:space="preserve">
+                <source>Radius</source>
+            </trans-unit>
+             <trans-unit id="tx_maps2_domain_model_poicollection.pois" xml:space="preserve">
+                <source></source>
+            </trans-unit>
+             <trans-unit id="tx_maps2_domain_model_poicollection.stroke_color" xml:space="preserve">
+                <source>Color</source>
+            </trans-unit>
+             <trans-unit id="tx_maps2_domain_model_poicollection.stroke_opacity" xml:space="preserve">
+                <source>Opacity</source>
+            </trans-unit>
+             <trans-unit id="tx_maps2_domain_model_poicollection.stroke_weight" xml:space="preserve">
+                <source>Weight</source>
+            </trans-unit>
+             <trans-unit id="tx_maps2_domain_model_poicollection.fill_color" xml:space="preserve">
+                <source>Color</source>
+            </trans-unit>
+             <trans-unit id="tx_maps2_domain_model_poicollection.fill_opacity" xml:space="preserve">
+                <source>Opacity</source>
+            </trans-unit>
+             <trans-unit id="tx_maps2_domain_model_poicollection.info_window_content" xml:space="preserve">
+                <source>Text within info window</source>
+            </trans-unit>
+             <trans-unit id="tx_maps2_domain_model_poicollection.info_window_images" xml:space="preserve">
+                <source>Images within info window</source>
+            </trans-unit>
+             <trans-unit id="tx_maps2_domain_model_poicollection.marker_icons" xml:space="preserve">
+                <source>Marker icon</source>
+            </trans-unit>
+             <trans-unit id="tx_maps2_domain_model_poicollection.marker_icon_width" xml:space="preserve">
+                <source>Width</source>
+            </trans-unit>
+             <trans-unit id="tx_maps2_domain_model_poicollection.marker_icon_height" xml:space="preserve">
+                <source>Height</source>
+            </trans-unit>
+             <trans-unit id="tx_maps2_domain_model_poicollection.marker_icon_anchor_pos_x" xml:space="preserve">
+                <source>Horizontal pixel X</source>
+            </trans-unit>
+             <trans-unit id="tx_maps2_domain_model_poicollection.marker_icon_anchor_pos_y" xml:space="preserve">
+                <source>Vertical pixel Y</source>
+            </trans-unit>
+             <trans-unit id="tx_maps2_domain_model_poicollection.categories" xml:space="preserve">
+                <source>Categories</source>
+            </trans-unit>
+             <trans-unit id="tx_maps2_domain_model_poicollection.t3_origuid" xml:space="preserve">
+                <source></source>
             </trans-unit>
             <trans-unit id="tt_content.list_type_pi1" xml:space="preserve">
                 <source>SAV Library Example10 - Using TypoScript</source>
