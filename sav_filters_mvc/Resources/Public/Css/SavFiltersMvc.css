@@ -1,0 +1,211 @@
+/**
+* Define your style below
+*/
+.savFiltersMvc {
+	width: 100%;
+	margin-bottom: 5px;
+	box-sizing: content-box;
+	height: auto;
+	margin-bottom: 5px;
+}
+
+.savFiltersMvc * {
+	box-sizing: content-box;
+}
+
+.savFiltersMvc ul.typo3-messages {
+	background-color: inherit;
+	color: red;
+	font-weight: bold;
+}
+
+.savFiltersMvc.AlphabeticFilter, .savFiltersMvc.MonthsFilter,
+	.savFiltersMvc.SearchFilter, .savFiltersMvc.SelectorsFilter,
+	.savFiltersMvc.MiniCalendarFilter {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 27px;
+	background-color: #f1fbfd;
+	color: inherit;
+	border: 1px #000099 solid;
+	margin: 0;
+	padding: 0;
+	align-items: center;
+	justify-content: center;
+}
+
+.savFiltersMvc.SelectorsFilter {
+	height: auto;
+}
+
+.savFiltersMvc ul {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: inherit;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	background-color: #f1fbfd;
+	list-style: none;
+	padding: 0px;
+}
+
+.savFiltersMvc ul li {
+	display: inline-block;
+	line-height: normal;
+	background-image: none;
+	padding: 0;
+	margin-right: 3px;
+}
+
+.savFiltersMvc ul li.all {
+	margin-left: 10px;
+}
+
+.savFiltersMvc a {
+	background-color: inherit;
+	text-decoration: none;
+	font-weight: bold;
+	color: #4176FF;
+}
+
+.savFiltersMvc a.selected {
+	color: #EA6900;
+}
+
+.savFiltersMvc a:hover {
+	color: #EA6900;
+	text-decoration: underline;
+}
+
+.savFiltersMvc form {
+	margin: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.savFiltersMvc.SearchBox input {
+	margin-left: 10px;
+}
+
+.savFiltersMvc .submit {
+	cursor: pointer;
+}
+
+.savFiltersMvc .submit img {
+	width: 14px;
+	height: 14px;
+}
+
+/* Calendar */
+.savFiltersMvc.MiniCalendarFilter {
+	height: auto;
+}
+
+.savFiltersMvc.MiniCalendarFilter .miniCalendarContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 225px;
+	border: 1px solid #009CE3;
+}
+
+.savFiltersMvc.MiniCalendarFilter .monthHeader {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #009CE3;
+	color: #FFFFFF;
+	font-weight: bold;
+	margin: 0;
+	padding: 2px 0 2px 0;
+	text-align: center;
+	margin-bottom: 1px;
+	width: inherit;
+}
+
+.savFiltersMvc.MiniCalendarFilter .monthHeader a.month{
+    color:inherit;
+}
+
+.savFiltersMvc.MiniCalendarFilter ul.daysHeader {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	background-color: #009CE3;
+	color: #FFFFFF;
+	width: inherit;
+	list-style: none outside none;
+	list-style-image: none;
+	margin: 0;
+	padding: 0;
+}
+
+.savFiltersMvc.MiniCalendarFilter ul.weeksHeader {
+	width: 24px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	background-color: #ffffff;
+	list-style: none outside none;
+	list-style-image: none;
+	margin: 0;
+	padding: 0;
+	border-right: 1px solid #009CE3;
+}
+
+.savFiltersMvc.MiniCalendarFilter li.week {
+	width: 20px;
+	text-align: center;
+	background-image: none;
+	margin: 0px;
+	padding: 2px;
+}
+
+.savFiltersMvc.MiniCalendarFilter li.day {
+	width: 24px;
+	text-align: center;
+	background-image: none;
+	margin: 0px;
+	padding: 2px;
+}
+
+.savFiltersMvc.MiniCalendarFilter ul.weeks {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	background-color: #ffffff;
+	width: 200px;
+	list-style: none outside none;
+	list-style-image: none;
+	margin: 0;
+	padding: 0;
+}
+
+.savFiltersMvc.MiniCalendarFilter ul.weeks li {
+	width: 24px;
+	text-align: center;
+	background-image: none;
+	margin: 0px;
+	padding: 2px;
+}
+
+.savFiltersMvc.MiniCalendarFilter ul.weeks li.weekend {
+	background-color: #eeeeee;
+}
+
+.savFiltersMvc.MiniCalendarFilter ul.weeks li.today {
+	border: 1px solid #000;
+}
+
+.savFiltersMvc.MiniCalendarFilter ul.weeks li.notInMonth {
+	background-color: #88d9ff;
+}
