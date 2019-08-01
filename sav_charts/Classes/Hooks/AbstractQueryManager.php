@@ -13,9 +13,8 @@ namespace YolfTypo3\SavCharts\Hooks;
  *
  * The TYPO3 project - inspiring people to share!
  */
-
 use TYPO3\CMS\Core\Utility\GeneralUtility;
-use TYPO3\CMS\Extbase\Service\TypoScriptService;
+use TYPO3\CMS\Core\TypoScript\TypoScriptService;
 use TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer;
 use YolfTypo3\SavCharts\Controller\DefaultController;
 
@@ -24,6 +23,7 @@ use YolfTypo3\SavCharts\Controller\DefaultController;
  */
 abstract class AbstractQueryManager implements QueryManagerInterface
 {
+
     /**
      * Controller
      *
@@ -117,7 +117,7 @@ abstract class AbstractQueryManager implements QueryManagerInterface
      *
      * @return array The rows
      */
-    public function executeQuery(int $queryId) : array
+    public function executeQuery(int $queryId): array
     {
         return [];
     }

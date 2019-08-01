@@ -13,7 +13,7 @@ namespace YolfTypo3\SavCharts\XmlParser\GeneralXmlTag;
  *
  * The TYPO3 project - inspiring people to share!
  */
-
+use TYPO3\CMS\Core\Utility\GeneralUtility;
 use YolfTypo3\SavCharts\XmlParser\XmlParser;
 
 /**
@@ -23,6 +23,7 @@ use YolfTypo3\SavCharts\XmlParser\XmlParser;
  */
 class ForXmlTag extends AbstractXmlTag
 {
+
     /**
      * Default method
      *
@@ -38,24 +39,21 @@ class ForXmlTag extends AbstractXmlTag
         // Gets the each attribute
         $each = (string) $element->attributes()->each;
         if ($each == '') {
-            return  XmlParser::getController()->addError(
-                'error.missingAttribute',
-                [
-                    'each',
-                    $elementName
-                ]
-            );
+            return XmlParser::getController()->addError('error.missingAttribute', [
+                'each',
+                $elementName
+            ]);
         }
 
         // Checks if the each attribute is a reference
         // otherwise processes it as a comma-separated lis
-        if ( XmlParser::isReference($each)) {
+        if (XmlParser::isReference($each)) {
             $eachValue = XmlParser::getValueFromReference($each);
         } else {
             $eachValue = GeneralUtility::trimExplode(',', $each);
         }
 
-        foreach($eachValue as $key => $value) {
+        foreach ($eachValue as $key => $value) {
             $this->xmlTagValue['key'] = $key;
             $this->xmlTagValue['value'] = $value;
             XmlParser::setXmlTagResult($elementName, $this->xmlTagId, $this);
@@ -63,7 +61,6 @@ class ForXmlTag extends AbstractXmlTag
                 $this->xmlParser->processXmlElement($child);
             }
         }
-
     }
 }
 ?>

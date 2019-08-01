@@ -13,7 +13,6 @@ namespace YolfTypo3\SavCharts\XmlParser\GeneralXmlTag;
  *
  * The TYPO3 project - inspiring people to share!
  */
-
 use YolfTypo3\SavCharts\XmlParser\XmlParser;
 
 /**
@@ -23,9 +22,11 @@ use YolfTypo3\SavCharts\XmlParser\XmlParser;
  */
 class QueryXmlTag extends AbstractXmlTag
 {
+
     /**
      * Sets the query manager
      * .
+     *
      * @param \SimpleXMLElement $element
      *
      * @return void
@@ -45,26 +46,27 @@ class QueryXmlTag extends AbstractXmlTag
             } elseif ($attributeKey == 'uid') {
                 $uid = (string) $attribute;
             } else {
+                $match = [];
                 if (preg_match('/^marker#(\w*)$/', (string) $attribute, $match)) {
                     $attribute = XmlParser::getValueFromReference((string) $attribute);
+                    $markers[$attributeKey] = $attribute;
                 } elseif (preg_match('/^(\w+)#(data|marker)#(\w+)((:)(?:(\d+)))?$/', (string) $attribute, $match)) {
                     $attribute = XmlParser::getValueFromReference($match[2], $match[3], ($match[6] ? $match[6] : 0));
-                }
-                if (preg_match('/^(\w+)#(.*)$/', (string) $attribute, $match)) {
+                    $markers[$attributeKey] = $attribute;
+                } elseif (preg_match('/^(\w+)#(.*)$/', (string) $attribute, $match)) {
                     $markers[$match[1]] = $match[2];
+                } else {
+                    $markers[$attributeKey] = (string) $attribute;
                 }
             }
         }
 
         // Checks if the attribute name exists
         if ($name === null) {
-            return XmlParser::getController()->addError(
-                'error.missingAttribute',
-                [
-                    'name',
-                    $elementName
-                ]
-            );
+            return XmlParser::getController()->addError('error.missingAttribute', [
+                'name',
+                $elementName
+            ]);
         }
         if (XmlParser::isReference($name) !== false) {
             $name = XmlParser::getValueFromReference($name);
@@ -72,13 +74,10 @@ class QueryXmlTag extends AbstractXmlTag
 
         // Checks if the attribute uid exists
         if ($uid === null) {
-            return XmlParser::getController()->addError(
-                'error.missingAttribute',
-                [
-                    'uid',
-                    $elementName
-                ]
-            );
+            return XmlParser::getController()->addError('error.missingAttribute', [
+                'uid',
+                $elementName
+            ]);
         }
         if (XmlParser::isReference($uid) !== false) {
             $uid = XmlParser::getValueFromReference($uid);

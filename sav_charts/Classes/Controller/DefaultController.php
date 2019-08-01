@@ -13,15 +13,15 @@ namespace YolfTypo3\SavCharts\Controller;
  *
  * The TYPO3 project - inspiring people to share!
  */
-
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Core\Utility\PathUtility;
 use TYPO3\CMS\Core\Messaging\FlashMessage;
 use TYPO3\CMS\Core\Page\PageRenderer;
+use TYPO3\CMS\Core\TypoScript\TypoScriptService;
 use TYPO3\CMS\Extbase\Configuration\FrontendConfigurationManager;
-use TYPO3\CMS\Extbase\Service\TypoScriptService;
 use TYPO3\CMS\Extbase\Utility\LocalizationUtility;
+use YolfTypo3\SavCharts\Domain\Repository\QueryRepository;
 use YolfTypo3\SavCharts\XmlParser\XmlParser;
 
 /**
@@ -29,6 +29,7 @@ use YolfTypo3\SavCharts\XmlParser\XmlParser;
  */
 class DefaultController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
 {
+
     /**
      * Css path
      *
@@ -46,12 +47,20 @@ class DefaultController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
     /**
      * Query repository
      *
-     * @var \YolfTypo3\SavCharts\Domain\Repository\QueryRepository
-     * @TYPO3\CMS\Extbase\Annotation\Inject
-     * @extensionScannerIgnoreLine
-     * @inject
+     * @var QueryRepository
+     *
      */
     protected $queryRepository;
+
+    /**
+     * Initializes the controller before invoking an action method.
+     *
+     * @param QueryRepository $queryRepository
+     */
+    public function injectQueryRepository(QueryRepository $queryRepository)
+    {
+        $this->queryRepository = $queryRepository;
+    }
 
     /**
      * Initializes the controller before invoking an action method.
@@ -68,7 +77,7 @@ class DefaultController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
         $frontendConfigurationManager = GeneralUtility::makeInstance(FrontendConfigurationManager::class);
         $typoScriptSetup = $frontendConfigurationManager->getTypoScriptSetup();
         $pluginSetupName = 'tx_' . strtolower($this->request->getControllerExtensionName()) . '.';
-        if (!@is_array($typoScriptSetup['plugin.'][$pluginSetupName]['view.'])) {
+        if (! @is_array($typoScriptSetup['plugin.'][$pluginSetupName]['view.'])) {
             die('Fatal error: You have to include the static template of the extension ' . $extensionKey . '.');
         }
     }
@@ -111,6 +120,22 @@ class DefaultController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
     public function getExtensionKey()
     {
         return $this->request->getControllerExtensionKey();
+    }
+
+    /**
+     * Sets the controller context
+     *
+     * @return void
+     */
+    public function setControllerContext()
+    {
+        $requestBuilder = $this->objectManager->get(\TYPO3\CMS\Extbase\Mvc\Web\RequestBuilder::class);
+        $this->request = $requestBuilder->build();
+        $this->response = $this->objectManager->get(\TYPO3\CMS\Extbase\Mvc\Web\Response::class);
+        $this->uriBuilder = $this->objectManager->get(\TYPO3\CMS\Extbase\Mvc\Web\Routing\UriBuilder::class);
+        $this->controllerContext = $this->buildControllerContext();
+        $flashMessageService = $this->objectManager->get(\TYPO3\CMS\Core\Messaging\FlashMessageService::class);
+        $this->controllerContext->injectFlashMessageService($flashMessageService);
     }
 
     /**
@@ -162,6 +187,7 @@ class DefaultController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 
         // Post-processing to get the javascript
         $result = $xmlParser->postProcessing();
+
         $canvases = $result['canvases'];
         foreach ($canvases as $canvas) {
             $this->addJavaScriptFooterInlineCode($canvas['chartId'], $result['javaScriptFooterInlineCode']);
@@ -249,18 +275,19 @@ class DefaultController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
      *
      * @return bool Returns always false so that it can be used in return statements
      */
-    public function addError(string $key, array $arguments = null) : bool
+    public function addError(string $key, array $arguments = null): bool
     {
         // Gets the extension key
         $extensionKey = $this->getExtensionKey();
 
         // Sets the message
         $message = LocalizationUtility::translate($key, $extensionKey, $arguments);
+
         if ($message === null) {
             $message = $key;
         }
 
-        $this->addFlashMessage($message, '', FlashMessage::ERROR);
+        $this->addFlashMessage($message, $key, FlashMessage::ERROR);
         return false;
     }
 
@@ -272,7 +299,7 @@ class DefaultController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
      *
      * @return string The relative web path
      */
-    protected static function getExtensionWebPath(string $extension) : string
+    protected static function getExtensionWebPath(string $extension): string
     {
         $extensionWebPath = PathUtility::getAbsoluteWebPath(ExtensionManagementUtility::extPath($extension));
         if ($extensionWebPath[0] === '/') {

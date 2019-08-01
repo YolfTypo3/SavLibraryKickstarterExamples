@@ -192,7 +192,7 @@ class XmlParser
     /**
      * Gets a xml tag result
      *
-     * @param strin $name
+     * @param string $name
      *            tag name
      * @param mixed $id
      *            id
@@ -626,6 +626,7 @@ class XmlParser
         }
 
         $javaScriptFooterInlineCode = [];
+        $result = [];
         $result['canvases'] = [];
         $chartCounter = 0;
 
@@ -672,6 +673,7 @@ class XmlParser
                         $options = json_encode($options, JSON_NUMERIC_CHECK);
 
                         // Processes the callbacks if any
+                        $matches = [];
                         if (preg_match_all('/"<!--(###)?(.*?)(###)?-->"/', $options, $matches)) {
                             foreach ($matches[0] as $matchKey => $match) {
                                 if (! empty($matches[1][$matchKey])) {
@@ -768,7 +770,6 @@ class XmlParser
      */
     public function processQuery(string $queryManagerName, string $uid, array $markers): array
     {
-
         // Gets the class from the hook
         $hookFound = false;
         if (is_array($GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['sav_charts']['queryManagerClass'])) {
@@ -824,6 +825,7 @@ class XmlParser
      */
     public static function isReference(string $reference)
     {
+        $matches = [];
         if (preg_match('/^(?P<tagName>\w+)#(?P<id>\w+|(?P<idTagName>\w+)#(?P<idId>\w+))(?::(?:(?P<indexNumber>\d+)|(?P<indexWord>value|key)|(?P<indexFor>for)#(?P<indexForId>\w+):(?P<indexForIdIndexWord>key|value))(?:-(?P<endIndexNumber>\d+))?)?$/', $reference, $matches)) {
             return $matches;
         } else {

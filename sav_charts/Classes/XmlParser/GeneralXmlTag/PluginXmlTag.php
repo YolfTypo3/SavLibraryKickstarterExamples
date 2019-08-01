@@ -14,8 +14,6 @@ namespace YolfTypo3\SavCharts\XmlParser\GeneralXmlTag;
  * The TYPO3 project - inspiring people to share!
  */
 
-use YolfTypo3\SavCharts\XmlParser\XmlParser;
-
 /**
  * Class template
  *
@@ -23,6 +21,7 @@ use YolfTypo3\SavCharts\XmlParser\XmlParser;
  */
 class PluginXmlTag extends AbstractXmlTag
 {
+
     /**
      * Default method
      *
@@ -35,7 +34,6 @@ class PluginXmlTag extends AbstractXmlTag
         $fileName = trim((string) $element);
         $this->xmlTagValue = $fileName;
     }
-
 }
 
 ?>
