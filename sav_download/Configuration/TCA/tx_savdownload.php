@@ -64,17 +64,15 @@ return [
         'file' => [
             'exclude' => 1,
             'label'  => 'LLL:EXT:sav_download/Resources/Private/Language/locallang_db.xlf:tx_savdownload.file',
-            'config' => [
-                'type' => 'group',
-                'internal_type' => 'file',
-                'allowed' => '',
-                'disallowed' => 'php,php3',
-                'max_size' => $GLOBALS['TYPO3_CONF_VARS']['BE']['maxFileSize'],
-                'uploadfolder' => 'uploads/tx_savdownload',
-                'size' => 1,
-                'minitems' => 0,
-                'maxitems' => 1,
-            ],
+            'config' =>	\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig(
+                	'file',
+                	[
+                    	'maxitems' => 1,
+                    	'uploadfolder' => 'user_upload',
+                	],
+                	'',
+                	'php,php3'
+            ),
         ],
     ],
     'types' => [

@@ -2,7 +2,7 @@
 
 <SavLibraryPlus>
     <general type="array">
-        <version>1.2.0</version>
+        <version>9.5.0</version>
         <overridedTablesForLocalization>
         </overridedTablesForLocalization>
         <saveAndNew type="array">
@@ -71,6 +71,7 @@
                             <fieldmessage>title</fieldmessage>
                             <target>_blank</target>
                             <addicon>1</addicon>
+                            <renderaslink>1</renderaslink>
                             <tableName>tx_savdownload</tableName>
                             <fieldName>file</fieldName>
                             <fieldType>Files</fieldType>
@@ -114,8 +115,6 @@
                     </a11743497>
                     <a105124557 type="array">
                         <config type="array">
-                            <verifier>isValidPattern</verifier>
-                            <verifierparam>/^[A-Z0-9a-z_.-]+$/</verifierparam>
                             <tableName>tx_savdownload</tableName>
                             <fieldName>file</fieldName>
                             <fieldType>Files</fieldType>

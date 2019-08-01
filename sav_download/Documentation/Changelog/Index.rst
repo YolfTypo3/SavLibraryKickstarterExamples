@@ -1,18 +1,8 @@
-.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
+.. include:: ../Includes.txt
 
-.. ==================================================
-.. DEFINE SOME TEXTROLES
-.. --------------------------------------------------
-.. role::   underline
-.. role::   typoscript(code)
-.. role::   ts(typoscript)
-   :class:  typoscript
-.. role::   php(code)
+.. _changelog:
 
-
+=========
 Changelog
 =========
 
@@ -21,6 +11,7 @@ Changelog
 =======  ===========================================================================
 Version  Changes
 =======  ===========================================================================
+9.5.0    - Extension regenerated with SAV Library Kickstarter 9.5.0.
 1.0.0    - Extension regenerated with SAV Library Kickstarter 1.0.0.
 0.2.0    - Extension regenerated with SAV Library Kickstarter 0.6.0.
 0.1.1    - Documentation converted to the reStructuredText format.
