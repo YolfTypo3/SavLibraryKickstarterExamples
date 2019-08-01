@@ -1,0 +1,15 @@
+<div class="hookHeader">
+	<f:translate key="message" extensionName="sav_library_example5" />
+</div>
+<ul class="hookList">
+	<f:if condition="{row.field1} < {row.field2}">
+		<f:then>
+			<li>{row.field1}</li>
+			<li>{row.field2}</li>
+		</f:then>
+		<f:else>
+			<li>{row.field2}</li>
+			<li>{row.field1}</li>
+		</f:else>
+	</f:if>
+</ul>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+
+<SavLibraryPlus>
+    <general type="array">
+        <version>9.5.0</version>
+        <overridedTablesForLocalization>
+        </overridedTablesForLocalization>
+        <saveAndNew type="array">
+		</saveAndNew>
+    </general>
+    <forms type="array">
+        <numIndex index="1" type="array">
+            <title>Default</title>
+            <listView>1</listView>
+            <singleView>2</singleView>
+            <editView>3</editView>
+            <query>1</query>
+            <formView></formView>
+            <specialView>0</specialView>
+            <userPlugin></userPlugin>
+            <viewsWithCondition>
+            </viewsWithCondition>
+        </numIndex>
+    </forms>
+    <templates type="array">
+        <numIndex index="1" type="array">
+            <itemTemplate>&lt;ul&gt;
+  &lt;li&gt;###title###&lt;/li&gt;
+&lt;/ul&gt;</itemTemplate>
+        </numIndex>
+    </templates>
+    <views type="array">
+        <numIndex index="1" type="array">
+            <a217895432 type="array">
+                <config type="array">
+                    <label>0</label>
+				</config>
+                <title type="array">
+                    <config type="array">
+                        <field></field>
+                    </config>
+                </title>
+                <fields type="array">
+                    <a268295533 type="array">
+                        <config type="array">
+                            <func>makeItemLink</func>
+                            <tableName>tx_savlibraryexample5</tableName>
+                            <fieldName>title</fieldName>
+                            <fieldType>String</fieldType>
+                        </config>
+                    </a268295533>
+                </fields>
+            </a217895432>
+        </numIndex>
+        <numIndex index="2" type="array">
+            <a217895432 type="array">
+                <config type="array">
+                    <label>0</label>
+				</config>
+                <title type="array">
+                    <config type="array">
+                        <field></field>
+                    </config>
+                </title>
+                <fields type="array">
+                    <a268295533 type="array">
+                        <config type="array">
+                            <tableName>tx_savlibraryexample5</tableName>
+                            <fieldName>title</fieldName>
+                            <fieldType>String</fieldType>
+                        </config>
+                    </a268295533>
+                    <a266095835 type="array">
+                        <config type="array">
+                            <hookname>SavLibraryExample5</hookname>
+                            <hookparameters>{
+  &quot;template&quot;: &quot;Test.html&quot;,
+  &quot;uid&quot;: &quot;###uidMainTable###&quot;
+}</hookparameters>
+                            <tableName>tx_savlibraryexample5</tableName>
+                            <fieldName>hook_content</fieldName>
+                            <fieldType>ShowOnly</fieldType>
+                            <renderType>String</renderType>
+                        </config>
+                    </a266095835>
+                </fields>
+            </a217895432>
+        </numIndex>
+        <numIndex index="3" type="array">
+            <a217895432 type="array">
+                <config type="array">
+                    <label>0</label>
+				</config>
+                <title type="array">
+                    <config type="array">
+                        <field></field>
+                    </config>
+                </title>
+                <fields type="array">
+                    <a268295533 type="array">
+                        <config type="array">
+                            <tableName>tx_savlibraryexample5</tableName>
+                            <fieldName>title</fieldName>
+                            <fieldType>String</fieldType>
+                        </config>
+                    </a268295533>
+                    <a116526166 type="array">
+                        <config type="array">
+                            <tableName>tx_savlibraryexample5</tableName>
+                            <fieldName>field1</fieldName>
+                            <fieldType>String</fieldType>
+                        </config>
+                    </a116526166>
+                    <a204036057 type="array">
+                        <config type="array">
+                            <tableName>tx_savlibraryexample5</tableName>
+                            <fieldName>field2</fieldName>
+                            <fieldType>String</fieldType>
+                        </config>
+                    </a204036057>
+                </fields>
+            </a217895432>
+        </numIndex>
+    </views>
+    <queries type="array">
+        <numIndex index="1" type="array">
+            <title>Default</title>
+            <mainTable>tx_savlibraryexample5</mainTable>
+ 		</numIndex>
+	</queries>
+
+</SavLibraryPlus>
