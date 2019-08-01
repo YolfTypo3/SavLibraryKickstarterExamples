@@ -2,7 +2,7 @@
 
 <SavLibraryPlus>
     <general type="array">
-        <version>1.2.0</version>
+        <version>9.5.0</version>
         <overridedTablesForLocalization>
         </overridedTablesForLocalization>
         <saveAndNew type="array">
@@ -117,6 +117,7 @@
                                                 <tableName>tx_savmeetings_item</tableName>
                                                 <fieldName>subject</fieldName>
                                                 <fieldType>String</fieldType>
+                                                <subformItem>1</subformItem>
                                             </config>
                                         </a57937923>
                                         <a42484691 type="array">
@@ -126,6 +127,7 @@
                                                 <tableName>tx_savmeetings_item</tableName>
                                                 <fieldName>proposed_by</fieldName>
                                                 <fieldType>RelationOneToManyAsSelectorbox</fieldType>
+                                                <subformItem>1</subformItem>
                                             </config>
                                         </a42484691>
                                         <a182716673 type="array">
@@ -136,6 +138,7 @@
                                                 <tableName>tx_savmeetings_item</tableName>
                                                 <fieldName>expected_duration</fieldName>
                                                 <fieldType>String</fieldType>
+                                                <subformItem>1</subformItem>
                                             </config>
                                         </a182716673>
                                         <a79266112 type="array">
@@ -144,6 +147,7 @@
                                                 <tableName>tx_savmeetings_item</tableName>
                                                 <fieldName>file</fieldName>
                                                 <fieldType>Files</fieldType>
+                                                <subformItem>1</subformItem>
                                             </config>
                                         </a79266112>
                                         <a176473846 type="array">
@@ -152,6 +156,7 @@
                                                 <tableName>tx_savmeetings_item</tableName>
                                                 <fieldName>report</fieldName>
                                                 <fieldType>RichTextEditor</fieldType>
+                                                <subformItem>1</subformItem>
                                             </config>
                                         </a176473846>
                                     </fields>
@@ -219,6 +224,7 @@
                                                 <tableName>tx_savmeetings_item</tableName>
                                                 <fieldName>subject</fieldName>
                                                 <fieldType>String</fieldType>
+                                                <subformItem>1</subformItem>
                                             </config>
                                         </a57937923>
                                         <a42484691 type="array">
@@ -230,6 +236,7 @@
                                                 <tableName>tx_savmeetings_item</tableName>
                                                 <fieldName>proposed_by</fieldName>
                                                 <fieldType>RelationOneToManyAsSelectorbox</fieldType>
+                                                <subformItem>1</subformItem>
                                             </config>
                                         </a42484691>
                                         <a182716673 type="array">
@@ -240,6 +247,7 @@
                                                 <tableName>tx_savmeetings_item</tableName>
                                                 <fieldName>expected_duration</fieldName>
                                                 <fieldType>String</fieldType>
+                                                <subformItem>1</subformItem>
                                             </config>
                                         </a182716673>
                                         <a79266112 type="array">
@@ -248,6 +256,7 @@
                                                 <tableName>tx_savmeetings_item</tableName>
                                                 <fieldName>file</fieldName>
                                                 <fieldType>Files</fieldType>
+                                                <subformItem>1</subformItem>
                                             </config>
                                         </a79266112>
                                         <a176473846 type="array">
@@ -255,6 +264,7 @@
                                                 <tableName>tx_savmeetings_item</tableName>
                                                 <fieldName>report</fieldName>
                                                 <fieldType>RichTextEditor</fieldType>
+                                                <subformItem>1</subformItem>
                                             </config>
                                         </a176473846>
                                     </fields>

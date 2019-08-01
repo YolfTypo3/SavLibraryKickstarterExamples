@@ -63,17 +63,15 @@ return [
         'file' => [
             'exclude' => 1,
             'label'  => 'LLL:EXT:sav_meetings/Resources/Private/Language/locallang_db.xlf:tx_savmeetings_item.file',
-            'config' => [
-                'type' => 'group',
-                'internal_type' => 'file',
-                'allowed' => '',
-                'disallowed' => 'php,php3',
-                'max_size' => $GLOBALS['TYPO3_CONF_VARS']['BE']['maxFileSize'],
-                'uploadfolder' => 'uploads/tx_savmeetings',
-                'size' => 1,
-                'minitems' => 0,
-                'maxitems' => 3,
-            ],
+            'config' =>	\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig(
+                	'file',
+                	[
+                    	'maxitems' => 3,
+                    	'uploadfolder' => 'user_upload',
+                	],
+                	'',
+                	'php,php3'
+            ),
         ],
         'report' => [
             'exclude' => 1,

@@ -70,7 +70,7 @@ return [
             'label'  => 'LLL:EXT:sav_meetings/Resources/Private/Language/locallang_db.xlf:tx_savmeetings.rel_item',
             'config' => [
                 'type' => 'inline',
-                'foreign_table' =>  'tx_savmeetings_item',
+                'foreign_table' => 'tx_savmeetings_item',
                 'foreign_sortby' => 'sorting',
                 'size' => 1,
                 'minitems' => 0,

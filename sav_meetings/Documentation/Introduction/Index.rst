@@ -1,23 +1,13 @@
-.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
+.. include:: ../Includes.txt
 
-.. ==================================================
-.. DEFINE SOME TEXTROLES
-.. --------------------------------------------------
-.. role::   underline
-.. role::   typoscript(code)
-.. role::   ts(typoscript)
-   :class:  typoscript
-.. role::   php(code)
+.. _introduction:
 
-
+============
 Introduction
 ============
 
-What does it do?
-----------------
+What Does it Do?
+================
 
 This extension was created with the `SAV Library Kickstarter <http://t
 ypo3.org/extensions/repository/view/sav_library_kickstarter>`_ in
@@ -59,21 +49,21 @@ make the saving more comfortable when the minutes are taken during the meeting.
 
 
 Screenshots
------------
+===========
 
 List view
-^^^^^^^^^
+---------
 
 .. figure:: ../Images/ScreenshotsListView.png 
 
 Single view
-^^^^^^^^^^^
+-----------
 
 .. figure:: ../Images/ScreenshotsSingleView.png 
 
 
 Edit view
-^^^^^^^^^
+---------
 
 .. figure:: ../Images/ScreenshotsEditView.png 
 
