@@ -200,7 +200,7 @@ template two markers are used to define labels
 which are displayed in the legend. The markers can be overloaded in the 
 **Markers** section of the flexform. Assuming that you have
 the previous code to display only one line chart, input the following code in 
-the **Markers** sections, save and go to the front end.
+the **Markers** sections, save and go to the frontend.
 
 .. code::
 

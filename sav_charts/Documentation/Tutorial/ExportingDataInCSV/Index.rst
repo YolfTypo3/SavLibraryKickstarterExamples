@@ -15,7 +15,7 @@ the two curves. Add the following code in the **Templates** section of the flexf
 
 .. figure:: ../../Images/Tutorial/ExportCsvFlexformConfiguration.png
 
-Now, in the front end you should see an icon under the legend.
+Now, in the frontend you should see an icon under the legend.
 Click on the icon to open the CSV file.
 
 .. figure:: ../../Images/Tutorial/ExportCsvInFrontend.png

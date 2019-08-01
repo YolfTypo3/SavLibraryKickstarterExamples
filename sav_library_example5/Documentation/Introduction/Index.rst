@@ -21,7 +21,7 @@ The SAV Library Kickstarter includes:
 
 - Creation of multiple views of the data,
 
-- Front end input of the data,
+- Frontend input of the data,
 
 - Views with folders,
 
