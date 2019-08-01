@@ -1,18 +1,8 @@
-.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
+.. include:: ../Includes.txt
 
-.. ==================================================
-.. DEFINE SOME TEXTROLES
-.. --------------------------------------------------
-.. role::   underline
-.. role::   typoscript(code)
-.. role::   ts(typoscript)
-   :class:  typoscript
-.. role::   php(code)
+.. _changelog:
 
-
+=========
 Changelog
 =========
 
@@ -21,7 +11,8 @@ Changelog
 =======  ===========================================================================
 Version  Changes
 =======  ===========================================================================
-1.0.0    - Extension regenerated with SAV Library Kickstarter 1.0.0.
+9.5.0    - Extension regenerated with SAV Library Kickstarter 9.5.0.
+         - Configuration modified to work with maps2 instead of wec_map.
 0.2.0    - Extension regenerated with SAV Library Kickstarter 0.6.0.
 0.1.0    - Documentation converted to the reStructuredText format.
          - Extension regenerated with SAV Library Kickstarter 0.5.0.

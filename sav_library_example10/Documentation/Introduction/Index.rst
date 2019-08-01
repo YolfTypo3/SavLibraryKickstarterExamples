@@ -1,22 +1,12 @@
-.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
+.. include:: ../Includes.txt
 
-.. ==================================================
-.. DEFINE SOME TEXTROLES
-.. --------------------------------------------------
-.. role::   underline
-.. role::   typoscript(code)
-.. role::   ts(typoscript)
-   :class:  typoscript
-.. role::   php(code)
+.. _introduction:
 
-
+============
 Introduction
 ============
 
-What does it do?
+What Does it Do?
 ----------------
 
 This extension was created with the `SAV Library Kickstarter <http://t
@@ -60,12 +50,11 @@ to create an admin form) :
 
 - The “Single” view has a special organization. The picture is on the left,
   then the title and the description is displayed at the right of the picture 
-  and, finally, the google map, where the marker is defined by the address, 
+  and, finally, the map, where the marker is defined by the address, 
   goes to the right of the description. By clicking on the image, it should be 
   displayed in its original size.
 
 Several authenticated users may use the plugin. Each user can modify or delete the record he/she has created.
-
 
 .. important::
 
@@ -74,17 +63,19 @@ Several authenticated users may use the plugin. Each user can modify or delete t
 
 
 Screenshots
------------
-
+===========
 
 List View
-^^^^^^^^^
+---------
+
 .. figure:: ../Images/ScreenshotsListView.png
 
 Edit View
-^^^^^^^^^
+---------
+
 .. figure:: ../Images/ScreenshotsEditView.png
 
 Single View
-^^^^^^^^^^^
+-----------
+
 .. figure:: ../Images/ScreenshotsSingleView.png
