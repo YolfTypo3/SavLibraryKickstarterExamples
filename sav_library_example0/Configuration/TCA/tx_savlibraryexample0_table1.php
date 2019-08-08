@@ -253,7 +253,7 @@ return [
             'label'  => 'LLL:EXT:sav_library_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample0_table1.field19',
             'config' => [
                 'type' => 'inline',
-                'foreign_table' =>  'tx_savlibraryexample0_table3',
+                'foreign_table' => 'tx_savlibraryexample0_table3',
                 'foreign_sortby' => 'sorting',
                 'size' => 1,
                 'minitems' => 0,
@@ -271,7 +271,7 @@ return [
             'label'  => 'LLL:EXT:sav_library_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample0_table1.field20',
             'config' => [
                 'type' => 'inline',
-                'foreign_table' =>  'tx_savlibraryexample0_table4',
+                'foreign_table' => 'tx_savlibraryexample0_table4',
                 'foreign_sortby' => 'sorting',
                 'size' => 1,
                 'minitems' => 0,
@@ -327,7 +327,7 @@ return [
             'label'  => 'LLL:EXT:sav_library_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample0_table1.field23',
             'config' => [
                 'type' => 'inline',
-                'foreign_table' =>  'tx_savlibraryexample0_table5',
+                'foreign_table' => 'tx_savlibraryexample0_table5',
                 'foreign_sortby' => 'sorting',
                 'size' => 1,
                 'minitems' => 0,

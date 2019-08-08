@@ -40,7 +40,7 @@ return [
             'label'  => 'LLL:EXT:sav_library_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample0_table5.field2',
             'config' => [
                 'type' => 'inline',
-                'foreign_table' =>  'tx_savlibraryexample0_table6',
+                'foreign_table' => 'tx_savlibraryexample0_table6',
                 'foreign_sortby' => 'sorting',
                 'size' => 1,
                 'minitems' => 0,

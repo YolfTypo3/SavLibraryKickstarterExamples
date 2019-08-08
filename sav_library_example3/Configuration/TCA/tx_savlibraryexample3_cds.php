@@ -110,7 +110,7 @@ return [
             'label'  => 'LLL:EXT:sav_library_example3/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample3_cds.rel_lending',
             'config' => [
                 'type' => 'inline',
-                'foreign_table' =>  'tx_savlibraryexample3_lending',
+                'foreign_table' => 'tx_savlibraryexample3_lending',
                 'foreign_sortby' => 'sorting',
                 'size' => 1,
                 'minitems' => 0,

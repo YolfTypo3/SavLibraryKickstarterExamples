@@ -110,7 +110,7 @@ return [
             'label'  => 'LLL:EXT:sav_library_example4/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample4_cds.rel_lending',
             'config' => [
                 'type' => 'inline',
-                'foreign_table' =>  'tx_savlibraryexample4_lending',
+                'foreign_table' => 'tx_savlibraryexample4_lending',
                 'foreign_sortby' => 'sorting',
                 'size' => 1,
                 'minitems' => 0,
@@ -128,7 +128,7 @@ return [
             'label'  => 'LLL:EXT:sav_library_example4/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample4_cds.rel_friends',
             'config' => [
                 'type' => 'inline',
-                'foreign_table' =>  'tx_savlibraryexample4_friends',
+                'foreign_table' => 'tx_savlibraryexample4_friends',
                 'foreign_sortby' => 'sorting',
                 'size' => 1,
                 'minitems' => 0,
