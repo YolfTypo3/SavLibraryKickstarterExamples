@@ -180,9 +180,8 @@
                             <label>LLL:EXT:sav_library_plus/Resources/Private/Language/locallang.xlf:pi_flexform.inputStartDate</label>
                             <config>
                                 <type>input</type>
+                                <renderType>inputDateTime</renderType>
                                 <eval>datetime</eval>
-                                <size>12</size>
-                                <max>20</max>
                                 <default>0</default>
                             </config>
                         </TCEforms>
@@ -192,9 +191,8 @@
                             <label>LLL:EXT:sav_library_plus/Resources/Private/Language/locallang.xlf:pi_flexform.inputEndDate</label>
                             <config>
                                 <type>input</type>
+                                <renderType>inputDateTime</renderType>
                                 <eval>datetime</eval>
-                                <size>12</size>
-                                <max>20</max>
                                 <default>0</default>
                             </config>
                         </TCEforms>

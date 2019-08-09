@@ -22,5 +22,6 @@ $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist']['sav_library_
     'sav_library_example1'
 );
 
+// Adds addToInsertRecords() if any
 
 ?>

@@ -70,8 +70,6 @@ return [
     'types' => [
         '0' => [
             'showitem' => 'hidden, image, poi, description, poi_uid, map',
-            'columnsOverrides' => [
-            ],
         ],
     ],
     'palettes' => [

@@ -18,5 +18,6 @@ $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist']['savcharts_de
 	'LLL:EXT:sav_charts/Resources/Private/Language/locallang_db.xlf:tt_content.list_type_pi1'
 );
 
+// Adds addToInsertRecords() if any
 
 ?>

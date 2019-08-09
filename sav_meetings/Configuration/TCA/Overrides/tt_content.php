@@ -22,5 +22,6 @@ $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist']['sav_meetings
     'sav_meetings'
 );
 
+// Adds addToInsertRecords() if any
 
 ?>
