@@ -25,7 +25,7 @@ class Table5 extends \YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel
      * The field1 variable.
      *
      * @var string
-     * @validate raw
+     * @TYPO3\CMS\Extbase\Annotation\Validate("Raw")
      */
     protected $field1;
 
@@ -33,7 +33,7 @@ class Table5 extends \YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel
      * The field2 variable.
      *
      * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table6>
-     * @validate raw
+     * @TYPO3\CMS\Extbase\Annotation\Validate("Raw")
      */
     protected $field2;
 

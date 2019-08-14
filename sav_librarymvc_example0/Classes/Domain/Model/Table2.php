@@ -25,7 +25,7 @@ class Table2 extends \YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel
      * The field1 variable.
      *
      * @var string
-     * @validate raw
+     * @TYPO3\CMS\Extbase\Annotation\Validate("Raw")
      */
     protected $field1;
 

@@ -19,7 +19,7 @@
           <entry align="center">
             <mediaobject sav_type="cutIfEmpty" sav_id="fe_users.image">
               <imageobject>
-                <imagedata fileref="fileadmin/user_upload/###fe_users.image###" width="2cm" scalefit="1" />
+                <imagedata fileref="fileadmin###sys_file.identifier###" width="2cm" scalefit="1" />
               </imageobject>
             </mediaobject>
           </entry>

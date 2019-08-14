@@ -25,7 +25,7 @@ class Table3 extends \YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel
      * The field1 variable.
      *
      * @var string
-     * @validate raw
+     * @TYPO3\CMS\Extbase\Annotation\Validate("Raw")
      */
     protected $field1;
 
@@ -33,7 +33,7 @@ class Table3 extends \YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel
      * The field2 variable.
      *
      * @var \DateTime
-     * @validate (datetime or empty)
+     * @TYPO3\CMS\Extbase\Annotation\Validate("DateTime")@TYPO3\CMS\Extbase\Annotation\Validate("YolfTypo3\SavLibraryMvc\Domain\Model\Validator\Empty")
      */
     protected $field2;
 
