@@ -10,12 +10,13 @@
         "role": "Developer"
         }
     ],
-    "replace": {
-        "sav_librarymvc_example0": "self.version",
-        "typo3-ter/sav-librarymvc-example0": "self.version"
-    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "sav_librarymvc_example0"
+        }
+    },    
     "require": {
-        "typo3/cms-core": ">=8.0,<10.0",
+        "typo3/cms-core": ">=8.7,<10.0",
         "typo3-ter/sav-library-mvc": ">=1.2"
     },
     "autoload": {
