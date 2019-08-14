@@ -11,7 +11,8 @@
         }
     ],  
 	"replace": {
-		"yolftypo3/sav-library-plus": "self.version"
+		"yolftypo3/sav-library-plus": "self.version",
+		"yolftypo3/sav-library-kickstarter": "self.version"
 	},
     "require": {
         "typo3/cms-core": ">=8.7,<10.0"
