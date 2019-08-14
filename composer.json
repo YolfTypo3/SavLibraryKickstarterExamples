@@ -1,7 +1,7 @@
 {
-    "name": "yolftypo3/sav-library-kickstarter_project",
+    "name": "yolftypo3/sav-library-kickstarter-project",
     "description": "The Sav Library Kickstarter Project includes a kickstarter to generate extension for TYPO3. It includes also libraries and examples.",
-    "type": "typo3-cms-extension",
+    "type": "project",
     "license": "GPL-2.0+",
     "authors": [
         {
@@ -10,6 +10,9 @@
         "role": "Developer"
         }
     ],  
+	"replace": {
+		"typo3/cms-about": "self.version"
+	},
     "require": {
         "typo3/cms-core": ">=8.7,<10.0"
     }
