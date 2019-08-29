@@ -19,7 +19,9 @@ namespace YolfTypo3\SavLibrarymvcExample0\Domain\Model;
  * Table6 model for the extension SavLibrarymvcExample0
  *
  */
-class Table6 extends \YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel
+use YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel;
+
+class Table6 extends DefaultModel
 {
     /**
      * The field1 variable.
@@ -44,6 +46,7 @@ class Table6 extends \YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel
     {
         $this->field2 = new \TYPO3\CMS\Extbase\Persistence\ObjectStorage();
     }
+
     /**
      * Getter for field1.
      *
@@ -65,7 +68,6 @@ class Table6 extends \YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel
         $this->field1 = $field1;
     }
 
-
     /**
      * Getter for field2.
      *
@@ -86,8 +88,6 @@ class Table6 extends \YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel
     {
         $this->field2 = $this->updateFileStorage($this->field2, $field2);
     }
-
-
 }
 ?>
 

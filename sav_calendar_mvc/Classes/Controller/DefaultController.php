@@ -14,6 +14,8 @@ namespace YolfTypo3\SavCalendarMvc\Controller;
  *
  * The TYPO3 project - inspiring people to share
  */
+use YolfTypo3\SavCalendarMvc\Domain\Model\Event;
+use YolfTypo3\SavCalendarMvc\Domain\Repository\EventRepository;
 
 /**
  * Controller for the form Default
@@ -24,12 +26,19 @@ class DefaultController extends \YolfTypo3\SavLibraryMvc\Controller\DefaultContr
     /**
      * Main repository
      *
-     * @var \YolfTypo3\SavCalendarMvc\Domain\Repository\EventRepository
-     * @TYPO3\CMS\Extbase\Annotation\Inject
-     * @extensionScannerIgnoreLine
-     * @inject
+     * @var EventRepository
      */
     protected $mainRepository = null;
+
+    /**
+     * Injects the repository.
+     *
+     * @param EventRepository $repository
+     */
+    public function injectEventRepository(EventRepository $repository)
+    {
+        $this->mainRepository = $repository;
+    }
 
     /**
      * Subform repository class names
@@ -42,10 +51,10 @@ class DefaultController extends \YolfTypo3\SavLibraryMvc\Controller\DefaultContr
     /**
      * Save action for this controller
      *
-     * @param \YolfTypo3\SavCalendarMvc\Domain\Model\Event $data
+     * @param Event $data
      * @return void
      */
-    public function saveAction(\YolfTypo3\SavCalendarMvc\Domain\Model\Event $data)
+    public function saveAction(Event $data)
     {
         $this->save($data);
     }

@@ -19,7 +19,9 @@ namespace YolfTypo3\SavLibrarymvcExample0\Domain\Model;
  * Table5 model for the extension SavLibrarymvcExample0
  *
  */
-class Table5 extends \YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel
+use YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel;
+
+class Table5 extends DefaultModel
 {
     /**
      * The field1 variable.
@@ -44,6 +46,7 @@ class Table5 extends \YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel
     {
         $this->field2 = new \TYPO3\CMS\Extbase\Persistence\ObjectStorage();
     }
+
     /**
      * Getter for field1.
      *
@@ -64,7 +67,6 @@ class Table5 extends \YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel
     {
         $this->field1 = $field1;
     }
-
 
     /**
      * Getter for field2.
@@ -109,7 +111,6 @@ class Table5 extends \YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel
     {
         $this->field2->detach($field2);
     }
-
 }
 ?>
 

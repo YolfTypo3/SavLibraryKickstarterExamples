@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 
 <xliff version="1.0">
-    <file source-language="en" datatype="plaintext" original="messages" date="2018-09-20T14:13:19Z" product-name="sav_calendar_mvc">
+    <file source-language="en" datatype="plaintext" original="messages" date="2019-08-16T06:37:05Z" product-name="sav_calendar_mvc">
         <header/>
         <body>
             <trans-unit id="tx_savcalendarmvc_domain_model_event" xml:space="preserve">

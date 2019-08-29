@@ -19,7 +19,9 @@ namespace YolfTypo3\SavLibrarymvcExample0\Domain\Model;
  * Table3 model for the extension SavLibrarymvcExample0
  *
  */
-class Table3 extends \YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel
+use YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel;
+
+class Table3 extends DefaultModel
 {
     /**
      * The field1 variable.
@@ -33,7 +35,8 @@ class Table3 extends \YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel
      * The field2 variable.
      *
      * @var \DateTime
-     * @TYPO3\CMS\Extbase\Annotation\Validate("DateTime")@TYPO3\CMS\Extbase\Annotation\Validate("YolfTypo3\SavLibraryMvc\Domain\Model\Validator\Empty")
+     * @TYPO3\CMS\Extbase\Annotation\Validate("DateTime")
+     * @TYPO3\CMS\Extbase\Annotation\Validate("YolfTypo3\SavLibraryMvc\Domain\Model\Validator\Empty")
      */
     protected $field2;
 
@@ -44,6 +47,7 @@ class Table3 extends \YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel
     {
         $this->field2 = new \DateTime();
     }
+
     /**
      * Getter for field1.
      *
@@ -65,7 +69,6 @@ class Table3 extends \YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel
         $this->field1 = $field1;
     }
 
-
     /**
      * Getter for field2.
      *
@@ -86,8 +89,6 @@ class Table3 extends \YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel
     {
         $this->field2 = $field2;
     }
-
-
 }
 ?>
 

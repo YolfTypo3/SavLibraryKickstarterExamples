@@ -19,13 +19,15 @@ namespace YolfTypo3\SavCalendarMvc\Domain\Model;
  * Event model for the extension SavCalendarMvc
  *
  */
-class Event extends \YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel
+use YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel;
+
+class Event extends DefaultModel
 {
     /**
      * The category variable.
      *
      * @var \YolfTypo3\SavCalendarMvc\Domain\Model\Category
-     * @validate raw
+     * @TYPO3\CMS\Extbase\Annotation\Validate("Raw")
      */
     protected $category;
 
@@ -33,7 +35,7 @@ class Event extends \YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel
      * The title variable.
      *
      * @var string
-     * @validate raw
+     * @TYPO3\CMS\Extbase\Annotation\Validate("Raw")
      */
     protected $title;
 
@@ -41,7 +43,8 @@ class Event extends \YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel
      * The dateBegin variable.
      *
      * @var \DateTime
-     * @validate (datetime or empty)
+     * @TYPO3\CMS\Extbase\Annotation\Validate("DateTime")
+     * @TYPO3\CMS\Extbase\Annotation\Validate("YolfTypo3\SavLibraryMvc\Domain\Model\Validator\Empty")
      */
     protected $dateBegin;
 
@@ -49,7 +52,8 @@ class Event extends \YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel
      * The dateEnd variable.
      *
      * @var \DateTime
-     * @validate (datetime or empty)
+     * @TYPO3\CMS\Extbase\Annotation\Validate("DateTime")
+     * @TYPO3\CMS\Extbase\Annotation\Validate("YolfTypo3\SavLibraryMvc\Domain\Model\Validator\Empty")
      */
     protected $dateEnd;
 
@@ -57,7 +61,7 @@ class Event extends \YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel
      * The location variable.
      *
      * @var string
-     * @validate raw
+     * @TYPO3\CMS\Extbase\Annotation\Validate("Raw")
      */
     protected $location;
 
@@ -65,7 +69,7 @@ class Event extends \YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel
      * The description variable.
      *
      * @var string
-     * @validate raw
+     * @TYPO3\CMS\Extbase\Annotation\Validate("Raw")
      */
     protected $description;
 
@@ -73,7 +77,7 @@ class Event extends \YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel
      * The link variable.
      *
      * @var string
-     * @validate raw
+     * @TYPO3\CMS\Extbase\Annotation\Validate("Raw")
      */
     protected $link;
 
@@ -81,7 +85,7 @@ class Event extends \YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel
      * The organizedBy variable.
      *
      * @var string
-     * @validate raw
+     * @TYPO3\CMS\Extbase\Annotation\Validate("Raw")
      */
     protected $organizedBy;
 
@@ -89,7 +93,7 @@ class Event extends \YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel
      * The email variable.
      *
      * @var string
-     * @validate raw
+     * @TYPO3\CMS\Extbase\Annotation\Validate("Raw")
      */
     protected $email;
 
@@ -101,6 +105,7 @@ class Event extends \YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel
         $this->dateBegin = new \DateTime();
         $this->dateEnd = new \DateTime();
     }
+
     /**
      * Getter for category.
      *
@@ -121,7 +126,6 @@ class Event extends \YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel
     {
         $this->category = $category;
     }
-
 
     /**
      * Getter for title.
@@ -144,7 +148,6 @@ class Event extends \YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel
         $this->title = $title;
     }
 
-
     /**
      * Getter for dateBegin.
      *
@@ -165,7 +168,6 @@ class Event extends \YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel
     {
         $this->dateBegin = $dateBegin;
     }
-
 
     /**
      * Getter for dateEnd.
@@ -188,7 +190,6 @@ class Event extends \YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel
         $this->dateEnd = $dateEnd;
     }
 
-
     /**
      * Getter for location.
      *
@@ -209,7 +210,6 @@ class Event extends \YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel
     {
         $this->location = $location;
     }
-
 
     /**
      * Getter for description.
@@ -232,7 +232,6 @@ class Event extends \YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel
         $this->description = $description;
     }
 
-
     /**
      * Getter for link.
      *
@@ -253,7 +252,6 @@ class Event extends \YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel
     {
         $this->link = $link;
     }
-
 
     /**
      * Getter for organizedBy.
@@ -276,7 +274,6 @@ class Event extends \YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel
         $this->organizedBy = $organizedBy;
     }
 
-
     /**
      * Getter for email.
      *
@@ -297,8 +294,6 @@ class Event extends \YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel
     {
         $this->email = $email;
     }
-
-
 }
 ?>
 

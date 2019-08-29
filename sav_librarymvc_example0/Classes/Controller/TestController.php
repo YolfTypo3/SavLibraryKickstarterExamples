@@ -14,7 +14,6 @@ namespace YolfTypo3\SavLibrarymvcExample0\Controller;
  *
  * The TYPO3 project - inspiring people to share
  */
-use YolfTypo3\SavLibraryMvc\Controller\DefaultController;
 use YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table1;
 use YolfTypo3\SavLibrarymvcExample0\Domain\Repository\Table1Repository;
 
@@ -22,7 +21,7 @@ use YolfTypo3\SavLibrarymvcExample0\Domain\Repository\Table1Repository;
  * Controller for the form Test
  *
  */
-class TestController extends DefaultController
+class TestController extends \YolfTypo3\SavLibraryMvc\Controller\DefaultController
 {
     /**
      * Main repository

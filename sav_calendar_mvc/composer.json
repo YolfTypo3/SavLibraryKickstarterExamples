@@ -10,13 +10,14 @@
         "role": "Developer"
         }
     ],
-    "replace": {
-        "sav_calendar_mvc": "self.version",
-        "typo3-ter/sav-calendar-mvc": "self.version"
-    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "sav_calendar_mvc"
+        }
+    },    
     "require": {
-        "typo3/cms-core": ">=8.0,<10.0",
-        "typo3-ter/sav-library-mvc": ">=1.2"
+        "typo3/cms-core": ">=8.7,<10.0",
+        "typo3-ter/sav-library-mvc": ">=9.5"
     },
     "autoload": {
         "psr-4": {

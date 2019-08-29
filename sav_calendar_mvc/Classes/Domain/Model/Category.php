@@ -19,13 +19,15 @@ namespace YolfTypo3\SavCalendarMvc\Domain\Model;
  * Category model for the extension SavCalendarMvc
  *
  */
-class Category extends \YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel
+use YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel;
+
+class Category extends DefaultModel
 {
     /**
      * The title variable.
      *
      * @var string
-     * @validate raw
+     * @TYPO3\CMS\Extbase\Annotation\Validate("Raw")
      */
     protected $title;
 
@@ -35,6 +37,7 @@ class Category extends \YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel
     public function __construct()
     {
     }
+
     /**
      * Getter for title.
      *
@@ -55,8 +58,6 @@ class Category extends \YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel
     {
         $this->title = $title;
     }
-
-
 }
 ?>
 

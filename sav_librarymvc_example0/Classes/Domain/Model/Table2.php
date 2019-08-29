@@ -19,7 +19,9 @@ namespace YolfTypo3\SavLibrarymvcExample0\Domain\Model;
  * Table2 model for the extension SavLibrarymvcExample0
  *
  */
-class Table2 extends \YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel
+use YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel;
+
+class Table2 extends DefaultModel
 {
     /**
      * The field1 variable.
@@ -35,6 +37,7 @@ class Table2 extends \YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel
     public function __construct()
     {
     }
+
     /**
      * Getter for field1.
      *
@@ -55,8 +58,6 @@ class Table2 extends \YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel
     {
         $this->field1 = $field1;
     }
-
-
 }
 ?>
 

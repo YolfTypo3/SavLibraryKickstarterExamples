@@ -18,5 +18,6 @@ $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist']['savcalendarm
     'LLL:EXT:sav_calendar_mvc/Resources/Private/Language/locallang_db.xlf:tt_content.list_type_pi1'
 );
 
+// Adds addToInsertRecords() if any
 
 ?>

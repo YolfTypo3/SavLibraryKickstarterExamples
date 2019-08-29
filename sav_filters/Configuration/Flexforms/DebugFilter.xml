@@ -4,9 +4,13 @@
 			<sheetTitle>LLL:EXT:sav_filters/Resources/Private/Language/locallang.xlf:flexform.type.7</sheetTitle>
 		</TCEforms>
 		<type>array</type>
-		<displayCond>FIELD:sDEF.settings.flexform.type:=:7</displayCond>
+		<displayCond>
+			<AND>
+				<numIndex index="0">FIELD:sDEF.settings.flexform.libraryType:=:0</numIndex>
+			 	<numIndex index="1">FIELD:sDEF.settings.flexform.type:=:7</numIndex>
+			</AND>
+		</displayCond>
 		<el>
-
 			<settings.flexform.debugFilter.sessionFilter>
 				<TCEforms>
 					<label>LLL:EXT:sav_filters/Resources/Private/Language/locallang.xlf:flexform.sessionFilter</label>

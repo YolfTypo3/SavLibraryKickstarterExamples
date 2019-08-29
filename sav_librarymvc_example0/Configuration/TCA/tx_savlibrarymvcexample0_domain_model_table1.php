@@ -16,6 +16,42 @@ return [
                 'ctrl' => [
                 ],
                 'columns' => [
+                    'field1' => [
+                        'fieldType' => 'String',
+                        'config' => [
+                            1 => [
+                                'func' => 'makeItemLink',
+                                'orderLinkInTitle' => '1',
+                                'orderLinkInTitleSetup' => ':value:ascdesc',
+                                'selected' => 1,
+                             ],
+                            2 => [
+                                'selected' => 1,
+                             ],
+                            3 => [
+                                'edit' => 1,
+                                'selected' => 1,
+                             ],
+                            4 => [
+                                'selected' => 0,
+                             ],
+                            5 => [
+                                'selected' => 0,
+                             ],
+                        ],
+                        'folders' => [
+                            2 => '2',
+                            3 => '2',
+                            5 => '0',
+                        ],
+                       'order' => [
+                            1 => '1',
+                            2 => '1',
+                            3 => '2',
+                            4 => '1',
+                            5 => '1',
+                        ],
+                    ],
                     'field2' => [
                         'fieldType' => 'Checkbox',
                         'config' => [
@@ -52,42 +88,6 @@ return [
                             3 => '1',
                             4 => '2',
                             5 => '2',
-                        ],
-                    ],
-                    'field1' => [
-                        'fieldType' => 'String',
-                        'config' => [
-                            1 => [
-                                'func' => 'makeItemLink',
-                                'orderLinkInTitle' => '1',
-                                'orderLinkInTitleSetup' => ':value:ascdesc',
-                                'selected' => 1,
-                             ],
-                            2 => [
-                                'selected' => 1,
-                             ],
-                            3 => [
-                                'edit' => 1,
-                                'selected' => 1,
-                             ],
-                            4 => [
-                                'selected' => 0,
-                             ],
-                            5 => [
-                                'selected' => 0,
-                             ],
-                        ],
-                        'folders' => [
-                            2 => '2',
-                            3 => '2',
-                            5 => '0',
-                        ],
-                       'order' => [
-                            1 => '1',
-                            2 => '1',
-                            3 => '2',
-                            4 => '1',
-                            5 => '1',
                         ],
                     ],
                     'field8' => [
@@ -226,8 +226,8 @@ return [
                             5 => '6',
                         ],
                     ],
-                    'field10' => [
-                        'fieldType' => 'Integer',
+                    'field24' => [
+                        'fieldType' => 'Currency',
                         'config' => [
                             1 => [
                                 'selected' => 1,
@@ -247,16 +247,15 @@ return [
                              ],
                         ],
                         'folders' => [
-                            2 => '3',
                             3 => '3',
-                            5 => '0',
+                            2 => '3',
                         ],
                        'order' => [
-                            1 => '9',
-                            2 => '24',
-                            3 => '7',
-                            4 => '8',
-                            5 => '7',
+                            1 => '24',
+                            2 => '7',
+                            3 => '24',
+                            4 => '24',
+                            5 => '24',
                         ],
                     ],
                     'field7' => [
@@ -836,8 +835,8 @@ return [
                             5 => '23',
                         ],
                     ],
-                    'field24' => [
-                        'fieldType' => 'Currency',
+                    'field10' => [
+                        'fieldType' => 'Integer',
                         'config' => [
                             1 => [
                                 'selected' => 1,
@@ -857,15 +856,16 @@ return [
                              ],
                         ],
                         'folders' => [
-                            3 => '3',
                             2 => '3',
+                            3 => '3',
+                            5 => '0',
                         ],
                        'order' => [
-                            1 => '24',
-                            2 => '7',
-                            3 => '24',
-                            4 => '24',
-                            5 => '24',
+                            1 => '9',
+                            2 => '24',
+                            3 => '7',
+                            4 => '8',
+                            5 => '7',
                         ],
                     ],
                 ],
@@ -880,12 +880,12 @@ return [
                                 'singleView' => [
                                     4 => [
                                         'config' => [
-                                            'showIf' => 'tx_savlibrarymvcexample0_table1.field21 = 1',
+                                            'showIf' => 'tx_savlibrarymvcexample0_domain_model_table1.field21 = 1',
                                         ],
                                     ],
                                     5 => [
                                         'config' => [
-                                            'showIf' => 'tx_savlibrarymvcexample0_table1.field21 = 2',
+                                            'showIf' => 'tx_savlibrarymvcexample0_domain_model_table1.field21 = 2',
                                         ],
                                     ],
                                 ],
@@ -1011,20 +1011,12 @@ return [
         ],
     ],
     'interface' => [
-        'showRecordFieldList' => ',field2,field1,field8,field9,field4,field5,field10,field7,field6,field12,field13,field14,field15,field16,field17,field18,field19,field20,field3,field11,field21,field22,field23,field24'
+        'showRecordFieldList' => ',field1,field2,field8,field9,field4,field5,field24,field7,field6,field12,field13,field14,field15,field16,field17,field18,field19,field20,field3,field11,field21,field22,field23,field10'
     ],
     'columns' => [
         'cruser_id_frontend' => [
             'config'  => [
                 'type' => 'passthrough',
-            ],
-        ],
-        'field2' => [
-            'exclude' => 1,
-            'label'  => 'LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field2',
-            'config' => [
-                'type' => 'check',
-                'default' => 0
             ],
         ],
         'field1' => [
@@ -1034,6 +1026,14 @@ return [
                 'type' => 'input',
                 'size' => '30',
                 'eval' => 'trim,required'
+            ],
+        ],
+        'field2' => [
+            'exclude' => 1,
+            'label'  => 'LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field2',
+            'config' => [
+                'type' => 'check',
+                'default' => 0
             ],
         ],
         'field8' => [
@@ -1075,19 +1075,15 @@ return [
                 'default' => '0'
             ],
         ],
-        'field10' => [
+        'field24' => [
             'exclude' => 1,
-            'label'  => 'LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field10',
+            'label'  => 'LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field24',
             'config' => [
                 'type'  => 'input',
-                'size'  => '4',
-                'max' => '6',
-                'eval'  => 'int',
+                'size'  => '13',
+                'max' => '13',
+                'eval'  => 'double2',
                 'checkbox'  => '0',
-                'range' => [
-                    'upper'  => '999999',
-                    'lower'  => '0'
-                ],
                 'default' => 0
             ],
         ],
@@ -1290,22 +1286,26 @@ return [
                 ],
             ],
         ],
-        'field24' => [
+        'field10' => [
             'exclude' => 1,
-            'label'  => 'LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field24',
+            'label'  => 'LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field10',
             'config' => [
                 'type'  => 'input',
-                'size'  => '13',
-                'max' => '13',
-                'eval'  => 'double2',
+                'size'  => '4',
+                'max' => '6',
+                'eval'  => 'int',
                 'checkbox'  => '0',
+                'range' => [
+                    'upper'  => '999999',
+                    'lower'  => '0'
+                ],
                 'default' => 0
             ],
         ],
     ],
     'types' => [
         '0' => [
-            'showitem' => 'field2, field1, field8, field9' . ', field4, field5, field10, field7, field6, field12, field13, field14, field15, field16, field17, field18, field19, field20, field3, field11, field21, field22, field23, field24',
+            'showitem' => 'field1, field2, field8, field9' . ', field4, field5, field24, field7, field6, field12, field13, field14, field15, field16, field17, field18, field19, field20, field3, field11, field21, field22, field23, field10',
         ],
     ],
     'palettes' => [
