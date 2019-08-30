@@ -2,17 +2,17 @@
 
 .. _changelog:
 
-=========
 Changelog
 =========
 
-.. tabularcolumns:: |r|p{13.7cm}|
+.. tabularcolumns:: |r|p|
 
 =======  ===========================================================================
 Version  Changes
 =======  ===========================================================================
 9.5.0    - Extension regenerated with SAV Library Kickstarter 9.5.0.
-1.0.0    - Extension regenerated with SAV Library Kickstarter 1.0.0.
-0.0.1    - 1st public release.
+0.1.0    - 1st release.
 =======  ===========================================================================
+
+
 

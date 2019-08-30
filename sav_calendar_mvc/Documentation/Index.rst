@@ -2,12 +2,12 @@
 
 .. _start:
 
-========================
-SAV Library Mvc Example0
-========================
+================ 
+SAV Calendar Mvc
+================ 
 
 :Extension key:
-   sav_librarymvc_example0
+   sav_calendar_mvc
 
 :Version:
    |release|
@@ -16,13 +16,13 @@ SAV Library Mvc Example0
    en
 
 :Description:
-   Test extension to illustrate the SAV Library Mvc.
+   Simple calendar with frontend input
 
 :Keywords:
-   sav_library_example, sav_library_mvc, sav_library_kickstarter
+   sav_calendar_mvc    
 
 :Copyright:
-   2010-2014
+   2019
 
 :Author:
    Laurent Foulloy
@@ -48,7 +48,6 @@ Table of Contents
    :maxdepth: 5
    :titlesonly:
    :glob:
-
+  
    Introduction/Index
    Changelog/Index
-

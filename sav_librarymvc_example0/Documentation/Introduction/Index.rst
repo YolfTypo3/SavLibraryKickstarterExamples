@@ -1,25 +1,16 @@
-.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
+.. include:: ../Includes.txt
 
-.. ==================================================
-.. DEFINE SOME TEXTROLES
-.. --------------------------------------------------
-.. role::   underline
-.. role::   typoscript(code)
-.. role::   ts(typoscript)
-   :class:  typoscript
-.. role::   php(code)
+.. _introduction:
 
-
+============
 Introduction
 ============
 
 What does it do?
-----------------
+================
 
-This extension was created with the `SAV Library Kickstarter <https://typo3.org/extensions/repository/view/sav_library_kickstarter>`_ in
+This extension was created with the `SAV Library Kickstarter 
+<https://typo3.org/extensions/repository/view/sav_library_kickstarter>`_ in
 order to be used with the `SAV Library Mvc
 <https://typo3.org/extensions/repository/view/sav_library_mvc>`_
 extension.
@@ -52,7 +43,7 @@ SAV Library Mvc extension.
 .. important::
 
   For more information, please read the
-  `SAV Library Kickstarter tutorial section <https://docs.typo3.org/typo3cms/extensions/sav_library_kickstarter/Tutorial/Index.html>`.
+  :ref:`SAV Library Kickstarter tutorial section <savlibrarykickstarter:tutorial>`.
   
   See also the `SAV Library Plus manual
   <https://docs.typo3.org/typo3cms/extensions/sav_library_plus/>`_
