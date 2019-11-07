@@ -11,7 +11,7 @@ Changelog
 =======  ===========================================================================
 Version  Changes
 =======  ===========================================================================
-9.5.0    - Version of charts.js changed to 2.8.0.
+9.5.0    - Version of charts.js changed to 2.9.2.
          - Compatibility changed to TYPO3 9.5.x.
          - Documentation updated to docker.
 
