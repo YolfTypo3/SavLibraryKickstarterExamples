@@ -1,6 +1,6 @@
 {
-    "name": "yolftypo3/sav-library-kickstarter-project",
-    "description": "The Sav Library Kickstarter Project includes a kickstarter to generate extensions for TYPO3. It also includes libraries and examples.",
+    "name": "yolftypo3/sav-library-kickstarter-examples",
+    "description": "Examples generated with the Sav Library Kickstarter.",
     "type": "project",
     "license": "GPL-2.0+",
     "authors": [

@@ -1,1 +1,0 @@
-'displayAsImage' => 1,
