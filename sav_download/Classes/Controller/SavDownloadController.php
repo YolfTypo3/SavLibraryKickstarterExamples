@@ -23,7 +23,7 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
  * @author Laurent Foulloy <yolf.typo3@orange.fr>
  * @package sav_download
  */
-class SavDownloadController extends \TYPO3\CMS\Frontend\Plugin\AbstractPlugin 
+class SavDownloadController extends \TYPO3\CMS\Frontend\Plugin\AbstractPlugin
 {
 	/**
 	 * PrefixId
@@ -44,7 +44,7 @@ class SavDownloadController extends \TYPO3\CMS\Frontend\Plugin\AbstractPlugin
 	 * @param array $configuration
 	 *
 	 * @return string the plugin content
-	 */            
+	 */
 	public function main(string $content, array $configuration) : string
 	{
 	  // Creates the SavLibraryPlus controller

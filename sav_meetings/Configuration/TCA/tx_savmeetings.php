@@ -40,7 +40,7 @@ return [
             'exclude' => 1,
             'label'  => 'LLL:EXT:sav_meetings/Resources/Private/Language/locallang_db.xlf:tx_savmeetings.category',
             'config' => [
-                'type' => 'select',  
+                'type' => 'select',
                 'renderType' => 'selectSingle',
                 'items' => [
                     ['LLL:EXT:sav_meetings/Resources/Private/Language/locallang_db.xlf:tx_savmeetings.category.I.0', 0],

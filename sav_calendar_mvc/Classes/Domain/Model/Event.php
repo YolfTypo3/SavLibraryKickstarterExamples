@@ -109,7 +109,7 @@ class Event extends DefaultModel
     /**
      * Getter for category.
      *
-     * @return \YolfTypo3\SavCalendarMvc\Domain\Model\Category    
+     * @return \YolfTypo3\SavCalendarMvc\Domain\Model\Category
      */
     public function getCategory()
     {

@@ -48,7 +48,7 @@ return [
                     ['', 0],
                 ],
                 'foreign_table' => 'tx_savlibraryexample0_table1',
-                'foreign_table_where' => 'AND tx_savlibraryexample0_table1.uid=###CURRENT_PID### AND tx_savlibraryexample0_table1.sys_language_uid IN (-1,0)', 
+                'foreign_table_where' => 'AND tx_savlibraryexample0_table1.uid=###CURRENT_PID### AND tx_savlibraryexample0_table1.sys_language_uid IN (-1,0)',
             ]
         ],
         'l18n_diffsource' => [
@@ -115,7 +115,7 @@ return [
                 'type' => 'input',
                 'renderType' => 'inputDateTime',
                 'eval' => 'date',
-                'default' => '0'     
+                'default' => '0'
             ],
         ],
         'field5' => [
@@ -144,7 +144,7 @@ return [
             'exclude' => 1,
             'label'  => 'LLL:EXT:sav_library_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample0_table1.field7',
             'config' => [
-                'type' => 'select',  
+                'type' => 'select',
                 'renderType' => 'selectSingle',
                 'items' => [
                     ['LLL:EXT:sav_library_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample0_table1.field7.I.0', 0],

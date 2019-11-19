@@ -46,7 +46,7 @@ return [
                     ['', 0],
                 ],
                 'foreign_table' => 'tx_savlibraryexample0_table2',
-                'foreign_table_where' => 'AND tx_savlibraryexample0_table2.uid=###CURRENT_PID### AND tx_savlibraryexample0_table2.sys_language_uid IN (-1,0)', 
+                'foreign_table_where' => 'AND tx_savlibraryexample0_table2.uid=###CURRENT_PID### AND tx_savlibraryexample0_table2.sys_language_uid IN (-1,0)',
             ]
         ],
         'l18n_diffsource' => [

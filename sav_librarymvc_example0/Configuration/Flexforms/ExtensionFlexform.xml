@@ -17,10 +17,10 @@
                                 <renderType>help</renderType>
                                 <parameters>
                                 	<section>Configuration/FlexformAssociatedWithThePlugin</section>
-                                    <tag>flexformAssociatedWithThePlugin-generalFolder</tag>    
-				                </parameters>                                 
-                            </config>                            
-                        </TCEforms>                          
+                                    <tag>flexformAssociatedWithThePlugin-generalFolder</tag>
+				                </parameters>
+                            </config>
+                        </TCEforms>
                     </helpGeneral>
                     <settings.formId>
                         <TCEforms>
@@ -28,7 +28,7 @@
                             <label>LLL:EXT:sav_library_mvc/Resources/Private/Language/locallang.xlf:extensionFlexform.formId</label>
                             <config>
                                 <type>select</type>
-                                <renderType>selectSingle</renderType>                                
+                                <renderType>selectSingle</renderType>
                                 <items  type="array">
                                     <numIndex  index="0"  type="array">
                                         <numIndex  index="0"></numIndex>
@@ -59,7 +59,7 @@
                             <label>LLL:EXT:sav_library_mvc/Resources/Private/Language/locallang.xlf:extensionFlexform.showNoAvailableInformation</label>
                             <config>
                                 <type>select</type>
-                                <renderType>selectSingle</renderType>                                
+                                <renderType>selectSingle</renderType>
                                 <items  type="array">
                                     <numIndex  index="0"  type="array">
                                         <numIndex  index="0">LLL:EXT:sav_library_mvc/Resources/Private/Language/locallang.xlf:extensionFlexform.showNoAvailableInformation.I.0</numIndex>
@@ -121,10 +121,10 @@
                                 <renderType>help</renderType>
                                 <parameters>
                                 	<section>Configuration/FlexformAssociatedWithThePlugin</section>
-                                    <tag>flexformAssociatedWithThePlugin-generalFolder</tag>    
-				                </parameters>                               
-                            </config>                            
-                        </TCEforms>                                
+                                    <tag>flexformAssociatedWithThePlugin-generalFolder</tag>
+				                </parameters>
+                            </config>
+                        </TCEforms>
                     </settings.helpInput>
                     <settings.inputIsAllowed>
                         <TCEforms>
@@ -230,7 +230,7 @@
                             <label>LLL:EXT:sav_library_mvc/Resources/Private/Language/locallang.xlf:extensionFlexform.inputApplyLimit</label>
                             <config>
                                 <type>select</type>
-                                <renderType>selectSingle</renderType>                                
+                                <renderType>selectSingle</renderType>
                                 <items  type="array">
                                     <numIndex  index="0"  type="array">
                                         <numIndex  index="0">LLL:EXT:sav_library_mvc/Resources/Private/Language/locallang.xlf:extensionFlexform.inputApplyLimit.I.0</numIndex>
@@ -255,7 +255,7 @@
                     </settings.inputApplyLimit>
                 </el>
             </ROOT>
-        </sInput>    
+        </sInput>
         <sAdvanced>
             <ROOT>
                 <TCEforms>
@@ -270,10 +270,10 @@
                                 <renderType>help</renderType>
                                 <parameters>
                                 	<section>Configuration/FlexformAssociatedWithThePlugin</section>
-                                    <tag>flexformAssociatedWithThePlugin-generalFolder</tag>    
-				                </parameters>                               
-                            </config>                            
-                        </TCEforms>                                
+                                    <tag>flexformAssociatedWithThePlugin-generalFolder</tag>
+				                </parameters>
+                            </config>
+                        </TCEforms>
                     </helpAdvanced>
                     <settings.permanentFilter>
                         <TCEforms>
@@ -308,6 +308,6 @@
                     </settings.allowQueryProperty>
                 </el>
             </ROOT>
-        </sAdvanced>              		
+        </sAdvanced>
     </sheets>
 </T3DataStructure>

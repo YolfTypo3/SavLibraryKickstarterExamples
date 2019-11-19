@@ -17,10 +17,10 @@
                                 <renderType>help</renderType>
                                 <parameters>
                                 	<section>Configuration/FlexformAssociatedWithThePlugin</section>
-                                    <tag>flexformAssociatedWithThePlugin-generalFolder</tag>    
-				                </parameters>                                
-                            </config>                           
-                        </TCEforms>                                
+                                    <tag>flexformAssociatedWithThePlugin-generalFolder</tag>
+				                </parameters>
+                            </config>
+                        </TCEforms>
                     </helpGeneral>
                     <formId>
                         <TCEforms>
@@ -107,10 +107,10 @@
                                 <renderType>help</renderType>
                                 <parameters>
                                 	<section>Configuration/FlexformAssociatedWithThePlugin</section>
-                                    <tag>flexformAssociatedWithThePlugin-inputControlsFolder</tag>    
-				                </parameters>                                
-                            </config> 
-                        </TCEforms>                                
+                                    <tag>flexformAssociatedWithThePlugin-inputControlsFolder</tag>
+				                </parameters>
+                            </config>
+                        </TCEforms>
                     </helpInputControls>
                     <inputIsAllowed>
                         <TCEforms>
@@ -231,7 +231,7 @@
                     </dateUserRestriction>
                 </el>
             </ROOT>
-        </sInput>    
+        </sInput>
         <sAdvanced>
             <ROOT>
                 <TCEforms>
@@ -246,10 +246,10 @@
                                 <renderType>help</renderType>
                                 <parameters>
                                 	<section>Configuration/FlexformAssociatedWithThePlugin</section>
-                                    <tag>flexformAssociatedWithThePlugin-advancedFolder</tag>    
-				                </parameters>                                
-                            </config> 
-                        </TCEforms>                                
+                                    <tag>flexformAssociatedWithThePlugin-advancedFolder</tag>
+				                </parameters>
+                            </config>
+                        </TCEforms>
                     </helpAdvanced>
                     <permanentFilter>
                         <TCEforms>
@@ -279,7 +279,7 @@
                                 <rows>8</rows>
                             </config>
                         </TCEforms>
-                    </allowDisplayDataQuery>                    
+                    </allowDisplayDataQuery>
                     <allowQueryProperty>
                         <TCEforms>
                             <displayCond>HIDE_FOR_NON_ADMINS</displayCond>
@@ -302,7 +302,7 @@
                     </allowExec>
                 </el>
             </ROOT>
-        </sAdvanced>    
+        </sAdvanced>
         <sHelpPages>
             <ROOT>
                 <TCEforms>
@@ -317,10 +317,10 @@
                                 <renderType>help</renderType>
                                 <parameters>
                                 	<section>Configuration/FlexformAssociatedWithThePlugin</section>
-                                    <tag>flexformAssociatedWithThePlugin-helpPagesFolder</tag>    
-				                </parameters>                                
-                            </config> 
-                        </TCEforms>                                
+                                    <tag>flexformAssociatedWithThePlugin-helpPagesFolder</tag>
+				                </parameters>
+                            </config>
+                        </TCEforms>
                     </helpHelpPages>
                     <helpPageListView>
                         <TCEforms>
@@ -363,6 +363,6 @@
                     </helpPageEditView>
                 </el>
             </ROOT>
-        </sHelpPages>              		                  		
+        </sHelpPages>
     </sheets>
 </T3DataStructure>

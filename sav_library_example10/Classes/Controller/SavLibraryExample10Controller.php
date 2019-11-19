@@ -23,7 +23,7 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
  * @author Laurent Foulloy <yolf.typo3@orange.fr>
  * @package sav_library_example10
  */
-class SavLibraryExample10Controller extends \TYPO3\CMS\Frontend\Plugin\AbstractPlugin 
+class SavLibraryExample10Controller extends \TYPO3\CMS\Frontend\Plugin\AbstractPlugin
 {
 	/**
 	 * PrefixId
@@ -44,7 +44,7 @@ class SavLibraryExample10Controller extends \TYPO3\CMS\Frontend\Plugin\AbstractP
 	 * @param array $configuration
 	 *
 	 * @return string the plugin content
-	 */            
+	 */
 	public function main(string $content, array $configuration) : string
 	{
 	  // Creates the SavLibraryPlus controller

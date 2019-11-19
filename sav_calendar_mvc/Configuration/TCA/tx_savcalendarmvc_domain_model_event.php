@@ -315,7 +315,7 @@ return [
                             'editView' => 0,
                             'specialView' => 0,
                             'viewsWithCondition' => [
-                            ],           
+                            ],
                         ],
                         'viewTileBars' => [
                                 '1' => '',
@@ -341,7 +341,7 @@ return [
                             '5' => [
                             ],
                         ],
-                        'queryIdentifier' => 1,            
+                        'queryIdentifier' => 1,
                     ],
                     'Admin' => [
                         'viewIdentifiers' => [
@@ -350,7 +350,7 @@ return [
                             'editView' => 5,
                             'specialView' => 0,
                             'viewsWithCondition' => [
-                            ],           
+                            ],
                         ],
                         'viewTileBars' => [
                                 '3' => '',
@@ -377,9 +377,9 @@ return [
                             '5' => [
                             ],
                         ],
-                        'queryIdentifier' => 2,            
+                        'queryIdentifier' => 2,
                     ],
-                ],              
+                ],
             ],
         ],
     ],
@@ -404,7 +404,7 @@ return [
             'exclude' => 1,
             'label'  => 'LLL:EXT:sav_calendar_mvc/Resources/Private/Language/locallang_db.xlf:tx_savcalendarmvc_domain_model_event.category',
             'config' => [
-                'type' => 'select',  
+                'type' => 'select',
                 'renderType' => 'selectSingle',
                 'items' => [
                     ['LLL:EXT:sav_calendar_mvc/Resources/Private/Language/locallang_db.xlf:tx_savcalendarmvc_domain_model_event.category.I.0', 0],

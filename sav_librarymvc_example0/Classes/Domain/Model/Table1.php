@@ -381,7 +381,7 @@ class Table1 extends DefaultModel
     /**
      * Getter for field7.
      *
-     * @return \YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table2    
+     * @return \YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table2
      */
     public function getField7()
     {
@@ -569,7 +569,7 @@ class Table1 extends DefaultModel
 
     /**
      * Adds a field18
-     * 
+     *
      * @param \YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table2 $field18
      * @return void
      */
@@ -580,7 +580,7 @@ class Table1 extends DefaultModel
 
     /**
      * Removes a field18
-     * 
+     *
      * @param \YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table2 $field18
      * @return void
      */
@@ -613,7 +613,7 @@ class Table1 extends DefaultModel
 
     /**
      * Adds a field19
-     * 
+     *
      * @param \YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table3 $field19
      * @return void
      */
@@ -624,7 +624,7 @@ class Table1 extends DefaultModel
 
     /**
      * Removes a field19
-     * 
+     *
      * @param \YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table3 $field19
      * @return void
      */
@@ -657,7 +657,7 @@ class Table1 extends DefaultModel
 
     /**
      * Adds a field20
-     * 
+     *
      * @param \YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table4 $field20
      * @return void
      */
@@ -668,7 +668,7 @@ class Table1 extends DefaultModel
 
     /**
      * Removes a field20
-     * 
+     *
      * @param \YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table4 $field20
      * @return void
      */
@@ -785,7 +785,7 @@ class Table1 extends DefaultModel
 
     /**
      * Adds a field23
-     * 
+     *
      * @param \YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table5 $field23
      * @return void
      */
@@ -796,7 +796,7 @@ class Table1 extends DefaultModel
 
     /**
      * Removes a field23
-     * 
+     *
      * @param \YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table5 $field23
      * @return void
      */

@@ -91,7 +91,7 @@ return [
                     ],
                 ],
                 'controllers' => [
-                ],              
+                ],
             ],
         ],
     ],

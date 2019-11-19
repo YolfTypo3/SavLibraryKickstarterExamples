@@ -889,7 +889,7 @@ return [
                                         ],
                                     ],
                                 ],
-                            ],           
+                            ],
                         ],
                         'viewTileBars' => [
                                 '1' => '<ul>
@@ -1004,9 +1004,9 @@ return [
                                 ],
                             ],
                         ],
-                        'queryIdentifier' => 1,            
+                        'queryIdentifier' => 1,
                     ],
-                ],              
+                ],
             ],
         ],
     ],
@@ -1062,7 +1062,7 @@ return [
                 'type' => 'input',
                 'renderType' => 'inputDateTime',
                 'eval' => 'date',
-                'default' => '0'     
+                'default' => '0'
             ],
         ],
         'field5' => [
@@ -1091,7 +1091,7 @@ return [
             'exclude' => 1,
             'label'  => 'LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field7',
             'config' => [
-                'type' => 'select',  
+                'type' => 'select',
                 'renderType' => 'selectSingle',
                 'items' => [
                     ['LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field7.I.0', 0],

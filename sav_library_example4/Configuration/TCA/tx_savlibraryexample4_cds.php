@@ -51,7 +51,7 @@ return [
                 'type' => 'input',
                 'renderType' => 'inputDateTime',
                 'eval' => 'date',
-                'default' => '0'     
+                'default' => '0'
             ],
         ],
         'link_to_website' => [
@@ -83,7 +83,7 @@ return [
             'exclude' => 1,
             'label'  => 'LLL:EXT:sav_library_example4/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample4_cds.category',
             'config' => [
-                'type' => 'select',  
+                'type' => 'select',
                 'renderType' => 'selectSingle',
                 'items' => [
                     ['LLL:EXT:sav_library_example4/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample4_cds.category.I.0', 0],

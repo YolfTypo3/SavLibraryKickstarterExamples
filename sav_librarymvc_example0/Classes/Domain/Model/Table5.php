@@ -92,7 +92,7 @@ class Table5 extends DefaultModel
 
     /**
      * Adds a field2
-     * 
+     *
      * @param \YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table6 $field2
      * @return void
      */
@@ -103,7 +103,7 @@ class Table5 extends DefaultModel
 
     /**
      * Removes a field2
-     * 
+     *
      * @param \YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table6 $field2
      * @return void
      */

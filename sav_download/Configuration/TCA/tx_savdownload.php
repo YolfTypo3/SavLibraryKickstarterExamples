@@ -39,7 +39,7 @@ return [
             'exclude' => 1,
             'label'  => 'LLL:EXT:sav_download/Resources/Private/Language/locallang_db.xlf:tx_savdownload.category',
             'config' => [
-                'type' => 'select',  
+                'type' => 'select',
                 'renderType' => 'selectSingle',
                 'items' => [
                     ['LLL:EXT:sav_download/Resources/Private/Language/locallang_db.xlf:tx_savdownload.category.I.0', 0],

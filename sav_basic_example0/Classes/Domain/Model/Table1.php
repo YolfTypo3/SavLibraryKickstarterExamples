@@ -62,7 +62,7 @@ class Table1 extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     public function setField1($field1)
     {
         $this->field1 = $field1;
-    }    
+    }
 
     /**
      * Getter for field2.
@@ -83,7 +83,7 @@ class Table1 extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     public function setField2($field2)
     {
         $this->field2 = $field2;
-    }    
+    }
 
 }
 ?>

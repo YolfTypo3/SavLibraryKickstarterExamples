@@ -30,7 +30,7 @@ return [
             'exclude' => 1,
             'label'  => 'LLL:EXT:sav_library_example4/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample4_lending.friend_name',
             'config' => [
-                'type' => 'select',  
+                'type' => 'select',
                 'renderType' => 'selectSingle',
                 'items' => [
                     ['LLL:EXT:sav_library_example4/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample4_lending.friend_name.I.0', 0],
@@ -49,7 +49,7 @@ return [
                 'type' => 'input',
                 'renderType' => 'inputDateTime',
                 'eval' => 'date',
-                'default' => '0'     
+                'default' => '0'
             ],
         ],
         'return_date' => [
@@ -59,7 +59,7 @@ return [
                 'type' => 'input',
                 'renderType' => 'inputDateTime',
                 'eval' => 'date',
-                'default' => '0'     
+                'default' => '0'
             ],
         ],
     ],

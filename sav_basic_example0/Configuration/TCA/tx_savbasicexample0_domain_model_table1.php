@@ -42,7 +42,7 @@ return [
                 'type' => 'input',
                 'renderType' => 'inputDateTime',
                 'eval' => 'date',
-                'default' => '0'     
+                'default' => '0'
             ],
         ],
     ],

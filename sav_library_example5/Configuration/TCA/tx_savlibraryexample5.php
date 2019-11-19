@@ -15,7 +15,7 @@ return [
         'iconfile' => 'EXT:sav_library_example5/Resources/Public/Icons/icon_tx_savlibraryexample5.gif',
     ],
     'interface' => [
-        'showRecordFieldList' => 'hidden,title,field1,field2,hook_content'
+        'showRecordFieldList' => 'hidden,title,hook_content,field1,field2'
     ],
     'columns' => [
         'hidden' => [
@@ -56,7 +56,7 @@ return [
     ],
     'types' => [
         '0' => [
-            'showitem' => 'hidden, title, field1, field2, hook_content',
+            'showitem' => 'hidden, title, hook_content, field1, field2',
         ],
     ],
     'palettes' => [
