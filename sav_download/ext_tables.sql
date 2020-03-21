@@ -12,7 +12,7 @@ CREATE TABLE tx_savdownload (
     hidden tinyint(4) unsigned DEFAULT '0' NOT NULL,
     title tinytext,
     category int(11) DEFAULT '0' NOT NULL,
-    date int(11) unsigned DEFAULT '0' NOT NULL,
+    date int(11) DEFAULT '0' NOT NULL,
     file int(11) unsigned DEFAULT '0',
 
     PRIMARY KEY (uid),

@@ -1,5 +1,14 @@
 <?php
 
+defined('TYPO3_MODE') or die();
+
+if (version_compare(\YolfTypo3\SavLibraryPlus\Compatibility\Typo3VersionCompatibility::getVersion(), '10.0', '<')) {
+    $interface = [
+    	'showRecordFieldList' => 'hidden,friend_name,friend_phone,friend_email,lending_date,return_date'
+    ];
+} else {
+    $interface = [];
+}
 return [
     'ctrl' => [
         'title' => 'LLL:EXT:sav_library_example3/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample3_lending',
@@ -14,9 +23,7 @@ return [
         ],
         'iconfile' => 'EXT:sav_library_example3/Resources/Public/Icons/icon_tx_savlibraryexample3_lending.gif',
     ],
-    'interface' => [
-        'showRecordFieldList' => 'hidden,friend_name,friend_phone,friend_email,lending_date,return_date'
-    ],
+    'interface' => $interface,
     'columns' => [
         'hidden' => [
             'exclude' => 1,

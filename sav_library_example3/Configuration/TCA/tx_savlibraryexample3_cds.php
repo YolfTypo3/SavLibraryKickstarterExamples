@@ -1,5 +1,14 @@
 <?php
 
+defined('TYPO3_MODE') or die();
+
+if (version_compare(\YolfTypo3\SavLibraryPlus\Compatibility\Typo3VersionCompatibility::getVersion(), '10.0', '<')) {
+    $interface = [
+    	'showRecordFieldList' => 'hidden,artist,album_title,date_of_purchase,link_to_website,coverimage,category,description,rel_lending'
+    ];
+} else {
+    $interface = [];
+}
 return [
     'ctrl' => [
         'title' => 'LLL:EXT:sav_library_example3/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample3_cds',
@@ -7,16 +16,14 @@ return [
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
         'cruser_id' => 'cruser_id',
-        'default_sortby' => 'ORDER BY tx_savlibraryexample3_cds.album_title ',
+        'default_sortby' => 'ORDER BY tx_savlibraryexample3_cds.album_title',
         'delete' => 'deleted',
         'enablecolumns' => [
             'disabled' => 'hidden',
         ],
         'iconfile' => 'EXT:sav_library_example3/Resources/Public/Icons/icon_tx_savlibraryexample3_cds.gif',
     ],
-    'interface' => [
-        'showRecordFieldList' => 'hidden,artist,album_title,date_of_purchase,link_to_website,coverimage,category,description,rel_lending'
-    ],
+    'interface' => $interface,
     'columns' => [
         'hidden' => [
             'exclude' => 1,

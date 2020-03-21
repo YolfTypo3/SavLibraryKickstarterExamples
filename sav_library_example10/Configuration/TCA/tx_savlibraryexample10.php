@@ -1,5 +1,14 @@
 <?php
 
+defined('TYPO3_MODE') or die();
+
+if (version_compare(\YolfTypo3\SavLibraryPlus\Compatibility\Typo3VersionCompatibility::getVersion(), '10.0', '<')) {
+    $interface = [
+    	'showRecordFieldList' => 'hidden,image,poi,description,poi_uid,map'
+    ];
+} else {
+    $interface = [];
+}
 return [
     'ctrl' => [
         'title' => 'LLL:EXT:sav_library_example10/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample10',
@@ -7,16 +16,14 @@ return [
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
         'cruser_id' => 'cruser_id',
-        'default_sortby' => 'ORDER BY tx_savlibraryexample10.crdate ',
+        'default_sortby' => 'ORDER BY tx_savlibraryexample10.crdate',
         'delete' => 'deleted',
         'enablecolumns' => [
             'disabled' => 'hidden',
         ],
         'iconfile' => 'EXT:sav_library_example10/Resources/Public/Icons/icon_tx_savlibraryexample10.gif',
     ],
-    'interface' => [
-        'showRecordFieldList' => 'hidden,image,poi,description,poi_uid,map'
-    ],
+    'interface' => $interface,
     'columns' => [
         'hidden' => [
             'exclude' => 1,

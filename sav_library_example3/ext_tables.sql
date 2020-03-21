@@ -12,7 +12,7 @@ CREATE TABLE tx_savlibraryexample3_cds (
     hidden tinyint(4) unsigned DEFAULT '0' NOT NULL,
     artist tinytext,
     album_title tinytext,
-    date_of_purchase int(11) unsigned DEFAULT '0' NOT NULL,
+    date_of_purchase int(11) DEFAULT '0' NOT NULL,
     link_to_website tinytext,
     coverimage int(11) unsigned DEFAULT '0',
     category int(11) DEFAULT '0' NOT NULL,
@@ -66,8 +66,8 @@ CREATE TABLE tx_savlibraryexample3_lending (
     friend_name tinytext,
     friend_phone tinytext,
     friend_email tinytext,
-    lending_date int(11) unsigned DEFAULT '0' NOT NULL,
-    return_date int(11) unsigned DEFAULT '0' NOT NULL,
+    lending_date int(11) DEFAULT '0' NOT NULL,
+    return_date int(11) DEFAULT '0' NOT NULL,
 
     PRIMARY KEY (uid),
     KEY parent (pid)

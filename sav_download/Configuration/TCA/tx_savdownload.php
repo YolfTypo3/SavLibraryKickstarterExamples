@@ -1,5 +1,14 @@
 <?php
 
+defined('TYPO3_MODE') or die();
+
+if (version_compare(\YolfTypo3\SavLibraryPlus\Compatibility\Typo3VersionCompatibility::getVersion(), '10.0', '<')) {
+    $interface = [
+    	'showRecordFieldList' => 'hidden,title,category,date,file'
+    ];
+} else {
+    $interface = [];
+}
 return [
     'ctrl' => [
         'title' => 'LLL:EXT:sav_download/Resources/Private/Language/locallang_db.xlf:tx_savdownload',
@@ -7,16 +16,14 @@ return [
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
         'cruser_id' => 'cruser_id',
-        'default_sortby' => 'ORDER BY tx_savdownload.crdate ',
+        'default_sortby' => 'ORDER BY tx_savdownload.crdate',
         'delete' => 'deleted',
         'enablecolumns' => [
             'disabled' => 'hidden',
         ],
         'iconfile' => 'EXT:sav_download/Resources/Public/Icons/icon_tx_savdownload.gif',
     ],
-    'interface' => [
-        'showRecordFieldList' => 'hidden,title,category,date,file'
-    ],
+    'interface' => $interface,
     'columns' => [
         'hidden' => [
             'exclude' => 1,

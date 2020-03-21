@@ -11,6 +11,7 @@ Changelog
 =======  ===========================================================================
 Version  Changes
 =======  ===========================================================================
+10.3.0   - Compatibility changed to TYPO3 10.3.0
 9.5.0    - Extension regenerated with SAV Library Kickstarter 9.5.0.
 1.0.0    - Extension regenerated with SAV Library Kickstarter 1.0.0.
 0.2.0    - Extension regenerated with SAV Library Kickstarter 0.6.0.

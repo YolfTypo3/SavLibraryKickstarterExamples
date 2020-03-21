@@ -16,9 +16,9 @@
         }
     },    
     "require": {
-        "typo3/cms-core": ">=8.7,<10.0",
-        "jweiland/maps2": "^5.2.3",
-        "typo3-ter/sav-library-plus": ">=9.5.0"
+        "typo3/cms-core": ">=9.5,<11.0",
+        "jweiland/maps2": "^7.1.3||^9.0.0",
+        "yolftypo3/sav-library-plus": ">=9.5.0"
     },
     "autoload": {
         "psr-4": {

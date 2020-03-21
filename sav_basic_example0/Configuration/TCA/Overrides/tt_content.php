@@ -13,7 +13,7 @@ $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist']['savbasicexam
 
 // Registers the Plugin to be listed in the Backend.
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
-    'sav_basic_example0',
+    'SavBasicExample0',
 	'Test',
 	'LLL:EXT:sav_basic_example0/Resources/Private/Language/locallang_db.xlf:tt_content.list_type_pi1'
 );

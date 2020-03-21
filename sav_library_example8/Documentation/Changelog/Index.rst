@@ -11,6 +11,7 @@ Changelog
 =======  ===========================================================================
 Version  Changes
 =======  ===========================================================================
+10.3.0   - Compatibility changed to TYPO3 10.3.0.
 9.5.0    - Extension regenerated with SAV Library Kickstarter 9.5.0.
 1.0.0    - Extension regenerated with SAV Library Kickstarter 1.0.0.
 0.2.0    - Extension regenerated with SAV Library Kickstarter 0.6.0.
@@ -22,8 +23,8 @@ Version  Changes
 0.0.4    - Extension regenerated to work with the SAV Library Plus extension by
            default.
 0.0.3    - Flexform updated.
-0.0.2    - File “to_docbook.xml” added in the directory “res” (see the section
-           “Export to other formats” in Tutorial 8 of the SAV Library 
+0.0.2    - File to_docbook.xml added in the directory res (see the section
+           Export to other formats in Tutorial 8 of the SAV Library 
            Extension Generator).  
 0.0.1    - Extension updated to the SAV Library Extension Generator version 3.0.0
          - Manual updated to the new documentation template (doc\_template 1.2.5)

@@ -2,7 +2,7 @@
 
 <SavLibraryPlus>
     <general type="array">
-        <version>9.5.0</version>
+        <version>10.3.0</version>
         <overridedTablesForLocalization>
         </overridedTablesForLocalization>
         <saveAndNew type="array">
