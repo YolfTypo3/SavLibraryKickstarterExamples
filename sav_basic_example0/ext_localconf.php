@@ -4,7 +4,8 @@ defined('TYPO3_MODE') or die();
 
 
 // Configures the Dispatcher
-if (version_compare(\YolfTypo3\SavBasicExample0\Controller\TestController::getTypo3Version(), '10.0', '<')) {
+$typo3Version = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Information\Typo3Version::class);
+if (version_compare($typo3Version->getVersion(), '10.0', '<')) {
 	\TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
     	'YolfTypo3.sav_basic_example0',
     	'Test',
@@ -28,4 +29,3 @@ if (version_compare(\YolfTypo3\SavBasicExample0\Controller\TestController::getTy
 	);
 }
 
-?>

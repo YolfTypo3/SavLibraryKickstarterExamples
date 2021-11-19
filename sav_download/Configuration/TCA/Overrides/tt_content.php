@@ -24,4 +24,3 @@ $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist']['sav_download
 
 // Adds addToInsertRecords() if any
 
-?>

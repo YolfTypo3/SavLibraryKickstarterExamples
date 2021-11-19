@@ -16,9 +16,9 @@
         }
     },    
     "require": {
-        "typo3/cms-core": ">=9.5,<11.0",
-        "yolftypo3/sav-charts": ">=10.3.0",
-        "yolftypo3/sav-library-plus": ">=9.5.0"
+        "typo3/cms-core": "^9.5.28||^10.4.18||^11.5",
+        "yolftypo3/sav-charts": "@dev",
+        "yolftypo3/sav-library-plus": "@dev"
     },
     "autoload": {
         "psr-4": {

@@ -2,9 +2,9 @@
 
 .. _start:
 
-==================== 
+====================
 SAV Library Example1
-==================== 
+====================
 
 :Extension key:
    sav_library_example1
@@ -16,13 +16,13 @@ SAV Library Example1
    en
 
 :Description:
-   A simple contact list (from  http://www.typo3journal.info/articles/developpement/developpement-extensions-1.html)
+   A simple contact list (from the former Typo3Journal)
 
 :Keywords:
    sav_library_example1    
 
 :Copyright:
-   2019
+   2021
 
 :Author:
    Laurent Foulloy
@@ -32,13 +32,13 @@ SAV Library Example1
 
 :License:
    This document is published under the Open Content License
-   available from http://www.opencontent.org/opl.shtml
+   available from `www.opencontent.org/openpub <https://www.opencontent.org/openpub/>`_.
 
 :Rendered:
    |today|
 
 The content of this document is related to TYPO3,
-a GNU/GPL CMS/Framework available from `www.typo3.org <http://www.typo3.org/>`_.
+a GNU/GPL CMS/Framework available from `www.typo3.org <https://www.typo3.org/>`_.
 
 
 Table of Contents
@@ -48,6 +48,9 @@ Table of Contents
    :maxdepth: 5
    :titlesonly:
    :glob:
-  
+
    Introduction/Index
+   NewTables/Index
+   Forms/Index
    Changelog/Index
+   

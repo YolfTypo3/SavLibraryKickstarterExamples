@@ -14,6 +14,7 @@ namespace YolfTypo3\SavBasicExample0\Controller;
  *
  * The TYPO3 project - inspiring people to share
 */
+use Psr\Http\Message\ResponseInterface;
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Core\Utility\PathUtility;
@@ -29,8 +30,7 @@ use TYPO3\CMS\Extbase\Configuration\FrontendConfigurationManager;
 
 class TestController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
 {
-
-    /**
+	/**
      * Css path
      *
      * @var string
@@ -43,7 +43,7 @@ class TestController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
      * @return void
      */
     protected function initializeAction()
-    {
+	{
         // Gets the extension key
         $extensionKey = $this->request->getControllerExtensionKey();
 
@@ -60,19 +60,24 @@ class TestController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
         $extensionWebPath = self::getExtensionWebPath($extensionKey);
         $cssFile = $extensionWebPath . self::$cssPath;
         $this->addCascadingStyleSheet($cssFile);
-    }
+	}
 
     /**
      * show action
      *
-     * @return void
+     * @return void|ResponseInterface
      */
     public function showAction()
-    {
+	{
         $this->view->assign('extension', $this->request->getControllerExtensionKey());
         $this->view->assign('controller', $this->request->getControllerName());
         $this->view->assign('action', $this->request->getControllerActionName());
-    }
+
+        // For TYPO3 V11: action must return an instance of Psr\Http\Message\ResponseInterface
+        if (method_exists($this, 'htmlResponse')) {
+            return $this->htmlResponse($this->view->render());
+        }
+	}
 
     /**
      * Adds a cascading style Sheet
@@ -82,10 +87,10 @@ class TestController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
      * @return void
      */
     protected function addCascadingStyleSheet($cascadingStyleSheet)
-    {
+	{
         $pageRenderer = GeneralUtility::makeInstance(PageRenderer::class);
         $pageRenderer->addCssFile($cascadingStyleSheet);
-    }
+	}
 
     /**
      * Gets the relative web path of a given extension.
@@ -96,32 +101,14 @@ class TestController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
      * @return string The relative web path
      */
     protected static function getExtensionWebPath(string $extension): string
-    {
+	{
         $extensionWebPath = PathUtility::getAbsoluteWebPath(ExtensionManagementUtility::extPath($extension));
         if ($extensionWebPath[0] === '/') {
             // Makes the path relative
             $extensionWebPath = substr($extensionWebPath, 1);
         }
         return $extensionWebPath;
-    }
-
-    /**
-     * Gets the TYPO3 version
-     *
-     * @todo Will be removed in TYPO3 11
-     *
-     * @return string
-     */
-    public static function getTypo3Version()
-    {
-        if (class_exists(\TYPO3\CMS\Core\Information\Typo3Version::class)) {
-            $typo3Version = GeneralUtility::makeInstance(\TYPO3\CMS\Core\Information\Typo3Version::class)->getVersion();
-        } else {
-            // @extensionScannerIgnoreLine
-            $typo3Version = TYPO3_version;
-        }
-        return $typo3Version;
-    }
+	}
 }
-?>
 
+?>

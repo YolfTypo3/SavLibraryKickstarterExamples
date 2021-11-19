@@ -19,4 +19,3 @@ plugin.tx_savdownload_pi1.userFunc = YolfTypo3\SavDownload\Controller\SavDownloa
 '
 );
 
-?>

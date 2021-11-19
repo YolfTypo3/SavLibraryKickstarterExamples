@@ -20,4 +20,3 @@ $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist']['savbasicexam
 
 // Adds addToInsertRecords() if any
 
-?>

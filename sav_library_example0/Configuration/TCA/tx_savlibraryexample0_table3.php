@@ -2,7 +2,7 @@
 
 defined('TYPO3_MODE') or die();
 
-if (version_compare(\YolfTypo3\SavLibraryPlus\Compatibility\Typo3VersionCompatibility::getVersion(), '10.0', '<')) {
+if (version_compare(\TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Information\Typo3Version::class)->getVersion(), '10.0', '<')) {
     $interface = [
     	'showRecordFieldList' => 'hidden,field1,field2'
     ];
@@ -27,7 +27,7 @@ return [
     'columns' => [
         'hidden' => [
             'exclude' => 1,
-            'label'  => 'LLL:EXT:lang/locallang_general.xlf:LGL.hidden',
+            'label'  => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf.xlf:LGL.hidden',
             'config' => [
                 'type'  => 'check',
                 'default' => 0,
@@ -63,4 +63,3 @@ return [
     ],
 ];
 
-?>

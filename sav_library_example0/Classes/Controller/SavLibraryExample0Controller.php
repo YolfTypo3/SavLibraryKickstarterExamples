@@ -1,7 +1,5 @@
 <?php
 
-namespace YolfTypo3\SavLibraryExample0\Controller;
-
 /*
  * This file is part of the TYPO3 CMS project.
  *
@@ -14,6 +12,8 @@ namespace YolfTypo3\SavLibraryExample0\Controller;
  *
  * The TYPO3 project - inspiring people to share
  */
+
+namespace YolfTypo3\SavLibraryExample0\Controller;
 
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 
@@ -68,4 +68,3 @@ class SavLibraryExample0Controller extends \TYPO3\CMS\Frontend\Plugin\AbstractPl
 	}
 }
 
-?>

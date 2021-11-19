@@ -19,4 +19,3 @@ plugin.tx_savmeetings_pi1.userFunc = YolfTypo3\SavMeetings\Controller\SavMeeting
 '
 );
 
-?>

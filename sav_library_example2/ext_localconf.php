@@ -16,4 +16,3 @@ plugin.tx_savlibraryexample2_pi1.userFunc = YolfTypo3\SavLibraryExample2\Control
 '
 );
 
-?>
