@@ -1,7 +1,5 @@
 <?php
 
-namespace YolfTypo3\SavLibrarymvcExample0\Domain\Model;
-
 /*
  * This file is part of the TYPO3 CMS project.
  *
@@ -15,6 +13,8 @@ namespace YolfTypo3\SavLibrarymvcExample0\Domain\Model;
  * The TYPO3 project - inspiring people to share
  */
 
+namespace YolfTypo3\SavLibrarymvcExample0\Domain\Model;
+
 /**
  * Table3 model for the extension SavLibrarymvcExample0
  *
@@ -24,15 +24,20 @@ use YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel;
 class Table3 extends DefaultModel
 {
     /**
-     * The field1 variable.
+     * @var \YolfTypo3\SavLibrarymvcExample0\Domain\Repository\Table3Repository
+     */
+    protected $repository = null;
+
+    /**
+     * The <field1> variable.
      *
      * @var string
-     * @TYPO3\CMS\Extbase\Annotation\Validate("Raw")
+     * @TYPO3\CMS\Extbase\Annotation\Validate("String")
      */
     protected $field1;
 
     /**
-     * The field2 variable.
+     * The <field2> variable.
      *
      * @var \DateTime
      * @TYPO3\CMS\Extbase\Annotation\Validate("DateTime")
@@ -49,7 +54,7 @@ class Table3 extends DefaultModel
     }
 
     /**
-     * Getter for field1.
+     * Getter for property <field1>.
      *
      * @return string
      */
@@ -59,7 +64,7 @@ class Table3 extends DefaultModel
     }
 
     /**
-     * Setter for field1.
+     * Setter for property <field1>.
      *
      * @param string $field1
      * @return void
@@ -70,7 +75,7 @@ class Table3 extends DefaultModel
     }
 
     /**
-     * Getter for field2.
+     * Getter for property <field2>.
      *
      * @return \DateTime
      */
@@ -80,7 +85,7 @@ class Table3 extends DefaultModel
     }
 
     /**
-     * Setter for field2.
+     * Setter for property <field2>.
      *
      * @param \DateTime $field2
      * @return void
@@ -89,6 +94,6 @@ class Table3 extends DefaultModel
     {
         $this->field2 = $field2;
     }
+
 }
-?>
 

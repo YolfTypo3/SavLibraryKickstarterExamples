@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 
 <xliff version="1.0">
-    <file source-language="en" datatype="plaintext" original="messages" date="2019-11-19T15:52:34Z" product-name="sav_librarymvc_example0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2023-02-11T08:09:38Z" product-name="sav_librarymvc_example0">
         <header/>
         <body>
             <trans-unit id="tx_savlibrarymvcexample0_domain_model_table1" xml:space="preserve">
                 <source>Table 1 for Mvc</source>
             </trans-unit>
-            <trans-unit id="tx_savlibrarymvcexample0_domain_model_table1.field1" xml:space="preserve">
-                <source>String</source>
-            </trans-unit>
             <trans-unit id="tx_savlibrarymvcexample0_domain_model_table1.field2" xml:space="preserve">
                 <source>Checkbox</source>
+            </trans-unit>
+            <trans-unit id="tx_savlibrarymvcexample0_domain_model_table1.field1" xml:space="preserve">
+                <source>String</source>
             </trans-unit>
             <trans-unit id="tx_savlibrarymvcexample0_domain_model_table1.field8" xml:space="preserve">
                 <source>Textarea</source>
@@ -34,8 +34,8 @@
             <trans-unit id="tx_savlibrarymvcexample0_domain_model_table1.field5.I.3" xml:space="preserve">
                 <source>Case 3</source>
             </trans-unit>
-            <trans-unit id="tx_savlibrarymvcexample0_domain_model_table1.field24" xml:space="preserve">
-                <source>Currency</source>
+            <trans-unit id="tx_savlibrarymvcexample0_domain_model_table1.field10" xml:space="preserve">
+                <source>Integer</source>
             </trans-unit>
             <trans-unit id="tx_savlibrarymvcexample0_domain_model_table1.field7" xml:space="preserve">
                 <source>Relation 1:n (selectorbox)</source>
@@ -127,8 +127,8 @@
             <trans-unit id="tx_savlibrarymvcexample0_domain_model_table1.field23" xml:space="preserve">
                 <source>Subform 3</source>
             </trans-unit>
-            <trans-unit id="tx_savlibrarymvcexample0_domain_model_table1.field10" xml:space="preserve">
-                <source>Integer</source>
+            <trans-unit id="tx_savlibrarymvcexample0_domain_model_table1.field24" xml:space="preserve">
+                <source>Currency</source>
             </trans-unit>
             <trans-unit id="tx_savlibrarymvcexample0_domain_model_table2" xml:space="preserve">
                 <source>Table 2 for Mvc</source>

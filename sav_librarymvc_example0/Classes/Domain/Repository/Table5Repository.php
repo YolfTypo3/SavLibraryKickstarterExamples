@@ -1,7 +1,5 @@
 <?php
 
-namespace YolfTypo3\SavLibrarymvcExample0\Domain\Repository;
-
 /*
  * This file is part of the TYPO3 CMS project.
  *
@@ -15,12 +13,16 @@ namespace YolfTypo3\SavLibrarymvcExample0\Domain\Repository;
  * The TYPO3 project - inspiring people to share
  */
 
+namespace YolfTypo3\SavLibrarymvcExample0\Domain\Repository;
+
+use TYPO3\CMS\Extbase\Persistence\QueryInterface;
+use TYPO3\CMS\Extbase\Persistence\Generic\Qom\ConstraintInterface;
+
 /**
- * Repository for the Table5 model in the extension SavLibrarymvcExample0
+ * Repository for the model "Table5" in the extension "sav_librarymvc_example0"
  *
  */
 class Table5Repository extends \YolfTypo3\SavLibraryMvc\Domain\Repository\DefaultRepository
 {
 }
-?>
 

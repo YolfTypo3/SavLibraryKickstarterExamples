@@ -1,21 +1,23 @@
 <?php
 
-defined('TYPO3_MODE') or die();
+defined('TYPO3') or die();
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addUserTSConfig('options.saveDocNew.table3=1');
+(function () {
+    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addUserTSConfig('options.saveDocNew.table3=1');
 
-// Configures the Dispatcher
-\TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
-    'YolfTypo3.sav_librarymvc_example0',
-    'Pi1',
-    [
-    // The first controller and its first action will be the default
-    'Test' => 'list,single,edit,save,delete,deleteInSubform,upInSubform,downInSubform,deleteFile',
-    ],
-    // Non-cachable controller actions
-    [
-    'Test' => 'edit,save,delete,deleteInSubform,upInSubform,downInSubform,deleteFile',
-    ]
-);
+    // Configures the Dispatcher
+    \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+        'SavLibrarymvcExample0',
+        'Default',
+        // Cachable controller actions
+        [
+            // The first controller and its first action will be the default
+            \YolfTypo3\SavLibrarymvcExample0\Controller\TestController::class => 'list,single,edit,save,delete,deleteInSubform,upInSubform,downInSubform,deleteFile,export,exportSubmit',
+        ],
+            // Non-cachable controller actions
+        [
+            \YolfTypo3\SavLibrarymvcExample0\Controller\TestController::class => 'list,edit,save,delete,deleteInSubform,upInSubform,downInSubform,deleteFile,export,exportSubmit',
+        ]
+    );
+})();
 
-?>

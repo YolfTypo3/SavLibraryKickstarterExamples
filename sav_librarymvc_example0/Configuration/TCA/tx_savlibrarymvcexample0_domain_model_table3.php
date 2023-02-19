@@ -1,5 +1,15 @@
 <?php
 
+defined('TYPO3') or die();
+
+$typo3Version = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Information\Typo3Version::class);
+if (version_compare($typo3Version->getVersion(), '10.0', '<')) {
+    $interface = [
+    	'showRecordFieldList' => ''
+    ];
+} else {
+    $interface = [];
+}
 return [
     'ctrl' => [
         'title' => 'LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table3',
@@ -7,14 +17,14 @@ return [
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
         'cruser_id' => 'cruser_id',
-        'default_sortby' => 'ORDER BY tx_savlibrarymvcexample0_domain_model_table3.crdate ',
+        'default_sortby' => 'crdate',
         'delete' => 'deleted',
         'enablecolumns' => [
             'disabled' => 'hidden',
         ],
         'iconfile' => 'EXT:sav_librarymvc_example0/Resources/Public/Icons/icon_tx_savlibrarymvcexample0_domain_model_table3.gif',
         'EXT' => [
-            'sav_library_mvc' => [
+            'sav_librarymvc_example0' => [
                 'ctrl' => [
                     'saveAndNew' => 1,
                 ],
@@ -44,11 +54,11 @@ return [
                             2 => '6',
                         ],
                        'order' => [
-                            1 => '1',
-                            2 => '1',
-                            3 => '1',
-                            4 => '1',
-                            5 => '1',
+                            1 => 1,
+                            2 => 1,
+                            3 => 1,
+                            4 => 1,
+                            5 => 1,
                         ],
                     ],
                     'field2' => [
@@ -77,26 +87,22 @@ return [
                             2 => '6',
                         ],
                        'order' => [
-                            1 => '2',
-                            2 => '2',
-                            3 => '2',
-                            4 => '2',
-                            5 => '2',
+                            1 => 2,
+                            2 => 2,
+                            3 => 2,
+                            4 => 2,
+                            5 => 2,
                         ],
                     ],
-                ],
-                'controllers' => [
                 ],
             ],
         ],
     ],
-    'interface' => [
-        'showRecordFieldList' => 'hidden,field1,field2'
-    ],
+    'interface' => $interface,
     'columns' => [
         'hidden' => [
             'exclude' => 1,
-            'label'  => 'LLL:EXT:lang/locallang_general.xlf:LGL.hidden',
+            'label'  => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf.xlf:LGL.hidden',
             'config' => [
                 'type'  => 'check',
                 'default' => 0,
@@ -137,4 +143,3 @@ return [
     ],
 ];
 
-?>

@@ -1,7 +1,5 @@
 <?php
 
-namespace YolfTypo3\SavLibrarymvcExample0\Controller;
-
 /*
  * This file is part of the TYPO3 CMS project.
  *
@@ -14,6 +12,9 @@ namespace YolfTypo3\SavLibrarymvcExample0\Controller;
  *
  * The TYPO3 project - inspiring people to share
  */
+
+namespace YolfTypo3\SavLibrarymvcExample0\Controller;
+
 use YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table1;
 use YolfTypo3\SavLibrarymvcExample0\Domain\Repository\Table1Repository;
 
@@ -21,7 +22,7 @@ use YolfTypo3\SavLibrarymvcExample0\Domain\Repository\Table1Repository;
  * Controller for the form Test
  *
  */
-class TestController extends \YolfTypo3\SavLibraryMvc\Controller\DefaultController
+final class TestController extends \YolfTypo3\SavLibraryMvc\Controller\DefaultController
 {
     /**
      * Main repository
@@ -31,11 +32,11 @@ class TestController extends \YolfTypo3\SavLibraryMvc\Controller\DefaultControll
     protected $mainRepository = null;
 
     /**
-     * Injects the repository.
+     * Constructor.
      *
-     * @param Table1Repository $repository
+     * @return void
      */
-    public function injectTable1Repository(Table1Repository $repository)
+    public function __construct(Table1Repository $repository)
     {
         $this->mainRepository = $repository;
     }
@@ -79,5 +80,4 @@ class TestController extends \YolfTypo3\SavLibraryMvc\Controller\DefaultControll
         $this->save($data);
     }
 }
-?>
 

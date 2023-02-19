@@ -1,7 +1,5 @@
 <?php
 
-namespace YolfTypo3\SavLibrarymvcExample0\Domain\Repository;
-
 /*
  * This file is part of the TYPO3 CMS project.
  *
@@ -15,8 +13,13 @@ namespace YolfTypo3\SavLibrarymvcExample0\Domain\Repository;
  * The TYPO3 project - inspiring people to share
  */
 
+namespace YolfTypo3\SavLibrarymvcExample0\Domain\Repository;
+
+use TYPO3\CMS\Extbase\Persistence\QueryInterface;
+use TYPO3\CMS\Extbase\Persistence\Generic\Qom\ConstraintInterface;
+
 /**
- * Repository for the Table1 model in the extension SavLibrarymvcExample0
+ * Repository for the model "Table1" in the extension "sav_librarymvc_example0"
  *
  */
 class Table1Repository extends \YolfTypo3\SavLibraryMvc\Domain\Repository\DefaultRepository
@@ -28,7 +31,7 @@ class Table1Repository extends \YolfTypo3\SavLibraryMvc\Domain\Repository\Defaul
      * @param \TYPO3\CMS\Extbase\Persistence\QueryInterface $query
      * @return void
      */
-    protected function orderByClauseForWhereTag1(\TYPO3\CMS\Extbase\Persistence\QueryInterface $query)
+    protected function orderByClauseForWhereTag1(QueryInterface $query)
     {
         $query->setOrderings(['field1' => \TYPO3\CMS\Extbase\Persistence\QueryInterface::ORDER_ASCENDING]);
     }
@@ -39,7 +42,7 @@ class Table1Repository extends \YolfTypo3\SavLibraryMvc\Domain\Repository\Defaul
      * @param \TYPO3\CMS\Extbase\Persistence\QueryInterface $query
      * @return void
      */
-    protected function orderByClauseForWhereTag2(\TYPO3\CMS\Extbase\Persistence\QueryInterface $query)
+    protected function orderByClauseForWhereTag2(QueryInterface $query)
     {
         $query->setOrderings(['field1' => \TYPO3\CMS\Extbase\Persistence\QueryInterface::ORDER_DESCENDING]);
     }
@@ -59,5 +62,4 @@ class Table1Repository extends \YolfTypo3\SavLibraryMvc\Domain\Repository\Defaul
         return $whereTags[$title];
     }
 }
-?>
 

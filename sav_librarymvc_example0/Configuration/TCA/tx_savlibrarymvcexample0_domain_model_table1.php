@@ -1,5 +1,15 @@
 <?php
 
+defined('TYPO3') or die();
+
+$typo3Version = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Information\Typo3Version::class);
+if (version_compare($typo3Version->getVersion(), '10.0', '<')) {
+    $interface = [
+    	'showRecordFieldList' => ''
+    ];
+} else {
+    $interface = [];
+}
 return [
     'ctrl' => [
         'title' => 'LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1',
@@ -7,15 +17,55 @@ return [
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
         'cruser_id' => 'cruser_id',
-        'default_sortby' => 'ORDER BY tx_savlibrarymvcexample0_domain_model_table1.crdate ',
+        'default_sortby' => 'crdate',
+        'delete' => 'deleted',
         'enablecolumns' => [
+            'disabled' => 'hidden',
         ],
         'iconfile' => 'EXT:sav_librarymvc_example0/Resources/Public/Icons/icon_tx_savlibrarymvcexample0_domain_model_table1.gif',
         'EXT' => [
-            'sav_library_mvc' => [
+            'sav_librarymvc_example0' => [
                 'ctrl' => [
                 ],
                 'columns' => [
+                    'field2' => [
+                        'fieldType' => 'Checkbox',
+                        'config' => [
+                            1 => [
+                                'displayAsImage' => 1,
+                                'selected' => 0,
+                             ],
+                            2 => [
+                                'displayAsImage' => 1,
+                                'selected' => 1,
+                             ],
+                            3 => [
+                                'edit' => 1,
+                                'displayAsImage' => 1,
+                                'selected' => 1,
+                             ],
+                            4 => [
+                                'displayAsImage' => 1,
+                                'selected' => 1,
+                             ],
+                            5 => [
+                                'displayAsImage' => 1,
+                                'selected' => 1,
+                             ],
+                        ],
+                        'folders' => [
+                            2 => '1',
+                            3 => '1',
+                            5 => '1',
+                        ],
+                       'order' => [
+                            1 => 19,
+                            2 => 2,
+                            3 => 1,
+                            4 => 2,
+                            5 => 2,
+                        ],
+                    ],
                     'field1' => [
                         'fieldType' => 'String',
                         'config' => [
@@ -45,56 +95,18 @@ return [
                             5 => '0',
                         ],
                        'order' => [
-                            1 => '1',
-                            2 => '1',
-                            3 => '2',
-                            4 => '1',
-                            5 => '1',
-                        ],
-                    ],
-                    'field2' => [
-                        'fieldType' => 'Checkbox',
-                        'config' => [
-                            1 => [
-                                'displayAsImage' => 1,
-                                'selected' => 1,
-                             ],
-                            2 => [
-                                'displayAsImage' => 1,
-                                'selected' => 1,
-                             ],
-                            3 => [
-                                'edit' => 1,
-                                'displayAsImage' => 1,
-                                'selected' => 1,
-                             ],
-                            4 => [
-                                'displayAsImage' => 1,
-                                'selected' => 1,
-                             ],
-                            5 => [
-                                'displayAsImage' => 1,
-                                'selected' => 1,
-                             ],
-                        ],
-                        'folders' => [
-                            2 => '1',
-                            3 => '1',
-                            5 => '1',
-                        ],
-                       'order' => [
-                            1 => '19',
-                            2 => '2',
-                            3 => '1',
-                            4 => '2',
-                            5 => '2',
+                            1 => 1,
+                            2 => 1,
+                            3 => 2,
+                            4 => 1,
+                            5 => 1,
                         ],
                     ],
                     'field8' => [
                         'fieldType' => 'Text',
                         'config' => [
                             1 => [
-                                'selected' => 1,
+                                'selected' => 0,
                              ],
                             2 => [
                                 'selected' => 1,
@@ -116,18 +128,18 @@ return [
                             5 => '0',
                         ],
                        'order' => [
-                            1 => '7',
-                            2 => '3',
-                            3 => '3',
-                            4 => '4',
-                            5 => '3',
+                            1 => 7,
+                            2 => 3,
+                            3 => 3,
+                            4 => 4,
+                            5 => 3,
                         ],
                     ],
                     'field9' => [
                         'fieldType' => 'RichTextEditor',
                         'config' => [
                             1 => [
-                                'selected' => 1,
+                                'selected' => 0,
                              ],
                             2 => [
                                 'selected' => 1,
@@ -150,11 +162,11 @@ return [
                             5 => '0',
                         ],
                        'order' => [
-                            1 => '8',
-                            2 => '4',
-                            3 => '4',
-                            4 => '5',
-                            5 => '4',
+                            1 => 8,
+                            2 => 4,
+                            3 => 4,
+                            4 => 5,
+                            5 => 4,
                         ],
                     ],
                     'field4' => [
@@ -185,18 +197,18 @@ return [
                             5 => '2',
                         ],
                        'order' => [
-                            1 => '3',
-                            2 => '5',
-                            3 => '5',
-                            4 => '6',
-                            5 => '5',
+                            1 => 3,
+                            2 => 5,
+                            3 => 5,
+                            4 => 6,
+                            5 => 5,
                         ],
                     ],
                     'field5' => [
                         'fieldType' => 'DateTime',
                         'config' => [
                             1 => [
-                                'selected' => 1,
+                                'selected' => 0,
                              ],
                             2 => [
                                 'selected' => 1,
@@ -219,18 +231,18 @@ return [
                             5 => '2',
                         ],
                        'order' => [
-                            1 => '4',
-                            2 => '6',
-                            3 => '6',
-                            4 => '7',
-                            5 => '6',
+                            1 => 4,
+                            2 => 6,
+                            3 => 6,
+                            4 => 7,
+                            5 => 6,
                         ],
                     ],
-                    'field24' => [
-                        'fieldType' => 'Currency',
+                    'field10' => [
+                        'fieldType' => 'Integer',
                         'config' => [
                             1 => [
-                                'selected' => 1,
+                                'selected' => 0,
                              ],
                             2 => [
                                 'selected' => 1,
@@ -247,22 +259,24 @@ return [
                              ],
                         ],
                         'folders' => [
-                            3 => '3',
                             2 => '3',
+                            3 => '3',
+                            5 => '0',
                         ],
                        'order' => [
-                            1 => '24',
-                            2 => '7',
-                            3 => '24',
-                            4 => '24',
-                            5 => '24',
+                            1 => 9,
+                            2 => 24,
+                            3 => 7,
+                            4 => 8,
+                            5 => 7,
                         ],
                     ],
                     'field7' => [
                         'fieldType' => 'RelationOneToManyAsSelectorbox',
+                        'foreignModel' => '\YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table2',
                         'config' => [
                             1 => [
-                                'selected' => 1,
+                                'selected' => 0,
                              ],
                             2 => [
                                 'selected' => 1,
@@ -284,18 +298,18 @@ return [
                             5 => '0',
                         ],
                        'order' => [
-                            1 => '6',
-                            2 => '8',
-                            3 => '8',
-                            4 => '9',
-                            5 => '8',
+                            1 => 6,
+                            2 => 8,
+                            3 => 8,
+                            4 => 9,
+                            5 => 8,
                         ],
                     ],
                     'field6' => [
                         'fieldType' => 'Selectorbox',
                         'config' => [
                             1 => [
-                                'selected' => 1,
+                                'selected' => 0,
                              ],
                             2 => [
                                 'selected' => 1,
@@ -317,18 +331,18 @@ return [
                             5 => '0',
                         ],
                        'order' => [
-                            1 => '5',
-                            2 => '9',
-                            3 => '9',
-                            4 => '10',
-                            5 => '9',
+                            1 => 5,
+                            2 => 9,
+                            3 => 9,
+                            4 => 10,
+                            5 => 9,
                         ],
                     ],
                     'field12' => [
                         'fieldType' => 'Link',
                         'config' => [
                             1 => [
-                                'selected' => 1,
+                                'selected' => 0,
                              ],
                             2 => [
                                 'message' => 'Click here',
@@ -352,11 +366,11 @@ return [
                             5 => '0',
                         ],
                        'order' => [
-                            1 => '11',
-                            2 => '10',
-                            3 => '10',
-                            4 => '11',
-                            5 => '10',
+                            1 => 11,
+                            2 => 10,
+                            3 => 10,
+                            4 => 11,
+                            5 => 10,
                         ],
                     ],
                     'field13' => [
@@ -364,7 +378,7 @@ return [
                         'config' => [
                             1 => [
                                 'imageFiles' => 1,
-                                'selected' => 1,
+                                'selected' => 0,
                              ],
                             2 => [
                                 'imageFiles' => 1,
@@ -390,18 +404,18 @@ return [
                             5 => '0',
                         ],
                        'order' => [
-                            1 => '12',
-                            2 => '11',
-                            3 => '11',
-                            4 => '12',
-                            5 => '11',
+                            1 => 12,
+                            2 => 11,
+                            3 => 11,
+                            4 => 12,
+                            5 => 11,
                         ],
                     ],
                     'field14' => [
                         'fieldType' => 'String',
                         'config' => [
                             1 => [
-                                'selected' => 1,
+                                'selected' => 0,
                              ],
                             2 => [
                                 'selected' => 1,
@@ -423,18 +437,18 @@ return [
                             5 => '0',
                         ],
                        'order' => [
-                            1 => '14',
-                            2 => '12',
-                            3 => '12',
-                            4 => '13',
-                            5 => '12',
+                            1 => 14,
+                            2 => 12,
+                            3 => 12,
+                            4 => 13,
+                            5 => 12,
                         ],
                     ],
                     'field15' => [
                         'fieldType' => 'String',
                         'config' => [
                             1 => [
-                                'selected' => 1,
+                                'selected' => 0,
                              ],
                             2 => [
                                 'selected' => 1,
@@ -456,18 +470,18 @@ return [
                             5 => '0',
                         ],
                        'order' => [
-                            1 => '13',
-                            2 => '13',
-                            3 => '13',
-                            4 => '14',
-                            5 => '13',
+                            1 => 13,
+                            2 => 13,
+                            3 => 13,
+                            4 => 14,
+                            5 => 13,
                         ],
                     ],
                     'field16' => [
                         'fieldType' => 'Graph',
                         'config' => [
                             1 => [
-                                'selected' => 1,
+                                'selected' => 0,
                              ],
                             2 => [
                                 'graphTemplate' => 'typo3conf/ext/sav_charts/Resources/Private/Templates/ChartsExamples/PieChartAdvanced.xml',
@@ -492,18 +506,19 @@ return [
                             5 => '0',
                         ],
                        'order' => [
-                            1 => '15',
-                            2 => '14',
-                            3 => '14',
-                            4 => '15',
-                            5 => '14',
+                            1 => 15,
+                            2 => 14,
+                            3 => 14,
+                            4 => 15,
+                            5 => 14,
                         ],
                     ],
                     'field17' => [
                         'fieldType' => 'RelationManyToManyAsDoubleSelectorbox',
+                        'foreignModel' => '\YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table2',
                         'config' => [
                             1 => [
-                                'selected' => 1,
+                                'selected' => 0,
                              ],
                             2 => [
                                 'selected' => 1,
@@ -525,18 +540,19 @@ return [
                             5 => '0',
                         ],
                        'order' => [
-                            1 => '16',
-                            2 => '15',
-                            3 => '15',
-                            4 => '16',
-                            5 => '15',
+                            1 => 16,
+                            2 => 15,
+                            3 => 15,
+                            4 => 16,
+                            5 => 15,
                         ],
                     ],
                     'field18' => [
                         'fieldType' => 'RelationManyToManyAsDoubleSelectorbox',
+                        'foreignModel' => '\YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table2',
                         'config' => [
                             1 => [
-                                'selected' => 1,
+                                'selected' => 0,
                              ],
                             2 => [
                                 'selected' => 1,
@@ -558,18 +574,19 @@ return [
                             5 => '0',
                         ],
                        'order' => [
-                            1 => '17',
-                            2 => '16',
-                            3 => '16',
-                            4 => '17',
-                            5 => '16',
+                            1 => 17,
+                            2 => 16,
+                            3 => 16,
+                            4 => 17,
+                            5 => 16,
                         ],
                     ],
                     'field19' => [
                         'fieldType' => 'RelationManyToManyAsSubform',
+                        'foreignModel' => '\YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table3',
                         'config' => [
                             1 => [
-                                'selected' => 1,
+                                'selected' => 0,
                              ],
                             2 => [
                                 'subformKey' => 0,
@@ -599,18 +616,19 @@ return [
                             5 => '0',
                         ],
                        'order' => [
-                            1 => '18',
-                            2 => '17',
-                            3 => '17',
-                            4 => '18',
-                            5 => '17',
+                            1 => 18,
+                            2 => 17,
+                            3 => 17,
+                            4 => 18,
+                            5 => 17,
                         ],
                     ],
                     'field20' => [
                         'fieldType' => 'RelationManyToManyAsSubform',
+                        'foreignModel' => '\YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table4',
                         'config' => [
                             1 => [
-                                'selected' => 1,
+                                'selected' => 0,
                              ],
                             2 => [
                                 'subformKey' => 1,
@@ -638,11 +656,11 @@ return [
                             5 => '0',
                         ],
                        'order' => [
-                            1 => '22',
-                            2 => '18',
-                            3 => '18',
-                            4 => '19',
-                            5 => '18',
+                            1 => 22,
+                            2 => 18,
+                            3 => 18,
+                            4 => 19,
+                            5 => 18,
                         ],
                     ],
                     'field3' => [
@@ -650,7 +668,7 @@ return [
                         'config' => [
                             1 => [
                                 'displayAsImage' => 1,
-                                'selected' => 1,
+                                'selected' => 0,
                              ],
                             2 => [
                                 'displayAsImage' => 1,
@@ -677,11 +695,11 @@ return [
                             5 => '1',
                         ],
                        'order' => [
-                            1 => '2',
-                            2 => '19',
-                            3 => '19',
-                            4 => '3',
-                            5 => '19',
+                            1 => 2,
+                            2 => 19,
+                            3 => 19,
+                            4 => 3,
+                            5 => 19,
                         ],
                     ],
                     'field11' => [
@@ -689,7 +707,7 @@ return [
                         'config' => [
                             1 => [
                                 'displayAsImage' => 1,
-                                'selected' => 1,
+                                'selected' => 0,
                              ],
                             2 => [
                                 'displayAsImage' => 1,
@@ -714,11 +732,11 @@ return [
                             5 => '0',
                         ],
                        'order' => [
-                            1 => '10',
-                            2 => '20',
-                            3 => '20',
-                            4 => '20',
-                            5 => '20',
+                            1 => 10,
+                            2 => 20,
+                            3 => 20,
+                            4 => 20,
+                            5 => 20,
                         ],
                     ],
                     'field21' => [
@@ -726,7 +744,7 @@ return [
                         'config' => [
                             1 => [
                                 'displayAsImage' => 1,
-                                'selected' => 1,
+                                'selected' => 0,
                              ],
                             2 => [
                                 'displayAsImage' => 1,
@@ -751,19 +769,20 @@ return [
                             2 => '0',
                         ],
                        'order' => [
-                            1 => '20',
-                            2 => '21',
-                            3 => '21',
-                            4 => '21',
-                            5 => '21',
+                            1 => 20,
+                            2 => 21,
+                            3 => 21,
+                            4 => 21,
+                            5 => 21,
                         ],
                     ],
                     'field22' => [
                         'fieldType' => 'ShowOnly',
+                        'renderType' => 'Text',
                         'config' => [
                             1 => [
                                 'renderType' => 'Text',
-                                'selected' => 1,
+                                'selected' => 0,
                              ],
                             2 => [
                                 'renderType' => 'Text',
@@ -789,18 +808,19 @@ return [
                             2 => '0',
                         ],
                        'order' => [
-                            1 => '21',
-                            2 => '22',
-                            3 => '22',
-                            4 => '22',
-                            5 => '22',
+                            1 => 21,
+                            2 => 22,
+                            3 => 22,
+                            4 => 22,
+                            5 => 22,
                         ],
                     ],
                     'field23' => [
                         'fieldType' => 'RelationManyToManyAsSubform',
+                        'foreignModel' => '\YolfTypo3\SavLibrarymvcExample0\Domain\Model\Table5',
                         'config' => [
                             1 => [
-                                'selected' => 1,
+                                'selected' => 0,
                              ],
                             2 => [
                                 'subformKey' => 2,
@@ -828,18 +848,18 @@ return [
                             2 => '6',
                         ],
                        'order' => [
-                            1 => '23',
-                            2 => '23',
-                            3 => '23',
-                            4 => '23',
-                            5 => '23',
+                            1 => 23,
+                            2 => 23,
+                            3 => 23,
+                            4 => 23,
+                            5 => 23,
                         ],
                     ],
-                    'field10' => [
-                        'fieldType' => 'Integer',
+                    'field24' => [
+                        'fieldType' => 'Currency',
                         'config' => [
                             1 => [
-                                'selected' => 1,
+                                'selected' => 0,
                              ],
                             2 => [
                                 'selected' => 1,
@@ -856,167 +876,42 @@ return [
                              ],
                         ],
                         'folders' => [
-                            2 => '3',
                             3 => '3',
-                            5 => '0',
+                            2 => '3',
                         ],
                        'order' => [
-                            1 => '9',
-                            2 => '24',
-                            3 => '7',
-                            4 => '8',
-                            5 => '7',
+                            1 => 24,
+                            2 => 7,
+                            3 => 24,
+                            4 => 24,
+                            5 => 24,
                         ],
-                    ],
-                ],
-                'controllers' => [
-                    'Test' => [
-                        'viewIdentifiers' => [
-                            'listView' => 1,
-                            'singleView' => 2,
-                            'editView' => 3,
-                            'specialView' => 0,
-                            'viewsWithCondition' => [
-                                'singleView' => [
-                                    4 => [
-                                        'config' => [
-                                            'showIf' => 'tx_savlibrarymvcexample0_domain_model_table1.field21 = 1',
-                                        ],
-                                    ],
-                                    5 => [
-                                        'config' => [
-                                            'showIf' => 'tx_savlibrarymvcexample0_domain_model_table1.field21 = 2',
-                                        ],
-                                    ],
-                                ],
-                            ],
-                        ],
-                        'viewTileBars' => [
-                                '1' => '<ul>
-          <li>###field1###</li>
-          <li>###field4###</li>
-        </ul>',
-                                '2' => '###field1###',
-                                '3' => '###field1###',
-                        ],
-                        'viewItemTemplates' => [
-                            'listView' => '<ul>
-          <li>###field1###</li>
-          <li>###field4###</li>
-        </ul>',
-                            'specialView' => '',
-                        ],
-                        'folders' => [
-                            '1' => [
-                            ],
-                            '2' => [
-                                1 => [
-                                    'label' => 'Checkboxes and radio',
-                                    'configuration' => [
-                                    ],
-                                ],
-                                2 => [
-                                    'label' => 'String, Text, Rte',
-                                    'configuration' => [
-                                    ],
-                                ],
-                                3 => [
-                                    'label' => 'Dates and integer',
-                                    'configuration' => [
-                                    ],
-                                ],
-                                4 => [
-                                    'label' => 'Selectorbox',
-                                    'configuration' => [
-                                    ],
-                                ],
-                                5 => [
-                                    'label' => 'Links and files',
-                                    'configuration' => [
-                                    ],
-                                ],
-                                6 => [
-                                    'label' => 'Relations',
-                                    'configuration' => [
-                                    ],
-                                ],
-                                7 => [
-                                    'label' => 'Graphs',
-                                    'configuration' => [
-                                    ],
-                                ],
-                            ],
-                            '3' => [
-                                1 => [
-                                    'label' => 'Checkboxes and radio',
-                                    'configuration' => [
-                                    ],
-                                ],
-                                2 => [
-                                    'label' => 'String, Text, Rte',
-                                    'configuration' => [
-                                    ],
-                                ],
-                                3 => [
-                                    'label' => 'Dates and integer',
-                                    'configuration' => [
-                                    ],
-                                ],
-                                4 => [
-                                    'label' => 'Selectorbox',
-                                    'configuration' => [
-                                    ],
-                                ],
-                                5 => [
-                                    'label' => 'Links and files',
-                                    'configuration' => [
-                                    ],
-                                ],
-                                6 => [
-                                    'label' => 'Relations',
-                                    'configuration' => [
-                                    ],
-                                ],
-                                7 => [
-                                    'label' => 'Graphs',
-                                    'configuration' => [
-                                    ],
-                                ],
-                                8 => [
-                                    'label' => 'Changing the view',
-                                    'configuration' => [
-                                        'cutIf' => 'tx_savlibrarymvcexample0_table1.field3 = 0',
-                                    ],
-                                ],
-                            ],
-                            '4' => [
-                            ],
-                            '5' => [
-                                1 => [
-                                    'label' => 'Checkboxes',
-                                    'configuration' => [
-                                    ],
-                                ],
-                                2 => [
-                                    'label' => 'Dates',
-                                    'configuration' => [
-                                    ],
-                                ],
-                            ],
-                        ],
-                        'queryIdentifier' => 1,
                     ],
                 ],
             ],
         ],
     ],
-    'interface' => [
-        'showRecordFieldList' => ',field1,field2,field8,field9,field4,field5,field24,field7,field6,field12,field13,field14,field15,field16,field17,field18,field19,field20,field3,field11,field21,field22,field23,field10'
-    ],
+    'interface' => $interface,
     'columns' => [
+        'hidden' => [
+            'exclude' => 1,
+            'label'  => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf.xlf:LGL.hidden',
+            'config' => [
+                'type'  => 'check',
+                'default' => 0,
+            ]
+        ],
         'cruser_id_frontend' => [
             'config'  => [
                 'type' => 'passthrough',
+            ],
+        ],
+        'field2' => [
+            'exclude' => 1,
+            'label'  => 'LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field2',
+            'config' => [
+                'type' => 'check',
+                'default' => 0
             ],
         ],
         'field1' => [
@@ -1026,14 +921,6 @@ return [
                 'type' => 'input',
                 'size' => '30',
                 'eval' => 'trim,required'
-            ],
-        ],
-        'field2' => [
-            'exclude' => 1,
-            'label'  => 'LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field2',
-            'config' => [
-                'type' => 'check',
-                'default' => 0
             ],
         ],
         'field8' => [
@@ -1075,15 +962,19 @@ return [
                 'default' => '0'
             ],
         ],
-        'field24' => [
+        'field10' => [
             'exclude' => 1,
-            'label'  => 'LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field24',
+            'label'  => 'LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field10',
             'config' => [
                 'type'  => 'input',
-                'size'  => '13',
-                'max' => '13',
-                'eval'  => 'double2',
+                'size'  => '4',
+                'max' => '6',
+                'eval'  => 'int',
                 'checkbox'  => '0',
+                'range' => [
+                    'upper'  => '999999',
+                    'lower'  => '0'
+                ],
                 'default' => 0
             ],
         ],
@@ -1191,7 +1082,7 @@ return [
                 'size' => 5,
                 'minitems' => 0,
                 'maxitems' => 100000,
-                'MM' => 'tx_savlibrarymvcexample0_domain_model_table1_field18_mm',
+                'MM' => 'tx_savlibrarymvcexample0_table1_field18_mm',
             ],
         ],
         'field19' => [
@@ -1204,7 +1095,7 @@ return [
                 'size' => 1,
                 'minitems' => 0,
                 'maxitems' => 999999,
-                'MM' => 'tx_savlibrarymvcexample0_domain_model_table1_field19_mm',
+                'MM' => 'tx_savlibrarymvcexample0_table1_field19_mm',
                 'appearance' => [
                     'newRecordLinkPosition' => 'bottom',
                     'collapseAll' => 1,
@@ -1222,7 +1113,7 @@ return [
                 'size' => 1,
                 'minitems' => 0,
                 'maxitems' => 999999,
-                'MM' => 'tx_savlibrarymvcexample0_domain_model_table1_field20_mm',
+                'MM' => 'tx_savlibrarymvcexample0_table1_field20_mm',
                 'appearance' => [
                     'newRecordLinkPosition' => 'bottom',
                     'collapseAll' => 1,
@@ -1268,6 +1159,13 @@ return [
                 ],
             ],
         ],
+        'field22' => [
+            'exclude' => 1,
+            'label'  => 'LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field22',
+            'config' => [
+                'type' => 'none',
+            ],
+        ],
         'field23' => [
             'exclude' => 1,
             'label'  => 'LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field23',
@@ -1278,7 +1176,7 @@ return [
                 'size' => 1,
                 'minitems' => 0,
                 'maxitems' => 999999,
-                'MM' => 'tx_savlibrarymvcexample0_domain_model_table1_field23_mm',
+                'MM' => 'tx_savlibrarymvcexample0_table1_field23_mm',
                 'appearance' => [
                     'newRecordLinkPosition' => 'bottom',
                     'collapseAll' => 1,
@@ -1286,26 +1184,22 @@ return [
                 ],
             ],
         ],
-        'field10' => [
+        'field24' => [
             'exclude' => 1,
-            'label'  => 'LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field10',
+            'label'  => 'LLL:EXT:sav_librarymvc_example0/Resources/Private/Language/locallang_db.xlf:tx_savlibrarymvcexample0_domain_model_table1.field24',
             'config' => [
                 'type'  => 'input',
-                'size'  => '4',
-                'max' => '6',
-                'eval'  => 'int',
+                'size'  => '13',
+                'max' => '13',
+                'eval'  => 'double2',
                 'checkbox'  => '0',
-                'range' => [
-                    'upper'  => '999999',
-                    'lower'  => '0'
-                ],
                 'default' => 0
             ],
         ],
     ],
     'types' => [
         '0' => [
-            'showitem' => 'field1, field2, field8, field9' . ', field4, field5, field24, field7, field6, field12, field13, field14, field15, field16, field17, field18, field19, field20, field3, field11, field21, field22, field23, field10',
+            'showitem' => 'hidden, field2, field1, field8, field9' . ', field4, field5, field10, field7, field6, field12, field13, field14, field15, field16, field17, field18, field19, field20, field3, field11, field21, field22, field23, field24',
         ],
     ],
     'palettes' => [
@@ -1313,4 +1207,3 @@ return [
     ],
 ];
 
-?>

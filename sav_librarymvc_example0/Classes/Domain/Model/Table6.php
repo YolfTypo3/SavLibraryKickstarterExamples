@@ -1,7 +1,5 @@
 <?php
 
-namespace YolfTypo3\SavLibrarymvcExample0\Domain\Model;
-
 /*
  * This file is part of the TYPO3 CMS project.
  *
@@ -15,6 +13,8 @@ namespace YolfTypo3\SavLibrarymvcExample0\Domain\Model;
  * The TYPO3 project - inspiring people to share
  */
 
+namespace YolfTypo3\SavLibrarymvcExample0\Domain\Model;
+
 /**
  * Table6 model for the extension SavLibrarymvcExample0
  *
@@ -24,18 +24,23 @@ use YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel;
 class Table6 extends DefaultModel
 {
     /**
-     * The field1 variable.
+     * @var \YolfTypo3\SavLibrarymvcExample0\Domain\Repository\Table6Repository
+     */
+    protected $repository = null;
+
+    /**
+     * The <field1> variable.
      *
      * @var string
-     * @TYPO3\CMS\Extbase\Annotation\Validate("Raw")
+     * @TYPO3\CMS\Extbase\Annotation\Validate("String")
      */
     protected $field1;
 
     /**
-     * The field2 variable.
+     * The <field2> variable.
      *
      * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\TYPO3\CMS\Extbase\Domain\Model\FileReference>
-     * @TYPO3\CMS\Extbase\Annotation\Validate("Raw")
+     * @TYPO3\CMS\Extbase\Annotation\ORM\Lazy
      */
     protected $field2;
 
@@ -48,7 +53,7 @@ class Table6 extends DefaultModel
     }
 
     /**
-     * Getter for field1.
+     * Getter for property <field1>.
      *
      * @return string
      */
@@ -58,7 +63,7 @@ class Table6 extends DefaultModel
     }
 
     /**
-     * Setter for field1.
+     * Setter for property <field1>.
      *
      * @param string $field1
      * @return void
@@ -69,25 +74,27 @@ class Table6 extends DefaultModel
     }
 
     /**
-     * Getter for field2.
+     * Getter for property <field2>.
      *
      * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage
      */
-    public function getField2()
+    public function getField2(): ?\TYPO3\CMS\Extbase\Persistence\ObjectStorage
     {
         return $this->field2;
     }
 
     /**
-     * Setter for field2.
+     * Setter for property <field2>.
      *
      * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage $field2
      * @return void
      */
-    public function setField2($field2)
+    public function setField2(\TYPO3\CMS\Extbase\Persistence\ObjectStorage $field2)
     {
-        $this->field2 = $this->updateFileStorage($this->field2, $field2);
+        $this->repository ??= \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\YolfTypo3\SavLibrarymvcExample0\Domain\Repository\Table6Repository::class);
+        $fieldConfiguration = $this->repository->getDataMapFactory()->getSavLibraryMvcFieldConfiguration('field2');
+        $this->field2 = $this->updateFileStorage($this->field2, $field2, $fieldConfiguration);
     }
+
 }
-?>
 

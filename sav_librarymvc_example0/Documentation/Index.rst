@@ -2,9 +2,9 @@
 
 .. _start:
 
-========================
-SAV Library Mvc Example0
-========================
+=======================
+SAV Librarymvc Example0
+=======================
 
 :Extension key:
    sav_librarymvc_example0
@@ -16,13 +16,13 @@ SAV Library Mvc Example0
    en
 
 :Description:
-   Test extension to illustrate the SAV Library Mvc.
+   An extension to illustrate the SAV Library Mvc
 
 :Keywords:
-   sav_library_example, sav_library_mvc, sav_library_kickstarter
+   sav_librarymvc_example0    
 
 :Copyright:
-   2010-2014
+   2023
 
 :Author:
    Laurent Foulloy
@@ -32,13 +32,13 @@ SAV Library Mvc Example0
 
 :License:
    This document is published under the Open Content License
-   available from http://www.opencontent.org/opl.shtml
+   available from `www.opencontent.org/openpub <https://www.opencontent.org/openpub/>`_.
 
 :Rendered:
    |today|
 
 The content of this document is related to TYPO3,
-a GNU/GPL CMS/Framework available from `www.typo3.org <http://www.typo3.org/>`_.
+a GNU/GPL CMS/Framework available from `www.typo3.org <https://www.typo3.org/>`_.
 
 
 Table of Contents
@@ -50,5 +50,7 @@ Table of Contents
    :glob:
 
    Introduction/Index
+   EntityRelationshipDiagram/Index
+   SavLibraryConfiguration/Index
    Changelog/Index
-
+   

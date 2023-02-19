@@ -1,7 +1,5 @@
 <?php
 
-namespace YolfTypo3\SavLibrarymvcExample0\Domain\Model;
-
 /*
  * This file is part of the TYPO3 CMS project.
  *
@@ -15,6 +13,8 @@ namespace YolfTypo3\SavLibrarymvcExample0\Domain\Model;
  * The TYPO3 project - inspiring people to share
  */
 
+namespace YolfTypo3\SavLibrarymvcExample0\Domain\Model;
+
 /**
  * Table2 model for the extension SavLibrarymvcExample0
  *
@@ -24,10 +24,15 @@ use YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel;
 class Table2 extends DefaultModel
 {
     /**
-     * The field1 variable.
+     * @var \YolfTypo3\SavLibrarymvcExample0\Domain\Repository\Table2Repository
+     */
+    protected $repository = null;
+
+    /**
+     * The <field1> variable.
      *
      * @var string
-     * @TYPO3\CMS\Extbase\Annotation\Validate("Raw")
+     * @TYPO3\CMS\Extbase\Annotation\Validate("String")
      */
     protected $field1;
 
@@ -39,7 +44,7 @@ class Table2 extends DefaultModel
     }
 
     /**
-     * Getter for field1.
+     * Getter for property <field1>.
      *
      * @return string
      */
@@ -49,7 +54,7 @@ class Table2 extends DefaultModel
     }
 
     /**
-     * Setter for field1.
+     * Setter for property <field1>.
      *
      * @param string $field1
      * @return void
@@ -58,6 +63,6 @@ class Table2 extends DefaultModel
     {
         $this->field1 = $field1;
     }
+
 }
-?>
 
