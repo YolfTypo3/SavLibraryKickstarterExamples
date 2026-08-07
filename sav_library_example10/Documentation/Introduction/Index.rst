@@ -59,7 +59,7 @@ Several authenticated users may use the plugin. Each user can modify or delete t
 .. important::
 
   For more information, please read the
-  :ref:`Tutorial 10 section of the SAV Library Plus documentation <savlibraryplus:tutorial10>`.
+  :ref:`Tutorial 10 section of the SAV Library Plus documentation <yolftypo3/sav-library-plus:tutorial10>`.
 
 
 Screenshots

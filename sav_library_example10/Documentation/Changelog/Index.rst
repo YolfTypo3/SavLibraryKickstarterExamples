@@ -6,11 +6,10 @@
 Changelog
 =========
 
-.. tabularcolumns:: |r|p{13.7cm}|
-
 =======  ===========================================================================
 Version  Changes
 =======  ===========================================================================
+14.3.0   - Compatibility changed to TYPO3 13.4.x and 14.3.x.
 11.2.0   - Compatibility changed to TYPO3 11.2.0.
 10.4.0   - Compatibility changed to TYPO3 10.4.0.
 10.3.0   - Compatibility changed to TYPO3 10.3.0.

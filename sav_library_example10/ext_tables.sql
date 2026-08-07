@@ -1,4 +1,3 @@
-
 #
 # Table structure for table 'tx_savlibraryexample10'
 #
@@ -26,9 +25,8 @@ CREATE TABLE tx_savlibraryexample10_poi_mm (
     uid_foreign int(11) unsigned DEFAULT '0' NOT NULL,
     tablenames varchar(30) DEFAULT '' NOT NULL,
     sorting int(11) DEFAULT '0' NOT NULL,
+
+    PRIMARY KEY (uid_local,uid_foreign),
     KEY uid_local (uid_local),
     KEY uid_foreign (uid_foreign)
 );
-
-
-

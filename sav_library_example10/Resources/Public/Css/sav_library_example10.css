@@ -4,7 +4,7 @@
 .sav_library_example10_gallery .savLibraryPlus .listView .image IMG {float:left;width:120px;height:100px;}
 
 .sav_library_example10_gallery .savLibraryPlus .singleView .items .item {border:none;}
-.sav_library_example10_gallery .savLibraryPlus .singleView .image {float:left;width:310px;}
+.sav_library_example10_gallery .savLibraryPlus .singleView .fileImage {float:left;width:310px; height: auto;}
 .sav_library_example10_gallery .savLibraryPlus .singleView .subform {border:none;}
 .sav_library_example10_gallery .savLibraryPlus .singleView .subform .footer {display:none;}
 .sav_library_example10_gallery .savLibraryPlus .singleView .subform .items .item {border:none;}

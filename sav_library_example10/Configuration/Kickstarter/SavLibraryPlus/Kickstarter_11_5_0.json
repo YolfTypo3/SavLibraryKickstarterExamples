@@ -5,7 +5,7 @@
             "pluginTitle": "SAV Library Example10 - Using TypoScript",
             "extensionKey": "sav_library_example10",
             "libraryType": 1,
-            "libraryVersion": "14.3.0",
+            "libraryVersion": "13.4.0",
             "extensionMustbeUpgraded": false,
             "fieldKey": "",
             "showFieldConfiguration": "",
@@ -13,14 +13,14 @@
             "currentLibraryVersion": "0.2.1",
             "keepExtLocalConf": "",
             "vendorName": "YolfTypo3",
-            "compatibility": "13x-14x",
+            "compatibility": "12x-13x",
             "addWizardPluginIcon": "",
             "upgrades": {
                 "YolfTypo3\\SavLibraryKickstarter\\Upgrade\\UpgradeToSavLibraryKickstarter_9_5_0": true
             },
             "libraryVersionMustbeUpgraded": false,
             "wrongCompatibility": false,
-            "section": "newTables",
+            "section": "emconf",
             "itemKey": 1,
             "addTypoScriptConfiguration": "",
             "addPluginIcon": 0,
@@ -33,10 +33,10 @@
             "description": "Simple gallery to show how to use TypoScript in SAV Library Extension. It includes images display and google maps",
             "category": "plugin",
             "state": "stable",
-            "dependencies": "maps2(emconf:13.0.0-0.0.0), jweiland\/maps2(composer:^13.0)",
+            "dependencies": "maps2(emconf:11.0.0-0.0.0), jweiland\/maps2(composer:^11.0)",
             "author": "Laurent Foulloy",
             "author_email": "yolf.typo3@orange.fr",
-            "version": "14.3.0"
+            "version": "11.5.0"
         }
     },
     "newTables": {
@@ -87,11 +87,10 @@
                     "configuration": {
                         "1": "func = makeItemLink;\r\ntsProperties = \r\n  file.width= 100\r\n;",
                         "3": "",
-                        "2": "wrapItem = <div class=\"container\"><div class=\"image\"> | <\/div>;\r\ncutLabel = 1;\r\ntsProperties = \r\n  file.width = 300\r\n;"
+                        "2": "wrapItem = <div class=\"container\"><div class=\"image\"> | <\/div>;\r\ncutLabel = 1;\r\ntsProperties = \r\n  file.width = 300\r\n  imageLinkWrap = 1\r\n  imageLinkWrap.enable = 1\r\n;"
                     },
                     "folders": null,
-                    "displayCondition": "",
-                    "extensionScannerIgnoreLine": ""
+                    "displayCondition": ""
                 },
                 "2": {
                     "fieldname": "poi",
@@ -174,12 +173,11 @@
                     "configuration": {
                         "1": "",
                         "3": "",
-                        "2": "cutIf = true;\r\ntsObject = CONTENT;\r\ntsProperties =\r\n  table = tx_maps2_domain_model_poicollection\r\n  select {\r\n    pidInList = ###storagePage###\r\n    join = tx_savlibraryexample10_poi_mm ON tx_maps2_domain_model_poicollection.uid = tx_savlibraryexample10_poi_mm.uid_foreign\r\n    selectFields = tx_maps2_domain_model_poicollection.uid\r\n    where = uid_local = ###uidMainTable### \r\n    }\r\nrenderObj = TEXT\r\nrenderObj.field = uid\r\n;\r\nrenderFieldInMarker = poi_uid;"
+                        "2": "cutIf = true;\r\ntsObject = CONTENT;\r\ntsProperties =\r\n  table = tx_maps2_domain_model_poicollection\r\n  select {\r\n    join = tx_savlibraryexample10_poi_mm ON tx_maps2_domain_model_poicollection.uid = tx_savlibraryexample10_poi_mm.uid_foreign\r\n    selectFields = tx_maps2_domain_model_poicollection.uid\r\n    where = uid_local = ###uidMainTable###\r\n    }\r\nrenderObj = TEXT\r\nrenderObj.field = uid\r\n;\r\nrenderFieldInMarker = poi_uid;"
                     },
                     "folders": null,
                     "displayCondition": "",
-                    "conf_render_type": "String",
-                    "extensionScannerIgnoreLine": ""
+                    "conf_render_type": "String"
                 },
                 "5": {
                     "fieldname": "map",
@@ -202,18 +200,17 @@
                     "configuration": {
                         "1": "",
                         "3": "",
-                        "2": "wrapItem = <div class=\"map\"> | <\/div><\/div>;\r\ncutLabel = 1;\r\n\r\ntsObject = EXTBASEPLUGIN;\r\ntsProperties =\r\n    extensionName = Maps2\r\n    pluginName = Maps2\r\n\r\n    persistence.storagePid = ###storagePage###\r\n    settings < plugin.tx_maps2.settings\r\n    settings {\r\n       openStreetMapGeocodeUri = https:\/\/nominatim.openstreetmap.org\r\n       zoom = 18\r\n       mapProvider = osm\r\n       poiCollection = ###poi_uid###\r\n       categories =\r\n       mapWidth = 100%\r\n       mapHeight = 300\r\n    }\r\n;\r\nshowIf = 0 < ###poi_uid###;\r\n"
+                        "2": "wrapItem = <div class=\"map\"> | <\/div><\/div>;\r\ncutLabel = 1;\r\n\r\ntsObject = USER;\r\ntsProperties =\r\n    userFunc = TYPO3\\CMS\\Extbase\\Core\\Bootstrap->run\r\n    extensionName = Maps2\r\n    pluginName = Maps2\r\n    vendorName = JWeiland\r\n    action = show\r\n\r\n     switchableControllerActions {\r\n          PoiCollection { \r\n            1 = show\r\n          }\r\n     }\r\n\r\n    settings < plugin.tx_maps2.settings\r\n    settings {\r\n       zoom = 18\r\n       poiCollection = ###poi_uid###\r\n       category =\r\n       mapWidth = 100%\r\n       mapHeight = 300\r\n    }\r\n}  \r\n;\r\nshowIf = 0 < ###poi_uid###;\r\n"
                     },
                     "folders": null,
                     "conf_render_type": "String",
-                    "displayCondition": "",
-                    "extensionScannerIgnoreLine": ""
+                    "displayCondition": ""
                 }
             },
             "viewKey": 2,
             "activeFields": {
                 "2": [
-                    4
+                    1
                 ],
                 "3": [
                     5
@@ -235,7 +232,7 @@
             "overrideLocalization": "",
             "viewSelectorbox": 0,
             "moveAfter": -1,
-            "viewKey": 2,
+            "viewKey": 3,
             "fields": {
                 "1": {
                     "order": {
@@ -253,7 +250,7 @@
                         "3": "",
                         "2": ""
                     },
-                    "viewKey": 2
+                    "viewKey": 3
                 },
                 "2": {
                     "order": {
@@ -271,7 +268,7 @@
                         "3": "",
                         "2": ""
                     },
-                    "viewKey": 2
+                    "viewKey": 3
                 },
                 "3": {
                     "order": {
@@ -289,7 +286,7 @@
                         "3": "",
                         "2": ""
                     },
-                    "viewKey": 2
+                    "viewKey": 3
                 },
                 "4": {
                     "order": {
@@ -307,7 +304,7 @@
                         "3": "",
                         "2": ""
                     },
-                    "viewKey": 2
+                    "viewKey": 3
                 },
                 "5": {
                     "order": {
@@ -325,7 +322,7 @@
                         "3": "",
                         "2": ""
                     },
-                    "viewKey": 2
+                    "viewKey": 3
                 },
                 "6": {
                     "order": {
@@ -343,7 +340,7 @@
                         "3": "",
                         "2": ""
                     },
-                    "viewKey": 2
+                    "viewKey": 3
                 },
                 "7": {
                     "order": {
@@ -361,7 +358,7 @@
                         "3": "",
                         "2": ""
                     },
-                    "viewKey": 2
+                    "viewKey": 3
                 },
                 "8": {
                     "order": {
@@ -379,7 +376,7 @@
                         "3": "",
                         "2": ""
                     },
-                    "viewKey": 2
+                    "viewKey": 3
                 },
                 "9": {
                     "order": {
@@ -414,7 +411,7 @@
                     "title": "address",
                     "type": "ShowOnly",
                     "selected": {
-                        "3": "",
+                        "3": 1,
                         "2": ""
                     },
                     "folders": {
@@ -445,7 +442,7 @@
                         "3": "",
                         "2": ""
                     },
-                    "viewKey": 2,
+                    "viewKey": 3,
                     "displayCondition": "",
                     "conf_render_type": "Numeric",
                     "configuration": {
@@ -468,7 +465,7 @@
                         "3": "",
                         "2": ""
                     },
-                    "viewKey": 2,
+                    "viewKey": 3,
                     "displayCondition": "",
                     "conf_render_type": "Numeric",
                     "configuration": {
@@ -491,7 +488,7 @@
                         "3": "",
                         "2": ""
                     },
-                    "viewKey": 2,
+                    "viewKey": 3,
                     "displayCondition": "",
                     "conf_render_type": "String",
                     "configuration": {
@@ -514,7 +511,7 @@
                         "3": "",
                         "2": ""
                     },
-                    "viewKey": 2,
+                    "viewKey": 3,
                     "displayCondition": "",
                     "conf_render_type": "String",
                     "configuration": {
@@ -537,7 +534,7 @@
                         "3": "",
                         "2": ""
                     },
-                    "viewKey": 2
+                    "viewKey": 3
                 },
                 "16": {
                     "order": {
@@ -555,7 +552,7 @@
                         "3": "",
                         "2": ""
                     },
-                    "viewKey": 2
+                    "viewKey": 3
                 },
                 "17": {
                     "order": {
@@ -573,7 +570,7 @@
                         "3": "",
                         "2": ""
                     },
-                    "viewKey": 2
+                    "viewKey": 3
                 },
                 "18": {
                     "order": {
@@ -591,7 +588,7 @@
                         "3": "",
                         "2": ""
                     },
-                    "viewKey": 2
+                    "viewKey": 3
                 },
                 "19": {
                     "order": {
@@ -609,7 +606,7 @@
                         "3": "",
                         "2": ""
                     },
-                    "viewKey": 2
+                    "viewKey": 3
                 },
                 "20": {
                     "order": {
@@ -627,7 +624,7 @@
                         "3": "",
                         "2": ""
                     },
-                    "viewKey": 2
+                    "viewKey": 3
                 },
                 "21": {
                     "order": {
@@ -645,7 +642,7 @@
                         "3": "",
                         "2": ""
                     },
-                    "viewKey": 2
+                    "viewKey": 3
                 },
                 "22": {
                     "order": {
@@ -663,7 +660,7 @@
                         "3": "",
                         "2": ""
                     },
-                    "viewKey": 2
+                    "viewKey": 3
                 },
                 "23": {
                     "order": {
@@ -681,7 +678,7 @@
                         "3": "",
                         "2": ""
                     },
-                    "viewKey": 2
+                    "viewKey": 3
                 },
                 "24": {
                     "order": {
@@ -699,7 +696,7 @@
                         "3": "",
                         "2": ""
                     },
-                    "viewKey": 2
+                    "viewKey": 3
                 },
                 "25": {
                     "order": {
@@ -717,7 +714,7 @@
                         "3": "",
                         "2": ""
                     },
-                    "viewKey": 2
+                    "viewKey": 3
                 },
                 "26": {
                     "order": {
@@ -735,7 +732,7 @@
                         "3": "",
                         "2": ""
                     },
-                    "viewKey": 2
+                    "viewKey": 3
                 },
                 "27": {
                     "order": {
@@ -753,7 +750,7 @@
                         "3": "",
                         "2": ""
                     },
-                    "viewKey": 2
+                    "viewKey": 3
                 },
                 "28": {
                     "order": {
@@ -771,7 +768,7 @@
                         "3": "",
                         "2": ""
                     },
-                    "viewKey": 2
+                    "viewKey": 3
                 },
                 "29": {
                     "order": {
@@ -789,7 +786,7 @@
                         "3": "",
                         "2": ""
                     },
-                    "viewKey": 2
+                    "viewKey": 3
                 },
                 "30": {
                     "order": {
@@ -807,12 +804,12 @@
                         "3": "",
                         "2": ""
                     },
-                    "viewKey": 2
+                    "viewKey": 3
                 }
             },
             "activeFields": {
                 "3": [
-                    14
+                    13
                 ],
                 "2": [
                     10
@@ -883,10 +880,7 @@
             "interSphinxMapping": "savlibraryplus = https:\/\/docs.typo3.org\/p\/yolftypo3\/sav-library-plus\/master\/en-us\/",
             "extensions": "",
             "keepSettingsCfg": "",
-            "AddDockerCompose": 1,
-            "relativeDocumentationDirectory": null,
-            "AddEntityRelationshipDiagram": 1,
-            "AddFormAndTableConfiguration": 1
+            "AddDockerCompose": 1
         }
     }
 }

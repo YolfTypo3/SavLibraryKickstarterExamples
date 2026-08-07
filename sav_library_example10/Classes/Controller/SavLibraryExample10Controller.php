@@ -1,5 +1,6 @@
 <?php
-namespace YolfTypo3\SavLibraryExample10\Controller;
+
+declare(strict_types=1);
 
 /*
  * This file is part of the TYPO3 CMS project.
@@ -13,7 +14,11 @@ namespace YolfTypo3\SavLibraryExample10\Controller;
  *
  * The TYPO3 project - inspiring people to share
  */
-use TYPO3\CMS\Core\Utility\GeneralUtility;
+
+namespace YolfTypo3\SavLibraryExample10\Controller;
+
+use TYPO3\CMS\Core\Attribute\AsAllowedCallable;
+use YolfTypo3\SavLibraryPlus\Controller\Controller;
 
 /**
  * Plugin 'SAV Library Example10 - Using TypoScript' for the 'sav_library_example10' extension.
@@ -21,52 +26,37 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
  * @author Laurent Foulloy <yolf.typo3@orange.fr>
  * @package sav_library_example10
  */
-class SavLibraryExample10Controller extends \TYPO3\CMS\Frontend\Plugin\AbstractPlugin
+final class SavLibraryExample10Controller extends Controller
 {
+	/**
+	 * PrefixId
+	 * @var string
+	 */
+	public $prefixId = 'tx_savlibraryexample10_pi1';
 
-    /**
-     * PrefixId
-     *
-     * @var string
-     */
-    public $prefixId = 'tx_savlibraryexample10_pi1';
+	/**
+	 * Extension key
+	 * @var string
+	 */
+	public $extensionKey = 'sav_library_example10';
 
-    /**
-     * Extension key
-     *
-     * @var string
-     */
-    public $extKey = 'sav_library_example10';
+	/**
+	 * The main function
+	 *
+	 * @param string $content
+	 * @param array $configuration
+	 *
+	 * @return string the plugin content
+	 */
+	#[AsAllowedCallable]
+	public function main(string $content, array $configuration): string
+	{
+		// Sets the debug variable. Use debug ONLY for development.
+		$this->setDebug(0);
 
-    /**
-     * The main function
-     *
-     * @param string $content
-     * @param array $configuration
-     *
-     * @return string the plugin content
-     */
-    public function main(string $content, array $configuration): string
-    {
-        // Creates the SavLibraryPlus controller
-        $controller = GeneralUtility::makeInstance(\YolfTypo3\SavLibraryPlus\Controller\Controller::class);
+		// Renders the form
+		$out = $this->render($configuration);
 
-        // Gets the extension configuration manager
-        $extensionConfigurationManager = $controller->getExtensionConfigurationManager();
-
-        // Injects the extension in the extension configuration manager
-        $extensionConfigurationManager->injectExtension($this);
-        // Injects the typoScript configuration in the extension configuration manager
-        $extensionConfigurationManager->injectTypoScriptConfiguration($configuration);
-
-        // Sets the debug variable. Use debug ONLY for development
-        $controller->setDebug(0);
-
-        // Renders the form
-        $out = $controller->render();
-
-        return $out;
-    }
+		return $out;
+	}
 }
-
-?>

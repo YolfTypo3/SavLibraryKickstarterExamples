@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-
 <SavLibraryPlus>
     <general type="array">
-        <version>11.0.0</version>
+        <version>14.3.0</version>
         <overridedTablesForLocalization>
         </overridedTablesForLocalization>
         <saveAndNew type="array">
@@ -49,6 +48,7 @@
                             <tableName>tx_savlibraryexample10</tableName>
                             <fieldName>image</fieldName>
                             <fieldType>Files</fieldType>
+                            <fieldTitle>Image</fieldTitle>
                         </config>
                     </a9598752>
                 </fields>
@@ -70,12 +70,11 @@
                             <wrapitem>&lt;div class=&quot;container&quot;&gt;&lt;div class=&quot;image&quot;&gt; | &lt;/div&gt;</wrapitem>
                             <cutlabel>1</cutlabel>
                             <tsproperties>file.width = 300
-  imageLinkWrap = 1
-  imageLinkWrap.enable = 1
 </tsproperties>
                             <tableName>tx_savlibraryexample10</tableName>
                             <fieldName>image</fieldName>
                             <fieldType>Files</fieldType>
+                            <fieldTitle>Image</fieldTitle>
                         </config>
                     </a9598752>
                     <a217321293 type="array">
@@ -85,6 +84,7 @@
                             <tableName>tx_savlibraryexample10</tableName>
                             <fieldName>poi</fieldName>
                             <fieldType>RelationManyToManyAsSubform</fieldType>
+                            <fieldTitle>Point of interest</fieldTitle>
                             <subform type="array">
                                 <a217895432 type="array">
                                     <fields type="array">
@@ -94,6 +94,7 @@
                                                 <tableName>tx_maps2_domain_model_poicollection</tableName>
                                                 <fieldName>title</fieldName>
                                                 <fieldType>ShowOnly</fieldType>
+                                                <fieldTitle>Title</fieldTitle>
                                                 <renderType>String</renderType>
                                                 <subformItem>1</subformItem>
                                             </config>
@@ -109,6 +110,7 @@
                             <tableName>tx_savlibraryexample10</tableName>
                             <fieldName>description</fieldName>
                             <fieldType>Text</fieldType>
+                            <fieldTitle>Description</fieldTitle>
                         </config>
                     </a90773530>
                     <a140341624 type="array">
@@ -117,6 +119,7 @@
                             <tsobject>CONTENT</tsobject>
                             <tsproperties>table = tx_maps2_domain_model_poicollection
   select {
+    pidInList = ###storagePage###
     join = tx_savlibraryexample10_poi_mm ON tx_maps2_domain_model_poicollection.uid = tx_savlibraryexample10_poi_mm.uid_foreign
     selectFields = tx_maps2_domain_model_poicollection.uid
     where = uid_local = ###uidMainTable###
@@ -128,6 +131,7 @@ renderObj.field = uid
                             <tableName>tx_savlibraryexample10</tableName>
                             <fieldName>poi_uid</fieldName>
                             <fieldType>ShowOnly</fieldType>
+                            <fieldTitle>Only used to get the pio uid</fieldTitle>
                             <renderType>String</renderType>
                         </config>
                     </a140341624>
@@ -135,31 +139,26 @@ renderObj.field = uid
                         <config type="array">
                             <wrapitem>&lt;div class=&quot;map&quot;&gt; | &lt;/div&gt;&lt;/div&gt;</wrapitem>
                             <cutlabel>1</cutlabel>
-                            <tsobject>USER</tsobject>
-                            <tsproperties>userFunc = TYPO3\CMS\Extbase\Core\Bootstrap-&gt;run
-    extensionName = Maps2
+                            <tsobject>EXTBASEPLUGIN</tsobject>
+                            <tsproperties>extensionName = Maps2
     pluginName = Maps2
-    vendorName = JWeiland
-    action = show
-     switchableControllerActions {
-          PoiCollection {
-            1 = show
-          }
-     }
+    persistence.storagePid = ###storagePage###
     settings &lt; plugin.tx_maps2.settings
     settings {
+       openStreetMapGeocodeUri = https://nominatim.openstreetmap.org
        zoom = 18
+       mapProvider = osm
        poiCollection = ###poi_uid###
-       category =
+       categories =
        mapWidth = 100%
        mapHeight = 300
     }
-}
 </tsproperties>
                             <showif>0 &lt; ###poi_uid###</showif>
                             <tableName>tx_savlibraryexample10</tableName>
                             <fieldName>map</fieldName>
                             <fieldType>ShowOnly</fieldType>
+                            <fieldTitle>Map</fieldTitle>
                             <renderType>String</renderType>
                         </config>
                     </a79811241>
@@ -182,6 +181,7 @@ renderObj.field = uid
                             <tableName>tx_savlibraryexample10</tableName>
                             <fieldName>image</fieldName>
                             <fieldType>Files</fieldType>
+                            <fieldTitle>Image</fieldTitle>
                         </config>
                     </a9598752>
                     <a90773530 type="array">
@@ -189,6 +189,7 @@ renderObj.field = uid
                             <tableName>tx_savlibraryexample10</tableName>
                             <fieldName>description</fieldName>
                             <fieldType>Text</fieldType>
+                            <fieldTitle>Description</fieldTitle>
                         </config>
                     </a90773530>
                     <a217321293 type="array">
@@ -196,6 +197,7 @@ renderObj.field = uid
                             <tableName>tx_savlibraryexample10</tableName>
                             <fieldName>poi</fieldName>
                             <fieldType>RelationManyToManyAsSubform</fieldType>
+                            <fieldTitle>Point of interest</fieldTitle>
                             <subform type="array">
                                 <a217895432 type="array">
                                     <fields type="array">
@@ -205,26 +207,18 @@ renderObj.field = uid
                                                 <tableName>tx_maps2_domain_model_poicollection</tableName>
                                                 <fieldName>title</fieldName>
                                                 <fieldType>ShowOnly</fieldType>
+                                                <fieldTitle>Title</fieldTitle>
                                                 <renderType>String</renderType>
                                                 <subformItem>1</subformItem>
                                             </config>
                                         </a256655301>
-                                        <a232115474 type="array">
-                                            <config type="array">
-                                                <updateshowonlyfield>1</updateshowonlyfield>
-                                                <tableName>tx_maps2_domain_model_poicollection</tableName>
-                                                <fieldName>address</fieldName>
-                                                <fieldType>ShowOnly</fieldType>
-                                                <renderType>String</renderType>
-                                                <subformItem>1</subformItem>
-                                            </config>
-                                        </a232115474>
                                         <a90542099 type="array">
                                             <config type="array">
                                                 <updateshowonlyfield>1</updateshowonlyfield>
                                                 <tableName>tx_maps2_domain_model_poicollection</tableName>
                                                 <fieldName>latitude</fieldName>
                                                 <fieldType>ShowOnly</fieldType>
+                                                <fieldTitle>Latitude for map position</fieldTitle>
                                                 <renderType>Numeric</renderType>
                                                 <subformItem>1</subformItem>
                                             </config>
@@ -235,6 +229,7 @@ renderObj.field = uid
                                                 <tableName>tx_maps2_domain_model_poicollection</tableName>
                                                 <fieldName>longitude</fieldName>
                                                 <fieldType>ShowOnly</fieldType>
+                                                <fieldTitle>Longitude for map position</fieldTitle>
                                                 <renderType>Numeric</renderType>
                                                 <subformItem>1</subformItem>
                                             </config>
@@ -246,6 +241,7 @@ renderObj.field = uid
                                                 <tableName>tx_maps2_domain_model_poicollection</tableName>
                                                 <fieldName>map_provider</fieldName>
                                                 <fieldType>ShowOnly</fieldType>
+                                                <fieldTitle>Choose a preferred Map Provider to render the map for this record. This option is only valid for the TYPO3 backend and will reload the form if you switch to another value.</fieldTitle>
                                                 <renderType>String</renderType>
                                                 <subformItem>1</subformItem>
                                             </config>
@@ -257,6 +253,7 @@ renderObj.field = uid
                                                 <tableName>tx_maps2_domain_model_poicollection</tableName>
                                                 <fieldName>configuration_map</fieldName>
                                                 <fieldType>ShowOnly</fieldType>
+                                                <fieldTitle>Configure position on Map</fieldTitle>
                                                 <renderType>String</renderType>
                                                 <subformItem>1</subformItem>
                                             </config>
@@ -276,5 +273,4 @@ renderObj.field = uid
             <mainTable>tx_savlibraryexample10</mainTable>
  		</numIndex>
 	</queries>
-
 </SavLibraryPlus>

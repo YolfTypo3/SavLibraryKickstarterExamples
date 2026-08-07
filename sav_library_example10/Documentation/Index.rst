@@ -2,9 +2,9 @@
 
 .. _start:
 
-===================== 
+=====================
 SAV Library Example10
-===================== 
+=====================
 
 :Extension key:
    sav_library_example10
@@ -19,10 +19,10 @@ SAV Library Example10
    Simple gallery to show how to use TypoScript in SAV Library Extension. It includes images display and google maps
 
 :Keywords:
-   sav_library_example10    
+   sav_library_example10
 
 :Copyright:
-   2019
+   2026
 
 :Author:
    Laurent Foulloy
@@ -48,6 +48,15 @@ Table of Contents
    :maxdepth: 5
    :titlesonly:
    :glob:
-  
+
    Introduction/Index
+   EntityRelationshipDiagram/Index
+   SavLibraryConfiguration/Index
    Changelog/Index
+
+.. Meta Menu
+
+.. toctree::
+   :hidden:
+
+   Sitemap   
