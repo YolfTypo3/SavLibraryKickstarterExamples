@@ -1,4 +1,3 @@
-
 #
 # Table structure for table 'tx_savbasicexample0_domain_model_table1'
 #
@@ -16,5 +15,3 @@ CREATE TABLE tx_savbasicexample0_domain_model_table1 (
     PRIMARY KEY (uid),
     KEY parent (pid)
 );
-
-

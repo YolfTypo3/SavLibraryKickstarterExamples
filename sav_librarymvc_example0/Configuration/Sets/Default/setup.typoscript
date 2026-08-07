@@ -1,0 +1,21 @@
+@import 'EXT:sav_librarymvc_example0/Configuration/TypoScript/setup.typoscript'
+
+plugin.tx_savlibrarymvcexample0 {
+  view {
+    templateRootPaths {
+      1 = {$savLibrarymvcExample0.templateRootPath}
+    }
+
+    partialRootPaths {
+      1 = {$savLibrarymvcExample0.partialRootPath}
+    }
+
+    layoutRootPaths {
+      1 = {$savLibrarymvcExample0.layoutRootPath}
+    }
+  }
+
+  persistence {
+    storagePid = {$savLibrarymvcExample0.storagePid}
+  }
+}

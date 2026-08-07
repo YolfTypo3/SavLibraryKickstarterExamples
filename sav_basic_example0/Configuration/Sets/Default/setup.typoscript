@@ -1,0 +1,21 @@
+@import 'EXT:sav_basic_example0/Configuration/TypoScript/setup.typoscript'
+
+plugin.tx_savbasicexample0 {
+  view {
+    templateRootPaths {
+      1 = {$savBasicExample0.templateRootPath}
+    }
+
+    partialRootPaths {
+      1 = {$savBasicExample0.partialRootPath}
+    }
+
+    layoutRootPaths {
+      1 = {$savBasicExample0.layoutRootPath}
+    }
+  }
+
+  persistence {
+    storagePid = {$savBasicExample0.storagePid}
+  }
+}

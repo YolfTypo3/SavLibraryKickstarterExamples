@@ -1,0 +1,39 @@
+categories:
+  SavLibrarymvcExample0:
+    label: 'SavBasicExample0'
+  SavLibrarymvcExample0.templates:
+    label: 'Templates'
+    parent: SavLibrarymvcExample0
+  SavLibrarymvcExample0.pages:
+    label: 'Pages'
+    parent: SavLibrarymvcExample0
+
+settings:
+
+  savLibrarymvcExample0.templateRootPath:
+    label: 'Templates'
+    category: SavBasicExample0.templates
+    description: 'Path to template root'
+    type: string
+    default: 'EXT:sav_librarymvc_example0/Resources/Private/Templates/'
+
+  savLibrarymvcExample0.partialRootPath:
+    label: 'Partials'
+    category: SavLibrarymvcExample0.templates
+    description: 'Path to partial root'
+    type: string
+    default: 'EXT:sav_librarymvc_example0/Resources/Private/Partials/'
+
+  savLibrarymvcExample0.layoutRootPath:
+    label: 'Layouts'
+    category: SavLibrarymvcExample0.templates
+    description: 'Path to layout root'
+    type: string
+    default: 'EXT:sav_librarymvc_example0/Resources/Private/Layouts/'
+
+  savLibrarymvcExample0.storagePid:
+    label: 'Default storage PID'
+    category: SavLibrarymvcExample0.pages
+    description: 'Folder that stores all reccords'
+    type: int
+    default: 0

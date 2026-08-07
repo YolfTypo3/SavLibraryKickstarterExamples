@@ -1,0 +1,67 @@
+
+plugin.tx_savlibrarymvcexample0 {
+    view {
+        templateRootPaths.10 = {$plugin.tx_savlibrarymvcexample0.view.templateRootPath}
+        partialRootPaths.10 = {$plugin.tx_savlibrarymvcexample0.view.partialRootPath}
+        layoutRootPaths.10 = {$plugin.tx_savlibrarymvcexample0.view.layoutRootPath}
+    }
+    persistence {
+        storagePid = {$plugin.tx_savlibrarymvcexample0.persistence.storagePid}
+    }
+}
+config.tx_extbase.persistence.classes {
+    YolfTypo3\SavLibrarymvcExample0\Domain\Model\ {
+        mapping {
+            tableName = tx_savlibrarymvcexample0_domain_model_table1
+            columns {
+                crdate.mapOnProperty = crdate
+                cruser_id.mapOnProperty = cruserId
+            }
+        }
+    }
+    YolfTypo3\SavLibrarymvcExample0\Domain\Model\ {
+        mapping {
+            tableName = tx_savlibrarymvcexample0_domain_model_table2
+            columns {
+                crdate.mapOnProperty = crdate
+                cruser_id.mapOnProperty = cruserId
+            }
+        }
+    }
+    YolfTypo3\SavLibrarymvcExample0\Domain\Model\ {
+        mapping {
+            tableName = tx_savlibrarymvcexample0_domain_model_table3
+            columns {
+                crdate.mapOnProperty = crdate
+                cruser_id.mapOnProperty = cruserId
+            }
+        }
+    }
+    YolfTypo3\SavLibrarymvcExample0\Domain\Model\ {
+        mapping {
+            tableName = tx_savlibrarymvcexample0_domain_model_table4
+            columns {
+                crdate.mapOnProperty = crdate
+                cruser_id.mapOnProperty = cruserId
+            }
+        }
+    }
+    YolfTypo3\SavLibrarymvcExample0\Domain\Model\ {
+        mapping {
+            tableName = tx_savlibrarymvcexample0_domain_model_table5
+            columns {
+                crdate.mapOnProperty = crdate
+                cruser_id.mapOnProperty = cruserId
+            }
+        }
+    }
+    YolfTypo3\SavLibrarymvcExample0\Domain\Model\ {
+        mapping {
+            tableName = tx_savlibrarymvcexample0_domain_model_table6
+            columns {
+                crdate.mapOnProperty = crdate
+                cruser_id.mapOnProperty = cruserId
+            }
+        }
+    }
+}

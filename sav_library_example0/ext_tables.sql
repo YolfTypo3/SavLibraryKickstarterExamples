@@ -1,4 +1,3 @@
-
 #
 # Table structure for table 'tx_savlibraryexample0_table1'
 #
@@ -23,25 +22,25 @@ CREATE TABLE tx_savlibraryexample0_table1 (
     deleted tinyint(4) unsigned DEFAULT '0' NOT NULL,
     hidden tinyint(4) unsigned DEFAULT '0' NOT NULL,
     field1 tinytext,
-    field3 int(11) DEFAULT '0' NOT NULL,
-    field4 int(11) DEFAULT '0' NOT NULL,
-    field5 int(11) DEFAULT '0' NOT NULL,
-    field6 int(11) DEFAULT '0' NOT NULL,
-    field7 int(11) DEFAULT '0' NOT NULL,
+    field2 tinyint(3) DEFAULT '0' NOT NULL,
     field8 text,
     field9 text,
+    field4 int(11) DEFAULT '0' NOT NULL,
+    field5 int(11) DEFAULT '0' NOT NULL,
     field10 int(11) DEFAULT '0' NOT NULL,
-    field11 varchar(255) DEFAULT '' NOT NULL,
+    field7 int(11) DEFAULT '0' NOT NULL,
+    field6 int(11) DEFAULT '0' NOT NULL,
     field12 tinytext,
     field13 int(11) unsigned DEFAULT '0',
-    field15 tinytext,
     field14 tinytext,
+    field15 tinytext,
     field17 text,
     field18 int(11) DEFAULT '0' NOT NULL,
     field19 int(11) DEFAULT '0' NOT NULL,
-    field2 tinyint(3) DEFAULT '0' NOT NULL,
-    field21 varchar(255) DEFAULT '' NOT NULL,
     field20 int(11) DEFAULT '0' NOT NULL,
+    field3 int(11) DEFAULT '0' NOT NULL,
+    field11 varchar(255) DEFAULT '' NOT NULL,
+    field21 varchar(255) DEFAULT '' NOT NULL,
     field23 int(11) DEFAULT '0' NOT NULL,
     field24 decimal(11,2) DEFAULT '0.00' NOT NULL,
 
@@ -58,6 +57,8 @@ CREATE TABLE tx_savlibraryexample0_table1_field18_mm (
     uid_foreign int(11) unsigned DEFAULT '0' NOT NULL,
     tablenames varchar(30) DEFAULT '' NOT NULL,
     sorting int(11) DEFAULT '0' NOT NULL,
+
+    PRIMARY KEY (uid_local,uid_foreign),
     KEY uid_local (uid_local),
     KEY uid_foreign (uid_foreign)
 );
@@ -70,6 +71,8 @@ CREATE TABLE tx_savlibraryexample0_table1_field19_mm (
     uid_foreign int(11) unsigned DEFAULT '0' NOT NULL,
     tablenames varchar(30) DEFAULT '' NOT NULL,
     sorting int(11) DEFAULT '0' NOT NULL,
+
+    PRIMARY KEY (uid_local,uid_foreign),
     KEY uid_local (uid_local),
     KEY uid_foreign (uid_foreign)
 );
@@ -82,6 +85,8 @@ CREATE TABLE tx_savlibraryexample0_table1_field20_mm (
     uid_foreign int(11) unsigned DEFAULT '0' NOT NULL,
     tablenames varchar(30) DEFAULT '' NOT NULL,
     sorting int(11) DEFAULT '0' NOT NULL,
+
+    PRIMARY KEY (uid_local,uid_foreign),
     KEY uid_local (uid_local),
     KEY uid_foreign (uid_foreign)
 );
@@ -94,6 +99,8 @@ CREATE TABLE tx_savlibraryexample0_table1_field23_mm (
     uid_foreign int(11) unsigned DEFAULT '0' NOT NULL,
     tablenames varchar(30) DEFAULT '' NOT NULL,
     sorting int(11) DEFAULT '0' NOT NULL,
+
+    PRIMARY KEY (uid_local,uid_foreign),
     KEY uid_local (uid_local),
     KEY uid_foreign (uid_foreign)
 );
@@ -179,6 +186,8 @@ CREATE TABLE tx_savlibraryexample0_table5_field1_mm (
     uid_foreign int(11) unsigned DEFAULT '0' NOT NULL,
     tablenames varchar(30) DEFAULT '' NOT NULL,
     sorting int(11) DEFAULT '0' NOT NULL,
+
+    PRIMARY KEY (uid_local,uid_foreign),
     KEY uid_local (uid_local),
     KEY uid_foreign (uid_foreign)
 );
@@ -191,6 +200,8 @@ CREATE TABLE tx_savlibraryexample0_table5_field2_mm (
     uid_foreign int(11) unsigned DEFAULT '0' NOT NULL,
     tablenames varchar(30) DEFAULT '' NOT NULL,
     sorting int(11) DEFAULT '0' NOT NULL,
+
+    PRIMARY KEY (uid_local,uid_foreign),
     KEY uid_local (uid_local),
     KEY uid_foreign (uid_foreign)
 );
@@ -211,5 +222,3 @@ CREATE TABLE tx_savlibraryexample0_table6 (
     PRIMARY KEY (uid),
     KEY parent (pid)
 );
-
-

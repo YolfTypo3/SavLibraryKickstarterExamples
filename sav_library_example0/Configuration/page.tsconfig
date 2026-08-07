@@ -1,0 +1,16 @@
+mod.wizards {
+    newContentElement.wizardItems {
+        plugins {
+            elements {
+                sav_library_example0 {
+                    iconIdentifier = tx-savlibraryexample0-svgicon
+                    title = SAV Library Example0 - Test
+                    description = An extension to illustrate the SAV Library Plus
+                    tt_content_defValues {
+                        CType = sav_library_example0_pi1
+                    }
+                }
+            }
+        }
+    }
+}

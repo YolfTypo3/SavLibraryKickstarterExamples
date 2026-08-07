@@ -1,0 +1,9 @@
+routeEnhancers:
+  SavLibraryExample0:
+    type: SavLibraryPlusPlugin
+    namespace: 'tx_savlibraryexample0_pi1'
+    routePath: '/savLibraryExample0/{controller}/{action}/{sav_library_plus}'
+    requirements:
+      controller: 'Default'
+      action: '[a-zA-Z]+'
+      sav_library_plus: '[0-9a-f]+'

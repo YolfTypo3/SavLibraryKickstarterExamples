@@ -1,0 +1,18 @@
+<sav:removeEmptyLines>
+
+<sav:query name="items">
+SELECT 
+    field1, 
+    FROM_UNIXTIME(field4) AS field4
+FROM 
+    tx_savlibrarymvcexample0_domain_model_table1
+WHERE 
+    NOT deleted
+    AND NOT hidden
+</sav:query>
+
+<f:for each="{items}" as="item">
+"{item.field1}";"{item.field4}"
+</f:for>
+
+</sav:removeEmptyLines>

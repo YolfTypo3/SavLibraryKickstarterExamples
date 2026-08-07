@@ -1,6 +1,6 @@
 <?php
 
-namespace YolfTypo3\SavBasicExample0\Domain\Model;
+declare(strict_types=1);
 
 /*
  * This file is part of the TYPO3 CMS project.
@@ -15,6 +15,8 @@ namespace YolfTypo3\SavBasicExample0\Domain\Model;
  * The TYPO3 project - inspiring people to share
  */
 
+namespace YolfTypo3\SavBasicExample0\Domain\Model;
+
 /**
  * Table1 model for the extension SavBasicExample0
  *
@@ -22,16 +24,23 @@ namespace YolfTypo3\SavBasicExample0\Domain\Model;
 class Table1 extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 {
     /**
-     * The field1 variable.
+     * @var \YolfTypo3\SavBasicExample0\Domain\Repository\Table1Repository
+     */
+    protected $repository = null;
+
+    /**
+     * The <field1> variable.
      *
      * @var string
+     * @TYPO3\CMS\Extbase\Annotation\Validate("String")
      */
     protected $field1;
 
     /**
-     * The field2 variable.
+     * The <field2> variable.
      *
      * @var \DateTime
+     * @TYPO3\CMS\Extbase\Annotation\Validate("DateTime")
      */
     protected $field2;
 
@@ -43,8 +52,9 @@ class Table1 extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
         $this->field2 = new \DateTime();
     }
 
+
     /**
-     * Getter for field1.
+     * Getter for property <field1>.
      *
      * @return string
      */
@@ -54,7 +64,7 @@ class Table1 extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     }
 
     /**
-     * Setter for field1.
+     * Setter for property <field1>.
      *
      * @param string $field1
      * @return void
@@ -64,8 +74,9 @@ class Table1 extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
         $this->field1 = $field1;
     }
 
+
     /**
-     * Getter for field2.
+     * Getter for property <field2>.
      *
      * @return \DateTime
      */
@@ -75,7 +86,7 @@ class Table1 extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     }
 
     /**
-     * Setter for field2.
+     * Setter for property <field2>.
      *
      * @param \DateTime $field2
      * @return void

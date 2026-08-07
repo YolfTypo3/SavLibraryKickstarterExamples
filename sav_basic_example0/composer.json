@@ -12,11 +12,15 @@
     ],
     "extra": {
         "typo3/cms": {
-            "extension-key": "sav_basic_example0"
+            "extension-key": "sav_basic_example0",
+            "version": "14.3.0",
+			"Package": {
+				"providesPackages": {}
+			}
         }
-    },    
+    },
     "require": {
-        "typo3/cms-core": "^9.5||^10.4||^11.5"
+        "typo3/cms-core": "^13.4|^14.3"
     },
     "autoload": {
         "psr-4": {

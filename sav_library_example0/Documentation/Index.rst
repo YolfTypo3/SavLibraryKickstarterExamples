@@ -19,10 +19,10 @@ SAV Library Example0
    An extension to illustrate the SAV Library Plus
 
 :Keywords:
-   sav_library_example0    
+   sav_library_example0
 
 :Copyright:
-   2021
+   2026
 
 :Author:
    Laurent Foulloy
@@ -50,7 +50,13 @@ Table of Contents
    :glob:
 
    Introduction/Index
-   NewTables/Index
-   Forms/Index
+   EntityRelationshipDiagram/Index
+   SavLibraryConfiguration/Index
    Changelog/Index
-   
+
+.. Meta Menu
+
+.. toctree::
+   :hidden:
+
+   Sitemap   

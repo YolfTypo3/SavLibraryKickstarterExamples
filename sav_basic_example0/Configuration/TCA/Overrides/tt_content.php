@@ -1,22 +1,48 @@
 <?php
-defined('TYPO3_MODE') or die();
 
-$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist']['savbasicexample0_test'] = 'layout,select_key';
-// Adds the flexform field to plugin option
-$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist']['savbasicexample0_test'] = 'pi_flexform';
+declare(strict_types=1);
 
-// Adds the flexform DataStructure
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
-    'savbasicexample0_test',
-    'FILE:EXT:sav_basic_example0/Configuration/Flexforms/ExtensionFlexform.xml'
-);
+use TYPO3\CMS\Core\Information\Typo3Version;
+use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
+use TYPO3\CMS\Extbase\Utility\ExtensionUtility;
 
-// Registers the Plugin to be listed in the Backend.
-\TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
-    'SavBasicExample0',
-	'Test',
-	'LLL:EXT:sav_basic_example0/Resources/Private/Language/locallang_db.xlf:tt_content.list_type_pi1'
-);
+defined('TYPO3') or die();
+
+$typo3Version = new (Typo3Version::class);
+if ($typo3Version->getMajorVersion() == 13) {
+	// Registers the Plugin to be listed in the Backend.
+	$pluginSignature = ExtensionUtility::registerPlugin(
+	    'SavBasicExample0',
+		'Default',
+		'LLL:EXT:sav_basic_example0/Resources/Private/Language/locallang_db.xlf:tt_content.list_type_pi1',
+		null,
+		'plugins',
+		''
+	);
+
+	// Activates the display of the FlexForm field
+	ExtensionManagementUtility::addToAllTCAtypes(
+		'tt_content',
+		'pages;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:pages.ALT.list_formlabel,--div--;Configuration,pi_flexform,',
+		$pluginSignature,
+		'after:subheader',
+	);
+
+	// @extensionScannerIgnoreLine
+	ExtensionManagementUtility::addPiFlexFormValue(
+		'*',
+	    'FILE:EXT:sav_basic_example0/Configuration/Flexforms/ExtensionFlexform.xml',
+	    $pluginSignature
+	);
+} else {
+	$pluginSignature = ExtensionUtility::registerPlugin(
+	    'SavBasicExample0',
+		'Default',
+		'LLL:EXT:sav_basic_example0/Resources/Private/Language/locallang_db.xlf:tt_content.list_type_pi1',
+		null,
+		'plugins',
+		''
+	);
+}
 
 // Adds addToInsertRecords() if any
-

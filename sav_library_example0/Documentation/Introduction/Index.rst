@@ -43,7 +43,7 @@ SAV Library Plus extension.
 .. important::
 
   For more information, please read the
-  :ref:`SAV Library Kickstarter tutorial section <savlibrarykickstarter:tutorial>`.
+  :ref:`SAV Library Kickstarter tutorial section <yolftypo3/sav-library-kickstarter:tutorial>`.
 
 
 Screenshots

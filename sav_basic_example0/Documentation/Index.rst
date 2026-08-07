@@ -2,9 +2,9 @@
 
 .. _start:
 
-================== 
+==================
 SAV Basic Example0
-================== 
+==================
 
 :Extension key:
    sav_basic_example0
@@ -19,10 +19,10 @@ SAV Basic Example0
    An extension to test SAV Library Kickstarter for the Basic type generation (Fluid/Extbase)
 
 :Keywords:
-   sav_basic_example0    
+   sav_basic_example0
 
 :Copyright:
-   2021
+   2026
 
 :Author:
    Laurent Foulloy
@@ -43,11 +43,17 @@ a GNU/GPL CMS/Framework available from `www.typo3.org <https://www.typo3.org/>`_
 
 Table of Contents
 =================
-
 .. toctree::
    :maxdepth: 5
    :titlesonly:
    :glob:
-  
+
    Introduction/Index
    Changelog/Index
+
+.. Meta Menu
+
+.. toctree::
+   :hidden:
+
+   Sitemap    

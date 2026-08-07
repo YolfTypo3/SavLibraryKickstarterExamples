@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+  PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "https://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<sav:removeEmptyLines>
+
+<sav:query name="items">
+SELECT 
+    field1, 
+    FROM_UNIXTIME(field4) AS field4
+FROM 
+    tx_savlibrarymvcexample0_domain_model_table1
+WHERE 
+    NOT deleted
+    AND NOT hidden
+</sav:query>
+
+<article lang="en">
+  <title>{title}</title>
+  <informaltable>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <thead>
+        <row>
+          <entry align="center">{header.field1}</entry>
+          <entry align="center">{header.field4}</entry>
+        </row>
+      </thead>
+      <tbody>
+        <f:for each="{items}" as="item">
+        <row>
+          <entry>{item.field1}</entry>
+          <entry>{item.field4}</entry>
+        </row>
+        </f:for>
+      </tbody>
+    </tgroup>
+  </informaltable>
+</article>
+</sav:removeEmptyLines>
