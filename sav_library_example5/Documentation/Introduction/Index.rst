@@ -37,3 +37,8 @@ The SAV Library Kickstarter includes:
 
 This example illustrates the use of a hook when the rendering is more complex
 than simply displaying fields.
+
+.. important::
+
+  For more information, please read the
+  :ref:`Tutorial 5 section of the SAV Library Plus documentation <yolftypo3/sav-library-plus:tutorial5>`.

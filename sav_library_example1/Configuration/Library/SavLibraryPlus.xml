@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-
 <SavLibraryPlus>
     <general type="array">
-        <version>11.5.0</version>
+        <version>14.3.0</version>
         <overridedTablesForLocalization>
         </overridedTablesForLocalization>
         <saveAndNew type="array">
@@ -49,6 +48,7 @@
                             <tableName>tx_savlibraryexample1_members</tableName>
                             <fieldName>firstname</fieldName>
                             <fieldType>String</fieldType>
+                            <fieldTitle>First Name</fieldTitle>
                         </config>
                     </a171665851>
                     <a111594229 type="array">
@@ -56,6 +56,7 @@
                             <tableName>tx_savlibraryexample1_members</tableName>
                             <fieldName>lastname</fieldName>
                             <fieldType>String</fieldType>
+                            <fieldTitle>Last Name</fieldTitle>
                         </config>
                     </a111594229>
                     <a200317443 type="array">
@@ -66,6 +67,7 @@
                             <tableName>tx_savlibraryexample1_members</tableName>
                             <fieldName>image</fieldName>
                             <fieldType>Files</fieldType>
+                            <fieldTitle>Image</fieldTitle>
                         </config>
                     </a200317443>
                 </fields>
@@ -87,6 +89,7 @@
                             <tableName>tx_savlibraryexample1_members</tableName>
                             <fieldName>firstname</fieldName>
                             <fieldType>String</fieldType>
+                            <fieldTitle>First Name</fieldTitle>
                         </config>
                     </a171665851>
                     <a111594229 type="array">
@@ -94,6 +97,7 @@
                             <tableName>tx_savlibraryexample1_members</tableName>
                             <fieldName>lastname</fieldName>
                             <fieldType>String</fieldType>
+                            <fieldTitle>Last Name</fieldTitle>
                         </config>
                     </a111594229>
                     <a132655371 type="array">
@@ -101,6 +105,7 @@
                             <tableName>tx_savlibraryexample1_members</tableName>
                             <fieldName>street</fieldName>
                             <fieldType>Text</fieldType>
+                            <fieldTitle>Street</fieldTitle>
                         </config>
                     </a132655371>
                     <a245194147 type="array">
@@ -108,6 +113,7 @@
                             <tableName>tx_savlibraryexample1_members</tableName>
                             <fieldName>zipcode</fieldName>
                             <fieldType>String</fieldType>
+                            <fieldTitle>Zip Code</fieldTitle>
                         </config>
                     </a245194147>
                     <a27366037 type="array">
@@ -115,6 +121,7 @@
                             <tableName>tx_savlibraryexample1_members</tableName>
                             <fieldName>city</fieldName>
                             <fieldType>String</fieldType>
+                            <fieldTitle>City</fieldTitle>
                         </config>
                     </a27366037>
                     <a200317443 type="array">
@@ -122,6 +129,7 @@
                             <tableName>tx_savlibraryexample1_members</tableName>
                             <fieldName>image</fieldName>
                             <fieldType>Files</fieldType>
+                            <fieldTitle>Image</fieldTitle>
                         </config>
                     </a200317443>
                 </fields>
@@ -144,6 +152,7 @@
                             <tableName>tx_savlibraryexample1_members</tableName>
                             <fieldName>firstname</fieldName>
                             <fieldType>String</fieldType>
+                            <fieldTitle>First Name</fieldTitle>
                         </config>
                     </a171665851>
                     <a111594229 type="array">
@@ -151,6 +160,7 @@
                             <tableName>tx_savlibraryexample1_members</tableName>
                             <fieldName>lastname</fieldName>
                             <fieldType>String</fieldType>
+                            <fieldTitle>Last Name</fieldTitle>
                         </config>
                     </a111594229>
                     <a132655371 type="array">
@@ -158,6 +168,7 @@
                             <tableName>tx_savlibraryexample1_members</tableName>
                             <fieldName>street</fieldName>
                             <fieldType>Text</fieldType>
+                            <fieldTitle>Street</fieldTitle>
                         </config>
                     </a132655371>
                     <a245194147 type="array">
@@ -165,6 +176,7 @@
                             <tableName>tx_savlibraryexample1_members</tableName>
                             <fieldName>zipcode</fieldName>
                             <fieldType>String</fieldType>
+                            <fieldTitle>Zip Code</fieldTitle>
                         </config>
                     </a245194147>
                     <a27366037 type="array">
@@ -172,6 +184,7 @@
                             <tableName>tx_savlibraryexample1_members</tableName>
                             <fieldName>city</fieldName>
                             <fieldType>String</fieldType>
+                            <fieldTitle>City</fieldTitle>
                         </config>
                     </a27366037>
                     <a200317443 type="array">
@@ -179,6 +192,7 @@
                             <tableName>tx_savlibraryexample1_members</tableName>
                             <fieldName>image</fieldName>
                             <fieldType>Files</fieldType>
+                            <fieldTitle>Image</fieldTitle>
                         </config>
                     </a200317443>
                 </fields>
@@ -191,5 +205,4 @@
             <mainTable>tx_savlibraryexample1_members</mainTable>
  		</numIndex>
 	</queries>
-
 </SavLibraryPlus>

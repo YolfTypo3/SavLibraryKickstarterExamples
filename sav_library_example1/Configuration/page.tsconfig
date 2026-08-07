@@ -1,0 +1,16 @@
+mod.wizards {
+    newContentElement.wizardItems {
+        plugins {
+            elements {
+                sav_library_example1 {
+                    iconIdentifier = tx-savlibraryexample1-svgicon
+                    title = SAV Library Example1 - Contact list
+                    description = A simple contact list (from the former Typo3Journal)
+                    tt_content_defValues {
+                        CType = sav_library_example1_pi1
+                    }
+                }
+            }
+        }
+    }
+}

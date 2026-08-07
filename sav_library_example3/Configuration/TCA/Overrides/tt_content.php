@@ -1,26 +1,43 @@
 <?php
-defined('TYPO3_MODE') or die();
+defined('TYPO3') or die();
 
-$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist']['sav_library_example3_pi1'] = 'layout,select_key';
-
-// Adds the flexform field to plugin option
-$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist']['sav_library_example3_pi1'] = 'pi_flexform';
-
-// Adds the flexform DataStructure
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
-    'sav_library_example3_pi1',
-    'FILE:EXT:sav_library_example3/Configuration/Flexforms/ExtensionFlexform.xml'
-);
-
-// Adds the plugin
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPlugin(
-    [
-        'LLL:EXT:sav_library_example3/Resources/Private/Language/locallang_db.xlf:tt_content.list_type_pi1',
-        'sav_library_example3_pi1',
-    ],
-    'list_type',
-    'sav_library_example3'
-);
+$typo3Version = new (\TYPO3\CMS\Core\Information\Typo3Version::class);
+if ($typo3Version->getMajorVersion() == 13) {
+	// Adds the plugin
+	\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPlugin(
+	    [
+	        'LLL:EXT:sav_library_example3/Resources/Private/Language/locallang_db.xlf:tt_content.list_type_pi1',
+	        'sav_library_example3_pi1',
+	    ],
+	    'CType',
+	    'sav_library_example3'
+	);
+	
+	// Activates the display of the FlexForm field
+	\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
+		'tt_content',
+		'pages;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:pages.ALT.list_formlabel,--div--;Configuration,pi_flexform,',
+		'sav_library_example3_pi1',
+		'after:subheader',
+	);
+	
+	// @extensionScannerIgnoreLine
+	\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
+		'*',
+	    'FILE:EXT:sav_library_example3/Configuration/Flexforms/ExtensionFlexform.xml',
+	    'sav_library_example3_pi1'
+	);
+} else {
+	// Adds the plugin
+	\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPlugin(
+	    [
+	        'label' => 'LLL:EXT:sav_library_example3/Resources/Private/Language/locallang_db.xlf:tt_content.list_type_pi1',
+	        'value' => 'sav_library_example3_pi1',
+	        'icon'	=> '',
+	        'group'	=> null
+	    ],
+	    'FILE:EXT:sav_library_example3/Configuration/Flexforms/ExtensionFlexform.xml',
+	);
+}
 
 // Adds addToInsertRecords() if any
-

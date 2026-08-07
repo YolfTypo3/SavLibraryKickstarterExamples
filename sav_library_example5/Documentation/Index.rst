@@ -16,13 +16,12 @@ SAV Library Example5
    en
 
 :Description:
-   
 
 :Keywords:
-   sav_library_example5    
+   sav_library_example5
 
 :Copyright:
-   2021
+   2026
 
 :Author:
    Laurent Foulloy
@@ -50,7 +49,13 @@ Table of Contents
    :glob:
 
    Introduction/Index
-   NewTables/Index
-   Forms/Index
+   EntityRelationshipDiagram/Index
+   SavLibraryConfiguration/Index
    Changelog/Index
-   
+
+.. Meta Menu
+
+.. toctree::
+   :hidden:
+
+   Sitemap   

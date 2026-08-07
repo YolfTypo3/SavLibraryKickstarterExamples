@@ -1,4 +1,3 @@
-
 #
 # Table structure for table 'tx_savlibraryexample7_guests'
 #
@@ -16,11 +15,9 @@ CREATE TABLE tx_savlibraryexample7_guests (
     website tinytext,
     message text,
     comment text,
-    _submitted_data_ blob NOT NULL,
+    _submitted_data_ blob,
     _validated_ tinyint(4) DEFAULT '0' NOT NULL,
 
     PRIMARY KEY (uid),
     KEY parent (pid)
 );
-
-

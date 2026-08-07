@@ -1,34 +1,37 @@
 <?php
+defined('TYPO3') or die();
 
-defined('TYPO3_MODE') or die();
-
-if (version_compare(\TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Information\Typo3Version::class)->getVersion(), '10.0', '<')) {
-    $interface = [
-    	'showRecordFieldList' => 'hidden,friend_name,friend_phone,friend_email,friend_preferred_music'
-    ];
-} else {
-    $interface = [];
-}
 return [
     'ctrl' => [
         'title' => 'LLL:EXT:sav_library_example4/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample4_friends',
         'label' => 'friend_name',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
-        'cruser_id' => 'cruser_id',
         'type' => 'friend_name',
-        'default_sortby' => 'ORDER BY tx_savlibraryexample4_friends.friend_name',
+        'default_sortby' => 'friend_name',
         'delete' => 'deleted',
+        'security' => [
+            'ignorePageTypeRestriction' => true,
+        ],
         'enablecolumns' => [
             'disabled' => 'hidden',
         ],
         'iconfile' => 'EXT:sav_library_example4/Resources/Public/Icons/icon_tx_savlibraryexample4_friends.gif',
     ],
-    'interface' => $interface,
+    'interface' => [],
     'columns' => [
+        'cruser_id' => [
+            'exclude' => true,
+            'label' => 'cruser_id',
+            'config' => [
+                'type' => 'number',
+                'format' => 'decimal',
+                'default' => 0
+            ],
+        ],
         'hidden' => [
             'exclude' => 1,
-            'label'  => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf.xlf:LGL.hidden',
+            'label'  => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.hidden',
             'config' => [
                 'type'  => 'check',
                 'default' => 0,
@@ -39,8 +42,8 @@ return [
             'label'  => 'LLL:EXT:sav_library_example4/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample4_friends.friend_name',
             'config' => [
                 'type' => 'input',
-                'size' => '30',
-                'eval' => 'trim,required'
+                'size' => 30,
+                'eval' => 'trim, required'
             ],
         ],
         'friend_phone' => [
@@ -48,7 +51,7 @@ return [
             'label'  => 'LLL:EXT:sav_library_example4/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample4_friends.friend_phone',
             'config' => [
                 'type' => 'input',
-                'size' => '30',
+                'size' => 30,
                 'eval' => 'trim'
             ],
         ],
@@ -57,7 +60,7 @@ return [
             'label'  => 'LLL:EXT:sav_library_example4/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample4_friends.friend_email',
             'config' => [
                 'type' => 'input',
-                'size' => '30',
+                'size' => 30,
                 'eval' => 'trim'
             ],
         ],
@@ -78,10 +81,11 @@ return [
     'types' => [
         '0' => [
             'showitem' => 'hidden, friend_name, friend_phone, friend_email, friend_preferred_music',
+            'columnsOverrides' => [
+            ],
         ],
     ],
     'palettes' => [
         '1' => ['showitem' => '']
     ],
 ];
-

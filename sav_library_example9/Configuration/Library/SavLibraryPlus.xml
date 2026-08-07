@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-
 <SavLibraryPlus>
     <general type="array">
-        <version>11.5.0</version>
+        <version>14.3.0</version>
         <overridedTablesForLocalization>
         </overridedTablesForLocalization>
         <saveAndNew type="array">
@@ -52,6 +51,7 @@
                             <tableName>tx_savlibraryexample9</tableName>
                             <fieldName>title</fieldName>
                             <fieldType>String</fieldType>
+                            <fieldTitle>Title</fieldTitle>
                         </config>
                     </a165177209>
                 </fields>
@@ -73,12 +73,13 @@
                             <tableName>tx_savlibraryexample9</tableName>
                             <fieldName>title</fieldName>
                             <fieldType>String</fieldType>
+                            <fieldTitle>Title</fieldTitle>
                         </config>
                     </a165177209>
                     <a1024838 type="array">
                         <config type="array">
                             <cutlabel>1</cutlabel>
-                            <graphtemplate>typo3conf/ext/sav_library_example9/Resources/Private/Templates/Charts.xml</graphtemplate>
+                            <graphtemplate>EXT:sav_library_example9/Resources/Private/Templates/Charts.xml</graphtemplate>
                             <allowqueries>1</allowqueries>
                             <tags>marker#uidQueryGraph1 = 1,
   marker#uidQueryGraph2 = 2,
@@ -87,6 +88,7 @@
                             <tableName>tx_savlibraryexample9</tableName>
                             <fieldName>graph</fieldName>
                             <fieldType>Graph</fieldType>
+                            <fieldTitle>Graph</fieldTitle>
                         </config>
                     </a1024838>
                 </fields>
@@ -108,6 +110,7 @@
                             <tableName>tx_savlibraryexample9</tableName>
                             <fieldName>title</fieldName>
                             <fieldType>String</fieldType>
+                            <fieldTitle>Title</fieldTitle>
                         </config>
                     </a165177209>
                     <a114758955 type="array">
@@ -115,6 +118,7 @@
                             <tableName>tx_savlibraryexample9</tableName>
                             <fieldName>graph1</fieldName>
                             <fieldType>RelationManyToManyAsSubform</fieldType>
+                            <fieldTitle>Graph 1</fieldTitle>
                             <subform type="array">
                                 <a217895432 type="array">
                                     <fields type="array">
@@ -123,6 +127,7 @@
                                                 <tableName>tx_savlibraryexample9_graph1</tableName>
                                                 <fieldName>sun</fieldName>
                                                 <fieldType>Numeric</fieldType>
+                                                <fieldTitle>Sunny days</fieldTitle>
                                                 <subformItem>1</subformItem>
                                             </config>
                                         </a180630440>
@@ -131,6 +136,7 @@
                                                 <tableName>tx_savlibraryexample9_graph1</tableName>
                                                 <fieldName>cloud</fieldName>
                                                 <fieldType>Numeric</fieldType>
+                                                <fieldTitle>Cloudy days</fieldTitle>
                                                 <subformItem>1</subformItem>
                                             </config>
                                         </a147354787>
@@ -139,6 +145,7 @@
                                                 <tableName>tx_savlibraryexample9_graph1</tableName>
                                                 <fieldName>rain</fieldName>
                                                 <fieldType>Numeric</fieldType>
+                                                <fieldTitle>Rainy days</fieldTitle>
                                                 <subformItem>1</subformItem>
                                             </config>
                                         </a47340651>
@@ -154,6 +161,7 @@
                             <tableName>tx_savlibraryexample9</tableName>
                             <fieldName>graph2</fieldName>
                             <fieldType>RelationManyToManyAsSubform</fieldType>
+                            <fieldTitle>Graph 2</fieldTitle>
                             <subform type="array">
                                 <a217895432 type="array">
                                     <fields type="array">
@@ -162,6 +170,7 @@
                                                 <tableName>tx_savlibraryexample9_graph2</tableName>
                                                 <fieldName>label</fieldName>
                                                 <fieldType>String</fieldType>
+                                                <fieldTitle>Label</fieldTitle>
                                                 <subformItem>1</subformItem>
                                             </config>
                                         </a49406976>
@@ -170,6 +179,7 @@
                                                 <tableName>tx_savlibraryexample9_graph2</tableName>
                                                 <fieldName>value1</fieldName>
                                                 <fieldType>Numeric</fieldType>
+                                                <fieldTitle>Mini</fieldTitle>
                                                 <subformItem>1</subformItem>
                                             </config>
                                         </a183434059>
@@ -178,6 +188,7 @@
                                                 <tableName>tx_savlibraryexample9_graph2</tableName>
                                                 <fieldName>value2</fieldName>
                                                 <fieldType>Numeric</fieldType>
+                                                <fieldTitle>Maxi</fieldTitle>
                                                 <subformItem>1</subformItem>
                                             </config>
                                         </a170654231>
@@ -196,5 +207,4 @@
             <mainTable>tx_savlibraryexample9</mainTable>
  		</numIndex>
 	</queries>
-
 </SavLibraryPlus>

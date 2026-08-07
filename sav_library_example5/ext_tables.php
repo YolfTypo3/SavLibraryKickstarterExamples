@@ -1,6 +1,5 @@
 <?php
+defined('TYPO3') or die();
 
-defined('TYPO3_MODE') or die();
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_savlibraryexample5');
-
-
+(function () {
+})();

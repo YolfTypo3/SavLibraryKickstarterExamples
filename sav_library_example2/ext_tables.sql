@@ -1,4 +1,3 @@
-
 #
 # Table structure for table 'tx_savlibraryexample2_cds'
 #
@@ -38,5 +37,3 @@ CREATE TABLE tx_savlibraryexample2_cat (
     PRIMARY KEY (uid),
     KEY parent (pid)
 );
-
-

@@ -1,4 +1,3 @@
-
 #
 # Table structure for table 'tx_savlibraryexample6'
 #
@@ -21,5 +20,3 @@ CREATE TABLE tx_savlibraryexample6 (
     PRIMARY KEY (uid),
     KEY parent (pid)
 );
-
-

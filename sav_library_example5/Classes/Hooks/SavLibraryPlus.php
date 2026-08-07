@@ -14,7 +14,9 @@ namespace YolfTypo3\SavLibraryExample5\Hooks;
  * The TYPO3 project - inspiring people to share!
  */
 use TYPO3\CMS\Core\Utility\GeneralUtility;
+use TYPO3\CMS\Core\Database\Connection;
 use TYPO3\CMS\Core\Database\ConnectionPool;
+use TYPO3\CMS\Core\Information\Typo3Version;
 use TYPO3\CMS\Fluid\View\StandaloneView;
 use YolfTypo3\SavLibraryPlus\Hooks\AbstractHook;
 
@@ -28,25 +30,23 @@ class SavLibraryPlus extends AbstractHook
      *
      * @return string
      */
-    public function renderHook($parameters)
+    public function renderHook($parameters): string
     {
         // Gets the parameters
         $template = $parameters['template'];
         $uid = $parameters['uid'];
 
         // Creates a view for more fluid processings of the template
-        /** @var StandaloneView $view */
-        $view = GeneralUtility::makeInstance(StandaloneView::class);
-        $view->setTemplatePathAndFilename('EXT:sav_library_example5/Resources/Private/Templates/' . $template);
+        $view = $this->controller->getViewer()->createView('EXT:sav_library_example5/Resources/Private/Templates/' . $template);
 
         // Selects the record
         $queryBuilder = GeneralUtility::makeInstance(ConnectionPool::class)->getQueryBuilderForTable('tx_savlibraryexample5');
         $rows = $queryBuilder->select('*')
             ->from('tx_savlibraryexample5')
             ->where($queryBuilder->expr()
-            ->eq('uid', $queryBuilder->createNamedParameter($uid, \PDO::PARAM_INT)))
-            ->execute()
-            ->fetchAll();
+                ->eq('uid', $queryBuilder->createNamedParameter($uid, Connection::PARAM_INT)))
+            ->executeQuery()
+            ->fetchAllAssociative();
 
         // Assigns the row variable
         $view->assign('row', $rows[0]);
@@ -56,6 +56,7 @@ class SavLibraryPlus extends AbstractHook
 
         return $content;
     }
+    
 }
 
 ?>

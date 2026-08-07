@@ -1,0 +1,16 @@
+mod.wizards {
+    newContentElement.wizardItems {
+        plugins {
+            elements {
+                sav_library_example5 {
+                    iconIdentifier = tx-savlibraryexample5-svgicon
+                    title = SAV Library Example5 - Hooks
+                    description =
+                    tt_content_defValues {
+                        CType = sav_library_example5_pi1
+                    }
+                }
+            }
+        }
+    }
+}

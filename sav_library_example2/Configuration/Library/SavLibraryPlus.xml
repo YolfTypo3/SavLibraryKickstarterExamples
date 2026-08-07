@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-
 <SavLibraryPlus>
     <general type="array">
-        <version>11.5.0</version>
+        <version>14.3.0</version>
         <overridedTablesForLocalization>
         </overridedTablesForLocalization>
         <saveAndNew type="array">
@@ -59,6 +58,7 @@
                             <tableName>tx_savlibraryexample2_cds</tableName>
                             <fieldName>artist</fieldName>
                             <fieldType>String</fieldType>
+                            <fieldTitle>Artist</fieldTitle>
                         </config>
                     </a54626113>
                     <a146233051 type="array">
@@ -66,6 +66,7 @@
                             <tableName>tx_savlibraryexample2_cds</tableName>
                             <fieldName>album_title</fieldName>
                             <fieldType>String</fieldType>
+                            <fieldTitle>Title of CD</fieldTitle>
                         </config>
                     </a146233051>
                     <a183562985 type="array">
@@ -73,6 +74,7 @@
                             <tableName>tx_savlibraryexample2_cds</tableName>
                             <fieldName>date_of_purchase</fieldName>
                             <fieldType>Date</fieldType>
+                            <fieldTitle>When did I buy the CD ?</fieldTitle>
                         </config>
                     </a183562985>
                     <a92875989 type="array">
@@ -83,6 +85,7 @@
                             <tableName>tx_savlibraryexample2_cds</tableName>
                             <fieldName>coverimage</fieldName>
                             <fieldType>Files</fieldType>
+                            <fieldTitle>Cover image (JPG)</fieldTitle>
                         </config>
                     </a92875989>
                     <a217152876 type="array">
@@ -90,6 +93,7 @@
                             <tableName>tx_savlibraryexample2_cds</tableName>
                             <fieldName>category</fieldName>
                             <fieldType>RelationOneToManyAsSelectorbox</fieldType>
+                            <fieldTitle>CD Category</fieldTitle>
                         </config>
                     </a217152876>
                 </fields>
@@ -111,6 +115,7 @@
                             <tableName>tx_savlibraryexample2_cds</tableName>
                             <fieldName>artist</fieldName>
                             <fieldType>String</fieldType>
+                            <fieldTitle>Artist</fieldTitle>
                         </config>
                     </a54626113>
                     <a146233051 type="array">
@@ -118,6 +123,7 @@
                             <tableName>tx_savlibraryexample2_cds</tableName>
                             <fieldName>album_title</fieldName>
                             <fieldType>String</fieldType>
+                            <fieldTitle>Title of CD</fieldTitle>
                         </config>
                     </a146233051>
                     <a183562985 type="array">
@@ -125,6 +131,7 @@
                             <tableName>tx_savlibraryexample2_cds</tableName>
                             <fieldName>date_of_purchase</fieldName>
                             <fieldType>Date</fieldType>
+                            <fieldTitle>When did I buy the CD ?</fieldTitle>
                         </config>
                     </a183562985>
                     <a54252103 type="array">
@@ -132,6 +139,7 @@
                             <tableName>tx_savlibraryexample2_cds</tableName>
                             <fieldName>link_to_website</fieldName>
                             <fieldType>Link</fieldType>
+                            <fieldTitle>Does the band have a website ?</fieldTitle>
                         </config>
                     </a54252103>
                     <a92875989 type="array">
@@ -139,6 +147,7 @@
                             <tableName>tx_savlibraryexample2_cds</tableName>
                             <fieldName>coverimage</fieldName>
                             <fieldType>Files</fieldType>
+                            <fieldTitle>Cover image (JPG)</fieldTitle>
                         </config>
                     </a92875989>
                     <a217152876 type="array">
@@ -146,6 +155,7 @@
                             <tableName>tx_savlibraryexample2_cds</tableName>
                             <fieldName>category</fieldName>
                             <fieldType>RelationOneToManyAsSelectorbox</fieldType>
+                            <fieldTitle>CD Category</fieldTitle>
                         </config>
                     </a217152876>
                     <a135495930 type="array">
@@ -153,6 +163,7 @@
                             <tableName>tx_savlibraryexample2_cds</tableName>
                             <fieldName>description</fieldName>
                             <fieldType>RichTextEditor</fieldType>
+                            <fieldTitle>Description / Band story</fieldTitle>
                         </config>
                     </a135495930>
                 </fields>
@@ -175,6 +186,7 @@
                             <tableName>tx_savlibraryexample2_cds</tableName>
                             <fieldName>artist</fieldName>
                             <fieldType>String</fieldType>
+                            <fieldTitle>Artist</fieldTitle>
                         </config>
                     </a54626113>
                     <a146233051 type="array">
@@ -182,6 +194,7 @@
                             <tableName>tx_savlibraryexample2_cds</tableName>
                             <fieldName>album_title</fieldName>
                             <fieldType>String</fieldType>
+                            <fieldTitle>Title of CD</fieldTitle>
                         </config>
                     </a146233051>
                     <a183562985 type="array">
@@ -189,6 +202,7 @@
                             <tableName>tx_savlibraryexample2_cds</tableName>
                             <fieldName>date_of_purchase</fieldName>
                             <fieldType>Date</fieldType>
+                            <fieldTitle>When did I buy the CD ?</fieldTitle>
                         </config>
                     </a183562985>
                     <a54252103 type="array">
@@ -196,6 +210,7 @@
                             <tableName>tx_savlibraryexample2_cds</tableName>
                             <fieldName>link_to_website</fieldName>
                             <fieldType>Link</fieldType>
+                            <fieldTitle>Does the band have a website ?</fieldTitle>
                         </config>
                     </a54252103>
                     <a92875989 type="array">
@@ -203,6 +218,7 @@
                             <tableName>tx_savlibraryexample2_cds</tableName>
                             <fieldName>coverimage</fieldName>
                             <fieldType>Files</fieldType>
+                            <fieldTitle>Cover image (JPG)</fieldTitle>
                         </config>
                     </a92875989>
                     <a217152876 type="array">
@@ -210,6 +226,7 @@
                             <tableName>tx_savlibraryexample2_cds</tableName>
                             <fieldName>category</fieldName>
                             <fieldType>RelationOneToManyAsSelectorbox</fieldType>
+                            <fieldTitle>CD Category</fieldTitle>
                         </config>
                     </a217152876>
                     <a135495930 type="array">
@@ -217,6 +234,7 @@
                             <tableName>tx_savlibraryexample2_cds</tableName>
                             <fieldName>description</fieldName>
                             <fieldType>RichTextEditor</fieldType>
+                            <fieldTitle>Description / Band story</fieldTitle>
                         </config>
                     </a135495930>
                 </fields>
@@ -237,5 +255,4 @@
             </whereTags>
  		</numIndex>
 	</queries>
-
 </SavLibraryPlus>

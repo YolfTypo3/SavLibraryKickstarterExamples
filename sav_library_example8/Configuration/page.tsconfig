@@ -1,0 +1,16 @@
+mod.wizards {
+    newContentElement.wizardItems {
+        plugins {
+            elements {
+                sav_library_example8 {
+                    iconIdentifier = tx-savlibraryexample8-svgicon
+                    title = SAV Library Example8 - FE Users Admin and Export
+                    description = FE Users Admin and Export
+                    tt_content_defValues {
+                        CType = sav_library_example8_pi1
+                    }
+                }
+            }
+        }
+    }
+}

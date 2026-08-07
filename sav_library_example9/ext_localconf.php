@@ -1,27 +1,22 @@
 <?php
 
-defined('TYPO3_MODE') or die();
+use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
+use TYPO3\CMS\Core\Utility\GeneralUtility;
+use TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider;
+use TYPO3\CMS\Core\Imaging\IconRegistry;
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addUserTSConfig('
-    options.saveDocNew.tx_savlibraryexample9=1
-');
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addUserTSConfig('
-    options.saveDocNew.tx_savlibraryexample9_graph1=1
-');
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addUserTSConfig('
-    options.saveDocNew.tx_savlibraryexample9_graph2=1
-');
+defined('TYPO3') or die();
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPItoST43(
-    'sav_library_example9',
-    'Classes/Controller/SavLibraryExample9Controller.php',
-    '_pi1',
-    'list_type',
-    1
-);
+(function () {
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTypoScriptSetup('
-plugin.tx_savlibraryexample9_pi1.userFunc = YolfTypo3\SavLibraryExample9\Controller\SavLibraryExample9Controller->main
-'
-);
+	ExtensionManagementUtility::addTypoScript(
+	    'sav_library_example9',
+	    'setup',
+	    'plugin.tx_savlibraryexample9_pi1 = USER_INT
+         plugin.tx_savlibraryexample9_pi1.userFunc = YolfTypo3\SavLibraryExample9\Controller\SavLibraryExample9Controller->main'
+	);
 
+	ExtensionManagementUtility::addTypoScriptSetup(
+		'tt_content.sav_library_example9_pi1 < plugin.tx_savlibraryexample9_pi1'
+	);
+})();

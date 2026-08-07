@@ -45,7 +45,7 @@ purchase, cover image, artist web link, category fields.
 .. important::
 
   For more information, please read the
-  :ref:`Tutorial 3 section of the SAV Library Plus documentation <savlibraryplus:tutorial3>`.
+  :ref:`Tutorial 3 section of the SAV Library Plus documentation <yolftypo3/sav-library-plus:tutorial3>`.
 
 
 Screenshots

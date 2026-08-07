@@ -1,0 +1,16 @@
+mod.wizards {
+    newContentElement.wizardItems {
+        plugins {
+            elements {
+                sav_library_example6 {
+                    iconIdentifier = tx-savlibraryexample6-svgicon
+                    title = SAV Library Example6 - Email and RTF
+                    description = Sending an email and generating a RTF file with the SAV Library
+                    tt_content_defValues {
+                        CType = sav_library_example6_pi1
+                    }
+                }
+            }
+        }
+    }
+}

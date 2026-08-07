@@ -59,7 +59,7 @@ This extension uses a table with the following fields:
 .. important::
 
   For more information, please read the
-  :ref:`Tutorial 7 section of the SAV Library Plus documentation <savlibraryplus:tutorial7>`.
+  :ref:`Tutorial 7 section of the SAV Library Plus documentation <yolftypo3/sav-library-plus:tutorial7>`.
 
 
 Screenshots

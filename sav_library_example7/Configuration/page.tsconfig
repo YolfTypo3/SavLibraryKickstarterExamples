@@ -1,0 +1,16 @@
+mod.wizards {
+    newContentElement.wizardItems {
+        plugins {
+            elements {
+                sav_library_example7 {
+                    iconIdentifier = tx-savlibraryexample7-svgicon
+                    title = SAV Library Example7 - Guest book
+                    description = Simple guest book
+                    tt_content_defValues {
+                        CType = sav_library_example7_pi1
+                    }
+                }
+            }
+        }
+    }
+}

@@ -37,34 +37,25 @@ The SAV Library Kickstarter includes:
 
 - Many other features.
 
-The aim of this extension is to show how include XML JpGraph into 
-an extension (see the extension `sav_jpgraph <http://typo3.org/extensions
-/repository/view/sav_jpgraph>`_ for  detailed information and a tutorial). 
-In this example, we want to display list of events as Gantt graphs. 
-Each graph is a period of time as, for example months or quarters. 
-Two forms are requested:
-The first one (Admin) will be used to input events in FE. An event includes 
-a title, a begin and a end date, a category. Categories will be input in BE. 
-They have a name and a color which will be used in the Gantt graph.
+The aim of this extension is to show how include charts into 
+an extension (see the extension `sav_charts <https://extensions.typo3.org/extension/sav_charts>`_ for  detailed information and a tutorial). 
 
 
 .. important::
 
   For more information, please read the
-  :ref:`Tutorial 9 section of the SAV Library Plus documentation <savlibraryplus:tutorial9>`.
+  :ref:`Tutorial 9 section of the SAV Library Plus documentation <yolftypo3/sav-library-plus:tutorial9>`.
 
 
 Screenshots
 ===========
 
-Admin Edit and List Views
--------------------------
+Single View
+-----------
 
-.. figure:: ../Images/ScreenshotsAdminEditView.png 
+.. figure:: ../Images/ScreenshotsSingleView.png 
 
-.. figure:: ../Images/ScreenshotsAdminListView.png 
-
-List View
+Edit View
 ---------
 
-.. figure:: ../Images/ScreenshotsListView.png
+.. figure:: ../Images/ScreenshotsEditView.png 

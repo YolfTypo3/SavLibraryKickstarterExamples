@@ -19,10 +19,10 @@ SAV Library Example3
    CD Album list (from Kasper's video Episode III)
 
 :Keywords:
-   sav_library_example3    
+   sav_library_example3
 
 :Copyright:
-   2021
+   2026
 
 :Author:
    Laurent Foulloy
@@ -50,7 +50,13 @@ Table of Contents
    :glob:
 
    Introduction/Index
-   NewTables/Index
-   Forms/Index
+   EntityRelationshipDiagram/Index
+   SavLibraryConfiguration/Index
    Changelog/Index
-   
+
+.. Meta Menu
+
+.. toctree::
+   :hidden:
+
+   Sitemap   

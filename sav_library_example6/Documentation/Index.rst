@@ -19,10 +19,10 @@ SAV Library Example6
    Sending an email and generating a RTF file with the SAV Library
 
 :Keywords:
-   sav_library_example6    
+   sav_library_example6
 
 :Copyright:
-   2021
+   2026
 
 :Author:
    Laurent Foulloy
@@ -50,7 +50,13 @@ Table of Contents
    :glob:
 
    Introduction/Index
-   NewTables/Index
-   Forms/Index
+   EntityRelationshipDiagram/Index
+   SavLibraryConfiguration/Index
    Changelog/Index
-   
+
+.. Meta Menu
+
+.. toctree::
+   :hidden:
+
+   Sitemap   

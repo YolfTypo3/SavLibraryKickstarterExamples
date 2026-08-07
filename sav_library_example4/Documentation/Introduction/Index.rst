@@ -46,7 +46,7 @@ and SAV Library Example3.
 .. important::
 
   For more information, please read the
-  :ref:`Tutorial 4 section of the SAV Library Plus documentation <savlibraryplus:tutorial4>`.
+  :ref:`Tutorial 4 section of the SAV Library Plus documentation <yolftypo3/sav-library-plus:tutorial4>`.
 
 
 Screenshots

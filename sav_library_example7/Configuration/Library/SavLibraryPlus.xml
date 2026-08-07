@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-
 <SavLibraryPlus>
     <general type="array">
-        <version>11.5.0</version>
+        <version>14.3.0</version>
         <overridedTablesForLocalization>
         </overridedTablesForLocalization>
         <saveAndNew type="array">
@@ -24,8 +23,8 @@
         <numIndex index="2" type="array">
             <title>LIST</title>
             <listView>3</listView>
-            <singleView>4</singleView>
-            <editView>5</editView>
+            <singleView>0</singleView>
+            <editView>0</editView>
             <query>2</query>
             <formView></formView>
             <specialView>0</specialView>
@@ -107,6 +106,7 @@
                             <tableName>tx_savlibraryexample7_guests</tableName>
                             <fieldName>firstname</fieldName>
                             <fieldType>String</fieldType>
+                            <fieldTitle>Firstname</fieldTitle>
                         </config>
                     </a240638963>
                     <a119044004 type="array">
@@ -117,6 +117,7 @@
                             <tableName>tx_savlibraryexample7_guests</tableName>
                             <fieldName>lastname</fieldName>
                             <fieldType>String</fieldType>
+                            <fieldTitle>Lastname</fieldTitle>
                         </config>
                     </a119044004>
                     <a37854466 type="array">
@@ -124,6 +125,7 @@
                             <tableName>tx_savlibraryexample7_guests</tableName>
                             <fieldName>email</fieldName>
                             <fieldType>String</fieldType>
+                            <fieldTitle>Email</fieldTitle>
                         </config>
                     </a37854466>
                     <a148382105 type="array">
@@ -133,6 +135,7 @@
                             <tableName>tx_savlibraryexample7_guests</tableName>
                             <fieldName>website</fieldName>
                             <fieldType>Link</fieldType>
+                            <fieldTitle>Website</fieldTitle>
                         </config>
                     </a148382105>
                     <a103857199 type="array">
@@ -143,6 +146,7 @@
                             <tableName>tx_savlibraryexample7_guests</tableName>
                             <fieldName>message</fieldName>
                             <fieldType>Text</fieldType>
+                            <fieldTitle>Message</fieldTitle>
                         </config>
                     </a103857199>
                 </fields>
@@ -166,6 +170,7 @@
                             <tableName>tx_savlibraryexample7_guests</tableName>
                             <fieldName>email</fieldName>
                             <fieldType>String</fieldType>
+                            <fieldTitle>Email</fieldTitle>
                         </config>
                     </a37854466>
                 </fields>
@@ -187,6 +192,7 @@
                             <tableName>tx_savlibraryexample7_guests</tableName>
                             <fieldName>firstname</fieldName>
                             <fieldType>String</fieldType>
+                            <fieldTitle>Firstname</fieldTitle>
                         </config>
                     </a240638963>
                     <a119044004 type="array">
@@ -194,6 +200,7 @@
                             <tableName>tx_savlibraryexample7_guests</tableName>
                             <fieldName>lastname</fieldName>
                             <fieldType>String</fieldType>
+                            <fieldTitle>Lastname</fieldTitle>
                         </config>
                     </a119044004>
                     <a37854466 type="array">
@@ -203,6 +210,7 @@
                             <tableName>tx_savlibraryexample7_guests</tableName>
                             <fieldName>email</fieldName>
                             <fieldType>String</fieldType>
+                            <fieldTitle>Email</fieldTitle>
                         </config>
                     </a37854466>
                     <a148382105 type="array">
@@ -212,6 +220,7 @@
                             <tableName>tx_savlibraryexample7_guests</tableName>
                             <fieldName>website</fieldName>
                             <fieldType>Link</fieldType>
+                            <fieldTitle>Website</fieldTitle>
                         </config>
                     </a148382105>
                     <a103857199 type="array">
@@ -219,6 +228,7 @@
                             <tableName>tx_savlibraryexample7_guests</tableName>
                             <fieldName>message</fieldName>
                             <fieldType>Text</fieldType>
+                            <fieldTitle>Message</fieldTitle>
                         </config>
                     </a103857199>
                     <a3335673 type="array">
@@ -228,6 +238,7 @@
                             <tableName>tx_savlibraryexample7_guests</tableName>
                             <fieldName>comment</fieldName>
                             <fieldType>Text</fieldType>
+                            <fieldTitle>Comment</fieldTitle>
                         </config>
                     </a3335673>
                     <a49137310 type="array">
@@ -236,6 +247,7 @@
                             <tableName>tx_savlibraryexample7_guests</tableName>
                             <fieldName>date</fieldName>
                             <fieldType>ShowOnly</fieldType>
+                            <fieldTitle>Date</fieldTitle>
                             <renderType>DateTime</renderType>
                         </config>
                     </a49137310>
@@ -258,6 +270,7 @@
                             <tableName>tx_savlibraryexample7_guests</tableName>
                             <fieldName>firstname</fieldName>
                             <fieldType>String</fieldType>
+                            <fieldTitle>Firstname</fieldTitle>
                         </config>
                     </a240638963>
                     <a119044004 type="array">
@@ -265,6 +278,7 @@
                             <tableName>tx_savlibraryexample7_guests</tableName>
                             <fieldName>lastname</fieldName>
                             <fieldType>String</fieldType>
+                            <fieldTitle>Lastname</fieldTitle>
                         </config>
                     </a119044004>
                     <a103857199 type="array">
@@ -277,6 +291,7 @@
                             <tableName>tx_savlibraryexample7_guests</tableName>
                             <fieldName>message</fieldName>
                             <fieldType>Text</fieldType>
+                            <fieldTitle>Message</fieldTitle>
                         </config>
                     </a103857199>
                     <a49137310 type="array">
@@ -285,6 +300,7 @@
                             <tableName>tx_savlibraryexample7_guests</tableName>
                             <fieldName>date</fieldName>
                             <fieldType>ShowOnly</fieldType>
+                            <fieldTitle>Date</fieldTitle>
                             <renderType>DateTime</renderType>
                         </config>
                     </a49137310>
@@ -296,7 +312,7 @@
         <numIndex index="1" type="array">
             <title>FORM_Query</title>
             <mainTable>tx_savlibraryexample7_guests</mainTable>
-            <whereClause>instr(_submitted_data_,'sav_library_example7_form') &gt; 0 AND not _validated_</whereClause>
+            <whereClause>instr(_submitted_data_,&#039;sav_library_example7_form&#039;) &gt; 0 AND not _validated_</whereClause>
  		</numIndex>
         <numIndex index="2" type="array">
             <title>LIST_Query</title>
@@ -311,5 +327,4 @@
             <orderByClause>tx_savlibraryexample7_guests.crdate desc</orderByClause>
  		</numIndex>
 	</queries>
-
 </SavLibraryPlus>

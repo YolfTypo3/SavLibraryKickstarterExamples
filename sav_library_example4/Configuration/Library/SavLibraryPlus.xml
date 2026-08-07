@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-
 <SavLibraryPlus>
     <general type="array">
-        <version>11.5.0</version>
+        <version>14.3.0</version>
         <overridedTablesForLocalization>
         </overridedTablesForLocalization>
         <saveAndNew type="array">
@@ -51,6 +50,7 @@
                             <tableName>tx_savlibraryexample4_cds</tableName>
                             <fieldName>artist</fieldName>
                             <fieldType>String</fieldType>
+                            <fieldTitle>Artist</fieldTitle>
                         </config>
                     </a204647352>
                     <a183096385 type="array">
@@ -58,6 +58,7 @@
                             <tableName>tx_savlibraryexample4_cds</tableName>
                             <fieldName>album_title</fieldName>
                             <fieldType>String</fieldType>
+                            <fieldTitle>Title of CD</fieldTitle>
                         </config>
                     </a183096385>
                     <a178598160 type="array">
@@ -65,6 +66,7 @@
                             <tableName>tx_savlibraryexample4_cds</tableName>
                             <fieldName>date_of_purchase</fieldName>
                             <fieldType>Date</fieldType>
+                            <fieldTitle>When did I buy the CD ?</fieldTitle>
                         </config>
                     </a178598160>
                     <a42532543 type="array">
@@ -75,6 +77,7 @@
                             <tableName>tx_savlibraryexample4_cds</tableName>
                             <fieldName>coverimage</fieldName>
                             <fieldType>Files</fieldType>
+                            <fieldTitle>Cover image (JPG)</fieldTitle>
                         </config>
                     </a42532543>
                     <a99466238 type="array">
@@ -82,6 +85,7 @@
                             <tableName>tx_savlibraryexample4_cds</tableName>
                             <fieldName>category</fieldName>
                             <fieldType>RelationOneToManyAsSelectorbox</fieldType>
+                            <fieldTitle>CD Category</fieldTitle>
                         </config>
                     </a99466238>
                 </fields>
@@ -103,6 +107,7 @@
                             <tableName>tx_savlibraryexample4_cds</tableName>
                             <fieldName>artist</fieldName>
                             <fieldType>String</fieldType>
+                            <fieldTitle>Artist</fieldTitle>
                         </config>
                     </a204647352>
                     <a183096385 type="array">
@@ -110,6 +115,7 @@
                             <tableName>tx_savlibraryexample4_cds</tableName>
                             <fieldName>album_title</fieldName>
                             <fieldType>String</fieldType>
+                            <fieldTitle>Title of CD</fieldTitle>
                         </config>
                     </a183096385>
                     <a178598160 type="array">
@@ -117,6 +123,7 @@
                             <tableName>tx_savlibraryexample4_cds</tableName>
                             <fieldName>date_of_purchase</fieldName>
                             <fieldType>Date</fieldType>
+                            <fieldTitle>When did I buy the CD ?</fieldTitle>
                         </config>
                     </a178598160>
                     <a113002389 type="array">
@@ -124,6 +131,7 @@
                             <tableName>tx_savlibraryexample4_cds</tableName>
                             <fieldName>link_to_website</fieldName>
                             <fieldType>Link</fieldType>
+                            <fieldTitle>Does the band have a website ?</fieldTitle>
                         </config>
                     </a113002389>
                     <a42532543 type="array">
@@ -131,6 +139,7 @@
                             <tableName>tx_savlibraryexample4_cds</tableName>
                             <fieldName>coverimage</fieldName>
                             <fieldType>Files</fieldType>
+                            <fieldTitle>Cover image (JPG)</fieldTitle>
                         </config>
                     </a42532543>
                     <a99466238 type="array">
@@ -138,6 +147,7 @@
                             <tableName>tx_savlibraryexample4_cds</tableName>
                             <fieldName>category</fieldName>
                             <fieldType>RelationOneToManyAsSelectorbox</fieldType>
+                            <fieldTitle>CD Category</fieldTitle>
                         </config>
                     </a99466238>
                 </fields>
@@ -157,6 +167,7 @@
                             <tableName>tx_savlibraryexample4_cds</tableName>
                             <fieldName>description</fieldName>
                             <fieldType>RichTextEditor</fieldType>
+                            <fieldTitle>Description / Band story</fieldTitle>
                         </config>
                     </a14294645>
                 </fields>
@@ -179,6 +190,7 @@
                             <tableName>tx_savlibraryexample4_cds</tableName>
                             <fieldName>rel_friends</fieldName>
                             <fieldType>RelationManyToManyAsSubform</fieldType>
+                            <fieldTitle>Friends</fieldTitle>
                             <subform type="array">
                                 <a217895432 type="array">
                                     <fields type="array">
@@ -187,6 +199,7 @@
                                                 <tableName>tx_savlibraryexample4_friends</tableName>
                                                 <fieldName>friend_name</fieldName>
                                                 <fieldType>String</fieldType>
+                                                <fieldTitle>Name</fieldTitle>
                                                 <subformItem>1</subformItem>
                                             </config>
                                         </a3433043>
@@ -196,6 +209,7 @@
                                                 <tableName>tx_savlibraryexample4_friends</tableName>
                                                 <fieldName>friend_phone</fieldName>
                                                 <fieldType>String</fieldType>
+                                                <fieldTitle>Phone</fieldTitle>
                                                 <subformItem>1</subformItem>
                                             </config>
                                         </a178041819>
@@ -205,6 +219,7 @@
                                                 <tableName>tx_savlibraryexample4_friends</tableName>
                                                 <fieldName>friend_email</fieldName>
                                                 <fieldType>String</fieldType>
+                                                <fieldTitle>Email</fieldTitle>
                                                 <subformItem>1</subformItem>
                                             </config>
                                         </a253857786>
@@ -213,6 +228,7 @@
                                                 <tableName>tx_savlibraryexample4_friends</tableName>
                                                 <fieldName>friend_preferred_music</fieldName>
                                                 <fieldType>RelationManyToManyAsDoubleSelectorbox</fieldType>
+                                                <fieldTitle>Preferred music</fieldTitle>
                                                 <subformItem>1</subformItem>
                                             </config>
                                         </a17417746>
@@ -239,6 +255,7 @@
                             <tableName>tx_savlibraryexample4_cds</tableName>
                             <fieldName>rel_lending</fieldName>
                             <fieldType>RelationManyToManyAsSubform</fieldType>
+                            <fieldTitle>Lendings</fieldTitle>
                             <subform type="array">
                                 <a217895432 type="array">
                                     <fields type="array">
@@ -247,6 +264,7 @@
                                                 <tableName>tx_savlibraryexample4_lending</tableName>
                                                 <fieldName>friend_name</fieldName>
                                                 <fieldType>RelationOneToManyAsSelectorbox</fieldType>
+                                                <fieldTitle>Name</fieldTitle>
                                                 <subformItem>1</subformItem>
                                             </config>
                                         </a253437308>
@@ -256,6 +274,7 @@
                                                 <tableName>tx_savlibraryexample4_lending</tableName>
                                                 <fieldName>lending_date</fieldName>
                                                 <fieldType>Date</fieldType>
+                                                <fieldTitle>Lending date</fieldTitle>
                                                 <subformItem>1</subformItem>
                                             </config>
                                         </a137036008>
@@ -265,6 +284,7 @@
                                                 <tableName>tx_savlibraryexample4_lending</tableName>
                                                 <fieldName>return_date</fieldName>
                                                 <fieldType>Date</fieldType>
+                                                <fieldTitle>Return date</fieldTitle>
                                                 <subformItem>1</subformItem>
                                             </config>
                                         </a179456241>
@@ -293,6 +313,7 @@
                             <tableName>tx_savlibraryexample4_cds</tableName>
                             <fieldName>artist</fieldName>
                             <fieldType>String</fieldType>
+                            <fieldTitle>Artist</fieldTitle>
                         </config>
                     </a204647352>
                     <a183096385 type="array">
@@ -300,6 +321,7 @@
                             <tableName>tx_savlibraryexample4_cds</tableName>
                             <fieldName>album_title</fieldName>
                             <fieldType>String</fieldType>
+                            <fieldTitle>Title of CD</fieldTitle>
                         </config>
                     </a183096385>
                     <a178598160 type="array">
@@ -307,6 +329,7 @@
                             <tableName>tx_savlibraryexample4_cds</tableName>
                             <fieldName>date_of_purchase</fieldName>
                             <fieldType>Date</fieldType>
+                            <fieldTitle>When did I buy the CD ?</fieldTitle>
                         </config>
                     </a178598160>
                     <a113002389 type="array">
@@ -314,6 +337,7 @@
                             <tableName>tx_savlibraryexample4_cds</tableName>
                             <fieldName>link_to_website</fieldName>
                             <fieldType>Link</fieldType>
+                            <fieldTitle>Does the band have a website ?</fieldTitle>
                         </config>
                     </a113002389>
                     <a42532543 type="array">
@@ -321,6 +345,7 @@
                             <tableName>tx_savlibraryexample4_cds</tableName>
                             <fieldName>coverimage</fieldName>
                             <fieldType>Files</fieldType>
+                            <fieldTitle>Cover image (JPG)</fieldTitle>
                         </config>
                     </a42532543>
                     <a99466238 type="array">
@@ -328,6 +353,7 @@
                             <tableName>tx_savlibraryexample4_cds</tableName>
                             <fieldName>category</fieldName>
                             <fieldType>RelationOneToManyAsSelectorbox</fieldType>
+                            <fieldTitle>CD Category</fieldTitle>
                         </config>
                     </a99466238>
                 </fields>
@@ -347,6 +373,7 @@
                             <tableName>tx_savlibraryexample4_cds</tableName>
                             <fieldName>description</fieldName>
                             <fieldType>RichTextEditor</fieldType>
+                            <fieldTitle>Description / Band story</fieldTitle>
                         </config>
                     </a14294645>
                 </fields>
@@ -370,6 +397,7 @@
                             <tableName>tx_savlibraryexample4_cds</tableName>
                             <fieldName>rel_friends</fieldName>
                             <fieldType>RelationManyToManyAsSubform</fieldType>
+                            <fieldTitle>Friends</fieldTitle>
                             <subform type="array">
                                 <a217895432 type="array">
                                     <fields type="array">
@@ -378,6 +406,7 @@
                                                 <tableName>tx_savlibraryexample4_friends</tableName>
                                                 <fieldName>friend_name</fieldName>
                                                 <fieldType>String</fieldType>
+                                                <fieldTitle>Name</fieldTitle>
                                                 <subformItem>1</subformItem>
                                             </config>
                                         </a3433043>
@@ -387,6 +416,7 @@
                                                 <tableName>tx_savlibraryexample4_friends</tableName>
                                                 <fieldName>friend_phone</fieldName>
                                                 <fieldType>String</fieldType>
+                                                <fieldTitle>Phone</fieldTitle>
                                                 <subformItem>1</subformItem>
                                             </config>
                                         </a178041819>
@@ -396,6 +426,7 @@
                                                 <tableName>tx_savlibraryexample4_friends</tableName>
                                                 <fieldName>friend_email</fieldName>
                                                 <fieldType>String</fieldType>
+                                                <fieldTitle>Email</fieldTitle>
                                                 <subformItem>1</subformItem>
                                             </config>
                                         </a253857786>
@@ -404,6 +435,7 @@
                                                 <tableName>tx_savlibraryexample4_friends</tableName>
                                                 <fieldName>friend_preferred_music</fieldName>
                                                 <fieldType>RelationManyToManyAsDoubleSelectorbox</fieldType>
+                                                <fieldTitle>Preferred music</fieldTitle>
                                                 <subformItem>1</subformItem>
                                             </config>
                                         </a17417746>
@@ -432,6 +464,7 @@
                             <tableName>tx_savlibraryexample4_cds</tableName>
                             <fieldName>rel_lending</fieldName>
                             <fieldType>RelationManyToManyAsSubform</fieldType>
+                            <fieldTitle>Lendings</fieldTitle>
                             <subform type="array">
                                 <a217895432 type="array">
                                     <fields type="array">
@@ -442,6 +475,7 @@
                                                 <tableName>tx_savlibraryexample4_lending</tableName>
                                                 <fieldName>friend_name</fieldName>
                                                 <fieldType>RelationOneToManyAsSelectorbox</fieldType>
+                                                <fieldTitle>Name</fieldTitle>
                                                 <subformItem>1</subformItem>
                                             </config>
                                         </a253437308>
@@ -452,6 +486,7 @@
                                                 <tableName>tx_savlibraryexample4_lending</tableName>
                                                 <fieldName>lending_date</fieldName>
                                                 <fieldType>Date</fieldType>
+                                                <fieldTitle>Lending date</fieldTitle>
                                                 <subformItem>1</subformItem>
                                             </config>
                                         </a137036008>
@@ -462,6 +497,7 @@
                                                 <tableName>tx_savlibraryexample4_lending</tableName>
                                                 <fieldName>return_date</fieldName>
                                                 <fieldType>Date</fieldType>
+                                                <fieldTitle>Return date</fieldTitle>
                                                 <subformItem>1</subformItem>
                                             </config>
                                         </a179456241>
@@ -481,5 +517,4 @@
             <groupByClause>tx_savlibraryexample4_cds.uid</groupByClause>
  		</numIndex>
 	</queries>
-
 </SavLibraryPlus>

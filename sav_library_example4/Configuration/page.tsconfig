@@ -1,0 +1,16 @@
+mod.wizards {
+    newContentElement.wizardItems {
+        plugins {
+            elements {
+                sav_library_example4 {
+                    iconIdentifier = tx-savlibraryexample4-svgicon
+                    title = SAV Library Example4 - CD Album (Improved)
+                    description = CD Album list (from Kasper's video Episode III)
+                    tt_content_defValues {
+                        CType = sav_library_example4_pi1
+                    }
+                }
+            }
+        }
+    }
+}

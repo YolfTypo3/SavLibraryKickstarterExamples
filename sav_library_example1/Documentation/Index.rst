@@ -19,10 +19,10 @@ SAV Library Example1
    A simple contact list (from the former Typo3Journal)
 
 :Keywords:
-   sav_library_example1    
+   sav_library_example1
 
 :Copyright:
-   2021
+   2026
 
 :Author:
    Laurent Foulloy
@@ -50,7 +50,13 @@ Table of Contents
    :glob:
 
    Introduction/Index
-   NewTables/Index
-   Forms/Index
+   EntityRelationshipDiagram/Index
+   SavLibraryConfiguration/Index
    Changelog/Index
-   
+
+.. Meta Menu
+
+.. toctree::
+   :hidden:
+
+   Sitemap   

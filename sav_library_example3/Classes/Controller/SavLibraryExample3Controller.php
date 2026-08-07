@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 /*
  * This file is part of the TYPO3 CMS project.
  *
@@ -15,7 +17,8 @@
 
 namespace YolfTypo3\SavLibraryExample3\Controller;
 
-use TYPO3\CMS\Core\Utility\GeneralUtility;
+use TYPO3\CMS\Core\Attribute\AsAllowedCallable;
+use YolfTypo3\SavLibraryPlus\Controller\Controller;
 
 /**
  * Plugin 'SAV Library Example3 - CD Album (Advanced)' for the 'sav_library_example3' extension.
@@ -23,7 +26,7 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
  * @author Laurent Foulloy <yolf.typo3@orange.fr>
  * @package sav_library_example3
  */
-class SavLibraryExample3Controller extends \TYPO3\CMS\Frontend\Plugin\AbstractPlugin
+final class SavLibraryExample3Controller extends Controller
 {
 	/**
 	 * PrefixId
@@ -35,7 +38,7 @@ class SavLibraryExample3Controller extends \TYPO3\CMS\Frontend\Plugin\AbstractPl
 	 * Extension key
 	 * @var string
 	 */
-	public $extKey = 'sav_library_example3';
+	public $extensionKey = 'sav_library_example3';
 
 	/**
 	 * The main function
@@ -45,26 +48,15 @@ class SavLibraryExample3Controller extends \TYPO3\CMS\Frontend\Plugin\AbstractPl
 	 *
 	 * @return string the plugin content
 	 */
-	public function main(string $content, array $configuration) : string
+	#[AsAllowedCallable]
+	public function main(string $content, array $configuration): string
 	{
-	  // Creates the SavLibraryPlus controller
-	  $controller = GeneralUtility::makeInstance(\YolfTypo3\SavLibraryPlus\Controller\Controller::class);
+		// Sets the debug variable. Use debug ONLY for development.
+		$this->setDebug(0);
 
-	  // Gets the extension configuration manager
-	  $extensionConfigurationManager = $controller->getExtensionConfigurationManager();
+		// Renders the form
+		$out = $this->render($configuration);
 
-	  // Injects the extension in the extension configuration manager
-	  $extensionConfigurationManager->injectExtension($this);
-	  // Injects the typoScript configuration in the extension configuration manager
-	  $extensionConfigurationManager->injectTypoScriptConfiguration($configuration);
-
-	  // Sets the debug variable. Use debug ONLY for development
-	  $controller->setDebug(0);
-
-	  // Renders the form
-	  $out = $controller->render();
-
-	  return $out;
+		return $out;
 	}
 }
-

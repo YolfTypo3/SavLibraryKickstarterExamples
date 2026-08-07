@@ -12,12 +12,16 @@
     ],
     "extra": {
         "typo3/cms": {
-            "extension-key": "sav_library_example1"
+            "extension-key": "sav_library_example1",
+            "version": "14.3.0",
+			"Package": {
+				"providesPackages": {}
+			}
         }
-    },    
+    },
     "require": {
-        "typo3/cms-core": "^9.5||^10.4||^11.5",
-        "yolftypo3/sav-library-plus": "@dev"
+        "typo3/cms-core": "^13.4|^14.3",
+        "yolftypo3/sav-library-plus": "^13.4|^14.3"
     },
     "autoload": {
         "psr-4": {

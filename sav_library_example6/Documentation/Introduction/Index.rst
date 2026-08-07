@@ -58,7 +58,7 @@ It contains different fields:
 .. important::
 
   For more information, please read the
-  :ref:`Tutorial 6 section of the SAV Library Plus documentation <savlibraryplus:tutorial6>`.
+  :ref:`Tutorial 6 section of the SAV Library Plus documentation <yolftypo3/sav-library-plus:tutorial6>`.
 
 
 Screenshots

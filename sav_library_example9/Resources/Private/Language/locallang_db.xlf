@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 
 <xliff version="1.0">
-    <file source-language="en" datatype="plaintext" original="messages" date="2021-10-13T08:24:05Z" product-name="sav_library_example9">
+    <file source-language="en" datatype="plaintext" original="messages" date="2026-07-17T07:35:02Z" product-name="sav_library_example9">
         <header/>
         <body>
             <trans-unit id="tx_savlibraryexample9" xml:space="preserve">
@@ -38,10 +38,10 @@
                 <source>Label</source>
             </trans-unit>
             <trans-unit id="tx_savlibraryexample9_graph2.value1" xml:space="preserve">
-                <source>Value 1</source>
+                <source>Mini</source>
             </trans-unit>
             <trans-unit id="tx_savlibraryexample9_graph2.value2" xml:space="preserve">
-                <source>Value 2</source>
+                <source>Maxi</source>
             </trans-unit>
             <trans-unit id="tt_content.list_type_pi1" xml:space="preserve">
                 <source>SAV Library Example9 - Graphs</source>
@@ -49,4 +49,3 @@
         </body>
     </file>
 </xliff>
-

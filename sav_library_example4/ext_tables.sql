@@ -1,4 +1,3 @@
-
 #
 # Table structure for table 'tx_savlibraryexample4_cds'
 #
@@ -18,6 +17,7 @@ CREATE TABLE tx_savlibraryexample4_cds (
     category int(11) DEFAULT '0' NOT NULL,
     description text,
     rel_lending int(11) DEFAULT '0' NOT NULL,
+    rel_friends int(11) DEFAULT '0' NOT NULL,
 
     PRIMARY KEY (uid),
     KEY parent (pid)
@@ -31,6 +31,8 @@ CREATE TABLE tx_savlibraryexample4_cds_rel_lending_mm (
     uid_foreign int(11) unsigned DEFAULT '0' NOT NULL,
     tablenames varchar(30) DEFAULT '' NOT NULL,
     sorting int(11) DEFAULT '0' NOT NULL,
+
+    PRIMARY KEY (uid_local,uid_foreign),
     KEY uid_local (uid_local),
     KEY uid_foreign (uid_foreign)
 );
@@ -90,5 +92,3 @@ CREATE TABLE tx_savlibraryexample4_friends (
     PRIMARY KEY (uid),
     KEY parent (pid)
 );
-
-
