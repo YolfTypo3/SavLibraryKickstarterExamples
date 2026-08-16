@@ -1,7 +1,5 @@
 <?php
 
-namespace YolfTypo3\SavCalendarMvc\Domain\Repository;
-
 /*
  * This file is part of the TYPO3 CMS project.
  *
@@ -15,12 +13,15 @@ namespace YolfTypo3\SavCalendarMvc\Domain\Repository;
  * The TYPO3 project - inspiring people to share
  */
 
+namespace YolfTypo3\SavCalendarMvc\Domain\Repository;
+
+use TYPO3\CMS\Extbase\Persistence\QueryInterface;
+use TYPO3\CMS\Extbase\Persistence\Generic\Qom\ConstraintInterface;
+
 /**
- * Repository for the Category model in the extension SavCalendarMvc
+ * Repository for the model "Category" in the extension "sav_calendar_mvc"
  *
  */
 class CategoryRepository extends \YolfTypo3\SavLibraryMvc\Domain\Repository\DefaultRepository
 {
 }
-?>
-

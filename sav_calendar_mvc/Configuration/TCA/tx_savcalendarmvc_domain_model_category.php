@@ -1,4 +1,5 @@
 <?php
+defined('TYPO3') or die();
 
 return [
     'ctrl' => [
@@ -6,15 +7,17 @@ return [
         'label' => 'title',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
-        'cruser_id' => 'cruser_id',
         'sortby' => 'sorting',
         'delete' => 'deleted',
+        'security' => [
+            'ignorePageTypeRestriction' => true,
+        ],
         'enablecolumns' => [
             'disabled' => 'hidden',
         ],
         'iconfile' => 'EXT:sav_calendar_mvc/Resources/Public/Icons/icon_tx_savcalendarmvc_domain_model_category.gif',
         'EXT' => [
-            'sav_library_mvc' => [
+            'sav_calendar_mvc' => [
                 'ctrl' => [
                 ],
                 'columns' => [
@@ -41,24 +44,29 @@ return [
                         'folders' => [
                         ],
                        'order' => [
-                            1 => '1',
-                            2 => '1',
-                            3 => '1',
+                            1 => 1,
+                            2 => 1,
+                            3 => 1,
                         ],
                     ],
-                ],
-                'controllers' => [
                 ],
             ],
         ],
     ],
-    'interface' => [
-        'showRecordFieldList' => 'hidden,title'
-    ],
+    'interface' => [],
     'columns' => [
+        'cruser_id' => [
+            'exclude' => true,
+            'label' => 'cruser_id',
+            'config' => [
+                'type' => 'number',
+                'format' => 'decimal',
+                'default' => 0
+            ],
+        ],
         'hidden' => [
-            'exclude' => 1,
-            'label'  => 'LLL:EXT:lang/locallang_general.xlf:LGL.hidden',
+            'exclude' => true,
+            'label'  => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.hidden',
             'config' => [
                 'type'  => 'check',
                 'default' => 0,
@@ -70,11 +78,11 @@ return [
             ],
         ],
         'title' => [
-            'exclude' => 1,
+            'exclude' => true,
             'label'  => 'LLL:EXT:sav_calendar_mvc/Resources/Private/Language/locallang_db.xlf:tx_savcalendarmvc_domain_model_category.title',
             'config' => [
                 'type' => 'input',
-                'size' => '30',
+                'size' => 30,
                 'eval' => 'trim'
             ],
         ],
@@ -82,11 +90,11 @@ return [
     'types' => [
         '0' => [
             'showitem' => 'hidden, title',
+            'columnsOverrides' => [
+            ],
         ],
     ],
     'palettes' => [
         '1' => ['showitem' => '']
     ],
 ];
-
-?>

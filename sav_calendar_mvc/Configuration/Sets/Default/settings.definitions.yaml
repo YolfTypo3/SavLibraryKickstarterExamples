@@ -1,0 +1,39 @@
+categories:
+  SavCalendarMvc:
+    label: 'SavBasicExample0'
+  SavCalendarMvc.templates:
+    label: 'Templates'
+    parent: SavCalendarMvc
+  SavCalendarMvc.pages:
+    label: 'Pages'
+    parent: SavCalendarMvc
+
+settings:
+
+  savCalendarMvc.templateRootPath:
+    label: 'Templates'
+    category: SavBasicExample0.templates
+    description: 'Path to template root'
+    type: string
+    default: 'EXT:sav_calendar_mvc/Resources/Private/Templates/'
+
+  savCalendarMvc.partialRootPath:
+    label: 'Partials'
+    category: SavCalendarMvc.templates
+    description: 'Path to partial root'
+    type: string
+    default: 'EXT:sav_calendar_mvc/Resources/Private/Partials/'
+
+  savCalendarMvc.layoutRootPath:
+    label: 'Layouts'
+    category: SavCalendarMvc.templates
+    description: 'Path to layout root'
+    type: string
+    default: 'EXT:sav_calendar_mvc/Resources/Private/Layouts/'
+
+  savCalendarMvc.storagePid:
+    label: 'Default storage PID'
+    category: SavCalendarMvc.pages
+    description: 'Folder that stores all reccords'
+    type: int
+    default: 0

@@ -3,7 +3,7 @@ mod.wizards {
         plugins {
             elements {
                 sav_library_example5 {
-                    iconIdentifier = tx-savlibraryexample5-svgicon
+                    iconIdentifier = ext-savlibraryexample5-wizard
                     title = SAV Library Example5 - Hooks
                     description =
                     tt_content_defValues {

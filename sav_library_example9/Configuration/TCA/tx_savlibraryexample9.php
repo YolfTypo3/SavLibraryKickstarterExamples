@@ -29,7 +29,7 @@ return [
             ],
         ],
         'hidden' => [
-            'exclude' => 1,
+            'exclude' => true,
             'label'  => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.hidden',
             'config' => [
                 'type'  => 'check',
@@ -37,7 +37,7 @@ return [
             ]
         ],
         'title' => [
-            'exclude' => 1,
+            'exclude' => true,
             'label'  => 'LLL:EXT:sav_library_example9/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample9.title',
             'config' => [
                 'type' => 'input',
@@ -46,7 +46,7 @@ return [
             ],
         ],
         'graph1' => [
-            'exclude' => 1,
+            'exclude' => true,
             'label'  => 'LLL:EXT:sav_library_example9/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample9.graph1',
             'config' => [
                 'type' => 'inline',
@@ -64,7 +64,7 @@ return [
             ],
         ],
         'graph2' => [
-            'exclude' => 1,
+            'exclude' => true,
             'label'  => 'LLL:EXT:sav_library_example9/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample9.graph2',
             'config' => [
                 'type' => 'inline',
@@ -82,7 +82,7 @@ return [
             ],
         ],
         'graph' => [
-            'exclude' => 1,
+            'exclude' => true,
             'label'  => 'LLL:EXT:sav_library_example9/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample9.graph',
             'config' => [
                 'type' => 'none',

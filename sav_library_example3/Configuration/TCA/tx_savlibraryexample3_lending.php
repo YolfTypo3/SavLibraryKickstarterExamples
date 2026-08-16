@@ -26,7 +26,7 @@ return [
             ],
         ],
         'hidden' => [
-            'exclude' => 1,
+            'exclude' => true,
             'label'  => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.hidden',
             'config' => [
                 'type'  => 'check',
@@ -34,7 +34,7 @@ return [
             ]
         ],
         'friend_name' => [
-            'exclude' => 1,
+            'exclude' => true,
             'label'  => 'LLL:EXT:sav_library_example3/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample3_lending.friend_name',
             'config' => [
                 'type' => 'input',
@@ -43,7 +43,7 @@ return [
             ],
         ],
         'friend_phone' => [
-            'exclude' => 1,
+            'exclude' => true,
             'label'  => 'LLL:EXT:sav_library_example3/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample3_lending.friend_phone',
             'config' => [
                 'type' => 'input',
@@ -52,7 +52,7 @@ return [
             ],
         ],
         'friend_email' => [
-            'exclude' => 1,
+            'exclude' => true,
             'label'  => 'LLL:EXT:sav_library_example3/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample3_lending.friend_email',
             'config' => [
                 'type' => 'input',
@@ -61,7 +61,7 @@ return [
             ],
         ],
         'lending_date' => [
-            'exclude' => 1,
+            'exclude' => true,
             'label'  => 'LLL:EXT:sav_library_example3/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample3_lending.lending_date',
             'config' => [
                 'type' => 'datetime',
@@ -71,7 +71,7 @@ return [
             ],
         ],
         'return_date' => [
-            'exclude' => 1,
+            'exclude' => true,
             'label'  => 'LLL:EXT:sav_library_example3/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample3_lending.return_date',
             'config' => [
                 'type' => 'datetime',

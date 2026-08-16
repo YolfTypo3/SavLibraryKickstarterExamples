@@ -1,7 +1,5 @@
 <?php
 
-namespace YolfTypo3\SavCalendarMvc\Domain\Model;
-
 /*
  * This file is part of the TYPO3 CMS project.
  *
@@ -15,19 +13,28 @@ namespace YolfTypo3\SavCalendarMvc\Domain\Model;
  * The TYPO3 project - inspiring people to share
  */
 
+namespace YolfTypo3\SavCalendarMvc\Domain\Model;
+
 /**
  * Category model for the extension SavCalendarMvc
  *
  */
+use TYPO3\CMS\Extbase\Annotation\Validate;
+use YolfTypo3\SavCalendarMvc\Domain\Repository\CategoryRepository;
 use YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel;
 
 class Category extends DefaultModel
 {
     /**
-     * The title variable.
+     * @var CategoryRepository
+     */
+    protected $repository = null;
+
+    #[Validate(validator: 'String')]
+    /**
+     * The <title> variable.
      *
      * @var string
-     * @TYPO3\CMS\Extbase\Annotation\Validate("Raw")
      */
     protected $title;
 
@@ -36,10 +43,18 @@ class Category extends DefaultModel
      */
     public function __construct()
     {
+        $this->initializeObject();
     }
 
     /**
-     * Getter for title.
+     * Object initializer.
+     */
+    public function initializeObject(): void
+    {
+    }
+
+    /**
+     * Getter for property <title>.
      *
      * @return string
      */
@@ -49,15 +64,14 @@ class Category extends DefaultModel
     }
 
     /**
-     * Setter for title.
+     * Setter for property <title>.
      *
      * @param string $title
      * @return void
      */
-    public function setTitle($title)
+    public function setTitle($title): void
     {
         $this->title = $title;
     }
-}
-?>
 
+}

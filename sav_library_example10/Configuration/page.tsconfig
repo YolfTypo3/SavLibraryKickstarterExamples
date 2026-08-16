@@ -3,7 +3,7 @@ mod.wizards {
         plugins {
             elements {
                 sav_library_example10 {
-                    iconIdentifier = tx-savlibraryexample10-svgicon
+                    iconIdentifier = ext-savlibraryexample10-wizard
                     title = SAV Library Example10 - Using TypoScript
                     description = Simple gallery to show how to use TypoScript in SAV Library Extension. It includes images display and google maps
                     tt_content_defValues {

@@ -1,0 +1,21 @@
+@import 'EXT:sav_calendar_mvc/Configuration/TypoScript/setup.typoscript'
+
+plugin.tx_savcalendarmvc {
+  view {
+    templateRootPaths {
+      1 = {$savCalendarMvc.templateRootPath}
+    }
+
+    partialRootPaths {
+      1 = {$savCalendarMvc.partialRootPath}
+    }
+
+    layoutRootPaths {
+      1 = {$savCalendarMvc.layoutRootPath}
+    }
+  }
+
+  persistence {
+    storagePid = {$savCalendarMvc.storagePid}
+  }
+}

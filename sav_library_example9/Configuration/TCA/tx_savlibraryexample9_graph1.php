@@ -29,7 +29,7 @@ return [
             ],
         ],
         'hidden' => [
-            'exclude' => 1,
+            'exclude' => true,
             'label'  => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.hidden',
             'config' => [
                 'type'  => 'check',
@@ -37,7 +37,7 @@ return [
             ]
         ],
         'sun' => [
-            'exclude' => 1,
+            'exclude' => true,
             'label'  => 'LLL:EXT:sav_library_example9/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample9_graph1.sun',
             'config' => [
                 'type' => 'number',
@@ -47,7 +47,7 @@ return [
             ],
         ],
         'cloud' => [
-            'exclude' => 1,
+            'exclude' => true,
             'label'  => 'LLL:EXT:sav_library_example9/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample9_graph1.cloud',
             'config' => [
                 'type' => 'number',
@@ -57,7 +57,7 @@ return [
             ],
         ],
         'rain' => [
-            'exclude' => 1,
+            'exclude' => true,
             'label'  => 'LLL:EXT:sav_library_example9/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample9_graph1.rain',
             'config' => [
                 'type' => 'number',

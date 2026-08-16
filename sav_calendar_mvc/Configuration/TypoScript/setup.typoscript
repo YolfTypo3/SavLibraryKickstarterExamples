@@ -1,0 +1,19 @@
+plugin.tx_savcalendarmvc {
+    view {
+        templateRootPaths {
+            0 = EXT:sav_library_mvc/Resources/Private/Templates/
+            1 = {$plugin.tx_savcalendarmvc.view.templateRootPath}
+        }
+        partialRootPaths {
+            0 = EXT:sav_library_mvc/Resources/Private/Partials/
+            1 = {$plugin.tx_savcalendarmvc.view.partialRootPath}
+        }
+        layoutRootPaths {
+            0 = EXT:sav_library_mvc/Resources/Private/Layouts/
+            1 = {$plugin.tx_savcalendarmvc.view.layoutRootPath}
+        }
+    }
+    persistence {
+        storagePid = {$plugin.tx_savcalendarmvc.persistence.storagePid}
+    }
+}

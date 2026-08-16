@@ -26,7 +26,7 @@ return [
             ],
         ],
         'hidden' => [
-            'exclude' => 1,
+            'exclude' => true,
             'label'  => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.hidden',
             'config' => [
                 'type'  => 'check',
@@ -34,7 +34,7 @@ return [
             ]
         ],
         'firstname' => [
-            'exclude' => 1,
+            'exclude' => true,
             'label'  => 'LLL:EXT:sav_library_example7/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample7_guests.firstname',
             'config' => [
                 'type' => 'input',
@@ -43,7 +43,7 @@ return [
             ],
         ],
         'lastname' => [
-            'exclude' => 1,
+            'exclude' => true,
             'label'  => 'LLL:EXT:sav_library_example7/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample7_guests.lastname',
             'config' => [
                 'type' => 'input',
@@ -52,7 +52,7 @@ return [
             ],
         ],
         'email' => [
-            'exclude' => 1,
+            'exclude' => true,
             'label'  => 'LLL:EXT:sav_library_example7/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample7_guests.email',
             'config' => [
                 'type' => 'input',
@@ -61,7 +61,7 @@ return [
             ],
         ],
         'website' => [
-            'exclude' => 1,
+            'exclude' => true,
             'label'  => 'LLL:EXT:sav_library_example7/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample7_guests.website',
             'config' => [
                 'type' => 'link',
@@ -73,7 +73,7 @@ return [
             ],
         ],
         'message' => [
-            'exclude' => 1,
+            'exclude' => true,
             'label'  => 'LLL:EXT:sav_library_example7/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample7_guests.message',
             'config' => [
                 'type' => 'text',
@@ -82,7 +82,7 @@ return [
             ],
         ],
         'comment' => [
-            'exclude' => 1,
+            'exclude' => true,
             'label'  => 'LLL:EXT:sav_library_example7/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample7_guests.comment',
             'config' => [
                 'type' => 'text',
@@ -91,7 +91,7 @@ return [
             ],
         ],
         'date' => [
-            'exclude' => 1,
+            'exclude' => true,
             'label'  => 'LLL:EXT:sav_library_example7/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample7_guests.date',
             'config' => [
                 'type' => 'none',

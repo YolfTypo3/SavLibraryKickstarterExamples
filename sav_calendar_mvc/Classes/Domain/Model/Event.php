@@ -1,7 +1,5 @@
 <?php
 
-namespace YolfTypo3\SavCalendarMvc\Domain\Model;
-
 /*
  * This file is part of the TYPO3 CMS project.
  *
@@ -15,85 +13,90 @@ namespace YolfTypo3\SavCalendarMvc\Domain\Model;
  * The TYPO3 project - inspiring people to share
  */
 
+namespace YolfTypo3\SavCalendarMvc\Domain\Model;
+
 /**
  * Event model for the extension SavCalendarMvc
  *
  */
+use TYPO3\CMS\Extbase\Annotation\Validate;
+use YolfTypo3\SavCalendarMvc\Domain\Model\Category;
+use YolfTypo3\SavCalendarMvc\Domain\Repository\EventRepository;
 use YolfTypo3\SavLibraryMvc\Domain\Model\DefaultModel;
 
 class Event extends DefaultModel
 {
     /**
-     * The category variable.
+     * @var EventRepository
+     */
+    protected $repository = null;
+
+    /**
+     * The <category> variable.
      *
-     * @var \YolfTypo3\SavCalendarMvc\Domain\Model\Category
-     * @TYPO3\CMS\Extbase\Annotation\Validate("Raw")
+     * @var Category
      */
     protected $category;
 
+    #[Validate(validator: 'String')]
     /**
-     * The title variable.
+     * The <title> variable.
      *
      * @var string
-     * @TYPO3\CMS\Extbase\Annotation\Validate("Raw")
      */
     protected $title;
 
+    #[Validate(validator: 'DateTime')]
     /**
-     * The dateBegin variable.
+     * The <dateBegin> variable.
      *
      * @var \DateTime
-     * @TYPO3\CMS\Extbase\Annotation\Validate("DateTime")
-     * @TYPO3\CMS\Extbase\Annotation\Validate("YolfTypo3\SavLibraryMvc\Domain\Model\Validator\Empty")
      */
     protected $dateBegin;
 
+    #[Validate(validator: 'DateTime')]
     /**
-     * The dateEnd variable.
+     * The <dateEnd> variable.
      *
      * @var \DateTime
-     * @TYPO3\CMS\Extbase\Annotation\Validate("DateTime")
-     * @TYPO3\CMS\Extbase\Annotation\Validate("YolfTypo3\SavLibraryMvc\Domain\Model\Validator\Empty")
      */
     protected $dateEnd;
 
+    #[Validate(validator: 'String')]
     /**
-     * The location variable.
+     * The <location> variable.
      *
      * @var string
-     * @TYPO3\CMS\Extbase\Annotation\Validate("Raw")
      */
     protected $location;
 
     /**
-     * The description variable.
+     * The <description> variable.
      *
      * @var string
-     * @TYPO3\CMS\Extbase\Annotation\Validate("Raw")
      */
     protected $description;
 
     /**
-     * The link variable.
+     * The <link> variable.
      *
      * @var string
-     * @TYPO3\CMS\Extbase\Annotation\Validate("Raw")
      */
     protected $link;
 
+    #[Validate(validator: 'String')]
     /**
-     * The organizedBy variable.
+     * The <organizedBy> variable.
      *
      * @var string
-     * @TYPO3\CMS\Extbase\Annotation\Validate("Raw")
      */
     protected $organizedBy;
 
+    #[Validate(validator: 'String')]
     /**
-     * The email variable.
+     * The <email> variable.
      *
      * @var string
-     * @TYPO3\CMS\Extbase\Annotation\Validate("Raw")
      */
     protected $email;
 
@@ -102,14 +105,22 @@ class Event extends DefaultModel
      */
     public function __construct()
     {
+        $this->initializeObject();
+    }
+
+    /**
+     * Object initializer.
+     */
+    public function initializeObject(): void
+    {
         $this->dateBegin = new \DateTime();
         $this->dateEnd = new \DateTime();
     }
 
     /**
-     * Getter for category.
+     * Getter for property <category>.
      *
-     * @return \YolfTypo3\SavCalendarMvc\Domain\Model\Category
+     * @return Category
      */
     public function getCategory()
     {
@@ -117,18 +128,18 @@ class Event extends DefaultModel
     }
 
     /**
-     * Setter for category.
+     * Setter for property <category>.
      *
-     * @param \YolfTypo3\SavCalendarMvc\Domain\Model\Category     $category
+     * @param Category $category
      * @return void
      */
-    public function setCategory($category)
+    public function setCategory($category): void
     {
         $this->category = $category;
     }
 
     /**
-     * Getter for title.
+     * Getter for property <title>.
      *
      * @return string
      */
@@ -138,18 +149,18 @@ class Event extends DefaultModel
     }
 
     /**
-     * Setter for title.
+     * Setter for property <title>.
      *
      * @param string $title
      * @return void
      */
-    public function setTitle($title)
+    public function setTitle($title): void
     {
         $this->title = $title;
     }
 
     /**
-     * Getter for dateBegin.
+     * Getter for property <dateBegin>.
      *
      * @return \DateTime
      */
@@ -159,18 +170,18 @@ class Event extends DefaultModel
     }
 
     /**
-     * Setter for dateBegin.
+     * Setter for property <dateBegin>.
      *
      * @param \DateTime $dateBegin
      * @return void
      */
-    public function setDateBegin($dateBegin)
+    public function setDateBegin($dateBegin): void
     {
         $this->dateBegin = $dateBegin;
     }
 
     /**
-     * Getter for dateEnd.
+     * Getter for property <dateEnd>.
      *
      * @return \DateTime
      */
@@ -180,18 +191,18 @@ class Event extends DefaultModel
     }
 
     /**
-     * Setter for dateEnd.
+     * Setter for property <dateEnd>.
      *
      * @param \DateTime $dateEnd
      * @return void
      */
-    public function setDateEnd($dateEnd)
+    public function setDateEnd($dateEnd): void
     {
         $this->dateEnd = $dateEnd;
     }
 
     /**
-     * Getter for location.
+     * Getter for property <location>.
      *
      * @return string
      */
@@ -201,18 +212,18 @@ class Event extends DefaultModel
     }
 
     /**
-     * Setter for location.
+     * Setter for property <location>.
      *
      * @param string $location
      * @return void
      */
-    public function setLocation($location)
+    public function setLocation($location): void
     {
         $this->location = $location;
     }
 
     /**
-     * Getter for description.
+     * Getter for property <description>.
      *
      * @return string
      */
@@ -222,18 +233,18 @@ class Event extends DefaultModel
     }
 
     /**
-     * Setter for description.
+     * Setter for property <description>.
      *
      * @param string $description
      * @return void
      */
-    public function setDescription($description)
+    public function setDescription($description): void
     {
         $this->description = $description;
     }
 
     /**
-     * Getter for link.
+     * Getter for property <link>.
      *
      * @return string
      */
@@ -243,18 +254,18 @@ class Event extends DefaultModel
     }
 
     /**
-     * Setter for link.
+     * Setter for property <link>.
      *
      * @param string $link
      * @return void
      */
-    public function setLink($link)
+    public function setLink($link): void
     {
         $this->link = $link;
     }
 
     /**
-     * Getter for organizedBy.
+     * Getter for property <organizedBy>.
      *
      * @return string
      */
@@ -264,18 +275,18 @@ class Event extends DefaultModel
     }
 
     /**
-     * Setter for organizedBy.
+     * Setter for property <organizedBy>.
      *
      * @param string $organizedBy
      * @return void
      */
-    public function setOrganizedBy($organizedBy)
+    public function setOrganizedBy($organizedBy): void
     {
         $this->organizedBy = $organizedBy;
     }
 
     /**
-     * Getter for email.
+     * Getter for property <email>.
      *
      * @return string
      */
@@ -285,15 +296,14 @@ class Event extends DefaultModel
     }
 
     /**
-     * Setter for email.
+     * Setter for property <email>.
      *
      * @param string $email
      * @return void
      */
-    public function setEmail($email)
+    public function setEmail($email): void
     {
         $this->email = $email;
     }
-}
-?>
 
+}

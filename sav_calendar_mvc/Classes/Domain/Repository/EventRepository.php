@@ -1,7 +1,5 @@
 <?php
 
-namespace YolfTypo3\SavCalendarMvc\Domain\Repository;
-
 /*
  * This file is part of the TYPO3 CMS project.
  *
@@ -15,8 +13,13 @@ namespace YolfTypo3\SavCalendarMvc\Domain\Repository;
  * The TYPO3 project - inspiring people to share
  */
 
+namespace YolfTypo3\SavCalendarMvc\Domain\Repository;
+
+use TYPO3\CMS\Extbase\Persistence\QueryInterface;
+use TYPO3\CMS\Extbase\Persistence\Generic\Qom\ConstraintInterface;
+
 /**
- * Repository for the Event model in the extension SavCalendarMvc
+ * Repository for the model "Event" in the extension "sav_calendar_mvc"
  *
  */
 class EventRepository extends \YolfTypo3\SavLibraryMvc\Domain\Repository\DefaultRepository
@@ -25,22 +28,22 @@ class EventRepository extends \YolfTypo3\SavLibraryMvc\Domain\Repository\Default
     /**
      * Defines the where clause
      *
-     * @param \TYPO3\CMS\Extbase\Persistence\QueryInterface $query
-     * @return void
+     * @param QueryInterface $query
+     * @return ConstraintInterface
      */
-    protected function whereClause1(\TYPO3\CMS\Extbase\Persistence\QueryInterface $query)
+    protected function whereClause1(QueryInterface $query): ?ConstraintInterface
     {
-        $whereClauseConstraints = $query->greaterThanOrEqual('date_end', $this->createQuery()->statement('SELECT UNIX_TIMESTAMP(NOW()) AS date_end')->execute()[0]->getDateEnd());
+        $whereClauseConstraints = $query->greaterThanOrEqual('date_end', $this->createQuery()->statement('SELECT UNIX_TIMESTAMP(NOW()) AS _localParam_')->execute(true)[0]['_localParam_']);
         return $whereClauseConstraints;
     }
 
     /**
      * Defines the order by clause
      *
-     * @param \TYPO3\CMS\Extbase\Persistence\QueryInterface $query
+     * @param QueryInterface $query
      * @return void
      */
-    protected function orderByClause1(\TYPO3\CMS\Extbase\Persistence\QueryInterface $query)
+    protected function orderByClause1(QueryInterface $query)
     {
         $query->setOrderings(['date_begin' => \TYPO3\CMS\Extbase\Persistence\QueryInterface::ORDER_ASCENDING]);
     }
@@ -48,13 +51,11 @@ class EventRepository extends \YolfTypo3\SavLibraryMvc\Domain\Repository\Default
     /**
      * Defines the order by clause
      *
-     * @param \TYPO3\CMS\Extbase\Persistence\QueryInterface $query
+     * @param QueryInterface $query
      * @return void
      */
-    protected function orderByClause2(\TYPO3\CMS\Extbase\Persistence\QueryInterface $query)
+    protected function orderByClause2(QueryInterface $query)
     {
         $query->setOrderings(['date_begin' => \TYPO3\CMS\Extbase\Persistence\QueryInterface::ORDER_DESCENDING]);
     }
 }
-?>
-

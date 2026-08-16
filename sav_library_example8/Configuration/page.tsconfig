@@ -3,7 +3,7 @@ mod.wizards {
         plugins {
             elements {
                 sav_library_example8 {
-                    iconIdentifier = tx-savlibraryexample8-svgicon
+                    iconIdentifier = ext-savlibraryexample8-wizard
                     title = SAV Library Example8 - FE Users Admin and Export
                     description = FE Users Admin and Export
                     tt_content_defValues {

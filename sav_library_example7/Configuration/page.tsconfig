@@ -3,7 +3,7 @@ mod.wizards {
         plugins {
             elements {
                 sav_library_example7 {
-                    iconIdentifier = tx-savlibraryexample7-svgicon
+                    iconIdentifier = ext-savlibraryexample7-wizard
                     title = SAV Library Example7 - Guest book
                     description = Simple guest book
                     tt_content_defValues {

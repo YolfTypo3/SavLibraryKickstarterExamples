@@ -29,7 +29,7 @@ return [
             ],
         ],
         'hidden' => [
-            'exclude' => 1,
+            'exclude' => true,
             'label'  => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.hidden',
             'config' => [
                 'type'  => 'check',
@@ -37,7 +37,7 @@ return [
             ]
         ],
         'artist' => [
-            'exclude' => 1,
+            'exclude' => true,
             'label'  => 'LLL:EXT:sav_library_example4/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample4_cds.artist',
             'config' => [
                 'type' => 'input',
@@ -46,7 +46,7 @@ return [
             ],
         ],
         'album_title' => [
-            'exclude' => 1,
+            'exclude' => true,
             'label'  => 'LLL:EXT:sav_library_example4/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample4_cds.album_title',
             'config' => [
                 'type' => 'input',
@@ -55,7 +55,7 @@ return [
             ],
         ],
         'date_of_purchase' => [
-            'exclude' => 1,
+            'exclude' => true,
             'label'  => 'LLL:EXT:sav_library_example4/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample4_cds.date_of_purchase',
             'config' => [
                 'type' => 'datetime',
@@ -65,7 +65,7 @@ return [
             ],
         ],
         'link_to_website' => [
-            'exclude' => 1,
+            'exclude' => true,
             'label'  => 'LLL:EXT:sav_library_example4/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample4_cds.link_to_website',
             'config' => [
                 'type' => 'link',
@@ -77,16 +77,15 @@ return [
             ],
         ],
         'coverimage' => [
-            'exclude' => 1,
+            'exclude' => true,
             'label'  => 'LLL:EXT:sav_library_example4/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample4_cds.coverimage',
             'config' => [
                 'type' => 'file',
                 'maxitems' => 1,
-                'allowed' => 'common-image-types',
             ],
         ],
         'category' => [
-            'exclude' => 1,
+            'exclude' => true,
             'label'  => 'LLL:EXT:sav_library_example4/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample4_cds.category',
             'config' => [
                 'type' => 'select',
@@ -105,7 +104,7 @@ return [
             ],
         ],
         'description' => [
-            'exclude' => 1,
+            'exclude' => true,
             'label'  => 'LLL:EXT:sav_library_example4/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample4_cds.description',
             'config' => [
                 'type' => 'text',
@@ -115,7 +114,7 @@ return [
             ],
         ],
         'rel_lending' => [
-            'exclude' => 1,
+            'exclude' => true,
             'label'  => 'LLL:EXT:sav_library_example4/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample4_cds.rel_lending',
             'config' => [
                 'type' => 'inline',
@@ -133,7 +132,7 @@ return [
             ],
         ],
         'rel_friends' => [
-            'exclude' => 1,
+            'exclude' => true,
             'label'  => 'LLL:EXT:sav_library_example4/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample4_cds.rel_friends',
             'config' => [
                 'type' => 'inline',

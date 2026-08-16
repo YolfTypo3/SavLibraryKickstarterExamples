@@ -3,7 +3,7 @@ mod.wizards {
         plugins {
             elements {
                 sav_library_example1 {
-                    iconIdentifier = tx-savlibraryexample1-svgicon
+                    iconIdentifier = ext-savlibraryexample1-wizard
                     title = SAV Library Example1 - Contact list
                     description = A simple contact list (from the former Typo3Journal)
                     tt_content_defValues {

@@ -7,7 +7,7 @@
             "libraryType": 1,
             "libraryVersion": "14.3.0",
             "extensionMustbeUpgraded": false,
-            "section": "documentation",
+            "section": "emconf",
             "itemKey": 1,
             "fieldKey": "",
             "showFieldConfiguration": "",
@@ -16,7 +16,7 @@
             "keepExtLocalConf": "",
             "vendorName": "YolfTypo3",
             "compatibility": "13x-14x",
-            "addWizardPluginIcon": "",
+            "addWizardPluginIcon": 1,
             "upgrades": {
                 "YolfTypo3\\SavLibraryKickstarter\\Upgrade\\UpgradeToSavLibraryKickstarter_9_5_0": true,
                 "YolfTypo3\\SavLibraryKickstarter\\Upgrade\\UpgradeToSavLibraryPlus_1_0_0": true,

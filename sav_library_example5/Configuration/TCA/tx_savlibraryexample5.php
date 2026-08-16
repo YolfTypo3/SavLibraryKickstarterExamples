@@ -29,7 +29,7 @@ return [
             ],
         ],
         'hidden' => [
-            'exclude' => 1,
+            'exclude' => true,
             'label'  => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.hidden',
             'config' => [
                 'type'  => 'check',
@@ -37,7 +37,7 @@ return [
             ]
         ],
         'title' => [
-            'exclude' => 1,
+            'exclude' => true,
             'label'  => 'LLL:EXT:sav_library_example5/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample5.title',
             'config' => [
                 'type' => 'input',
@@ -46,14 +46,14 @@ return [
             ],
         ],
         'hook_content' => [
-            'exclude' => 1,
+            'exclude' => true,
             'label'  => 'LLL:EXT:sav_library_example5/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample5.hook_content',
             'config' => [
                 'type' => 'none',
             ],
         ],
         'field1' => [
-            'exclude' => 1,
+            'exclude' => true,
             'label'  => 'LLL:EXT:sav_library_example5/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample5.field1',
             'config' => [
                 'type' => 'input',
@@ -62,7 +62,7 @@ return [
             ],
         ],
         'field2' => [
-            'exclude' => 1,
+            'exclude' => true,
             'label'  => 'LLL:EXT:sav_library_example5/Resources/Private/Language/locallang_db.xlf:tx_savlibraryexample5.field2',
             'config' => [
                 'type' => 'input',

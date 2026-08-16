@@ -1,4 +1,3 @@
-
 #
 # Table structure for table 'tx_savcalendarmvc_domain_model_event'
 #
@@ -13,8 +12,8 @@ CREATE TABLE tx_savcalendarmvc_domain_model_event (
     cruser_id_frontend int(11) DEFAULT '0' NOT NULL,
     category int(11) DEFAULT '0' NOT NULL,
     title tinytext,
-    date_begin int(11) unsigned DEFAULT '0' NOT NULL,
-    date_end int(11) unsigned DEFAULT '0' NOT NULL,
+    date_begin int(11) DEFAULT '0' NOT NULL,
+    date_end int(11) DEFAULT '0' NOT NULL,
     location tinytext,
     description text,
     link tinytext,
@@ -43,5 +42,3 @@ CREATE TABLE tx_savcalendarmvc_domain_model_category (
     PRIMARY KEY (uid),
     KEY parent (pid)
 );
-
-

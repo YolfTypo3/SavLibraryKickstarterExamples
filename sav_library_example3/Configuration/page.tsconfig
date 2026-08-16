@@ -3,7 +3,7 @@ mod.wizards {
         plugins {
             elements {
                 sav_library_example3 {
-                    iconIdentifier = tx-savlibraryexample3-svgicon
+                    iconIdentifier = ext-savlibraryexample3-wizard
                     title = SAV Library Example3 - CD Album (Advanced)
                     description = CD Album list (from Kasper's video Episode III)
                     tt_content_defValues {

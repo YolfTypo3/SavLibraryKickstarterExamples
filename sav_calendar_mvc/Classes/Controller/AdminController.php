@@ -1,7 +1,5 @@
 <?php
 
-namespace YolfTypo3\SavCalendarMvc\Controller;
-
 /*
  * This file is part of the TYPO3 CMS project.
  *
@@ -14,6 +12,10 @@ namespace YolfTypo3\SavCalendarMvc\Controller;
  *
  * The TYPO3 project - inspiring people to share
  */
+
+namespace YolfTypo3\SavCalendarMvc\Controller;
+
+use Psr\Http\Message\ResponseInterface;
 use YolfTypo3\SavCalendarMvc\Domain\Model\Event;
 use YolfTypo3\SavCalendarMvc\Domain\Repository\EventRepository;
 
@@ -21,7 +23,7 @@ use YolfTypo3\SavCalendarMvc\Domain\Repository\EventRepository;
  * Controller for the form Admin
  *
  */
-class AdminController extends \YolfTypo3\SavLibraryMvc\Controller\DefaultController
+final class AdminController extends \YolfTypo3\SavLibraryMvc\Controller\DefaultController
 {
     /**
      * Main repository
@@ -31,11 +33,11 @@ class AdminController extends \YolfTypo3\SavLibraryMvc\Controller\DefaultControl
     protected $mainRepository = null;
 
     /**
-     * Injects the repository.
+     * Constructor.
      *
-     * @param EventRepository $repository
+     * @return void
      */
-    public function injectEventRepository(EventRepository $repository)
+    public function __construct(EventRepository $repository)
     {
         $this->mainRepository = $repository;
     }
@@ -52,12 +54,10 @@ class AdminController extends \YolfTypo3\SavLibraryMvc\Controller\DefaultControl
      * Save action for this controller
      *
      * @param Event $data
-     * @return void
+     * @return ResponseInterface
      */
-    public function saveAction(Event $data)
+    public function saveAction(Event $data): ResponseInterface
     {
-        $this->save($data);
+        return $this->save($data);
     }
 }
-?>
-

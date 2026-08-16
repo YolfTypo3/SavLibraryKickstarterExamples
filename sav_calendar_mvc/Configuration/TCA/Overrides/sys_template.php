@@ -1,5 +1,5 @@
 <?php
-defined('TYPO3_MODE') or die();
+defined('TYPO3') or die();
 
 // Default TypoScript
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
@@ -7,5 +7,3 @@ defined('TYPO3_MODE') or die();
     'Configuration/TypoScript',
     'SAV Calendar Mvc'
 );
-
-?>
